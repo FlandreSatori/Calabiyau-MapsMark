@@ -98,7 +98,7 @@ export default async function HomePage({ searchParams }: { searchParams?: { bg?:
                 </section>
 
                 <section className="panel panel-pad">
-                    <p className="section-title">最新动态</p>
+                    <p className="section-title">地图动态</p>
                     <div className="cover-grid">
                         {summary.maps.map((map) => (
                             <MapCard key={map.id} map={map} reviews={summary.reviews} />

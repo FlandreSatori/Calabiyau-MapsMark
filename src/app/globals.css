@@ -699,8 +699,8 @@ img {
 }
 
 .review-map-thumb {
-    width: 112px;
     height: 112px;
+    width: calc(112px * 4 / 3);
     border-radius: 14px;
     object-fit: cover;
     border: 1px solid rgba(255, 255, 255, 0.08);
