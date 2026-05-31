@@ -83,10 +83,75 @@ const readFileAsDataUrl = async (file: File | null) => {
     });
 };
 
+const compressAndUpload = async (file: File, opts?: { maxDim?: number; quality?: number; notify?: (t: ToastState) => void }) => {
+    const maxDim = opts?.maxDim ?? 1600;
+    const quality = opts?.quality ?? 0.75;
+    try {
+        const dataUrl = await readFileAsDataUrl(file);
+        const img = await new Promise<HTMLImageElement>((resolve, reject) => {
+            const el = new Image();
+            el.onload = () => resolve(el);
+            el.onerror = reject;
+            el.src = dataUrl;
+        });
+
+        let { width, height } = img;
+        if (width > maxDim || height > maxDim) {
+            const ratio = width > height ? maxDim / width : maxDim / height;
+            width = Math.round(width * ratio);
+            height = Math.round(height * ratio);
+        }
+
+        const canvas = document.createElement("canvas");
+        canvas.width = width;
+        canvas.height = height;
+        const ctx = canvas.getContext("2d");
+        if (!ctx) throw new Error("无法创建画布上下文");
+        ctx.drawImage(img, 0, 0, width, height);
+
+        const blob: Blob | null = await new Promise((resolve) => canvas.toBlob(resolve as BlobCallback, "image/jpeg", quality));
+        if (!blob) throw new Error("图片压缩失败");
+
+        const dataUrl2 = await new Promise<string>((resolve, reject) => {
+            const reader = new FileReader();
+            reader.onload = () => resolve(String(reader.result ?? ""));
+            reader.onerror = () => reject(reader.error);
+            reader.readAsDataURL(blob);
+        });
+
+        const base64 = dataUrl2.split(",")[1] ?? "";
+
+        // 上传到后端，后端再写入 GitHub
+        const filename = file.name.replace(/[^a-zA-Z0-9._-]/g, "_");
+        const resp = await fetch("/api/upload", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ filename, contentBase64: base64, contentType: "image/jpeg" })
+        });
+        const text = await resp.text();
+        let payload: any = {};
+        try {
+            payload = JSON.parse(text);
+        } catch (e) {
+            payload = { message: text };
+        }
+        if (!resp.ok) {
+            const message = payload?.message ?? `上传失败 (${resp.status})`;
+            if (opts?.notify) opts.notify({ title: "上传失败", message });
+            throw new Error(message);
+        }
+        return payload?.url as string;
+    } catch (err) {
+        throw err;
+    }
+};
+
 export function MapForm({ mapTypes, onSuccess, notify }: MapFormProps) {
     const [submitting, setSubmitting] = useState(false);
     const [selectedType, setSelectedType] = useState(mapTypes[0] ?? "解密");
     const router = useRouter();
+
+    const [touched, setTouched] = useState<Record<string, boolean>>({});
 
     const [form, setForm] = useState({
         coverImage: "",
@@ -101,13 +166,35 @@ export function MapForm({ mapTypes, onSuccess, notify }: MapFormProps) {
     });
 
     const canSubmit = useMemo(
-        () => Boolean(form.coverImage && form.previewImage && form.code && form.name && form.author && form.mappedAt && form.introduction),
+        // Required: coverImage, code, name, author. Other fields optional.
+        () => Boolean(form.coverImage && form.code && form.name && form.author),
         [form]
     );
+
+    const isInvalid = (key: keyof typeof form) => !form[key] && Boolean(touched[key]);
 
     const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         setSubmitting(true);
+        // 防止超大 payload 导致平台拒绝（FUNCTION_PAYLOAD_TOO_LARGE）
+        try {
+            const sample = JSON.stringify({ type: "map", payload: form });
+            const size = new TextEncoder().encode(sample).length;
+            const LIMIT = 3_500_000; // 3.5MB 保守阈值
+            if (size > LIMIT) {
+                const kb = Math.round(size / 1024);
+                const msg = `请求体太大（约 ${kb}KB），请缩小图片或使用外部图床后重试。`;
+                if (notify) {
+                    notify({ title: "提交失败：文件过大", message: msg });
+                } else {
+                    globalNotify("error", "提交失败：文件过大", msg);
+                }
+                setSubmitting(false);
+                return;
+            }
+        } catch (e) {
+            // 如果检测失败也不阻塞提交，继续尝试
+        }
         try {
             const response = await fetch("/api/state", {
                 method: "POST",
@@ -155,41 +242,58 @@ export function MapForm({ mapTypes, onSuccess, notify }: MapFormProps) {
         <form onSubmit={handleSubmit} className="grid gap-12">
             <div className="form-grid">
                 <label className="label full">
-                    封面
+                    封面 <span style={{ color: "#ffcc00", marginLeft: 6 }}>*</span>
                     <input
                         className="input"
                         type="file"
                         accept="image/*"
                         onChange={async (event) => {
                             const file = event.target.files?.[0] ?? null;
+                            setTouched((s) => ({ ...s, coverImage: true }));
                             setForm((current) => ({ ...current, coverImage: "" }));
                             if (file) {
-                                setForm((current) => ({ ...current, coverImage: "" }));
-                                const value = await readFileAsDataUrl(file);
-                                setForm((current) => ({ ...current, coverImage: value }));
+                                try {
+                                    globalNotify("info", "上传中", "正在压缩并上传封面图片，请稍候...");
+                                    const url = await compressAndUpload(file, { notify });
+                                    setForm((current) => ({ ...current, coverImage: url }));
+                                    globalNotify("success", "上传成功", "封面已上传。");
+                                } catch (e) {
+                                    const message = e instanceof Error ? e.message : String(e);
+                                    if (notify) notify({ title: "上传失败", message });
+                                    else globalNotify("error", "上传失败", message);
+                                }
                             }
                         }}
                     />
-                    <span className="help">上传后会作为地图封面保存到历史数据中。</span>
+                    <span className="help">上传后会保存到 GitHub 仓库并将 URL 写入数据中。（必填）</span>
                 </label>
                 <label className="label full">
-                    内容预览图
+                    内容预览图 <span style={{ color: "#9aa0a6", marginLeft: 6 }}>（可选）</span>
                     <input
                         className="input"
                         type="file"
                         accept="image/*"
                         onChange={async (event) => {
                             const file = event.target.files?.[0] ?? null;
+                            setTouched((s) => ({ ...s, previewImage: true }));
                             if (file) {
-                                const value = await readFileAsDataUrl(file);
-                                setForm((current) => ({ ...current, previewImage: value }));
+                                try {
+                                    globalNotify("info", "上传中", "正在压缩并上传预览图片，请稍候...");
+                                    const url = await compressAndUpload(file, { notify });
+                                    setForm((current) => ({ ...current, previewImage: url }));
+                                    globalNotify("success", "上传成功", "预览图已上传。");
+                                } catch (e) {
+                                    const message = e instanceof Error ? e.message : String(e);
+                                    if (notify) notify({ title: "上传失败", message });
+                                    else globalNotify("error", "上传失败", message);
+                                }
                             }
                         }}
                     />
                 </label>
                 <label className="label">
-                    地图代码
-                    <input className="input" value={form.code} onChange={(event) => setForm({ ...form, code: event.target.value })} placeholder="abcdef" />
+                    地图代码 <span style={{ color: "#ffcc00", marginLeft: 6 }}>*</span>
+                    <input className={`input${isInvalid("code") ? " input-invalid" : ""}`} value={form.code} onBlur={() => setTouched((s) => ({ ...s, code: true }))} onChange={(event) => setForm({ ...form, code: event.target.value })} placeholder="abcdef" />
                 </label>
                 <label className="label">
                     地图类型
@@ -202,15 +306,15 @@ export function MapForm({ mapTypes, onSuccess, notify }: MapFormProps) {
                     </select>
                 </label>
                 <label className="label">
-                    地图名
-                    <input className="input" value={form.name} onChange={(event) => setForm({ ...form, name: event.target.value })} />
+                    地图名 <span style={{ color: "#ffcc00", marginLeft: 6 }}>*</span>
+                    <input className={`input${isInvalid("name") ? " input-invalid" : ""}`} value={form.name} onBlur={() => setTouched((s) => ({ ...s, name: true }))} onChange={(event) => setForm({ ...form, name: event.target.value })} />
                 </label>
                 <label className="label">
-                    作者名
-                    <input className="input" value={form.author} onChange={(event) => setForm({ ...form, author: event.target.value })} />
+                    作者名 <span style={{ color: "#ffcc00", marginLeft: 6 }}>*</span>
+                    <input className={`input${isInvalid("author") ? " input-invalid" : ""}`} value={form.author} onBlur={() => setTouched((s) => ({ ...s, author: true }))} onChange={(event) => setForm({ ...form, author: event.target.value })} />
                 </label>
                 <label className="label">
-                    制图时间
+                    制图时间 <span style={{ color: "#9aa0a6", marginLeft: 6 }}>（可选）</span>
                     <input className="input" type="date" value={form.mappedAt} onChange={(event) => setForm({ ...form, mappedAt: event.target.value })} />
                 </label>
                 <label className="label">
@@ -218,7 +322,7 @@ export function MapForm({ mapTypes, onSuccess, notify }: MapFormProps) {
                     <input className="input" type="number" min="1" max="999" value={form.estimatedMinutes} onChange={(event) => setForm({ ...form, estimatedMinutes: Number(event.target.value) })} />
                 </label>
                 <label className="label full">
-                    地图介绍
+                    地图介绍 <span style={{ color: "#9aa0a6", marginLeft: 6 }}>（可选）</span>
                     <textarea className="textarea" value={form.introduction} onChange={(event) => setForm({ ...form, introduction: event.target.value })} />
                 </label>
             </div>

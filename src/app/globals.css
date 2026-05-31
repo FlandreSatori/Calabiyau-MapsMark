@@ -281,6 +281,12 @@ img {
     border-radius: 18px;
 }
 
+.input-invalid,
+.textarea-invalid {
+    border-color: var(--danger) !important;
+    box-shadow: 0 0 0 4px rgba(255, 125, 144, 0.08);
+}
+
 .textarea {
     min-height: 120px;
     resize: vertical;
