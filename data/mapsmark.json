@@ -1,6 +1,20 @@
 {
   "maps": [
     {
+      "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780225516098-____MMR.png",
+      "previewImage": "",
+      "code": "mzv9k9",
+      "type": "解密",
+      "name": "双人成行MMR",
+      "author": "古明地小五",
+      "mappedAt": "",
+      "introduction": "1.请自备一个好朋友！最好是打电话喵！友尽概不负责(\n2.有两条路线，一人一边喵，二刷可以换边\n3.开局走大石头可以跳关到庭院",
+      "estimatedMinutes": 60,
+      "id": "map-27bbe770-6267-429d-a7e1-992cdffba9d4",
+      "submittedAt": "2026-05-31T11:05:18.809Z",
+      "updatedAt": "2026-05-31T11:05:18.809Z"
+    },
+    {
       "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780225465504-_______.png",
       "previewImage": "",
       "code": "7au748",
@@ -187,6 +201,14 @@
   "events": [
     {
       "kind": "map-create",
+      "subjectId": "map-27bbe770-6267-429d-a7e1-992cdffba9d4",
+      "title": "发布地图 双人成行MMR",
+      "detail": "mzv9k9",
+      "id": "event-7376e5b2-8a3a-4a5e-a535-90dbe7cb3985",
+      "timestamp": "2026-05-31T11:05:18.809Z"
+    },
+    {
+      "kind": "map-create",
       "subjectId": "map-f73cc454-b3c9-4331-ae33-4483af0c0d61",
       "title": "发布地图 大画家突破牢笼",
       "detail": "7au748",
@@ -290,5 +312,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-05-31T11:04:28.029Z"
+  "updatedAt": "2026-05-31T11:05:18.809Z"
 }
