@@ -1,6 +1,20 @@
 {
   "maps": [
     {
+      "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780224761427-___01.png",
+      "previewImage": "",
+      "code": "jy9r3e",
+      "type": "解密",
+      "name": "神奇猫娘大冒险01：奇怪的脑回路",
+      "author": "香奈美馒头铺",
+      "mappedAt": "",
+      "introduction": "长按F1查看游戏玩法\n\n游戏内有一次性方块（不影响通关），建议单人游玩；\n关卡为偏mmr坑系解密闯关，游玩时长约为20-40分钟；\n因为没有告示牌模块就暂时没有编制原创剧情了，之后官方有出会补的喵；",
+      "estimatedMinutes": 30,
+      "id": "map-fe9aded8-70c4-4e8a-9095-2f18b2df4e43",
+      "submittedAt": "2026-05-31T10:53:15.784Z",
+      "updatedAt": "2026-05-31T10:53:15.784Z"
+    },
+    {
       "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780224580768-______.png",
       "previewImage": "",
       "code": "1s93ae",
@@ -103,6 +117,14 @@
   "events": [
     {
       "kind": "map-create",
+      "subjectId": "map-fe9aded8-70c4-4e8a-9095-2f18b2df4e43",
+      "title": "发布地图 神奇猫娘大冒险01：奇怪的脑回路",
+      "detail": "jy9r3e",
+      "id": "event-82682d60-5762-42a0-8e53-c9683484e9c1",
+      "timestamp": "2026-05-31T10:53:15.784Z"
+    },
+    {
+      "kind": "map-create",
       "subjectId": "map-b4a6746b-d178-4955-a68f-74fc5dacf77a",
       "title": "发布地图 糖猫解密小跑酷",
       "detail": "1s93ae",
@@ -158,5 +180,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-05-31T10:50:04.120Z"
+  "updatedAt": "2026-05-31T10:53:15.784Z"
 }
