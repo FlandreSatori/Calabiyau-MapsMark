@@ -409,6 +409,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-0cc4bcd8-81d6-4028-84b7-b197c6c92ef8",
+      "reviewerName": "解密造💩👑",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 5,
+        "aesthetics": 2,
+        "guidance": 5,
+        "difficulty": 1,
+        "overall": 5
+      },
+      "comment": "趣味性：美味😋一些方面具有开创性的一张图；最喜欢的关卡是4和7\n美观性：正常程度。我说解密聚焦于内容与思路你👂🐉吗？咳咳，不过解密图里卷美术的在少数，而且那个时代(?)没什么卷美观性的\n引导性：解密必吃图，豪赤就对了😋\n难易度：以有解密经验的玩家视角看最终版本——仍有一定难度。难易度的高分不是你可以企及的！高分我可是要留给其它图的，比如怪**宫\n评价：解密区的最高里程碑之一&带火解密区的大功臣之一；我的二恋！（抱歉，我的第一次给了闪影解密，它先来的QAQ）\n可惜的是，这张图成功引起了某位造解密图的兴趣，并在一个月后产出*异迷*V0，罪大恶极喵，个人主观扣除0.05，最终评价四舍五入=5.0",
+      "id": "review-fb53c1ee-7467-4285-8fb3-bf65adf8b93a",
+      "submittedAt": "2026-05-31T17:08:19.201Z",
+      "updatedAt": "2026-05-31T17:08:19.201Z"
+    },
+    {
       "mapId": "map-53804f28-d922-4fe3-9c54-650931cb22b0",
       "reviewerName": "解密造💩👑",
       "anonymous": false,
@@ -459,6 +475,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-fb53c1ee-7467-4285-8fb3-bf65adf8b93a",
+      "title": "新增评价 解密造💩👑",
+      "detail": "map-0cc4bcd8-81d6-4028-84b7-b197c6c92ef8",
+      "id": "event-f5cdbf44-1a7e-49d3-93e4-ad92303ed0f5",
+      "timestamp": "2026-05-31T17:08:19.201Z"
+    },
     {
       "kind": "review-create",
       "subjectId": "review-554df986-31c2-4da1-b6f2-dcdd65f20251",
@@ -724,5 +748,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-05-31T16:19:57.305Z"
+  "updatedAt": "2026-05-31T17:08:19.201Z"
 }
