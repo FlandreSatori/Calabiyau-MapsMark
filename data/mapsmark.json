@@ -1,6 +1,20 @@
 {
   "maps": [
     {
+      "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780228409334-______MMR.png",
+      "previewImage": "",
+      "code": "7j4mvl",
+      "type": "解密",
+      "name": "江一楠大冒险·幼教版",
+      "author": "柴郡Ch3shire",
+      "mappedAt": "",
+      "introduction": "此为MMR解密之江一楠大冒险的削弱关，旨在帮助猫娘了解菲的一些机制\n此版添加了大量指引方块，同时人美心善的柴郡在一个神秘的房间准备了mmr路线喵",
+      "estimatedMinutes": 30,
+      "id": "map-431a8b39-81d2-49cd-a471-b5ea6912c418",
+      "submittedAt": "2026-05-31T11:54:21.730Z",
+      "updatedAt": "2026-05-31T11:54:21.730Z"
+    },
+    {
       "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780227971679-_____.png",
       "previewImage": "",
       "code": "r5h3zb",
@@ -299,6 +313,14 @@
   "events": [
     {
       "kind": "map-create",
+      "subjectId": "map-431a8b39-81d2-49cd-a471-b5ea6912c418",
+      "title": "发布地图 江一楠大冒险·幼教版",
+      "detail": "7j4mvl",
+      "id": "event-91f3b3af-dc76-4829-bc25-8c4481379720",
+      "timestamp": "2026-05-31T11:54:21.731Z"
+    },
+    {
+      "kind": "map-create",
       "subjectId": "map-63c6c5a0-8aae-40c0-b60f-06588c9ae196",
       "title": "发布地图 非常规解密",
       "detail": "r5h3zb",
@@ -466,5 +488,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-05-31T11:46:17.000Z"
+  "updatedAt": "2026-05-31T11:54:21.731Z"
 }
