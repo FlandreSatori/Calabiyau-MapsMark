@@ -1,6 +1,20 @@
 {
   "maps": [
     {
+      "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780229219923-____.png",
+      "previewImage": "",
+      "code": "zou7mr",
+      "type": "解密",
+      "name": "MMR解密之老登有难了喵DLC",
+      "author": "柴郡Ch3shire",
+      "mappedAt": "",
+      "introduction": "解密是这样的，MMR只需要动动脑筋，而老登要考虑到就很多了喵\n【单人游玩】体验最佳，实在不行的话，哼，两个人也是可以接受的啦\n一共7关，整体有一定难度，卡关请寻找并解读线索，相信七步以内必有解喵，本图不需要高阶跑酷技巧喵，最后一关非常难喵\n本体有三个高手彩蛋房间，DLC有三个被恶魔抓住的小雪人，有余力的话请找齐他们吧\n做的不好的地方请海涵喵\n V4更新：增加了dlc关卡，通关本体后即可获得开启dlc和作者通道的小提示，平衡部分关卡难度，优化部分关卡指引\n鸣谢：古明地小五和所有游玩过V1的老登",
+      "estimatedMinutes": 120,
+      "id": "map-0cc4bcd8-81d6-4028-84b7-b197c6c92ef8",
+      "submittedAt": "2026-05-31T12:07:02.203Z",
+      "updatedAt": "2026-05-31T12:07:02.203Z"
+    },
+    {
       "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780228519556-______.png",
       "previewImage": "",
       "code": "w2zjhy",
@@ -327,6 +341,14 @@
   "events": [
     {
       "kind": "map-create",
+      "subjectId": "map-0cc4bcd8-81d6-4028-84b7-b197c6c92ef8",
+      "title": "发布地图 MMR解密之老登有难了喵DLC",
+      "detail": "zou7mr",
+      "id": "event-e7104c4c-ebb6-4b59-b122-644cdf1acc2a",
+      "timestamp": "2026-05-31T12:07:02.203Z"
+    },
+    {
+      "kind": "map-create",
       "subjectId": "map-4ff9fd49-3d04-45b6-94b0-bd7a76e40f56",
       "title": "发布地图 MMR解密之江一楠大冒险V2",
       "detail": "w2zjhy",
@@ -510,5 +532,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-05-31T11:55:21.788Z"
+  "updatedAt": "2026-05-31T12:07:02.203Z"
 }
