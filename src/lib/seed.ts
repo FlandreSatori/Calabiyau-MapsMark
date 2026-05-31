@@ -142,4 +142,8 @@ export const seedState: AppState = {
         }
     ],
     updatedAt: "2026-05-30T14:18:00.000Z"
+    ,
+    ui: {
+        background: "linear-gradient(180deg, rgba(8,12,22,0.6), rgba(4,7,13,0.6))"
+    }
 };

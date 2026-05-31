@@ -1,5 +1,5 @@
 import type { AppState } from "@/lib/types";
-import { averageRatings, aggregateByMetric, topEvents, visibleMaps, visibleReviews } from "@/lib/metrics";
+import { averageRatings, aggregateByMetric, topEvents, visibleMaps, visibleReviews, countMapCategories, countMapTypes } from "@/lib/metrics";
 
 export const summarizeState = (state: AppState) => {
     const maps = visibleMaps(state);
@@ -10,7 +10,8 @@ export const summarizeState = (state: AppState) => {
         events: topEvents(state),
         mapCount: maps.length,
         reviewCount: reviews.length,
-        averages: averageRatings(reviews),
+        typeCounts: countMapTypes(state),
+        categoryCounts: countMapCategories(state),
         bestByMetric: {
             entertainment: aggregateByMetric(state, "entertainment").slice(0, 5),
             aesthetics: aggregateByMetric(state, "aesthetics").slice(0, 5),

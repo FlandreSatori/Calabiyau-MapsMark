@@ -50,6 +50,9 @@ export type AppState = {
     reviews: ReviewRecord[];
     events: EventRecord[];
     updatedAt: string;
+    ui?: {
+        background?: string;
+    };
 };
 
 export type MapInput = Omit<MapRecord, "id" | "submittedAt" | "updatedAt" | "deletedAt">;

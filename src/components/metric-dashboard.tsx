@@ -18,15 +18,15 @@ type MapMetric = {
     reviewCount: number;
 };
 
-const clampScore = (value: number) => Math.max(1, Math.min(5, value));
-const toPercent = (value: number) => 8 + ((clampScore(value) - 1) / 4) * 84;
+const clampScore = (value: number) => Math.max(-5, Math.min(5, value));
+const toPercent = (value: number) => ((clampScore(value) + 5) / 10) * 100;
 const cardOffsets = [
-    { x: 18, y: -78, side: "right" as const },
-    { x: 18, y: 16, side: "right" as const },
-    { x: -228, y: -78, side: "left" as const },
-    { x: -228, y: 16, side: "left" as const },
-    { x: 18, y: -162, side: "right" as const },
-    { x: -228, y: -162, side: "left" as const }
+    { x: 14, y: -66, side: "right" as const },
+    { x: 14, y: 10, side: "right" as const },
+    { x: -186, y: -66, side: "left" as const },
+    { x: -186, y: 10, side: "left" as const },
+    { x: 14, y: -132, side: "right" as const },
+    { x: -186, y: -132, side: "left" as const }
 ];
 
 const metricKeys = ratingLabels;
@@ -74,12 +74,13 @@ export function MetricDashboard({ maps, reviews, initialSelected = ["overall"] }
 
     const renderSingleAxis = (metric: keyof RatingDimensions) => {
         const ordered = [...mapMetrics].sort((left, right) => sortByMetric(left, right, metric));
-        const height = Math.max(320, ordered.length * 82 + 56);
+        const height = Math.max(420, ordered.length * 64 + 72);
 
         return (
             <div className="metric-stage metric-stage-single" style={{ minHeight: height }}>
                 <div className="metric-axis metric-axis-horizontal" aria-hidden="true" />
-                <div className="metric-axis-label metric-axis-label-left">1</div>
+                <div className="metric-axis-label metric-axis-label-left">-5</div>
+                <div className="metric-axis-label metric-axis-label-center">0</div>
                 <div className="metric-axis-label metric-axis-label-right">5</div>
                 {ordered.map((entry, index) => {
                     const left = toPercent(entry.ratings[metric]);
@@ -88,7 +89,7 @@ export function MetricDashboard({ maps, reviews, initialSelected = ["overall"] }
                             key={entry.map.id}
                             href={`/maps/${entry.map.id}`}
                             className="metric-node metric-node-single"
-                            style={{ left: `${left}%`, top: `${18 + index * 78}px`, zIndex: String(ordered.length - index) }}
+                            style={{ left: `${left}%`, top: `${18 + index * 60}px`, zIndex: String(ordered.length - index) }}
                             title={`${entry.map.name} · 点击查看详情`}
                         >
                             <img src={entry.map.coverImage} alt={entry.map.name} className="metric-node-cover" />
@@ -115,8 +116,9 @@ export function MetricDashboard({ maps, reviews, initialSelected = ["overall"] }
                 <div className="metric-axis metric-axis-y" aria-hidden="true" />
                 <div className="metric-axis-label metric-axis-label-bottom-left">{ratingLabelText[xMetric]}</div>
                 <div className="metric-axis-label metric-axis-label-top-left">{ratingLabelText[yMetric]}</div>
-                <div className="metric-axis-label metric-axis-label-bottom-right">5</div>
-                <div className="metric-axis-label metric-axis-label-top-right">5</div>
+                <div className="metric-axis-label metric-axis-label-left">-5</div>
+                <div className="metric-axis-label metric-axis-label-center">0</div>
+                <div className="metric-axis-label metric-axis-label-right">5</div>
                 {points.map((entry) => {
                     const x = toPercent(entry.ratings[xMetric]);
                     const y = toPercent(entry.ratings[yMetric]);

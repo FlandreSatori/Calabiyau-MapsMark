@@ -7,11 +7,11 @@ import { defaultMapTypes } from "@/lib/types";
 export default async function EmbedPage({ searchParams }: { searchParams?: { bg?: string } }) {
     const state = await loadState();
     const summary = summarizeState(state);
-    const background = searchParams?.bg;
+    const background = searchParams?.bg ?? state.ui?.background;
 
     return (
         <main className="app-shell" style={{ padding: 16, ...(background ? { background } : {}) }}>
-            <div className="container grid gap-18">
+            <div className="container embed-full grid gap-18">
                 <section className="panel panel-pad panel-strong">
                     <p className="section-title">Embed View</p>
                     <h2 className="hero-title" style={{ fontSize: "2.2rem" }}>嵌入展示</h2>

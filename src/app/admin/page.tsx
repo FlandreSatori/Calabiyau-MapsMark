@@ -28,15 +28,18 @@ export default function AdminPage({ searchParams }: { searchParams?: { bg?: stri
     }, [token]);
 
     const summary = useMemo(() => summarizeState(state), [state]);
+    const [bgInput, setBgInput] = useState("");
 
     const refresh = async () => {
         const response = await fetch("/api/state", { cache: "no-store" });
         if (response.ok) {
-            setState((await response.json()) as AppState);
+            const s = (await response.json()) as AppState;
+            setState(s);
+            setBgInput(s.ui?.background ?? "");
         }
     };
 
-    const mutate = async (method: "PATCH" | "DELETE", type: "map" | "review", id: string, patch?: unknown) => {
+    const mutate = async (method: "PATCH" | "DELETE", type: "map" | "review" | "ui", id: string, patch?: unknown) => {
         const response = await fetch("/api/state", {
             method,
             headers: {
@@ -46,8 +49,35 @@ export default function AdminPage({ searchParams }: { searchParams?: { bg?: stri
             body: JSON.stringify({ type, id, patch })
         });
         if (response.ok) {
+            // 乐观更新：先在本地移除或修改对应项，以便 UI 立即反映
+            setState((prev) => {
+                const next = structuredClone(prev);
+                if (type === "map") {
+                    next.maps = next.maps.map((m) => (m.id === id ? { ...m, deletedAt: new Date().toISOString() } : m));
+                } else {
+                    next.reviews = next.reviews.map((r) => (r.id === id ? { ...r, deletedAt: new Date().toISOString() } : r));
+                }
+                return next;
+            });
+            // 然后刷新以确保与服务器保持一致
             await refresh();
+        } else {
+            let text: string;
+            try {
+                const json = await response.json();
+                text = JSON.stringify(json);
+            } catch (e) {
+                text = await response.text();
+            }
+            // eslint-disable-next-line no-alert
+            alert(`Server error (${response.status}): ${text}`);
+            // eslint-disable-next-line no-console
+            console.error("API /api/state error:", response.status, text);
         }
+    };
+
+    const saveBackground = async () => {
+        await mutate("PATCH", "ui", "ui", { background: bgInput });
     };
 
     if (!ready) {
@@ -71,6 +101,16 @@ export default function AdminPage({ searchParams }: { searchParams?: { bg?: stri
                             <div className="legend-row"><span>地图</span><strong>{summary.mapCount}</strong></div>
                             <div className="legend-row"><span>评价</span><strong>{summary.reviewCount}</strong></div>
                             <div className="legend-row"><span>最近更新时间</span><strong>{state.updatedAt.slice(0, 19).replace("T", " ")}</strong></div>
+                        </div>
+                        <div style={{ marginTop: 12 }}>
+                            <label className="label">自定义背景（CSS，可填颜色/渐变/rgba）：</label>
+                            <div style={{ display: "flex", gap: 8, alignItems: "center", marginTop: 8 }}>
+                                <input className="input" value={bgInput} onChange={(e) => setBgInput(e.target.value)} placeholder="e.g. rgba(8,12,22,0.6) or linear-gradient(...)" />
+                                <button className="button button-primary" onClick={saveBackground} type="button">保存背景</button>
+                            </div>
+                            <div style={{ marginTop: 10 }}>
+                                <div style={{ height: 80, borderRadius: 12, border: "1px solid rgba(255,255,255,0.06)", background: bgInput || "transparent" }} />
+                            </div>
                         </div>
                         <MetricDashboard maps={summary.maps} reviews={summary.reviews} />
                     </div>

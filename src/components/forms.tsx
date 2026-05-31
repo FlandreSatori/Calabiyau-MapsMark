@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState, type FormEvent } from "react";
+import { useEffect, useMemo, useState, type FormEvent } from "react";
 
 import type { MapRecord, RatingDimensions, ReviewRecord } from "@/lib/types";
 import { clampScore } from "@/lib/format";
@@ -26,6 +26,48 @@ type AdminLoginProps = {
 };
 
 const ratingKeys = Object.keys(ratingLabelText) as Array<keyof RatingDimensions>;
+
+const emptyRatings = (): RatingDimensions => ({
+    entertainment: 0,
+    aesthetics: 0,
+    guidance: 0,
+    difficulty: 0,
+    overall: 0
+});
+
+const createReviewDraft = () => ({
+    ratings: emptyRatings(),
+    comment: ""
+});
+
+type ReviewDraft = ReturnType<typeof createReviewDraft>;
+
+function StarSlider({ label, value, onChange }: { label: string; value: number; onChange: (value: number) => void }) {
+    const fill = `${(Math.abs(value) / 5) * 100}%`;
+    const isNegative = value < 0;
+
+    return (
+        <div className="star-slider">
+            <div className="star-slider-head">
+                <span>{label}</span>
+                <strong className={isNegative ? "is-negative" : ""}>{value.toFixed(1)}</strong>
+            </div>
+            <div className={`star-slider-track${isNegative ? " is-negative" : ""}`} aria-hidden="true">
+                <span className="star-slider-base">★★★★★</span>
+                <span className="star-slider-fill" style={{ width: fill }}>★★★★★</span>
+            </div>
+            <input
+                className="star-slider-range"
+                type="range"
+                min="-5"
+                max="5"
+                step="0.1"
+                value={value}
+                onChange={(event) => onChange(Number(event.target.value))}
+            />
+        </div>
+    );
+}
 
 const readFileAsDataUrl = async (file: File | null) => {
     if (!file) {
@@ -171,29 +213,40 @@ export function MapForm({ mapTypes, onSuccess, notify }: MapFormProps) {
 }
 
 export function ReviewForm({ maps, onSuccess, notify }: ReviewFormProps) {
-    const [submitting, setSubmitting] = useState(false);
     const [anonymous, setAnonymous] = useState(false);
-    const [form, setForm] = useState({
-        mapId: maps[0]?.id ?? "",
-        reviewerName: "",
-        anonymous: false,
-        ratings: {
-            entertainment: 5,
-            aesthetics: 5,
-            guidance: 5,
-            difficulty: 5,
-            overall: 5
-        },
-        comment: ""
-    });
+    const [reviewerName, setReviewerName] = useState("");
+    const [submittingMapId, setSubmittingMapId] = useState<string | null>(null);
+    const [drafts, setDrafts] = useState<Record<string, ReviewDraft>>(() =>
+        Object.fromEntries(maps.map((map) => [map.id, createReviewDraft()]))
+    );
 
-    const handleRating = (key: keyof RatingDimensions, value: number) => {
-        setForm((current) => ({ ...current, ratings: { ...current.ratings, [key]: clampScore(value) } }));
+    useEffect(() => {
+        setDrafts((current) => {
+            const next: Record<string, ReviewDraft> = {};
+            maps.forEach((map) => {
+                next[map.id] = current[map.id] ?? createReviewDraft();
+            });
+            return next;
+        });
+    }, [maps]);
+
+    const updateDraft = (mapId: string, patch: Partial<ReviewDraft>) => {
+        setDrafts((current) => ({
+            ...current,
+            [mapId]: {
+                ...(current[mapId] ?? createReviewDraft()),
+                ...patch
+            }
+        }));
     };
 
-    const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
-        event.preventDefault();
-        setSubmitting(true);
+    const submitReview = async (mapId: string) => {
+        const draft = drafts[mapId] ?? createReviewDraft();
+        if (!anonymous && !reviewerName.trim()) {
+            notify?.({ title: "提交失败", message: "请先填写姓名，或者勾选匿名提交。" });
+            return;
+        }
+        setSubmittingMapId(mapId);
         try {
             const response = await fetch("/api/state", {
                 method: "POST",
@@ -201,76 +254,81 @@ export function ReviewForm({ maps, onSuccess, notify }: ReviewFormProps) {
                 body: JSON.stringify({
                     type: "review",
                     payload: {
-                        ...form,
+                        mapId,
+                        reviewerName: anonymous ? "匿名" : reviewerName,
                         anonymous,
-                        reviewerName: anonymous ? "匿名" : form.reviewerName
+                        ratings: draft.ratings,
+                        comment: draft.comment
                     }
                 })
             });
             if (!response.ok) {
                 throw new Error("评价提交失败");
             }
-            notify?.({ title: "评价已提交", message: "图表与排行榜将自动更新。" });
-            setForm((current) => ({
+            notify?.({ title: "评价已提交", message: "该地图的评分已保存。" });
+            setDrafts((current) => ({
                 ...current,
-                reviewerName: "",
-                comment: "",
-                ratings: {
-                    entertainment: 5,
-                    aesthetics: 5,
-                    guidance: 5,
-                    difficulty: 5,
-                    overall: 5
-                }
+                [mapId]: createReviewDraft()
             }));
             onSuccess?.();
         } catch (error) {
             notify?.({ title: "提交失败", message: error instanceof Error ? error.message : "请稍后再试" });
         } finally {
-            setSubmitting(false);
+            setSubmittingMapId(null);
         }
     };
 
     return (
-        <form onSubmit={handleSubmit} className="grid gap-12">
-            <div className="form-grid">
-                <label className="label full">
-                    选择地图
-                    <select className="select" value={form.mapId} onChange={(event) => setForm({ ...form, mapId: event.target.value })}>
-                        {maps.map((map) => (
-                            <option key={map.id} value={map.id}>
-                                {map.name} · {map.code}
-                            </option>
-                        ))}
-                    </select>
-                </label>
-                <label className="label">
-                    姓名
-                    <input className="input" disabled={anonymous} value={form.reviewerName} onChange={(event) => setForm({ ...form, reviewerName: event.target.value })} placeholder="提交评价时可填写姓名" />
-                </label>
-                <label className="label">
-                    匿名提交
-                    <label className="upload-row">
-                        <input type="checkbox" checked={anonymous} onChange={(event) => setAnonymous(event.target.checked)} />
-                        <span className="help">匿名后将不会显示姓名。</span>
+        <div className="grid gap-12">
+            <div className="review-shell panel panel-strong panel-pad">
+                <div className="form-grid">
+                    <label className="label">
+                        姓名
+                        <input className="input" disabled={anonymous} value={reviewerName} onChange={(event) => setReviewerName(event.target.value)} placeholder="提交评价时可填写姓名" />
                     </label>
-                </label>
-                {ratingKeys.map((key) => (
-                    <label className="label" key={key}>
-                        {ratingLabelText[key]}
-                        <input className="input" type="range" min="1" max="5" value={form.ratings[key]} onChange={(event) => handleRating(key, Number(event.target.value))} />
-                        <span className="help">当前评分：{form.ratings[key]} 星</span>
+                    <label className="label">
+                        匿名提交
+                        <label className="upload-row">
+                            <input type="checkbox" checked={anonymous} onChange={(event) => setAnonymous(event.target.checked)} />
+                            <span className="help">匿名后将不会显示姓名。</span>
+                        </label>
                     </label>
-                ))}
-                <label className="label full">
-                    评价内容
-                    <textarea className="textarea" value={form.comment} onChange={(event) => setForm({ ...form, comment: event.target.value })} />
-                </label>
+                </div>
             </div>
-            <button className="button button-primary" disabled={!form.mapId || (!anonymous && !form.reviewerName) || submitting} type="submit">
-                {submitting ? "提交中..." : "提交评价"}
-            </button>
-        </form>
+
+            <div className="review-board">
+                {maps.map((map) => {
+                    const draft = drafts[map.id] ?? createReviewDraft();
+                    return (
+                        <section className="review-row panel panel-pad" key={map.id}>
+                            <div className="list-row">
+                                <div>
+                                    <strong>{map.name}</strong>
+                                    <div className="help">{map.type} · {map.code} · {map.author}</div>
+                                </div>
+                                <button className="button button-primary" type="button" onClick={() => void submitReview(map.id)} disabled={submittingMapId === map.id || (!anonymous && !reviewerName.trim())}>
+                                    {submittingMapId === map.id ? "提交中..." : "提交该图评价"}
+                                </button>
+                            </div>
+                            <div className="review-rating-grid">
+                                {ratingKeys.map((key) => (
+                                    <StarSlider
+                                        key={key}
+                                        label={ratingLabelText[key]}
+                                        value={draft.ratings[key]}
+                                        onChange={(value) => updateDraft(map.id, { ratings: { ...draft.ratings, [key]: clampScore(value) } })}
+                                    />
+                                ))}
+                            </div>
+                            <label className="label full">
+                                评价内容
+                                <textarea className="textarea" value={draft.comment} onChange={(event) => updateDraft(map.id, { comment: event.target.value })} />
+                            </label>
+                        </section>
+                    );
+                })}
+            </div>
+        </div>
     );
 }
 

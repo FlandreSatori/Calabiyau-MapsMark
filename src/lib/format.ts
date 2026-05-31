@@ -9,4 +9,4 @@ export const formatDate = (value: string) =>
         dateStyle: "medium"
     }).format(new Date(value));
 
-export const clampScore = (value: number) => Math.max(1, Math.min(5, Math.round(value)));
+export const clampScore = (value: number) => Math.max(-5, Math.min(5, Math.round(value * 10) / 10));

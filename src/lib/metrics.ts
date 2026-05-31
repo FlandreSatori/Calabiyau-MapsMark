@@ -63,3 +63,35 @@ export const visibleMaps = (state: AppState) => state.maps.filter((item) => !ite
 export const visibleReviews = (state: AppState) => state.reviews.filter((item) => !item.deletedAt);
 
 export const getMapById = (state: AppState, id: string) => state.maps.find((item) => item.id === id && !item.deletedAt) ?? null;
+
+export const ratingDimensionsWithoutDifficulty = ["entertainment", "aesthetics", "guidance", "overall"] as const;
+
+export const countAboveThreshold = (ratings: RatingDimensions, threshold: number, dimensions = ratingDimensionsWithoutDifficulty) =>
+    dimensions.filter((dimension) => ratings[dimension] > threshold).length;
+
+export const countBelowThreshold = (ratings: RatingDimensions, threshold: number, dimensions = ratingDimensionsWithoutDifficulty) =>
+    dimensions.filter((dimension) => ratings[dimension] < threshold).length;
+
+export const classifyRatings = (ratings: RatingDimensions) => ({
+    good: countAboveThreshold(ratings, 0) >= 2 && countAboveThreshold(ratings, 0) <= 3,
+    god: countAboveThreshold(ratings, 3) >= 2 && countAboveThreshold(ratings, 3) <= 3,
+    poop: countBelowThreshold(ratings, 0) >= 3
+});
+
+export const countMapTypes = (state: AppState) =>
+    visibleMaps(state).reduce<Record<string, number>>((accumulator, map) => {
+        accumulator[map.type] = (accumulator[map.type] ?? 0) + 1;
+        return accumulator;
+    }, {});
+
+export const countMapCategories = (state: AppState) => {
+    const totals = { good: 0, god: 0, poop: 0 };
+    visibleMaps(state).forEach((map) => {
+        const ratings = averageRatings(state.reviews, map.id);
+        const classification = classifyRatings(ratings);
+        if (classification.good) totals.good += 1;
+        if (classification.god) totals.god += 1;
+        if (classification.poop) totals.poop += 1;
+    });
+    return totals;
+};

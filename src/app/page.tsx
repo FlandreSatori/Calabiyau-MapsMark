@@ -11,7 +11,7 @@ import { defaultMapTypes, ratingLabelText } from "@/lib/types";
 export default async function HomePage({ searchParams }: { searchParams?: { bg?: string } }) {
     const state = await loadState();
     const summary = summarizeState(state);
-    const background = searchParams?.bg;
+    const background = searchParams?.bg ?? state.ui?.background;
 
     return (
         <main className="app-shell" style={background ? { background } : undefined}>
@@ -34,8 +34,7 @@ export default async function HomePage({ searchParams }: { searchParams?: { bg?:
 
                 <section className="grid grid-hero">
                     <div className="panel panel-pad">
-                        <p className="section-title">总览</p>
-                        <h2 className="hero-title">是啊玩什么</h2>
+                        <p className="section-title">是啊玩什么</p>
                         <p className="hero-text">
                             请做出评价吧！
                         </p>
@@ -44,19 +43,32 @@ export default async function HomePage({ searchParams }: { searchParams?: { bg?:
                             <span className="stat">评价总数 {summary.reviewCount}</span>
                             <span className="stat">更新时间 {formatDateTime(state.updatedAt)}</span>
                         </div>
-                        <div className="metrics">
-                            {Object.entries(summary.averages).map(([key, value]) => (
-                                <div className="metric" key={key}>
-                                    <strong>{value.toFixed(1)}</strong>
-                                    <span>{ratingLabelText[key as keyof typeof ratingLabelText]}</span>
+                        <div className="type-count-grid" style={{ marginTop: 20 }}>
+                            {Object.entries(summary.typeCounts).map(([type, count]) => (
+                                <div className="metric" key={type}>
+                                    <strong>{count}</strong>
+                                    <span>{type}</span>
                                 </div>
                             ))}
+                        </div>
+                        <div className="type-count-grid" style={{ marginTop: 12 }}>
+                            <div className="metric">
+                                <strong>{summary.categoryCounts.good}</strong>
+                                <span>好图</span>
+                            </div>
+                            <div className="metric">
+                                <strong>{summary.categoryCounts.god}</strong>
+                                <span>神图</span>
+                            </div>
+                            <div className="metric">
+                                <strong>{summary.categoryCounts.poop}</strong>
+                                <span>粪图</span>
+                            </div>
                         </div>
                     </div>
 
                     <div className="panel panel-pad panel-strong">
                         <p className="section-title">总榜</p>
-                        <p className="hero-text">单维榜单请到展示页手动勾选，主页只展示综合总榜。</p>
                         <div className="list" style={{ marginTop: 14 }}>
                             {summary.bestByMetric.overall.slice(0, 5).map(({ map, score, reviewCount }, index) => (
                                 <div className="list-item" key={map.id}>

@@ -251,3 +251,17 @@ export const removeReview = async (id: string) => {
     await saveState(state);
     return state;
 };
+
+export const patchUI = async (background: string) => {
+    const state = await loadState();
+    state.ui = state.ui || {};
+    state.ui.background = background;
+    appendEvent(state, {
+        kind: "map-update",
+        subjectId: "ui",
+        title: `更新 UI 背景`,
+        detail: background
+    });
+    await saveState(state);
+    return state;
+};
