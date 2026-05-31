@@ -5,6 +5,7 @@ import { useEffect, useMemo, useState } from "react";
 import { AdminLogin } from "@/components/forms";
 import { HistoryList } from "@/components/history-list";
 import { MetricDashboard } from "@/components/metric-dashboard";
+import { notify } from "@/components/toast";
 import type { AppState } from "@/lib/types";
 import { summarizeState } from "@/lib/state-utils";
 
@@ -24,6 +25,7 @@ export default function AdminPage({ searchParams }: { searchParams?: { bg?: stri
     useEffect(() => {
         if (!token) return;
         localStorage.setItem("mapsmark-admin-token", token);
+        notify("success", "管理员令牌已保存", "已保存到本地并用于后续操作。");
         void refresh();
     }, [token]);
 
@@ -61,6 +63,14 @@ export default function AdminPage({ searchParams }: { searchParams?: { bg?: stri
             });
             // 然后刷新以确保与服务器保持一致
             await refresh();
+            // success notification
+            if (method === "DELETE") {
+                notify("success", type === "map" ? "已删除地图" : "已删除评价", "操作已提交并刷新。");
+            } else if (method === "PATCH" && type === "ui") {
+                notify("success", "已保存背景", "UI 背景已更新。");
+            } else {
+                notify("success", "已保存更改", "操作成功并已刷新。");
+            }
         } else {
             let text: string;
             try {
@@ -69,8 +79,8 @@ export default function AdminPage({ searchParams }: { searchParams?: { bg?: stri
             } catch (e) {
                 text = await response.text();
             }
-            // eslint-disable-next-line no-alert
-            alert(`Server error (${response.status}): ${text}`);
+            // show error toast and log
+            notify("error", `Server error (${response.status})`, text);
             // eslint-disable-next-line no-console
             console.error("API /api/state error:", response.status, text);
         }

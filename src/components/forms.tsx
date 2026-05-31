@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState, type FormEvent } from "react";
+import { notify as globalNotify } from "@/components/toast";
 import { useRouter } from "next/navigation";
 
 import type { MapRecord, RatingDimensions, ReviewRecord } from "@/lib/types";
@@ -139,9 +140,10 @@ export function MapForm({ mapTypes, onSuccess, notify }: MapFormProps) {
             onSuccess?.();
         } catch (error) {
             const message = error instanceof Error ? error.message : "请稍后再试";
-            notify?.({ title: "提交失败", message });
-            if (!notify) {
-                alert(`提交失败：${message}`);
+            if (notify) {
+                notify({ title: "提交失败", message });
+            } else {
+                globalNotify("error", "提交失败", message);
             }
         } finally {
             setSubmitting(false);
@@ -186,7 +188,7 @@ export function MapForm({ mapTypes, onSuccess, notify }: MapFormProps) {
                 </label>
                 <label className="label">
                     地图代码
-                    <input className="input" value={form.code} onChange={(event) => setForm({ ...form, code: event.target.value })} placeholder="例如 MM-2026-03" />
+                    <input className="input" value={form.code} onChange={(event) => setForm({ ...form, code: event.target.value })} placeholder="abcdef" />
                 </label>
                 <label className="label">
                     地图类型
@@ -258,7 +260,11 @@ export function ReviewForm({ maps, onSuccess, notify }: ReviewFormProps) {
     const submitReview = async (mapId: string) => {
         const draft = drafts[mapId] ?? createReviewDraft();
         if (!anonymous && !reviewerName.trim()) {
-            notify?.({ title: "提交失败", message: "请先填写姓名，或者勾选匿名提交。" });
+            if (notify) {
+                notify({ title: "提交失败", message: "请先填写姓名，或者勾选匿名提交。" });
+            } else {
+                globalNotify("error", "提交失败", "请先填写姓名，或者勾选匿名提交。");
+            }
             return;
         }
         setSubmittingMapId(mapId);
@@ -296,9 +302,10 @@ export function ReviewForm({ maps, onSuccess, notify }: ReviewFormProps) {
             onSuccess?.();
         } catch (error) {
             const message = error instanceof Error ? error.message : "请稍后再试";
-            notify?.({ title: "提交失败", message });
-            if (!notify) {
-                alert(`提交失败：${message}`);
+            if (notify) {
+                notify({ title: "提交失败", message });
+            } else {
+                globalNotify("error", "提交失败", message);
             }
         } finally {
             setSubmittingMapId(null);

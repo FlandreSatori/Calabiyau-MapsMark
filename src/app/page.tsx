@@ -3,6 +3,7 @@ import Link from "next/link";
 import { MapForm, ReviewForm } from "@/components/forms";
 import { HistoryList } from "@/components/history-list";
 import { MapCard } from "@/components/map-card";
+// 使用表单内部的全局通知（避免从服务器组件传函数到客户端）
 import { formatDateTime } from "@/lib/format";
 import { loadState } from "@/lib/github-store";
 import { summarizeState } from "@/lib/state-utils";
