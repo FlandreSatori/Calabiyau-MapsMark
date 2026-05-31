@@ -1,6 +1,20 @@
 {
   "maps": [
     {
+      "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780224275806-____.png",
+      "previewImage": "",
+      "code": "fwl5my",
+      "type": "解密",
+      "name": "随机复活解密",
+      "author": "莳芕",
+      "mappedAt": "2026-01-01",
+      "introduction": "多碰蓝火刷新位置，3，4次在同一位置很正常\n开局一个门没开的时候，刷新位置能开2个初始门",
+      "estimatedMinutes": 45,
+      "id": "map-8ff6810e-ab5f-47c1-9855-57622484ef5c",
+      "submittedAt": "2026-05-31T10:44:40.606Z",
+      "updatedAt": "2026-05-31T10:44:40.606Z"
+    },
+    {
       "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780224055881-____.png",
       "previewImage": "",
       "code": "zee85y",
@@ -75,6 +89,14 @@
   "events": [
     {
       "kind": "map-create",
+      "subjectId": "map-8ff6810e-ab5f-47c1-9855-57622484ef5c",
+      "title": "发布地图 随机复活解密",
+      "detail": "fwl5my",
+      "id": "event-c92ff51e-fa21-4296-bc5f-188a46d4f976",
+      "timestamp": "2026-05-31T10:44:40.606Z"
+    },
+    {
+      "kind": "map-create",
       "subjectId": "map-98f00295-ae37-4a25-9bdd-2dc15593dcce",
       "title": "发布地图 逃离监狱",
       "detail": "zee85y",
@@ -114,5 +136,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-05-31T10:41:06.394Z"
+  "updatedAt": "2026-05-31T10:44:40.606Z"
 }
