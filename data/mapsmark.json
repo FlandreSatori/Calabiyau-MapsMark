@@ -422,10 +422,19 @@
       "comment": "测试",
       "id": "review-8c24d19d-65f3-4b52-a775-bf1b68862691",
       "submittedAt": "2026-05-31T12:28:52.419Z",
-      "updatedAt": "2026-05-31T12:28:52.419Z"
+      "updatedAt": "2026-05-31T14:59:56.211Z",
+      "deletedAt": "2026-05-31T14:59:56.211Z"
     }
   ],
   "events": [
+    {
+      "kind": "review-delete",
+      "subjectId": "review-8c24d19d-65f3-4b52-a775-bf1b68862691",
+      "title": "删除评价 古明地小五",
+      "detail": "map-fdfb60c0-26cf-4cb8-951e-c9ef210ae266",
+      "id": "event-daeae4fb-0b06-4b86-a978-a596d01cd152",
+      "timestamp": "2026-05-31T14:59:56.212Z"
+    },
     {
       "kind": "map-create",
       "subjectId": "map-53804f28-d922-4fe3-9c54-650931cb22b0",
@@ -667,5 +676,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-05-31T14:59:24.572Z"
+  "updatedAt": "2026-05-31T14:59:56.212Z"
 }
