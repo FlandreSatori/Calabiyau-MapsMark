@@ -72,12 +72,13 @@ export default function AdminPage({ searchParams }: { searchParams?: { bg?: stri
                 notify("success", "已保存更改", "操作成功并已刷新。");
             }
         } else {
-            let text: string;
+            const textBody = await response.text();
+            let text = textBody;
             try {
-                const json = await response.json();
-                text = JSON.stringify(json);
+                const parsed = JSON.parse(textBody);
+                text = JSON.stringify(parsed);
             } catch (e) {
-                text = await response.text();
+                // leave text as-is
             }
             // show error toast and log
             notify("error", `Server error (${response.status})`, text);

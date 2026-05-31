@@ -115,12 +115,13 @@ export function MapForm({ mapTypes, onSuccess, notify }: MapFormProps) {
                 body: JSON.stringify({ type: "map", payload: form })
             });
             if (!response.ok) {
+                const textBody = await response.text();
                 let message = "提交失败";
                 try {
-                    const payload = await response.json();
+                    const payload = JSON.parse(textBody);
                     message = payload?.message ?? message;
                 } catch {
-                    message = await response.text();
+                    message = textBody || message;
                 }
                 throw new Error(message);
             }
@@ -284,12 +285,13 @@ export function ReviewForm({ maps, onSuccess, notify }: ReviewFormProps) {
                 })
             });
             if (!response.ok) {
+                const textBody = await response.text();
                 let message = "评价提交失败";
                 try {
-                    const payload = await response.json();
+                    const payload = JSON.parse(textBody);
                     message = payload?.message ?? message;
                 } catch {
-                    message = await response.text();
+                    message = textBody || message;
                 }
                 throw new Error(message);
             }
