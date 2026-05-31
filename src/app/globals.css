@@ -680,6 +680,22 @@ img {
     gap: 14px;
 }
 
+.review-map-head {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 0;
+}
+
+.review-map-thumb {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    object-fit: cover;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    flex: 0 0 auto;
+}
+
 .review-rating-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -713,7 +729,7 @@ img {
 }
 
 .star-slider-track.is-negative {
-    color: rgba(255, 255, 255, 0.18);
+    color: rgba(16, 32, 74, 0.3);
 }
 
 .star-slider-base,
@@ -731,7 +747,7 @@ img {
 }
 
 .star-slider-track.is-negative .star-slider-fill {
-    color: #111111;
+    color: #1a2f6d;
 }
 
 .star-slider-range {

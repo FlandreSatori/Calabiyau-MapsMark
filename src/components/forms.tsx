@@ -452,9 +452,12 @@ export function ReviewForm({ maps, onSuccess, notify }: ReviewFormProps) {
                     return (
                         <section className="review-row panel panel-pad" key={map.id}>
                             <div className="list-row">
-                                <div>
-                                    <strong>{map.name}</strong>
-                                    <div className="help">{map.type} · {map.code} · {map.author}</div>
+                                <div className="review-map-head">
+                                    <img className="review-map-thumb" src={map.coverImage} alt={map.name} />
+                                    <div>
+                                        <strong>{map.name}</strong>
+                                        <div className="help">{map.type} · {map.code} · {map.author}</div>
+                                    </div>
                                 </div>
                                 <button className="button button-primary" type="button" onClick={() => void submitReview(map.id)} disabled={submittingMapId === map.id || (!anonymous && !reviewerName.trim())}>
                                     {submittingMapId === map.id ? "提交中..." : "提交该图评价"}
