@@ -1,6 +1,20 @@
 {
   "maps": [
     {
+      "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780227971679-_____.png",
+      "previewImage": "",
+      "code": "r5h3zb",
+      "type": "解密",
+      "name": "非常规解密",
+      "author": "准心不敢和人对视",
+      "mappedAt": "",
+      "introduction": "我的风场呜呜（",
+      "estimatedMinutes": 45,
+      "id": "map-63c6c5a0-8aae-40c0-b60f-06588c9ae196",
+      "submittedAt": "2026-05-31T11:46:17.000Z",
+      "updatedAt": "2026-05-31T11:46:17.000Z"
+    },
+    {
       "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780227397465-MMR_____.png",
       "previewImage": "",
       "code": "6d4r9e",
@@ -285,6 +299,14 @@
   "events": [
     {
       "kind": "map-create",
+      "subjectId": "map-63c6c5a0-8aae-40c0-b60f-06588c9ae196",
+      "title": "发布地图 非常规解密",
+      "detail": "r5h3zb",
+      "id": "event-95e8a508-1cee-4841-9d27-a92c31b46090",
+      "timestamp": "2026-05-31T11:46:17.000Z"
+    },
+    {
+      "kind": "map-create",
       "subjectId": "map-436f31ba-334b-4503-8db8-80217e5d1fdd",
       "title": "发布地图 MMR解密之矢图来袭",
       "detail": "6d4r9e",
@@ -444,5 +466,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-05-31T11:37:16.716Z"
+  "updatedAt": "2026-05-31T11:46:17.000Z"
 }
