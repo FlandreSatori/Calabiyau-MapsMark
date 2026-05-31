@@ -1,6 +1,30 @@
 {
-    "maps": [],
-    "reviews": [],
-    "events": [],
-    "updatedAt": "2026-05-31T00:00:00.000Z"
+  "maps": [
+    {
+      "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780220539552-____.png",
+      "previewImage": "",
+      "code": "9trdrv",
+      "type": "解密",
+      "name": "构式解密，逃离古堡之贪玩蓝门",
+      "author": "抹茶补丁戏雨烛",
+      "mappedAt": "2025-08-01",
+      "introduction": "星庇所受到一封来自古堡的邀请函\n据说古堡的主人会在这次宴会中露面\n只有受到邀请之人才能参加晚宴\n你不想错过这次机会\n但是星绘事物繁忙\n你只能一人前往\n当你发现情况不对时\n已经来不及离开了\n\n“那么，前辈能逃得出这里吗，❤~~”",
+      "estimatedMinutes": 60,
+      "id": "map-f35d749f-2a1b-4d16-ae48-fe8ee6291d70",
+      "submittedAt": "2026-05-31T09:42:56.101Z",
+      "updatedAt": "2026-05-31T09:42:56.101Z"
+    }
+  ],
+  "reviews": [],
+  "events": [
+    {
+      "kind": "map-create",
+      "subjectId": "map-f35d749f-2a1b-4d16-ae48-fe8ee6291d70",
+      "title": "发布地图 构式解密，逃离古堡之贪玩蓝门",
+      "detail": "9trdrv",
+      "id": "event-af6776e5-b0ab-48a3-bbcb-9cc315f81040",
+      "timestamp": "2026-05-31T09:42:56.101Z"
+    }
+  ],
+  "updatedAt": "2026-05-31T09:42:56.101Z"
 }
