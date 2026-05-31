@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState, type FormEvent } from "react";
+import { useRouter } from "next/navigation";
 
 import type { MapRecord, RatingDimensions, ReviewRecord } from "@/lib/types";
 import { clampScore } from "@/lib/format";
@@ -84,6 +85,7 @@ const readFileAsDataUrl = async (file: File | null) => {
 export function MapForm({ mapTypes, onSuccess, notify }: MapFormProps) {
     const [submitting, setSubmitting] = useState(false);
     const [selectedType, setSelectedType] = useState(mapTypes[0] ?? "解密");
+    const router = useRouter();
 
     const [form, setForm] = useState({
         coverImage: "",
@@ -112,7 +114,14 @@ export function MapForm({ mapTypes, onSuccess, notify }: MapFormProps) {
                 body: JSON.stringify({ type: "map", payload: form })
             });
             if (!response.ok) {
-                throw new Error("提交失败");
+                let message = "提交失败";
+                try {
+                    const payload = await response.json();
+                    message = payload?.message ?? message;
+                } catch {
+                    message = await response.text();
+                }
+                throw new Error(message);
             }
             notify?.({ title: "地图已提交", message: `${form.name} 已加入历史记录。` });
             setForm((current) => ({
@@ -126,9 +135,14 @@ export function MapForm({ mapTypes, onSuccess, notify }: MapFormProps) {
                 introduction: "",
                 estimatedMinutes: 15
             }));
+            router.refresh();
             onSuccess?.();
         } catch (error) {
-            notify?.({ title: "提交失败", message: error instanceof Error ? error.message : "请稍后再试" });
+            const message = error instanceof Error ? error.message : "请稍后再试";
+            notify?.({ title: "提交失败", message });
+            if (!notify) {
+                alert(`提交失败：${message}`);
+            }
         } finally {
             setSubmitting(false);
         }
@@ -216,6 +230,7 @@ export function ReviewForm({ maps, onSuccess, notify }: ReviewFormProps) {
     const [anonymous, setAnonymous] = useState(false);
     const [reviewerName, setReviewerName] = useState("");
     const [submittingMapId, setSubmittingMapId] = useState<string | null>(null);
+    const router = useRouter();
     const [drafts, setDrafts] = useState<Record<string, ReviewDraft>>(() =>
         Object.fromEntries(maps.map((map) => [map.id, createReviewDraft()]))
     );
@@ -263,16 +278,28 @@ export function ReviewForm({ maps, onSuccess, notify }: ReviewFormProps) {
                 })
             });
             if (!response.ok) {
-                throw new Error("评价提交失败");
+                let message = "评价提交失败";
+                try {
+                    const payload = await response.json();
+                    message = payload?.message ?? message;
+                } catch {
+                    message = await response.text();
+                }
+                throw new Error(message);
             }
             notify?.({ title: "评价已提交", message: "该地图的评分已保存。" });
             setDrafts((current) => ({
                 ...current,
                 [mapId]: createReviewDraft()
             }));
+            router.refresh();
             onSuccess?.();
         } catch (error) {
-            notify?.({ title: "提交失败", message: error instanceof Error ? error.message : "请稍后再试" });
+            const message = error instanceof Error ? error.message : "请稍后再试";
+            notify?.({ title: "提交失败", message });
+            if (!notify) {
+                alert(`提交失败：${message}`);
+            }
         } finally {
             setSubmittingMapId(null);
         }

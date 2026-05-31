@@ -16,6 +16,21 @@ const hasGitHubConfig = () => {
     return Boolean(config.owner && config.repo);
 };
 
+const requireGitHubConfig = () => {
+    const config = githubConfig();
+    const missing = [
+        !config.owner ? "GITHUB_OWNER" : "",
+        !config.repo ? "GITHUB_REPO" : "",
+        !config.token ? "GITHUB_TOKEN" : ""
+    ].filter(Boolean);
+
+    if (missing.length > 0) {
+        throw new Error(`Missing GitHub environment variables: ${missing.join(", ")}`);
+    }
+
+    return config as Required<ReturnType<typeof githubConfig>>;
+};
+
 const contentsUrl = () => {
     const config = githubConfig();
     return `https://api.github.com/repos/${config.owner}/${config.repo}/contents/${config.dataPath}?ref=${config.branch}`;
@@ -90,11 +105,7 @@ export const loadState = async (): Promise<AppState> => {
 };
 
 export const saveState = async (state: AppState) => {
-    if (!hasGitHubConfig()) {
-        return state;
-    }
-
-    const config = githubConfig();
+    const config = requireGitHubConfig();
     const headers: Record<string, string> = {
         Accept: "application/vnd.github.object+json",
         ...authHeaders()
