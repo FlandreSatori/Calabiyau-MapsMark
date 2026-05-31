@@ -1,6 +1,20 @@
 {
   "maps": [
     {
+      "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780222903004-_______.png",
+      "previewImage": "",
+      "code": "8j6r8z",
+      "type": "解密",
+      "name": "逃离虐猫咖啡馆",
+      "author": "VVVVWVV",
+      "mappedAt": "2025-11-01",
+      "introduction": "",
+      "estimatedMinutes": 15,
+      "id": "map-859e43c7-c7a6-4693-9597-2a07616a0d0c",
+      "submittedAt": "2026-05-31T10:23:43.823Z",
+      "updatedAt": "2026-05-31T10:23:43.823Z"
+    },
+    {
       "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780221409617-____.png",
       "previewImage": "",
       "code": "0197RP",
@@ -33,6 +47,14 @@
   "events": [
     {
       "kind": "map-create",
+      "subjectId": "map-859e43c7-c7a6-4693-9597-2a07616a0d0c",
+      "title": "发布地图 逃离虐猫咖啡馆",
+      "detail": "8j6r8z",
+      "id": "event-66070e89-ec05-4f34-a5cb-974c5be2d698",
+      "timestamp": "2026-05-31T10:23:43.823Z"
+    },
+    {
+      "kind": "map-create",
       "subjectId": "map-98a6bfaa-269f-4528-81cb-f547e79d4eb7",
       "title": "发布地图 怪异迷宫V4",
       "detail": "0197RP",
@@ -48,5 +70,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-05-31T09:57:18.152Z"
+  "updatedAt": "2026-05-31T10:23:43.823Z"
 }
