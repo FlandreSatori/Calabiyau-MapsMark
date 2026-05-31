@@ -1,6 +1,20 @@
 {
   "maps": [
     {
+      "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780239470965-____.png",
+      "previewImage": "",
+      "code": "stz3bp",
+      "type": "解密",
+      "name": "地下探险",
+      "author": "莳芕",
+      "mappedAt": "2026-05-30",
+      "introduction": "入口在地面，终点从山顶出来。\n有点陷阱，还有点小怪。",
+      "estimatedMinutes": 30,
+      "id": "map-a6abb700-46c1-4d61-b588-89384005cd82",
+      "submittedAt": "2026-05-31T14:57:53.606Z",
+      "updatedAt": "2026-05-31T14:57:53.606Z"
+    },
+    {
       "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780238856280-__________.png",
       "previewImage": "",
       "code": "wnh09o",
@@ -400,6 +414,14 @@
   "events": [
     {
       "kind": "map-create",
+      "subjectId": "map-a6abb700-46c1-4d61-b588-89384005cd82",
+      "title": "发布地图 地下探险",
+      "detail": "stz3bp",
+      "id": "event-97f3d9c8-4472-4cbc-a97d-927ea0c9ac06",
+      "timestamp": "2026-05-31T14:57:53.606Z"
+    },
+    {
+      "kind": "map-create",
       "subjectId": "map-b6ab47d4-1947-4279-9a8f-546fd56511e3",
       "title": "发布地图 逃离此处，找到最初猫窝",
       "detail": "wnh09o",
@@ -623,5 +645,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-05-31T14:47:39.091Z"
+  "updatedAt": "2026-05-31T14:57:53.606Z"
 }
