@@ -1,6 +1,20 @@
 {
   "maps": [
     {
+      "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780239561085-____.png",
+      "previewImage": "",
+      "code": "48gy1q",
+      "type": "解密",
+      "name": "猫娘乐园V3",
+      "author": "YorK",
+      "mappedAt": "2026-05-30",
+      "introduction": "规则：\n如果掉帧的话，可以开低画质，然后纹理图像质量调中\n简介规则很重要务必记住\n主线：靠线索推理出开关或入口位置，第1关为教学关\n每组线索对应一关，一共18组\n两格高数字+下面的半砖：数字是各线索组的组号，半砖个数表示该组一共几条线索\n线索房说明：十字形指引块为指北针，上北右东，出生点在东南；M看地图；指引块表示所指对应处可进；弦化块+指引块表示所指对应方块可贴\n机关门共9个按颜色排列，前7个有延迟便于定位。出1关红色门后水块上方看颜色顺序。\n副武器仅限小蜜蜂；防御塔要在它攻击范围内打\n开头为BV的一串去B站搜\n支线：藏有抽象画\nF1 ",
+      "estimatedMinutes": 120,
+      "id": "map-53804f28-d922-4fe3-9c54-650931cb22b0",
+      "submittedAt": "2026-05-31T14:59:24.572Z",
+      "updatedAt": "2026-05-31T14:59:24.572Z"
+    },
+    {
       "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780239470965-____.png",
       "previewImage": "",
       "code": "stz3bp",
@@ -414,6 +428,14 @@
   "events": [
     {
       "kind": "map-create",
+      "subjectId": "map-53804f28-d922-4fe3-9c54-650931cb22b0",
+      "title": "发布地图 猫娘乐园V3",
+      "detail": "48gy1q",
+      "id": "event-fa26c324-8da7-4041-a793-893e503d9935",
+      "timestamp": "2026-05-31T14:59:24.572Z"
+    },
+    {
+      "kind": "map-create",
       "subjectId": "map-a6abb700-46c1-4d61-b588-89384005cd82",
       "title": "发布地图 地下探险",
       "detail": "stz3bp",
@@ -645,5 +667,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-05-31T14:57:53.606Z"
+  "updatedAt": "2026-05-31T14:59:24.572Z"
 }
