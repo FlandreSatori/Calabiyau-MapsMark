@@ -74,7 +74,7 @@ const responseToState = async (response: Response) => {
     };
 };
 
-export const loadState = async (): Promise<AppState> => {
+const loadStateWithCache = async (cache: RequestCache): Promise<AppState> => {
     if (!hasGitHubConfig()) {
         return defaultState();
     }
@@ -86,7 +86,7 @@ export const loadState = async (): Promise<AppState> => {
 
     const response = await fetch(hasGitHubConfig() ? contentsUrl() : rawUrl(), {
         headers,
-        cache: "no-store"
+        cache
     });
 
     if (response.status === 404) {
@@ -94,7 +94,7 @@ export const loadState = async (): Promise<AppState> => {
     }
 
     if (!response.ok) {
-        const rawResponse = await fetch(rawUrl(), { cache: "no-store" });
+        const rawResponse = await fetch(rawUrl(), { cache });
         if (!rawResponse.ok) {
             return defaultState();
         }
@@ -103,6 +103,12 @@ export const loadState = async (): Promise<AppState> => {
 
     return responseToState(response).then(({ state }) => state);
 };
+
+export const loadState = async (): Promise<AppState> => {
+    return loadStateWithCache("no-store");
+};
+
+export const loadStateStatic = async (): Promise<AppState> => loadStateWithCache("force-cache");
 
 export const saveState = async (state: AppState) => {
     const config = requireGitHubConfig();

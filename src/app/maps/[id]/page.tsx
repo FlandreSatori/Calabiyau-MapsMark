@@ -3,15 +3,22 @@ import { notFound } from "next/navigation";
 
 import { RadarChart } from "@/components/radar-chart";
 import { HistoryList } from "@/components/history-list";
-import { loadState } from "@/lib/github-store";
+import { loadStateStatic } from "@/lib/github-store";
 import { summarizeState } from "@/lib/state-utils";
 import { formatDate, formatDateTime } from "@/lib/format";
 import { getMapById } from "@/lib/metrics";
 import { ratingLabels, ratingLabelText } from "@/lib/types";
 
+export const dynamic = "force-static";
+
+export async function generateStaticParams() {
+    const state = await loadStateStatic();
+    return state.maps.filter((map) => !map.deletedAt).map((map) => ({ id: map.id }));
+}
+
 export default async function MapDetailPage({ params }: { params: { id: string } }) {
     const { id } = params;
-    const state = await loadState();
+    const state = await loadStateStatic();
     const map = getMapById(state, id);
     if (!map) {
         notFound();
