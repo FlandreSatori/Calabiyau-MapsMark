@@ -1,6 +1,20 @@
 {
   "maps": [
     {
+      "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780221409617-____.png",
+      "previewImage": "",
+      "code": "0197RP",
+      "type": "解密",
+      "name": "怪异迷宫V4",
+      "author": "YorK",
+      "mappedAt": "2026-01-01",
+      "introduction": "赤石警告喵！\n1所有机关门开关的正面，角色必能身体触碰到，不存在墙后等等\n2 一套的传送门模块用于双向传送\n3第四关找到三个数，求和，得到由0/1组成的三位数，对应关/开。找完数字再进风洞！一次性单向通道！\n4第五关可打通回出生点的双向捷径\n5第八关先打开橙色机关，找到橙色机关门，进入指引9的线索房。机关门没藏很明显\n6第九关根据线索找到3个通道入口，前两个打碎石，最后一个通往十\n7第十一关有两个线索房，在“向上看”房间看到方块，然后去入口旁房间找这种方块对应的几个字母，拼成单词。将单词填入括号，正在做这个的东东就是答案\n",
+      "estimatedMinutes": 90,
+      "id": "map-98a6bfaa-269f-4528-81cb-f547e79d4eb7",
+      "submittedAt": "2026-05-31T09:57:18.152Z",
+      "updatedAt": "2026-05-31T09:57:18.152Z"
+    },
+    {
       "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780220539552-____.png",
       "previewImage": "",
       "code": "9trdrv",
@@ -19,6 +33,14 @@
   "events": [
     {
       "kind": "map-create",
+      "subjectId": "map-98a6bfaa-269f-4528-81cb-f547e79d4eb7",
+      "title": "发布地图 怪异迷宫V4",
+      "detail": "0197RP",
+      "id": "event-d407f234-0148-4a03-b378-fbea4872375b",
+      "timestamp": "2026-05-31T09:57:18.152Z"
+    },
+    {
+      "kind": "map-create",
       "subjectId": "map-f35d749f-2a1b-4d16-ae48-fe8ee6291d70",
       "title": "发布地图 构式解密，逃离古堡之贪玩蓝门",
       "detail": "9trdrv",
@@ -26,5 +48,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-05-31T09:42:56.101Z"
+  "updatedAt": "2026-05-31T09:57:18.152Z"
 }
