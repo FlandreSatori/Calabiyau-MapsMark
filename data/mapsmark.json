@@ -1,6 +1,20 @@
 {
   "maps": [
     {
+      "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780226839925-MMR___.png",
+      "previewImage": "",
+      "code": "v49fx2",
+      "type": "解密",
+      "name": "MMR解密之不玩闪影的有难了喵",
+      "author": "准心不敢和人对视",
+      "mappedAt": "",
+      "introduction": "弦化侧身有移速加成喵",
+      "estimatedMinutes": 45,
+      "id": "map-3e9d28cc-104d-45c6-99a1-d45edae292cc",
+      "submittedAt": "2026-05-31T11:27:26.298Z",
+      "updatedAt": "2026-05-31T11:27:26.298Z"
+    },
+    {
       "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780226603871-MMR__.png",
       "previewImage": "",
       "code": "btsl97",
@@ -257,6 +271,14 @@
   "events": [
     {
       "kind": "map-create",
+      "subjectId": "map-3e9d28cc-104d-45c6-99a1-d45edae292cc",
+      "title": "发布地图 MMR解密之不玩闪影的有难了喵",
+      "detail": "v49fx2",
+      "id": "event-5a34d1c1-43bd-43e4-896f-4d56b0c4bc3b",
+      "timestamp": "2026-05-31T11:27:26.298Z"
+    },
+    {
+      "kind": "map-create",
       "subjectId": "map-3d25699d-cd82-46d3-ba0b-b428d6f83c5a",
       "title": "发布地图 MMR也能过的解密",
       "detail": "btsl97",
@@ -400,5 +422,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-05-31T11:23:26.072Z"
+  "updatedAt": "2026-05-31T11:27:26.298Z"
 }
