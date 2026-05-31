@@ -45,6 +45,24 @@ export async function POST(request: Request) {
         }
 
         if (!res.ok) {
+            if (res.status === 401) {
+                return NextResponse.json(
+                    {
+                        message: "GitHub token 无效或已失效，请重新生成 PAT，并确认仓库授权与 SSO 已批准。",
+                        detail: payload ?? { message: text }
+                    },
+                    { status: 401 }
+                );
+            }
+            if (res.status === 403) {
+                return NextResponse.json(
+                    {
+                        message: "GitHub token 没有该仓库的写权限，或需要先批准 SSO。请确认 Contents: Read & write，并把仓库加入 Repository access。",
+                        detail: payload ?? { message: text }
+                    },
+                    { status: 403 }
+                );
+            }
             return NextResponse.json({ message: payload?.message ?? `GitHub upload failed (${res.status})`, detail: payload }, { status: 500 });
         }
 

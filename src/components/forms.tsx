@@ -171,6 +171,15 @@ export function MapForm({ mapTypes, onSuccess, notify }: MapFormProps) {
         [form]
     );
 
+    const missingRequired = useMemo(() => {
+        const missing: string[] = [];
+        if (!form.coverImage) missing.push("封面未上传成功");
+        if (!form.code) missing.push("地图代码");
+        if (!form.name) missing.push("地图名");
+        if (!form.author) missing.push("作者名");
+        return missing;
+    }, [form.coverImage, form.code, form.name, form.author]);
+
     const isInvalid = (key: keyof typeof form) => !form[key] && Boolean(touched[key]);
 
     const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
@@ -329,6 +338,7 @@ export function MapForm({ mapTypes, onSuccess, notify }: MapFormProps) {
             <button className="button button-primary" disabled={!canSubmit || submitting} type="submit">
                 {submitting ? "提交中..." : "提交地图"}
             </button>
+            {!canSubmit ? <p className="help" style={{ margin: 0, color: "#ffb1bb" }}>当前缺少：{missingRequired.join("、")}。</p> : null}
         </form>
     );
 }
