@@ -1,6 +1,20 @@
 {
   "maps": [
     {
+      "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780225391541-______.png",
+      "previewImage": "",
+      "code": "6thn20",
+      "type": "解密",
+      "name": " 小基咪喵解密",
+      "author": "楪祈喵",
+      "mappedAt": "",
+      "introduction": "一共7+1关喵，过不去的话，在出生点可以选关喵，修了好多卡似位置，提示局内F1.B站已发教程喵",
+      "estimatedMinutes": 90,
+      "id": "map-4685def4-103e-4197-9135-f6668c1de2f8",
+      "submittedAt": "2026-05-31T11:03:14.401Z",
+      "updatedAt": "2026-05-31T11:03:14.401Z"
+    },
+    {
       "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780225006182-___04.png",
       "previewImage": "",
       "code": "ymvzjz",
@@ -159,6 +173,14 @@
   "events": [
     {
       "kind": "map-create",
+      "subjectId": "map-4685def4-103e-4197-9135-f6668c1de2f8",
+      "title": "发布地图  小基咪喵解密",
+      "detail": "6thn20",
+      "id": "event-54c15c03-602d-4eb0-a6b5-98f945af18f0",
+      "timestamp": "2026-05-31T11:03:14.401Z"
+    },
+    {
+      "kind": "map-create",
       "subjectId": "map-aa61b510-66ef-4999-8398-e1aa821fb6d1",
       "title": "发布地图 神奇猫娘大冒险04：风场将带我去何方",
       "detail": "ymvzjz",
@@ -246,5 +268,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-05-31T10:56:59.762Z"
+  "updatedAt": "2026-05-31T11:03:14.401Z"
 }
