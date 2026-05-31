@@ -14,13 +14,13 @@ export default async function EmbedPage({ searchParams }: { searchParams?: { bg?
             <div className="container grid gap-18">
                 <section className="panel panel-pad panel-strong">
                     <p className="section-title">Embed View</p>
-                    <h2 className="hero-title" style={{ fontSize: "2.2rem" }}>嵌入版仪表盘</h2>
-                    <p className="hero-text">适合直接以 iframe 方式嵌入 Vue3 前端，支持背景透明度定制。</p>
+                    <h2 className="hero-title" style={{ fontSize: "2.2rem" }}>嵌入版展示</h2>
+                    <p className="hero-text">适合直接以 iframe 方式嵌入 Vue3 前端。单维时显示轴图，双维时显示二维坐标图，最多选择两个维度。</p>
                 </section>
 
                 <section className="grid grid-hero">
                     <div className="panel panel-pad">
-                        <MetricDashboard values={summary.averages} />
+                        <MetricDashboard maps={summary.maps} reviews={summary.reviews} />
                     </div>
                     <div className="panel panel-pad">
                         <p className="section-title">最近投稿</p>

@@ -389,11 +389,255 @@ img {
     color: #ffcbcf;
 }
 
-.radar-wrap {
+.metric-explorer {
     display: grid;
-    grid-template-columns: 1fr 360px;
-    gap: 18px;
+    gap: 16px;
+}
+
+.metric-controls {
+    display: grid;
+    gap: 14px;
+}
+
+.metric-choice-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.metric-choice {
+    display: flex;
     align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    background: rgba(255, 255, 255, 0.03);
+    cursor: pointer;
+    user-select: none;
+    color: #dfeaff;
+}
+
+.metric-choice.is-selected {
+    border-color: rgba(119, 215, 255, 0.4);
+    background: rgba(119, 215, 255, 0.1);
+}
+
+.metric-choice.is-disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+
+.metric-choice input {
+    margin: 0;
+    accent-color: var(--accent);
+}
+
+.metric-stage {
+    position: relative;
+    overflow: visible;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.015));
+}
+
+.metric-stage-single {
+    padding: 18px 16px 22px;
+}
+
+.metric-stage-double {
+    min-height: 520px;
+    padding: 24px;
+}
+
+.metric-axis {
+    position: absolute;
+    background: rgba(119, 215, 255, 0.28);
+}
+
+.metric-axis-horizontal {
+    left: 24px;
+    right: 24px;
+    bottom: 24px;
+    height: 2px;
+}
+
+.metric-axis-x {
+    left: 24px;
+    right: 24px;
+    bottom: 52px;
+    height: 2px;
+    opacity: 0.6;
+}
+
+.metric-axis-y {
+    top: 24px;
+    bottom: 24px;
+    left: 24px;
+    width: 2px;
+    opacity: 0.6;
+}
+
+.metric-plot-grid {
+    position: absolute;
+    inset: 24px;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+    background-size: 20% 20%;
+    border-radius: 20px;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.metric-axis-label {
+    position: absolute;
+    color: rgba(215, 230, 255, 0.72);
+    font-size: 0.8rem;
+    pointer-events: none;
+}
+
+.metric-axis-label-left {
+    left: 24px;
+    bottom: 4px;
+}
+
+.metric-axis-label-right {
+    right: 24px;
+    bottom: 4px;
+}
+
+.metric-axis-label-bottom-left {
+    left: 24px;
+    bottom: 4px;
+}
+
+.metric-axis-label-top-left {
+    left: 24px;
+    top: 4px;
+}
+
+.metric-axis-label-bottom-right {
+    right: 24px;
+    bottom: 4px;
+}
+
+.metric-axis-label-top-right {
+    right: 24px;
+    top: 4px;
+}
+
+.metric-node {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 12px;
+    width: min(300px, calc(100vw - 72px));
+    padding: 10px;
+    border-radius: 20px;
+    background: rgba(8, 15, 27, 0.88);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(16px);
+    z-index: 1;
+}
+
+.metric-node:hover {
+    border-color: rgba(119, 215, 255, 0.4);
+    z-index: 5;
+}
+
+.metric-node-single {
+    transform: translate(-50%, 0);
+}
+
+.metric-node-cover {
+    width: 90px;
+    height: 90px;
+    border-radius: 14px;
+    object-fit: cover;
+}
+
+.metric-node-body {
+    display: grid;
+    gap: 4px;
+    align-content: center;
+    color: #dce8fb;
+}
+
+.metric-node-body strong {
+    font-size: 0.98rem;
+}
+
+.metric-node-body span {
+    color: var(--muted);
+    font-size: 0.83rem;
+    line-height: 1.45;
+}
+
+.metric-scatter-point {
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.metric-scatter-dot {
+    position: absolute;
+    left: -4px;
+    top: -4px;
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    background: var(--accent);
+    box-shadow: 0 0 0 8px rgba(119, 215, 255, 0.12);
+}
+
+.metric-scatter-card {
+    position: absolute;
+    width: min(300px, calc(100vw - 72px));
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 12px;
+    padding: 10px;
+    border-radius: 20px;
+    background: rgba(8, 15, 27, 0.88);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(16px);
+}
+
+.metric-scatter-card:hover {
+    border-color: rgba(119, 215, 255, 0.4);
+    z-index: 6;
+}
+
+.metric-scatter-card-right {
+    left: 18px;
+    top: -76px;
+}
+
+.metric-scatter-card-right::before {
+    content: "";
+    position: absolute;
+    left: -14px;
+    top: 50%;
+    width: 14px;
+    height: 2px;
+    background: rgba(119, 215, 255, 0.8);
+}
+
+.metric-scatter-card-left {
+    right: 18px;
+    top: -76px;
+}
+
+.metric-scatter-card-left::before {
+    content: "";
+    position: absolute;
+    right: -14px;
+    top: 50%;
+    width: 14px;
+    height: 2px;
+    background: rgba(119, 215, 255, 0.8);
 }
 
 .legend-grid {
@@ -407,12 +651,6 @@ img {
     gap: 10px;
     color: var(--muted);
     font-size: 0.92rem;
-}
-
-.radar-svg {
-    width: 100%;
-    height: auto;
-    overflow: visible;
 }
 
 .history {

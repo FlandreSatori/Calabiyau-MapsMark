@@ -3,7 +3,6 @@ import Link from "next/link";
 import { MapForm, ReviewForm } from "@/components/forms";
 import { HistoryList } from "@/components/history-list";
 import { MapCard } from "@/components/map-card";
-import { MetricDashboard } from "@/components/metric-dashboard";
 import { formatDateTime } from "@/lib/format";
 import { loadState } from "@/lib/github-store";
 import { summarizeState } from "@/lib/state-utils";
@@ -21,25 +20,24 @@ export default async function HomePage({ searchParams }: { searchParams?: { bg?:
                     <div className="brand">
                         <div className="brand-mark" />
                         <div>
-                            <h1>MapsMark</h1>
-                            <p>地图投稿、五星评价、排行榜和雷达图一体化平台</p>
+                            <h1>卡丘工坊地图评价</h1>
+                            <p>你是怎么发现这里的喵</p>
                         </div>
                     </div>
                     <div className="toolbar">
-                        <Link className="pill" href="#submit-map">投稿地图</Link>
+                        <Link className="pill" href="#submit-map">上传地图</Link>
                         <Link className="pill" href="#submit-review">提交评价</Link>
                         <Link className="pill" href="/admin">后台管理</Link>
-                        <Link className="pill" href="/embed">嵌入页</Link>
+                        <Link className="pill" href="/embed">展示页</Link>
                     </div>
                 </div>
 
                 <section className="grid grid-hero">
                     <div className="panel panel-pad">
-                        <p className="section-title">Overview</p>
-                        <h2 className="hero-title">让地图投稿、历史评价和雷达分析放在同一处展示。</h2>
+                        <p className="section-title">总览</p>
+                        <h2 className="hero-title">是啊玩什么</h2>
                         <p className="hero-text">
-                            任何人都可以投稿地图、给出五星评价并查看历史数据。管理员通过后台处理删改；
-                            所有数据都写回 GitHub 仓库，便于 Vercel 部署与长期保存。
+                            请做出评价吧！
                         </p>
                         <div className="stat-strip" style={{ marginTop: 18 }}>
                             <span className="stat">地图总数 {summary.mapCount}</span>
@@ -57,23 +55,37 @@ export default async function HomePage({ searchParams }: { searchParams?: { bg?:
                     </div>
 
                     <div className="panel panel-pad panel-strong">
-                        <p className="section-title">Radar</p>
-                        <MetricDashboard values={summary.averages} />
+                        <p className="section-title">总榜</p>
+                        <p className="hero-text">单维榜单请到展示页手动勾选，主页只展示综合总榜。</p>
+                        <div className="list" style={{ marginTop: 14 }}>
+                            {summary.bestByMetric.overall.slice(0, 5).map(({ map, score, reviewCount }, index) => (
+                                <div className="list-item" key={map.id}>
+                                    <div className="list-row">
+                                        <strong>{index + 1}. {map.name}</strong>
+                                        <span className="badge">{score.toFixed(1)}</span>
+                                    </div>
+                                    <div className="list-row">
+                                        <span>{map.type} · {map.code}</span>
+                                        <span>{reviewCount} 条评价</span>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </section>
 
                 <section className="panel panel-pad" id="submit-map">
-                    <p className="section-title">Submit Map</p>
+                    <p className="section-title">上传地图</p>
                     <MapForm mapTypes={[...defaultMapTypes]} />
                 </section>
 
                 <section className="panel panel-pad" id="submit-review">
-                    <p className="section-title">Submit Review</p>
+                    <p className="section-title">提交评价</p>
                     <ReviewForm maps={summary.maps} />
                 </section>
 
                 <section className="panel panel-pad">
-                    <p className="section-title">Latest Maps</p>
+                    <p className="section-title">最新动态</p>
                     <div className="cover-grid">
                         {summary.maps.map((map) => (
                             <MapCard key={map.id} map={map} reviews={summary.reviews} />
@@ -105,7 +117,7 @@ export default async function HomePage({ searchParams }: { searchParams?: { bg?:
                     </div>
 
                     <div className="panel panel-pad">
-                        <p className="section-title">历史事件</p>
+                        <p className="section-title">日志</p>
                         <HistoryList events={summary.events} />
                     </div>
                 </section>

@@ -210,7 +210,7 @@ export function ReviewForm({ maps, onSuccess, notify }: ReviewFormProps) {
             if (!response.ok) {
                 throw new Error("评价提交失败");
             }
-            notify?.({ title: "评价已提交", message: "雷达图与排行榜将自动更新。" });
+            notify?.({ title: "评价已提交", message: "图表与排行榜将自动更新。" });
             setForm((current) => ({
                 ...current,
                 reviewerName: "",

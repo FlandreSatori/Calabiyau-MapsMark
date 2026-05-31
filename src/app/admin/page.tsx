@@ -72,7 +72,7 @@ export default function AdminPage({ searchParams }: { searchParams?: { bg?: stri
                             <div className="legend-row"><span>评价</span><strong>{summary.reviewCount}</strong></div>
                             <div className="legend-row"><span>最近更新时间</span><strong>{state.updatedAt.slice(0, 19).replace("T", " ")}</strong></div>
                         </div>
-                        <MetricDashboard values={summary.averages} />
+                        <MetricDashboard maps={summary.maps} reviews={summary.reviews} />
                     </div>
                     <div className="panel panel-pad">
                         <p className="section-title">历史记录</p>
