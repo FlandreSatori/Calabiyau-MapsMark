@@ -1,5 +1,6 @@
 import type { AppState, EventRecord, MapInput, MapRecord, ReviewInput, ReviewRecord } from "@/lib/types";
 import { seedState } from "@/lib/seed";
+import bundledState from "../../data/mapsmark.json";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 
@@ -120,7 +121,9 @@ export const loadState = async (): Promise<AppState> => {
     return loadStateWithCache("no-store");
 };
 
-export const loadStateStatic = async (): Promise<AppState> => loadStateWithCache("force-cache");
+export const loadStateStatic = async (): Promise<AppState> => {
+    return structuredClone(bundledState as AppState);
+};
 
 export const saveState = async (state: AppState) => {
     const config = requireGitHubConfig();

@@ -346,6 +346,7 @@ export function MapForm({ mapTypes, onSuccess, notify }: MapFormProps) {
 export function ReviewForm({ maps, onSuccess, notify }: ReviewFormProps) {
     const [anonymous, setAnonymous] = useState(false);
     const [reviewerName, setReviewerName] = useState("");
+    const [nameInvalid, setNameInvalid] = useState(false);
     const [submittingMapId, setSubmittingMapId] = useState<string | null>(null);
     const router = useRouter();
     const [drafts, setDrafts] = useState<Record<string, ReviewDraft>>(() =>
@@ -375,6 +376,7 @@ export function ReviewForm({ maps, onSuccess, notify }: ReviewFormProps) {
     const submitReview = async (mapId: string) => {
         const draft = drafts[mapId] ?? createReviewDraft();
         if (!anonymous && !reviewerName.trim()) {
+            setNameInvalid(true);
             if (notify) {
                 notify({ title: "提交失败", message: "请先填写姓名，或者勾选匿名提交。" });
             } else {
@@ -433,14 +435,23 @@ export function ReviewForm({ maps, onSuccess, notify }: ReviewFormProps) {
             <div className="review-shell panel panel-strong panel-pad">
                 <div className="form-grid">
                     <label className="label">
-                        姓名
-                        <input className="input" disabled={anonymous} value={reviewerName} onChange={(event) => setReviewerName(event.target.value)} placeholder="提交评价时可填写姓名" />
+                        名称
+                        <input className="input" disabled={anonymous} value={reviewerName} onChange={(event) => setReviewerName(event.target.value)} placeholder="提交评价时须填写名称或匿名" />
+                        <div className="help" style={{ marginTop: 8 }}>
+                            <div><strong>维度说明：</strong></div>
+                            <div style={{ marginTop: 6 }}>
+                                <div><strong>趣味性：</strong>是否有趣，是否值得二刷/带人，设计的谜题是否有创造性，是否环环相扣引人入胜，关卡节奏安排是否合理；  -5为无聊 +5为流连忘返</div>
+                                <div style={{ marginTop: 6 }}><strong>美观性：</strong>场景是否自洽和谐，是否赏心悦目，是否有完整的世界观和气氛构建；  -5为简陋 +5为叹为观止</div>
+                                <div style={{ marginTop: 6 }}><strong>引导性：</strong>游玩的时候是否感觉到迷茫，不知道干什么，卡关但不是因为被难住，试图无差别的蹭墙蹭草钻水;   -5为动线混沌，+5为动线清晰</div>
+                                <div style={{ marginTop: 6 }}><strong>难易度：</strong>相互比较之下，需要思考/花费的时间多少，需要的知识储备多少；  -5为极难 +5为非常简单</div>
+                            </div>
+                        </div>
                     </label>
                     <label className="label">
                         匿名提交
                         <label className="upload-row">
                             <input type="checkbox" checked={anonymous} onChange={(event) => setAnonymous(event.target.checked)} />
-                            <span className="help">匿名后将不会显示姓名。</span>
+                            <span className="help">匿名后评价将不会上传名称</span>
                         </label>
                     </label>
                 </div>

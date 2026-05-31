@@ -229,6 +229,11 @@ img {
     max-width: 60ch;
 }
 
+.map-introduction {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
 .metrics {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -720,6 +725,28 @@ img {
 
 .review-comment-textarea {
     min-height: 260px;
+}
+
+.dimension-row {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.dimension-desc {
+    flex: 1 1 auto;
+}
+
+.dimension-scale {
+    flex: 0 0 220px;
+    text-align: right;
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
+.input-invalid {
+    border-color: rgba(255, 77, 94, 0.9);
+    box-shadow: 0 0 0 3px rgba(255, 77, 94, 0.08);
 }
 
 .review-rating-grid {

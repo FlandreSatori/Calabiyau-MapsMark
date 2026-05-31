@@ -3,22 +3,17 @@ import { notFound } from "next/navigation";
 
 import { RadarChart } from "@/components/radar-chart";
 import { HistoryList } from "@/components/history-list";
-import { loadStateStatic } from "@/lib/github-store";
+import { loadState } from "@/lib/github-store";
 import { summarizeState } from "@/lib/state-utils";
 import { formatDate, formatDateTime } from "@/lib/format";
 import { getMapById } from "@/lib/metrics";
 import { ratingLabels, ratingLabelText } from "@/lib/types";
 
-export const dynamic = "force-static";
+export const dynamic = "force-dynamic";
 
-export async function generateStaticParams() {
-    const state = await loadStateStatic();
-    return state.maps.filter((map) => !map.deletedAt).map((map) => ({ id: map.id }));
-}
-
-export default async function MapDetailPage({ params }: { params: { id: string } }) {
-    const { id } = params;
-    const state = await loadStateStatic();
+export default async function MapDetailPage({ params }: { params: Promise<{ id: string }> }) {
+    const { id } = await params;
+    const state = await loadState();
     const map = getMapById(state, id);
     if (!map) {
         notFound();
@@ -62,9 +57,11 @@ export default async function MapDetailPage({ params }: { params: { id: string }
                             <span className="stat">{map.author}</span>
                             <span className="stat">制图时间 {formatDate(map.mappedAt)}</span>
                         </div>
-                        <p className="hero-text">{map.introduction}</p>
+                        <p className="hero-text map-introduction">{map.introduction}</p>
                         <div className="grid gap-12" style={{ marginTop: 18 }}>
-                            <div className="preview-frame"><img src={map.previewImage} alt={`${map.name} 预览`} /></div>
+                            {map.previewImage ? (
+                                <div className="preview-frame"><img src={map.previewImage} alt={`${map.name} 预览`} /></div>
+                            ) : null}
                             <div className="panel panel-pad panel-strong">
                                 <strong>地图代码</strong>
                                 <p className="hero-text">{map.code}</p>

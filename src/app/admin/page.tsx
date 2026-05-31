@@ -8,6 +8,7 @@ import { MetricDashboard } from "@/components/metric-dashboard";
 import { notify } from "@/components/toast";
 import type { AppState } from "@/lib/types";
 import { summarizeState } from "@/lib/state-utils";
+import { formatDateTime } from "@/lib/format";
 
 const emptyState: AppState = { maps: [], reviews: [], events: [], updatedAt: new Date().toISOString() };
 
@@ -111,7 +112,7 @@ export default function AdminPage({ searchParams }: { searchParams?: { bg?: stri
                         <div className="legend-grid">
                             <div className="legend-row"><span>地图</span><strong>{summary.mapCount}</strong></div>
                             <div className="legend-row"><span>评价</span><strong>{summary.reviewCount}</strong></div>
-                            <div className="legend-row"><span>最近更新时间</span><strong>{state.updatedAt.slice(0, 19).replace("T", " ")}</strong></div>
+                            <div className="legend-row"><span>最近更新时间</span><strong>{formatDateTime(state.updatedAt)}</strong></div>
                         </div>
                         <div style={{ marginTop: 12 }}>
                             <label className="label">自定义背景（CSS，可填颜色/渐变/rgba）：</label>
