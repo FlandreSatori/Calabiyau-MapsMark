@@ -1,6 +1,20 @@
 {
   "maps": [
     {
+      "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780238856280-__________.png",
+      "previewImage": "",
+      "code": "wnh09o",
+      "type": "解密",
+      "name": "逃离此处，找到最初猫窝",
+      "author": "楪祈喵",
+      "mappedAt": "2026-05-30",
+      "introduction": "一觉醒来，发现自己的猫窝不知为何遭到破坏，看到未知生物，开始怀疑自己是否在现实世界。无规则，请逃离此处，回到自己真正的猫窝（图中看到灵魂灯笼，代表此处无钥匙，仅一部分有灯笼提示，钥匙均不可见，当前钥匙均开启别处机关门，隐藏可贴方块均有提示）（新加了一点点点东西）",
+      "estimatedMinutes": 60,
+      "id": "map-b6ab47d4-1947-4279-9a8f-546fd56511e3",
+      "submittedAt": "2026-05-31T14:47:39.091Z",
+      "updatedAt": "2026-05-31T14:47:39.091Z"
+    },
+    {
       "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780238692130-MMR__18.png",
       "previewImage": "",
       "code": "ifk22m",
@@ -386,6 +400,14 @@
   "events": [
     {
       "kind": "map-create",
+      "subjectId": "map-b6ab47d4-1947-4279-9a8f-546fd56511e3",
+      "title": "发布地图 逃离此处，找到最初猫窝",
+      "detail": "wnh09o",
+      "id": "event-db988038-d4b9-40e0-a304-2600827f2d16",
+      "timestamp": "2026-05-31T14:47:39.091Z"
+    },
+    {
+      "kind": "map-create",
       "subjectId": "map-8c3f0601-5bcf-4fff-8f3b-058813684475",
       "title": "发布地图 MMR入门解密18关",
       "detail": "ifk22m",
@@ -601,5 +623,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-05-31T14:44:54.944Z"
+  "updatedAt": "2026-05-31T14:47:39.091Z"
 }
