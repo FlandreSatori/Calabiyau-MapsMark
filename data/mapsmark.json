@@ -1,6 +1,20 @@
 {
   "maps": [
     {
+      "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780238692130-MMR__18.png",
+      "previewImage": "",
+      "code": "ifk22m",
+      "type": "解密",
+      "name": "MMR入门解密18关",
+      "author": "柴郡Ch3shire",
+      "mappedAt": "",
+      "introduction": "许多常见的解密巧思，排除了许多干扰项的合集喵\n解密最原始的样貌——于此呈现\n\n——当真如此吗\n逃逃逃逃兆兆兆兆兆兆兆兆兆兆兆兆兆兆兆北北北北北北北……十十十十十八……八八八八八八八八八八…………",
+      "estimatedMinutes": 30,
+      "id": "map-8c3f0601-5bcf-4fff-8f3b-058813684475",
+      "submittedAt": "2026-05-31T14:44:54.944Z",
+      "updatedAt": "2026-05-31T14:44:54.944Z"
+    },
+    {
       "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780229344642-_____.png",
       "previewImage": "",
       "code": "965p1o",
@@ -371,6 +385,14 @@
   ],
   "events": [
     {
+      "kind": "map-create",
+      "subjectId": "map-8c3f0601-5bcf-4fff-8f3b-058813684475",
+      "title": "发布地图 MMR入门解密18关",
+      "detail": "ifk22m",
+      "id": "event-b9ddfbb6-1bc9-4341-9883-8f155af69eb1",
+      "timestamp": "2026-05-31T14:44:54.944Z"
+    },
+    {
       "kind": "review-create",
       "subjectId": "review-8c24d19d-65f3-4b52-a775-bf1b68862691",
       "title": "新增评价 古明地小五",
@@ -579,5 +601,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-05-31T12:28:52.419Z"
+  "updatedAt": "2026-05-31T14:44:54.944Z"
 }
