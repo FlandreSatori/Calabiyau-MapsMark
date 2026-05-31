@@ -88,6 +88,15 @@ export default async function HomePage({ searchParams }: { searchParams?: { bg?:
                     </div>
                 </section>
 
+                <section className="panel panel-pad">
+                    <p className="section-title">地图动态</p>
+                    <div className="cover-grid">
+                        {summary.maps.map((map) => (
+                            <MapCard key={map.id} map={map} reviews={summary.reviews} />
+                        ))}
+                    </div>
+                </section>
+
                 <section className="panel panel-pad" id="submit-map">
                     <p className="section-title">上传地图</p>
                     <MapForm mapTypes={[...defaultMapTypes]} />
@@ -96,15 +105,6 @@ export default async function HomePage({ searchParams }: { searchParams?: { bg?:
                 <section className="panel panel-pad" id="submit-review">
                     <p className="section-title">提交评价</p>
                     <ReviewForm maps={summary.maps} />
-                </section>
-
-                <section className="panel panel-pad">
-                    <p className="section-title">地图动态</p>
-                    <div className="cover-grid">
-                        {summary.maps.map((map) => (
-                            <MapCard key={map.id} map={map} reviews={summary.reviews} />
-                        ))}
-                    </div>
                 </section>
 
                 <section className="grid grid-hero">

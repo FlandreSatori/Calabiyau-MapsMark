@@ -434,9 +434,16 @@ export function ReviewForm({ maps, onSuccess, notify }: ReviewFormProps) {
         <div className="grid gap-12">
             <div className="review-shell panel panel-strong panel-pad">
                 <div className="form-grid">
-                    <label className="label">
-                        名称
-                        <input className="input" disabled={anonymous} value={reviewerName} onChange={(event) => setReviewerName(event.target.value)} placeholder="提交评价时须填写名称或匿名" />
+                    <label className="label full review-name-row">
+                        <span>名称</span>
+                        <div className="review-name-control">
+                            <input className="input" disabled={anonymous} value={reviewerName} onChange={(event) => setReviewerName(event.target.value)} placeholder="提交评价时须填写名称或匿名" />
+                            <label className="review-anonymous-toggle">
+                                <input type="checkbox" className="review-anonymous-checkbox" checked={anonymous} onChange={(event) => setAnonymous(event.target.checked)} />
+                                <span>匿名提交</span>
+                            </label>
+                        </div>
+                        <span className="help">匿名后评价将不会上传名称</span>
                         <div className="help" style={{ marginTop: 8 }}>
                             <div><strong>维度说明：</strong></div>
                             <div style={{ marginTop: 6 }}>
@@ -446,13 +453,6 @@ export function ReviewForm({ maps, onSuccess, notify }: ReviewFormProps) {
                                 <div style={{ marginTop: 6 }}><strong>难易度：</strong>相互比较之下，需要思考/花费的时间多少，需要的知识储备多少；  -5为极难 +5为非常简单</div>
                             </div>
                         </div>
-                    </label>
-                    <label className="label">
-                        匿名提交
-                        <label className="upload-row">
-                            <input type="checkbox" checked={anonymous} onChange={(event) => setAnonymous(event.target.checked)} />
-                            <span className="help">匿名后评价将不会上传名称</span>
-                        </label>
                     </label>
                 </div>
             </div>

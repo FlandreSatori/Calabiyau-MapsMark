@@ -326,6 +326,35 @@ img {
     flex-wrap: wrap;
 }
 
+.review-name-row {
+    display: grid;
+    gap: 10px;
+}
+
+.review-name-control {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.review-anonymous-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.98rem;
+    color: var(--text);
+    user-select: none;
+}
+
+.review-anonymous-checkbox {
+    width: 22px;
+    height: 22px;
+    accent-color: var(--accent);
+    transform: scale(1.15);
+    transform-origin: center;
+}
+
 .file-chip {
     padding: 8px 12px;
     border-radius: 999px;
