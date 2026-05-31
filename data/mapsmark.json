@@ -1,6 +1,20 @@
 {
   "maps": [
     {
+      "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780226603871-MMR__.png",
+      "previewImage": "",
+      "code": "btsl97",
+      "type": "解密",
+      "name": "MMR也能过的解密",
+      "author": "准心不敢和人对视",
+      "mappedAt": "",
+      "introduction": "MMR不骗MMR喵！",
+      "estimatedMinutes": 15,
+      "id": "map-3d25699d-cd82-46d3-ba0b-b428d6f83c5a",
+      "submittedAt": "2026-05-31T11:23:26.072Z",
+      "updatedAt": "2026-05-31T11:23:26.072Z"
+    },
+    {
       "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780226076543-______.png",
       "previewImage": "",
       "code": "j429pv",
@@ -243,6 +257,14 @@
   "events": [
     {
       "kind": "map-create",
+      "subjectId": "map-3d25699d-cd82-46d3-ba0b-b428d6f83c5a",
+      "title": "发布地图 MMR也能过的解密",
+      "detail": "btsl97",
+      "id": "event-7c3c7059-3a25-44fb-8232-e29707190843",
+      "timestamp": "2026-05-31T11:23:26.072Z"
+    },
+    {
+      "kind": "map-create",
       "subjectId": "map-6554e08d-b080-4deb-991d-d894e328275f",
       "title": "发布地图 双人解密闯关",
       "detail": "j429pv",
@@ -378,5 +400,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-05-31T11:14:55.166Z"
+  "updatedAt": "2026-05-31T11:23:26.072Z"
 }
