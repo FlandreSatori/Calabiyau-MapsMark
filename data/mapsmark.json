@@ -351,8 +351,33 @@
       "updatedAt": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "reviews": [],
+  "reviews": [
+    {
+      "mapId": "map-fdfb60c0-26cf-4cb8-951e-c9ef210ae266",
+      "reviewerName": "古明地小五",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 0,
+        "aesthetics": 0,
+        "guidance": 0,
+        "difficulty": 0,
+        "overall": 5
+      },
+      "comment": "测试",
+      "id": "review-8c24d19d-65f3-4b52-a775-bf1b68862691",
+      "submittedAt": "2026-05-31T12:28:52.419Z",
+      "updatedAt": "2026-05-31T12:28:52.419Z"
+    }
+  ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-8c24d19d-65f3-4b52-a775-bf1b68862691",
+      "title": "新增评价 古明地小五",
+      "detail": "map-fdfb60c0-26cf-4cb8-951e-c9ef210ae266",
+      "id": "event-ef8607a8-bcea-459c-9aab-255aed396d61",
+      "timestamp": "2026-05-31T12:28:52.419Z"
+    },
     {
       "kind": "map-create",
       "subjectId": "map-c435497d-8c81-4c04-a89f-d05462935597",
@@ -554,5 +579,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-05-31T12:09:07.362Z"
+  "updatedAt": "2026-05-31T12:28:52.419Z"
 }
