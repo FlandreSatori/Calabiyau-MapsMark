@@ -459,24 +459,26 @@ export function ReviewForm({ maps, onSuccess, notify }: ReviewFormProps) {
                                         <div className="help">{map.type} · {map.code} · {map.author}</div>
                                     </div>
                                 </div>
-                                <button className="button button-primary" type="button" onClick={() => void submitReview(map.id)} disabled={submittingMapId === map.id || (!anonymous && !reviewerName.trim())}>
-                                    {submittingMapId === map.id ? "提交中..." : "提交该图评价"}
+                                <button className="button button-primary button-rect review-submit-button" type="button" onClick={() => void submitReview(map.id)} disabled={submittingMapId === map.id || (!anonymous && !reviewerName.trim())}>
+                                    {submittingMapId === map.id ? "提交中..." : "提交评价"}
                                 </button>
                             </div>
-                            <div className="review-rating-grid">
-                                {ratingKeys.map((key) => (
-                                    <StarSlider
-                                        key={key}
-                                        label={ratingLabelText[key]}
-                                        value={draft.ratings[key]}
-                                        onChange={(value) => updateDraft(map.id, { ratings: { ...draft.ratings, [key]: clampScore(value) } })}
-                                    />
-                                ))}
+                            <div className="review-content-grid">
+                                <div className="review-rating-grid">
+                                    {ratingKeys.map((key) => (
+                                        <StarSlider
+                                            key={key}
+                                            label={ratingLabelText[key]}
+                                            value={draft.ratings[key]}
+                                            onChange={(value) => updateDraft(map.id, { ratings: { ...draft.ratings, [key]: clampScore(value) } })}
+                                        />
+                                    ))}
+                                </div>
+                                <label className="label full review-comment-block">
+                                    评价内容
+                                    <textarea className="textarea review-comment-textarea" value={draft.comment} onChange={(event) => updateDraft(map.id, { comment: event.target.value })} />
+                                </label>
                             </div>
-                            <label className="label full">
-                                评价内容
-                                <textarea className="textarea" value={draft.comment} onChange={(event) => updateDraft(map.id, { comment: event.target.value })} />
-                            </label>
                         </section>
                     );
                 })}
