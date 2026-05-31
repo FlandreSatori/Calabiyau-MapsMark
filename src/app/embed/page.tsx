@@ -1,0 +1,46 @@
+import { MapCard } from "@/components/map-card";
+import { MetricDashboard } from "@/components/metric-dashboard";
+import { loadState } from "@/lib/github-store";
+import { summarizeState } from "@/lib/state-utils";
+import { defaultMapTypes } from "@/lib/types";
+
+export default async function EmbedPage({ searchParams }: { searchParams?: { bg?: string } }) {
+    const state = await loadState();
+    const summary = summarizeState(state);
+    const background = searchParams?.bg;
+
+    return (
+        <main className="app-shell" style={{ padding: 16, ...(background ? { background } : {}) }}>
+            <div className="container grid gap-18">
+                <section className="panel panel-pad panel-strong">
+                    <p className="section-title">Embed View</p>
+                    <h2 className="hero-title" style={{ fontSize: "2.2rem" }}>嵌入版仪表盘</h2>
+                    <p className="hero-text">适合直接以 iframe 方式嵌入 Vue3 前端，支持背景透明度定制。</p>
+                </section>
+
+                <section className="grid grid-hero">
+                    <div className="panel panel-pad">
+                        <MetricDashboard values={summary.averages} />
+                    </div>
+                    <div className="panel panel-pad">
+                        <p className="section-title">最近投稿</p>
+                        <div className="cover-grid" style={{ gridTemplateColumns: "1fr" }}>
+                            {summary.maps.slice(0, 2).map((map) => (
+                                <MapCard key={map.id} map={map} reviews={summary.reviews} />
+                            ))}
+                        </div>
+                    </div>
+                </section>
+
+                <section className="panel panel-pad">
+                    <p className="section-title">类型说明</p>
+                    <div className="stat-strip">
+                        {defaultMapTypes.map((item) => (
+                            <span className="stat" key={item}>{item}</span>
+                        ))}
+                    </div>
+                </section>
+            </div>
+        </main>
+    );
+}
