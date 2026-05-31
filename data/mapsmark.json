@@ -1,6 +1,20 @@
 {
   "maps": [
     {
+      "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780229344642-_____.png",
+      "previewImage": "",
+      "code": "965p1o",
+      "type": "解密",
+      "name": "MMR解密之猫娘大调查喵V2",
+      "author": "柴郡Ch3shire",
+      "mappedAt": "",
+      "introduction": "你能大调查柴郡Cheshire留下的谜题并且找到粉色END吗\n难度适中的解密，不需要任何高阶跑酷技巧，无老登陷阱，放心游玩喵\n一共8关",
+      "estimatedMinutes": 90,
+      "id": "map-c435497d-8c81-4c04-a89f-d05462935597",
+      "submittedAt": "2026-05-31T12:09:07.362Z",
+      "updatedAt": "2026-05-31T12:09:07.362Z"
+    },
+    {
       "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780229219923-____.png",
       "previewImage": "",
       "code": "zou7mr",
@@ -341,6 +355,14 @@
   "events": [
     {
       "kind": "map-create",
+      "subjectId": "map-c435497d-8c81-4c04-a89f-d05462935597",
+      "title": "发布地图 MMR解密之猫娘大调查喵V2",
+      "detail": "965p1o",
+      "id": "event-b78fd931-a884-4d05-bdab-df2bdcd1d711",
+      "timestamp": "2026-05-31T12:09:07.362Z"
+    },
+    {
+      "kind": "map-create",
       "subjectId": "map-0cc4bcd8-81d6-4028-84b7-b197c6c92ef8",
       "title": "发布地图 MMR解密之老登有难了喵DLC",
       "detail": "zou7mr",
@@ -532,5 +554,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-05-31T12:07:02.203Z"
+  "updatedAt": "2026-05-31T12:09:07.362Z"
 }
