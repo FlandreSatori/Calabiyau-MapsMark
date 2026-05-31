@@ -234,6 +234,11 @@ img {
     overflow-wrap: anywhere;
 }
 
+.review-comment-text {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
 .metrics {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -896,6 +901,34 @@ img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.map-gallery {
+    width: 100%;
+}
+
+.map-gallery-track {
+    display: flex;
+    gap: 14px;
+    overflow-x: auto;
+    padding-bottom: 8px;
+    scroll-snap-type: x proximity;
+    scrollbar-gutter: stable;
+}
+
+.map-gallery-item {
+    flex: 0 0 min(100%, 720px);
+    margin: 0;
+    scroll-snap-align: start;
+}
+
+.map-gallery-frame {
+    min-height: 320px;
+}
+
+.map-gallery-caption {
+    margin-top: 8px;
+    text-align: center;
 }
 
 .admin-grid {

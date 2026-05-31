@@ -20,6 +20,10 @@ export default async function MapDetailPage({ params }: { params: Promise<{ id: 
     }
     const summary = summarizeState(state);
     const reviews = summary.reviews.filter((review) => review.mapId === map.id);
+    const gallery = [
+        { src: map.coverImage, label: "封面图" },
+        { src: map.previewImage, label: "预览图" }
+    ].filter((item) => Boolean(item.src));
 
     const average = reviews.length
         ? reviews.reduce(
@@ -58,10 +62,17 @@ export default async function MapDetailPage({ params }: { params: Promise<{ id: 
                             <span className="stat">制图时间 {formatDate(map.mappedAt)}</span>
                         </div>
                         <p className="hero-text map-introduction">{map.introduction}</p>
-                        <div className="grid gap-12" style={{ marginTop: 18 }}>
-                            {map.previewImage ? (
-                                <div className="preview-frame"><img src={map.previewImage} alt={`${map.name} 预览`} /></div>
-                            ) : null}
+                        <div className="map-gallery" style={{ marginTop: 18 }}>
+                            <div className="map-gallery-track">
+                                {gallery.map((image) => (
+                                    <figure className="map-gallery-item" key={`${map.id}-${image.label}`}>
+                                        <div className="preview-frame map-gallery-frame">
+                                            <img src={image.src} alt={`${map.name} ${image.label}`} />
+                                        </div>
+                                        <figcaption className="help map-gallery-caption">{image.label}</figcaption>
+                                    </figure>
+                                ))}
+                            </div>
                             <div className="panel panel-pad panel-strong">
                                 <strong>地图代码</strong>
                                 <p className="hero-text">{map.code}</p>
@@ -105,11 +116,11 @@ export default async function MapDetailPage({ params }: { params: Promise<{ id: 
                                         <span className="badge">{formatDateTime(review.submittedAt)}</span>
                                     </div>
                                     <div className="stat-strip">
-                                        {Object.entries(review.ratings).map(([key, value]) => (
-                                            <span className="stat" key={key}>{key} {value}</span>
+                                        {ratingLabels.map((key) => (
+                                            <span className="stat" key={key}>{ratingLabelText[key]} {review.ratings[key].toFixed(1)}</span>
                                         ))}
                                     </div>
-                                    <p className="hero-text" style={{ marginBottom: 0 }}>{review.comment}</p>
+                                    <p className="hero-text review-comment-text" style={{ marginBottom: 0 }}>{review.comment}</p>
                                 </div>
                             ))}
                         </div>
