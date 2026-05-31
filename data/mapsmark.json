@@ -1,6 +1,20 @@
 {
   "maps": [
     {
+      "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780224055881-____.png",
+      "previewImage": "",
+      "code": "zee85y",
+      "type": "解密",
+      "name": "逃离监狱",
+      "author": "莳芕",
+      "mappedAt": "2025-10-01",
+      "introduction": "路线：通风管  下水道\n第一个楼有3个出口，第二个有2个\n多观察房间布局，开关门不影响通关\n换个角度能看见入口\n移速跟飘飞速度拉满，方便跑图\n单人玩不容易被影响\n\n加了点野怪",
+      "estimatedMinutes": 60,
+      "id": "map-98f00295-ae37-4a25-9bdd-2dc15593dcce",
+      "submittedAt": "2026-05-31T10:41:06.394Z",
+      "updatedAt": "2026-05-31T10:41:06.394Z"
+    },
+    {
       "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780223427422-_____.png",
       "previewImage": "",
       "code": "cloz0r",
@@ -61,6 +75,14 @@
   "events": [
     {
       "kind": "map-create",
+      "subjectId": "map-98f00295-ae37-4a25-9bdd-2dc15593dcce",
+      "title": "发布地图 逃离监狱",
+      "detail": "zee85y",
+      "id": "event-9c69fd4e-88e3-452a-a92d-3d11681e36a3",
+      "timestamp": "2026-05-31T10:41:06.394Z"
+    },
+    {
+      "kind": "map-create",
       "subjectId": "map-387ee9e3-5c38-46b9-9aea-257b68844c4d",
       "title": "发布地图 重生之我是哈基米德",
       "detail": "cloz0r",
@@ -92,5 +114,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-05-31T10:31:04.288Z"
+  "updatedAt": "2026-05-31T10:41:06.394Z"
 }
