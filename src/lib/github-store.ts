@@ -1,5 +1,7 @@
 import type { AppState, EventRecord, MapInput, MapRecord, ReviewInput, ReviewRecord } from "@/lib/types";
 import { seedState } from "@/lib/seed";
+import { readFile } from "node:fs/promises";
+import path from "node:path";
 
 const defaultState = () => structuredClone(seedState);
 
@@ -74,9 +76,19 @@ const responseToState = async (response: Response) => {
     };
 };
 
+
+const loadLocalStateFile = async (): Promise<AppState | null> => {
+    try {
+        const filePath = path.join(process.cwd(), "data", "mapsmark.json");
+        const text = await readFile(filePath, "utf8");
+        return JSON.parse(text) as AppState;
+    } catch (error) {
+        return null;
+    }
+};
 const loadStateWithCache = async (cache: RequestCache): Promise<AppState> => {
     if (!hasGitHubConfig()) {
-        return defaultState();
+        return (await loadLocalStateFile()) ?? defaultState();
     }
 
     const headers: Record<string, string> = {
@@ -90,13 +102,13 @@ const loadStateWithCache = async (cache: RequestCache): Promise<AppState> => {
     });
 
     if (response.status === 404) {
-        return defaultState();
+        return (await loadLocalStateFile()) ?? defaultState();
     }
 
     if (!response.ok) {
         const rawResponse = await fetch(rawUrl(), { cache });
         if (!rawResponse.ok) {
-            return defaultState();
+            return (await loadLocalStateFile()) ?? defaultState();
         }
         return (await rawResponse.json()) as AppState;
     }
