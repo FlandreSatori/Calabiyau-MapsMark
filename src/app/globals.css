@@ -747,6 +747,8 @@ img {
 
 .star-slider-track {
     position: relative;
+    display: inline-block;
+    width: max-content;
     font-size: 1.35rem;
     line-height: 1;
     letter-spacing: 0.12em;
@@ -760,7 +762,7 @@ img {
 
 .star-slider-base,
 .star-slider-fill {
-    display: block;
+    display: inline-block;
     white-space: nowrap;
     overflow: hidden;
 }

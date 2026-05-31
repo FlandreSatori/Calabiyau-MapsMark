@@ -162,6 +162,14 @@ export const saveState = async (state: AppState) => {
 
 const nextId = (prefix: string) => `${prefix}-${crypto.randomUUID()}`;
 
+const normalizeMappedAt = (value: unknown) => {
+    if (typeof value !== "string" || !value.trim()) {
+        return "";
+    }
+    const parsed = new Date(value);
+    return Number.isNaN(parsed.getTime()) ? "" : value;
+};
+
 const appendEvent = (state: AppState, event: Omit<EventRecord, "id" | "timestamp">) => {
     state.events.unshift({
         ...event,
@@ -176,6 +184,7 @@ export const addMap = async (input: MapInput) => {
     const now = new Date().toISOString();
     const record: MapRecord = {
         ...input,
+        mappedAt: normalizeMappedAt(input.mappedAt),
         id: nextId("map"),
         submittedAt: now,
         updatedAt: now
@@ -217,7 +226,10 @@ export const patchMap = async (id: string, patch: Partial<MapInput>) => {
     if (!target) {
         throw new Error("Map not found");
     }
-    Object.assign(target, patch, { updatedAt: new Date().toISOString() });
+    Object.assign(target, patch, {
+        mappedAt: patch.mappedAt !== undefined ? normalizeMappedAt(patch.mappedAt) : target.mappedAt,
+        updatedAt: new Date().toISOString()
+    });
     appendEvent(state, {
         kind: "map-update",
         subjectId: target.id,
