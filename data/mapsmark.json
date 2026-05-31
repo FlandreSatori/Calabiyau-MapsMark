@@ -409,6 +409,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-53804f28-d922-4fe3-9c54-650931cb22b0",
+      "reviewerName": "解密造💩👑",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 5,
+        "aesthetics": 5,
+        "guidance": 5,
+        "difficulty": 5,
+        "overall": 3
+      },
+      "comment": "趣味性：YorK的小巧思你就品吧\n美观性：这图搞得作者心力交瘁，给高些可怜可怜吧\n难易度：需要正确理解线索+满图跑找位置\n引导性：根据线索找答案。热知识：只要你能看懂线索，你就知道答案了 :P\n评价：还是有不少优化空间的，就是不知道怎么改就是了。既然是V3，那就给个3.0吧",
+      "id": "review-554df986-31c2-4da1-b6f2-dcdd65f20251",
+      "submittedAt": "2026-05-31T16:19:57.305Z",
+      "updatedAt": "2026-05-31T16:19:57.305Z"
+    },
+    {
       "mapId": "map-98a6bfaa-269f-4528-81cb-f547e79d4eb7",
       "reviewerName": "解密造💩👑",
       "anonymous": false,
@@ -443,6 +459,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-554df986-31c2-4da1-b6f2-dcdd65f20251",
+      "title": "新增评价 解密造💩👑",
+      "detail": "map-53804f28-d922-4fe3-9c54-650931cb22b0",
+      "id": "event-2799f486-76a9-437c-bdb1-d30cc4d397fe",
+      "timestamp": "2026-05-31T16:19:57.305Z"
+    },
     {
       "kind": "review-create",
       "subjectId": "review-d6577b0d-1757-4598-a8c4-39ff12494387",
@@ -700,5 +724,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-05-31T16:04:13.251Z"
+  "updatedAt": "2026-05-31T16:19:57.305Z"
 }
