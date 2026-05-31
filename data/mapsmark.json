@@ -1,6 +1,20 @@
 {
   "maps": [
     {
+      "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780225555481-______.png",
+      "previewImage": "",
+      "code": "gryb9l",
+      "type": "解密",
+      "name": "双人成行困难",
+      "author": "古明地小五",
+      "mappedAt": "",
+      "introduction": "1.请自备一个好朋友！最好是打电话喵！友尽概不负责(\n2.×为困难路线，√为简单路线，让糕手去困难路线喵\n3.开局走大石头可以跳关到庭院\n4.如果感觉很困难可以玩MMR版喵，订阅我的创意工坊就能看到了谢谢喵！",
+      "estimatedMinutes": 90,
+      "id": "map-28971207-c22d-44c7-8787-f70909194b72",
+      "submittedAt": "2026-05-31T11:06:10.091Z",
+      "updatedAt": "2026-05-31T11:06:10.091Z"
+    },
+    {
       "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780225516098-____MMR.png",
       "previewImage": "",
       "code": "mzv9k9",
@@ -201,6 +215,14 @@
   "events": [
     {
       "kind": "map-create",
+      "subjectId": "map-28971207-c22d-44c7-8787-f70909194b72",
+      "title": "发布地图 双人成行困难",
+      "detail": "gryb9l",
+      "id": "event-e91677e6-4f26-4164-8cc5-a1d1823a75d7",
+      "timestamp": "2026-05-31T11:06:10.091Z"
+    },
+    {
+      "kind": "map-create",
       "subjectId": "map-27bbe770-6267-429d-a7e1-992cdffba9d4",
       "title": "发布地图 双人成行MMR",
       "detail": "mzv9k9",
@@ -312,5 +334,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-05-31T11:05:18.809Z"
+  "updatedAt": "2026-05-31T11:06:10.091Z"
 }
