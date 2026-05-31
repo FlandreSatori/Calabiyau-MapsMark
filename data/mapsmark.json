@@ -1,6 +1,20 @@
 {
   "maps": [
     {
+      "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780223427422-_____.png",
+      "previewImage": "",
+      "code": "cloz0r",
+      "type": "解密",
+      "name": "重生之我是哈基米德",
+      "author": "喵雪儿喵",
+      "mappedAt": "2025-12-01",
+      "introduction": "震撼首发之重生点解密喵！\n正常情况下被阻挡的重生点会被屏蔽，反之未被阻挡的则会正常复活。\n关卡内的传送门除了进下一关门，其余门全部是回家门，请小心探索解密喵！",
+      "estimatedMinutes": 30,
+      "id": "map-387ee9e3-5c38-46b9-9aea-257b68844c4d",
+      "submittedAt": "2026-05-31T10:31:04.288Z",
+      "updatedAt": "2026-05-31T10:31:04.288Z"
+    },
+    {
       "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780222903004-_______.png",
       "previewImage": "",
       "code": "8j6r8z",
@@ -47,6 +61,14 @@
   "events": [
     {
       "kind": "map-create",
+      "subjectId": "map-387ee9e3-5c38-46b9-9aea-257b68844c4d",
+      "title": "发布地图 重生之我是哈基米德",
+      "detail": "cloz0r",
+      "id": "event-e01649ba-910c-4c0a-9428-00fcae15783f",
+      "timestamp": "2026-05-31T10:31:04.288Z"
+    },
+    {
+      "kind": "map-create",
       "subjectId": "map-859e43c7-c7a6-4693-9597-2a07616a0d0c",
       "title": "发布地图 逃离虐猫咖啡馆",
       "detail": "8j6r8z",
@@ -70,5 +92,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-05-31T10:23:43.823Z"
+  "updatedAt": "2026-05-31T10:31:04.288Z"
 }
