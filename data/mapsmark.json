@@ -409,6 +409,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-98a6bfaa-269f-4528-81cb-f547e79d4eb7",
+      "reviewerName": "解密造💩👑",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 3,
+        "aesthetics": 1,
+        "guidance": 3,
+        "difficulty": 5,
+        "overall": 0.1
+      },
+      "comment": "注：0分表示及格。\n趣味性：我说还是有不少小巧思的好吧 :D\n美观性：本来想给0分的（毕竟背景基本就单调的砖墙），但是\n想起里面有很多艺术作品，于是多给一分以表赞叹 :P\n引导性：作者真是太善良了都把某些关卡的线索解释写进简介\n了（感觉每关的目标还是挺明确的，给个三点零\n难易度：假房间误导这一块。作者被迫设计某些关卡为结合简介文字与线索进行解题的狼狈尽显 :(\n总体评价：解密区闪闪发光的一坨史状巧克力，鉴于线索改了那么多版，给个及格喵",
+      "id": "review-d6577b0d-1757-4598-a8c4-39ff12494387",
+      "submittedAt": "2026-05-31T16:04:13.250Z",
+      "updatedAt": "2026-05-31T16:04:13.250Z"
+    },
+    {
       "mapId": "map-fdfb60c0-26cf-4cb8-951e-c9ef210ae266",
       "reviewerName": "古明地小五",
       "anonymous": false,
@@ -427,6 +443,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-d6577b0d-1757-4598-a8c4-39ff12494387",
+      "title": "新增评价 解密造💩👑",
+      "detail": "map-98a6bfaa-269f-4528-81cb-f547e79d4eb7",
+      "id": "event-605d1904-d9b0-453e-8083-88b7df81526c",
+      "timestamp": "2026-05-31T16:04:13.251Z"
+    },
     {
       "kind": "review-delete",
       "subjectId": "review-8c24d19d-65f3-4b52-a775-bf1b68862691",
@@ -676,5 +700,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-05-31T14:59:56.212Z"
+  "updatedAt": "2026-05-31T16:04:13.251Z"
 }
