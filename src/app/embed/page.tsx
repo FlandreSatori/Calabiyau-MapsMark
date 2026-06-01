@@ -17,7 +17,7 @@ export default async function EmbedPage({ searchParams }: { searchParams?: { bg?
                     <h2 className="hero-title" style={{ fontSize: "2.2rem" }}>嵌入展示</h2>
                 </section>
 
-                <section className="grid grid-hero">
+                <section className="grid">
                     <div className="panel panel-pad">
                         <MetricDashboard maps={summary.maps} reviews={summary.reviews} />
                     </div>
