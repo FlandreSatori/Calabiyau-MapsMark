@@ -274,10 +274,10 @@ export function MapForm({ mapTypes, onSuccess, notify }: MapFormProps) {
                             }
                         }}
                     />
-                    <span className="help">上传后会保存到 GitHub 仓库并将 URL 写入数据中。（必填）</span>
+                    <span className="help">上传后会保存到 GitHub 仓库并将 URL 写入数据中。</span>
                 </label>
                 <label className="label full">
-                    内容预览图 <span style={{ color: "#9aa0a6", marginLeft: 6 }}>（可选）</span>
+                    内容预览图 <span style={{ color: "#9aa0a6", marginLeft: 6 }}></span>
                     <input
                         className="input"
                         type="file"
@@ -323,7 +323,7 @@ export function MapForm({ mapTypes, onSuccess, notify }: MapFormProps) {
                     <input className={`input${isInvalid("author") ? " input-invalid" : ""}`} value={form.author} onBlur={() => setTouched((s) => ({ ...s, author: true }))} onChange={(event) => setForm({ ...form, author: event.target.value })} />
                 </label>
                 <label className="label">
-                    制图时间 <span style={{ color: "#9aa0a6", marginLeft: 6 }}>（可选）</span>
+                    制图时间 <span style={{ color: "#9aa0a6", marginLeft: 6 }}></span>
                     <input className="input" type="date" value={form.mappedAt} onChange={(event) => setForm({ ...form, mappedAt: event.target.value })} />
                 </label>
                 <label className="label">
@@ -331,7 +331,7 @@ export function MapForm({ mapTypes, onSuccess, notify }: MapFormProps) {
                     <input className="input" type="number" min="1" max="999" value={form.estimatedMinutes} onChange={(event) => setForm({ ...form, estimatedMinutes: Number(event.target.value) })} />
                 </label>
                 <label className="label full">
-                    地图介绍 <span style={{ color: "#9aa0a6", marginLeft: 6 }}>（可选）</span>
+                    地图介绍 <span style={{ color: "#9aa0a6", marginLeft: 6 }}></span>
                     <textarea className="textarea" value={form.introduction} onChange={(event) => setForm({ ...form, introduction: event.target.value })} />
                 </label>
             </div>
@@ -447,10 +447,11 @@ export function ReviewForm({ maps, onSuccess, notify }: ReviewFormProps) {
                         <div className="help" style={{ marginTop: 8 }}>
                             <div><strong>维度说明：</strong></div>
                             <div style={{ marginTop: 6 }}>
-                                <div><strong>趣味性：</strong>是否有趣，是否值得二刷/带人，设计的谜题是否有创造性，是否环环相扣引人入胜，关卡节奏安排是否合理；  -5为无聊 +5为流连忘返</div>
-                                <div style={{ marginTop: 6 }}><strong>美观性：</strong>场景是否自洽和谐，是否赏心悦目，是否有完整的世界观和气氛构建；  -5为简陋 +5为叹为观止</div>
-                                <div style={{ marginTop: 6 }}><strong>引导性：</strong>游玩的时候是否感觉到迷茫，不知道干什么，卡关但不是因为被难住，试图无差别的蹭墙蹭草钻水;   -5为动线混沌，+5为动线清晰</div>
-                                <div style={{ marginTop: 6 }}><strong>难易度：</strong>相互比较之下，需要思考/花费的时间多少，需要的知识储备多少；  -5为极难 +5为非常简单</div>
+                                <div><strong>趣味性：</strong>是否有趣，是否值得二刷/带人，设计的谜题是否有创造性，是否环环相扣引人入胜，关卡节奏安排是否合理；  0为无聊 +5为流连忘返</div>
+                                <div style={{ marginTop: 6 }}><strong>美观性：</strong>场景是否自洽和谐，是否赏心悦目，是否有完整的世界观和气氛构建；  0为简陋 +5为叹为观止</div>
+                                <div style={{ marginTop: 6 }}><strong>引导性：</strong>游玩的时候是否感觉到迷茫，不知道干什么，卡关但不是因为被难住，试图无差别的蹭墙蹭草钻水;    0为动线混沌，+5为动线清晰</div>
+                                <div style={{ marginTop: 6 }}><strong>难易度：</strong>相较之下，需要思考/花费的时间多少，需要的知识储备多少；  0为简单 +5为极难</div>
+                                <div style={{ marginTop: 6 }}><strong>负分：</strong>表示该维度不及格，存在严重问题，或令人不适</div>
                             </div>
                         </div>
                     </label>

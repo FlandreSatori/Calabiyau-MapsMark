@@ -371,7 +371,7 @@ img {
 .cover-card {
     position: relative;
     overflow: hidden;
-    min-height: 180px;
+    aspect-ratio: 16 / 9;
     border-radius: 22px;
     border: 1px solid rgba(255, 255, 255, 0.08);
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
@@ -419,6 +419,32 @@ img {
     background: rgba(255, 255, 255, 0.05);
     color: #dfeaff;
     font-size: 0.88rem;
+}
+
+.classification-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.classification-item {
+    padding: 14px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.classification-item strong {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 1rem;
+}
+
+.classification-item p {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.7;
+    font-size: 0.9rem;
 }
 
 .list {
@@ -918,6 +944,24 @@ img {
     gap: 18px;
 }
 
+.copy-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.copy-code-value {
+    margin: 8px 0 0;
+    font-size: 1.1rem;
+    letter-spacing: 0.08em;
+}
+
+.copy-button {
+    flex: 0 0 auto;
+}
+
 .preview-frame {
     border-radius: 26px;
     overflow: hidden;
@@ -965,6 +1009,28 @@ img {
     gap: 14px;
 }
 
+.admin-map-editor {
+    display: grid;
+    gap: 14px;
+}
+
+.admin-map-fields {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.admin-map-fields .full {
+    grid-column: 1 / -1;
+}
+
+.admin-map-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
 .toast {
     position: fixed;
     right: 18px;
@@ -975,6 +1041,30 @@ img {
     background: rgba(9, 17, 29, 0.95);
     border: 1px solid rgba(119, 215, 255, 0.2);
     box-shadow: var(--shadow);
+}
+
+.back-to-top {
+    position: fixed;
+    left: 18px;
+    bottom: 18px;
+    z-index: 9998;
+    border: 1px solid rgba(119, 215, 255, 0.28);
+    border-radius: 999px;
+    padding: 12px 14px;
+    background: rgba(8, 15, 27, 0.88);
+    color: #dff4ff;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(12px);
+    cursor: pointer;
+}
+
+.back-to-top:hover {
+    border-color: rgba(119, 215, 255, 0.5);
+    transform: translateY(-1px);
+}
+
+.back-to-top:focus-visible {
+    box-shadow: 0 0 0 3px rgba(119, 215, 255, 0.18), 0 16px 40px rgba(0, 0, 0, 0.35);
 }
 
 .toast strong {
@@ -1001,11 +1091,54 @@ img {
     .review-rating-grid {
         grid-template-columns: 1fr;
     }
+
+    .classification-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-map-fields {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 980px) and (orientation: portrait) {
+    .cover-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .review-content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .review-comment-block {
+        align-self: stretch;
+    }
+
+    .review-comment-textarea {
+        min-height: 180px;
+    }
+}
+
+@media (orientation: landscape) {
+    .cover-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .review-content-grid {
+        grid-template-columns: 1.15fr 0.85fr;
+    }
 }
 
 @media (max-width: 640px) {
     .app-shell {
         padding-inline: 14px;
+    }
+
+    .back-to-top {
+        left: 14px;
+        bottom: 14px;
+        padding: 11px 13px;
+        font-size: 0.9rem;
     }
 
     .cover-grid,
@@ -1015,5 +1148,9 @@ img {
 
     .panel-pad {
         padding: 16px;
+    }
+
+    .copy-section {
+        flex-direction: column;
     }
 }

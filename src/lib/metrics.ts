@@ -75,6 +75,7 @@ export const countBelowThreshold = (ratings: RatingDimensions, threshold: number
 export const classifyRatings = (ratings: RatingDimensions) => ({
     good: countAboveThreshold(ratings, 0) >= 2 && countAboveThreshold(ratings, 0) <= 3,
     god: countAboveThreshold(ratings, 3) >= 2 && countAboveThreshold(ratings, 3) <= 3,
+    shenren: countBelowThreshold(ratings, 0) >= 1 && countBelowThreshold(ratings, 0) <= 2,
     poop: countBelowThreshold(ratings, 0) >= 3
 });
 
@@ -85,12 +86,13 @@ export const countMapTypes = (state: AppState) =>
     }, {});
 
 export const countMapCategories = (state: AppState) => {
-    const totals = { good: 0, god: 0, poop: 0 };
+    const totals = { good: 0, god: 0, shenren: 0, poop: 0 };
     visibleMaps(state).forEach((map) => {
         const ratings = averageRatings(state.reviews, map.id);
         const classification = classifyRatings(ratings);
         if (classification.good) totals.good += 1;
         if (classification.god) totals.god += 1;
+        if (classification.shenren) totals.shenren += 1;
         if (classification.poop) totals.poop += 1;
     });
     return totals;

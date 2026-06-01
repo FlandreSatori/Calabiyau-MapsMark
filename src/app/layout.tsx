@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 import "./globals.css";
+import { BackToTopButton } from "@/components/back-to-top";
 import Toasts from "@/components/toast";
 
 export const metadata: Metadata = {
@@ -13,6 +14,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <html lang="zh-CN">
             <body>
                 {children}
+                <BackToTopButton />
                 <Toasts />
             </body>
         </html>

@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 
 import { AdminLogin } from "@/components/forms";
 import { HistoryList } from "@/components/history-list";
+import { MapEditor } from "@/components/map-editor";
 import { MetricDashboard } from "@/components/metric-dashboard";
 import { notify } from "@/components/toast";
 import type { AppState } from "@/lib/types";
@@ -134,28 +135,7 @@ export default function AdminPage({ searchParams }: { searchParams?: { bg?: stri
 
                 <section className="panel panel-pad">
                     <p className="section-title">地图管理</p>
-                    <div className="admin-grid">
-                        {summary.maps.map((map) => (
-                            <div className="list-item" key={map.id}>
-                                <div className="list-row">
-                                    <strong>{map.name}</strong>
-                                    <span className="badge">{map.type}</span>
-                                </div>
-                                <div className="stat-strip">
-                                    <span className="stat">{map.author}</span>
-                                    <span className="stat">{map.code}</span>
-                                </div>
-                                <textarea
-                                    className="textarea"
-                                    defaultValue={map.introduction}
-                                    onBlur={(event) => mutate("PATCH", "map", map.id, { introduction: event.target.value })}
-                                />
-                                <div className="toolbar">
-                                    <button className="button button-danger" onClick={() => mutate("DELETE", "map", map.id)} type="button">删除地图</button>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
+                    <MapEditor maps={summary.maps} token={token} onSaved={refresh} />
                 </section>
 
                 <section className="panel panel-pad">

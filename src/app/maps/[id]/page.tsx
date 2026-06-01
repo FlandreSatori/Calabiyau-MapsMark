@@ -2,10 +2,12 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { RadarChart } from "@/components/radar-chart";
+import { ReviewForm } from "@/components/forms";
 import { HistoryList } from "@/components/history-list";
+import { CopyButton } from "@/components/copy-button";
 import { loadState } from "@/lib/github-store";
 import { summarizeState } from "@/lib/state-utils";
-import { formatDate, formatDateTime } from "@/lib/format";
+import { formatDateTime } from "@/lib/format";
 import { getMapById } from "@/lib/metrics";
 import { ratingLabels, ratingLabelText } from "@/lib/types";
 
@@ -59,7 +61,7 @@ export default async function MapDetailPage({ params }: { params: Promise<{ id: 
                             <span className="stat">{map.type}</span>
                             <span className="stat">{map.code}</span>
                             <span className="stat">{map.author}</span>
-                            <span className="stat">制图时间 {formatDate(map.mappedAt)}</span>
+                            <span className="stat">{map.estimatedMinutes}分钟</span>
                         </div>
                         <p className="hero-text map-introduction">{map.introduction}</p>
                         <div className="map-gallery" style={{ marginTop: 18 }}>
@@ -74,12 +76,13 @@ export default async function MapDetailPage({ params }: { params: Promise<{ id: 
                                 ))}
                             </div>
                             <div className="panel panel-pad panel-strong">
-                                <strong>地图代码</strong>
-                                <p className="hero-text">{map.code}</p>
-                                <strong>预计游玩时间</strong>
-                                <p className="hero-text">{map.estimatedMinutes} 分钟</p>
-                                <strong>提交时间</strong>
-                                <p className="hero-text">{formatDateTime(map.submittedAt)}</p>
+                                <div className="copy-section">
+                                    <div>
+                                        <strong>地图代码</strong>
+                                        <p className="hero-text copy-code-value">{map.code}</p>
+                                    </div>
+                                    <CopyButton value={map.code} label="复制代码" successMessage="地图代码已复制到剪贴板。" />
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -103,6 +106,11 @@ export default async function MapDetailPage({ params }: { params: Promise<{ id: 
                             )}
                         </div>
                     </div>
+                </section>
+
+                <section className="panel panel-pad">
+                    <p className="section-title">提交评价</p>
+                    <ReviewForm maps={[map]} />
                 </section>
 
                 <section className="grid grid-hero">

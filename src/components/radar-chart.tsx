@@ -50,19 +50,45 @@ export function RadarChart({ values, dimensions, size = 440 }: RadarChartProps) 
             ))}
             {dimensions.map((dimension, index) => {
                 const endpoint = pointFor(index, dimensions.length, 5);
+                const isNegative = values[dimension] < 0;
                 return (
                     <g key={dimension}>
-                        <line x1={center} y1={center} x2={endpoint.x} y2={endpoint.y} stroke="rgba(255,255,255,0.12)" strokeWidth="1.4" />
-                        <text x={endpoint.x} y={endpoint.y} fill="#dbe8ff" fontSize="14" textAnchor="middle" dy="-8">
+                        <line
+                            x1={center}
+                            y1={center}
+                            x2={endpoint.x}
+                            y2={endpoint.y}
+                            stroke={isNegative ? "rgba(255, 125, 144, 0.42)" : "rgba(255,255,255,0.12)"}
+                            strokeWidth="1.4"
+                        />
+                        <text
+                            x={endpoint.x}
+                            y={endpoint.y}
+                            fill={isNegative ? "#ff8da0" : "#dbe8ff"}
+                            fontSize="14"
+                            textAnchor="middle"
+                            dy="-8"
+                        >
                             {ratingLabelText[dimension]}
                         </text>
                     </g>
                 );
             })}
             <polygon points={polygon} fill="url(#radar-fill)" stroke="#77d7ff" strokeWidth="2.2" opacity="0.96" />
-            {points.map((point, index) => (
-                <circle key={dimensions[index]} cx={point.x} cy={point.y} r="4.5" fill="#fff" stroke="#77d7ff" strokeWidth="2" />
-            ))}
+            {points.map((point, index) => {
+                const isNegative = values[dimensions[index]] < 0;
+                return (
+                    <circle
+                        key={dimensions[index]}
+                        cx={point.x}
+                        cy={point.y}
+                        r="4.5"
+                        fill={isNegative ? "#ff8da0" : "#fff"}
+                        stroke={isNegative ? "#ff5f79" : "#77d7ff"}
+                        strokeWidth="2"
+                    />
+                );
+            })}
         </svg>
     );
 }

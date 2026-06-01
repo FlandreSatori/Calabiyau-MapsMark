@@ -63,6 +63,10 @@ export default async function HomePage({ searchParams }: { searchParams?: { bg?:
                                 <span>神图</span>
                             </div>
                             <div className="metric">
+                                <strong>{summary.categoryCounts.shenren}</strong>
+                                <span>神人图</span>
+                            </div>
+                            <div className="metric">
                                 <strong>{summary.categoryCounts.poop}</strong>
                                 <span>粪图</span>
                             </div>
@@ -95,6 +99,29 @@ export default async function HomePage({ searchParams }: { searchParams?: { bg?:
                             <MapCard key={map.id} map={map} reviews={summary.reviews} />
                         ))}
                     </div>
+                </section>
+
+                <section className="panel panel-pad">
+                    <p className="section-title">判定方式</p>
+                    <div className="classification-grid">
+                        <div className="classification-item">
+                            <strong>好图</strong>
+                            <p>在趣味性、美观性、引导性、总体评价这四项平均分里，超过 0 分的维度有 2 到 3 项</p>
+                        </div>
+                        <div className="classification-item">
+                            <strong>神图</strong>
+                            <p>在同样四项里，超过 3 分的维度有 2 到 3 项</p>
+                        </div>
+                        <div className="classification-item">
+                            <strong>神人图</strong>
+                            <p>在同样四项里，低于 0 分的维度有 1 到 2 项</p>
+                        </div>
+                        <div className="classification-item">
+                            <strong>粪图</strong>
+                            <p>在同样四项里，低于 0 分的维度达到 3 项或以上</p>
+                        </div>
+                    </div>
+                    <p className="help" style={{ marginTop: 12, marginBottom: 0 }}>难易度不参与评价</p>
                 </section>
 
                 <section className="panel panel-pad" id="submit-map">
