@@ -409,6 +409,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-0cc4bcd8-81d6-4028-84b7-b197c6c92ef8",
+      "reviewerName": "匿名",
+      "anonymous": true,
+      "ratings": {
+        "entertainment": 5,
+        "aesthetics": 5,
+        "guidance": 5,
+        "difficulty": 5,
+        "overall": 5
+      },
+      "comment": "",
+      "id": "review-4e79ca3a-e23b-4ad2-9b2f-68ca0e4afcef",
+      "submittedAt": "2026-06-01T11:47:02.006Z",
+      "updatedAt": "2026-06-01T11:47:02.006Z"
+    },
+    {
       "mapId": "map-fdfb60c0-26cf-4cb8-951e-c9ef210ae266",
       "reviewerName": "解密造💩👑",
       "anonymous": false,
@@ -507,6 +523,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-4e79ca3a-e23b-4ad2-9b2f-68ca0e4afcef",
+      "title": "新增评价 匿名",
+      "detail": "map-0cc4bcd8-81d6-4028-84b7-b197c6c92ef8",
+      "id": "event-68eee9c3-bd33-4b79-8d59-561fea01e2bf",
+      "timestamp": "2026-06-01T11:47:02.007Z"
+    },
     {
       "kind": "review-create",
       "subjectId": "review-3626a68a-4d77-4a2a-b588-5a440c466d0d",
@@ -796,5 +820,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-05-31T17:30:55.716Z"
+  "updatedAt": "2026-06-01T11:47:02.007Z"
 }
