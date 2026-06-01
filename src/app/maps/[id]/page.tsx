@@ -7,7 +7,7 @@ import { HistoryList } from "@/components/history-list";
 import { CopyButton } from "@/components/copy-button";
 import { loadState } from "@/lib/github-store";
 import { summarizeState } from "@/lib/state-utils";
-import { formatDateTime } from "@/lib/format";
+import { formatDateTime, getProxiedGithubUrl } from "@/lib/format";
 import { getMapById } from "@/lib/metrics";
 import { ratingLabels, ratingLabelText } from "@/lib/types";
 
@@ -69,7 +69,7 @@ export default async function MapDetailPage({ params }: { params: Promise<{ id: 
                                 {gallery.map((image) => (
                                     <figure className="map-gallery-item" key={`${map.id}-${image.label}`}>
                                         <div className="preview-frame map-gallery-frame">
-                                            <img src={image.src} alt={`${map.name} ${image.label}`} />
+                                            <img src={getProxiedGithubUrl(image.src)} alt={`${map.name} ${image.label}`} suppressHydrationWarning />
                                         </div>
                                         <figcaption className="help map-gallery-caption">{image.label}</figcaption>
                                     </figure>

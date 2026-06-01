@@ -5,7 +5,7 @@ import { notify as globalNotify } from "@/components/toast";
 import { useRouter } from "next/navigation";
 
 import type { MapRecord, RatingDimensions, ReviewRecord } from "@/lib/types";
-import { clampScore } from "@/lib/format";
+import { clampScore, getProxiedGithubUrl } from "@/lib/format";
 import { ratingLabelText } from "@/lib/types";
 
 type ToastState = { title: string; message: string } | null;
@@ -465,7 +465,7 @@ export function ReviewForm({ maps, onSuccess, notify }: ReviewFormProps) {
                         <section className="review-row panel panel-pad" key={map.id}>
                             <div className="list-row">
                                 <div className="review-map-head">
-                                    <img className="review-map-thumb" src={map.coverImage} alt={map.name} />
+                                    <img className="review-map-thumb" src={getProxiedGithubUrl(map.coverImage)} alt={map.name} suppressHydrationWarning />
                                     <div>
                                         <strong>{map.name}</strong>
                                         <div className="help">{map.type} · {map.code} · {map.author}</div>

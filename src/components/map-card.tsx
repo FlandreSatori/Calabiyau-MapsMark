@@ -3,7 +3,7 @@
 import Link from "next/link";
 
 import type { MapRecord, ReviewRecord } from "@/lib/types";
-import { formatDateTime } from "@/lib/format";
+import { formatDateTime, getProxiedGithubUrl } from "@/lib/format";
 import { averageRatings } from "@/lib/metrics";
 
 type MapCardProps = {
@@ -15,7 +15,7 @@ export function MapCard({ map, reviews }: MapCardProps) {
     const score = averageRatings(reviews, map.id);
     return (
         <Link href={`/maps/${map.id}`} className="cover-card" title={`${map.name} · 点击查看详情`}>
-            <img src={map.coverImage} alt={map.name} />
+            <img src={getProxiedGithubUrl(map.coverImage)} alt={map.name} suppressHydrationWarning />
             <div className="cover-overlay">
                 <h3 className="card-title">{map.name}</h3>
                 <div className="card-meta">

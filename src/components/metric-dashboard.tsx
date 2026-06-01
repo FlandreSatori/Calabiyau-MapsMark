@@ -6,6 +6,7 @@ import type { SimulationNodeDatum, Simulation } from "d3-force";
 import { forceSimulation, forceX, forceY } from "d3-force";
 
 import { averageRatings } from "@/lib/metrics";
+import { getProxiedGithubUrl } from "@/lib/format";
 import { ratingLabelText, ratingLabels, type MapRecord, type RatingDimensions, type ReviewRecord } from "@/lib/types";
 
 type MetricDashboardProps = {
@@ -303,7 +304,7 @@ function ForceStage({ maps, xMetric, yMetric }: { maps: MapMetric[], xMetric: ke
                             onMouseEnter={() => setHoveredId(entry.map.id)}
                             onMouseLeave={() => setHoveredId(null)}
                         >
-                            <img src={entry.map.coverImage} alt={entry.map.name} className="metric-node-cover" />
+                            <img src={getProxiedGithubUrl(entry.map.coverImage)} alt={entry.map.name} className="metric-node-cover" suppressHydrationWarning />
                             <div className="metric-node-body">
                                 <strong>{entry.map.name}</strong>
                                 <span>{entry.map.type} · {entry.map.code}</span>
@@ -438,7 +439,7 @@ export function MetricDashboard({ maps, reviews, initialSelected = ["overall"] }
                                         transition: 'all 0.2s',
                                     }}
                                 >
-                                    <img src={map.coverImage} alt={map.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                                    <img src={getProxiedGithubUrl(map.coverImage)} alt={map.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} suppressHydrationWarning />
                                     <div style={{
                                         position: 'absolute',
                                         inset: 0,
