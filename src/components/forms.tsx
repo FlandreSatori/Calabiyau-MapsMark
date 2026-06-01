@@ -44,7 +44,7 @@ const createReviewDraft = () => ({
 
 type ReviewDraft = ReturnType<typeof createReviewDraft>;
 
-function StarSlider({ label, value, onChange }: { label: string; value: number; onChange: (value: number) => void }) {
+function StarSlider({ label, value, min = -5, onChange }: { label: string; value: number; min?: number; onChange: (value: number) => void }) {
     const fill = `${(Math.abs(value) / 5) * 100}%`;
     const isNegative = value < 0;
 
@@ -61,7 +61,7 @@ function StarSlider({ label, value, onChange }: { label: string; value: number; 
             <input
                 className="star-slider-range"
                 type="range"
-                min="-5"
+                min={String(min)}
                 max="5"
                 step="0.1"
                 value={value}
@@ -482,6 +482,7 @@ export function ReviewForm({ maps, onSuccess, notify }: ReviewFormProps) {
                                             key={key}
                                             label={ratingLabelText[key]}
                                             value={draft.ratings[key]}
+                                            min={key === "difficulty" ? 0 : -5}
                                             onChange={(value) => updateDraft(map.id, { ratings: { ...draft.ratings, [key]: clampScore(value) } })}
                                         />
                                     ))}
