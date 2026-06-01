@@ -5,9 +5,10 @@ import { RadarChart } from "@/components/radar-chart";
 import { ReviewForm } from "@/components/forms";
 import { HistoryList } from "@/components/history-list";
 import { CopyButton } from "@/components/copy-button";
+import { FallbackImage } from "@/components/fallback-image";
 import { loadState } from "@/lib/github-store";
 import { summarizeState } from "@/lib/state-utils";
-import { formatDateTime, getProxiedGithubUrl } from "@/lib/format";
+import { formatDateTime } from "@/lib/format";
 import { getMapById } from "@/lib/metrics";
 import { ratingLabels, ratingLabelText } from "@/lib/types";
 
@@ -69,17 +70,7 @@ export default async function MapDetailPage({ params }: { params: Promise<{ id: 
                                 {gallery.map((image) => (
                                     <figure className="map-gallery-item" key={`${map.id}-${image.label}`}>
                                         <div className="preview-frame map-gallery-frame">
-                                            <img
-                                                src={image.src}
-                                                alt={`${map.name} ${image.label}`}
-                                                onError={(e) => {
-                                                    const target = e.currentTarget;
-                                                    if (!target.dataset.retried) {
-                                                        target.dataset.retried = 'true';
-                                                        target.src = getProxiedGithubUrl(image.src) ?? image.src;
-                                                    }
-                                                }}
-                                            />
+                                            <FallbackImage src={image.src} alt={`${map.name} ${image.label}`} />
                                         </div>
                                         <figcaption className="help map-gallery-caption">{image.label}</figcaption>
                                     </figure>
