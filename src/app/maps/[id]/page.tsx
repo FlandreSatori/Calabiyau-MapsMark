@@ -69,7 +69,17 @@ export default async function MapDetailPage({ params }: { params: Promise<{ id: 
                                 {gallery.map((image) => (
                                     <figure className="map-gallery-item" key={`${map.id}-${image.label}`}>
                                         <div className="preview-frame map-gallery-frame">
-                                            <img src={getProxiedGithubUrl(image.src)} alt={`${map.name} ${image.label}`} suppressHydrationWarning />
+                                            <img
+                                                src={image.src}
+                                                alt={`${map.name} ${image.label}`}
+                                                onError={(e) => {
+                                                    const target = e.currentTarget;
+                                                    if (!target.dataset.retried) {
+                                                        target.dataset.retried = 'true';
+                                                        target.src = getProxiedGithubUrl(image.src) ?? image.src;
+                                                    }
+                                                }}
+                                            />
                                         </div>
                                         <figcaption className="help map-gallery-caption">{image.label}</figcaption>
                                     </figure>

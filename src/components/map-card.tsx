@@ -15,7 +15,17 @@ export function MapCard({ map, reviews }: MapCardProps) {
     const score = averageRatings(reviews, map.id);
     return (
         <Link href={`/maps/${map.id}`} className="cover-card" title={`${map.name} · 点击查看详情`}>
-            <img src={getProxiedGithubUrl(map.coverImage)} alt={map.name} suppressHydrationWarning />
+            <img
+                src={map.coverImage}
+                alt={map.name}
+                onError={(e) => {
+                    const target = e.currentTarget;
+                    if (!target.dataset.retried) {
+                        target.dataset.retried = 'true';
+                        target.src = getProxiedGithubUrl(map.coverImage) ?? map.coverImage;
+                    }
+                }}
+            />
             <div className="cover-overlay">
                 <h3 className="card-title">{map.name}</h3>
                 <div className="card-meta">

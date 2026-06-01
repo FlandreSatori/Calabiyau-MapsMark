@@ -159,7 +159,7 @@ export default async function HomePage({ searchParams }: { searchParams?: { bg?:
 
                     <div className="panel panel-pad">
                         <p className="section-title">日志</p>
-                        <HistoryList events={summary.events} />
+                        <HistoryList events={summary.events} maps={summary.maps} />
                     </div>
                 </section>
             </div>

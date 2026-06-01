@@ -465,7 +465,18 @@ export function ReviewForm({ maps, onSuccess, notify }: ReviewFormProps) {
                         <section className="review-row panel panel-pad" key={map.id}>
                             <div className="list-row">
                                 <div className="review-map-head">
-                                    <img className="review-map-thumb" src={getProxiedGithubUrl(map.coverImage)} alt={map.name} suppressHydrationWarning />
+                                    <img
+                                        className="review-map-thumb"
+                                        src={map.coverImage}
+                                        alt={map.name}
+                                        onError={(e) => {
+                                            const target = e.currentTarget;
+                                            if (!target.dataset.retried) {
+                                                target.dataset.retried = 'true';
+                                                target.src = getProxiedGithubUrl(map.coverImage) ?? map.coverImage;
+                                            }
+                                        }}
+                                    />
                                     <div>
                                         <strong>{map.name}</strong>
                                         <div className="help">{map.type} · {map.code} · {map.author}</div>
