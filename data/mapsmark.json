@@ -409,6 +409,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-b6ab47d4-1947-4279-9a8f-546fd56511e3",
+      "reviewerName": "匿名",
+      "anonymous": true,
+      "ratings": {
+        "entertainment": -5,
+        "aesthetics": 3.6,
+        "guidance": -5,
+        "difficulty": 5,
+        "overall": -5
+      },
+      "comment": "区喵，引导晦涩难懂喵，根本找不到隐藏开关喵，逛地图半天也不明白喵，根本过不了关喵，找攻略还遇到作者发视频恶意嘲笑喵，呜呜X﹏X",
+      "id": "review-cde8406d-61ea-4987-8825-1fef260e7158",
+      "submittedAt": "2026-06-02T13:09:16.764Z",
+      "updatedAt": "2026-06-02T13:09:16.764Z"
+    },
+    {
       "mapId": "map-fdfb60c0-26cf-4cb8-951e-c9ef210ae266",
       "reviewerName": "匿名",
       "anonymous": true,
@@ -555,6 +571,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-cde8406d-61ea-4987-8825-1fef260e7158",
+      "title": "新增评价 匿名",
+      "detail": "map-b6ab47d4-1947-4279-9a8f-546fd56511e3",
+      "id": "event-176a657a-f086-48e1-bdd6-21b34303f2f7",
+      "timestamp": "2026-06-02T13:09:16.764Z"
+    },
     {
       "kind": "review-create",
       "subjectId": "review-77e7ae45-ba02-4498-81c9-94d71c857982",
@@ -868,5 +892,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-01T11:49:29.873Z"
+  "updatedAt": "2026-06-02T13:09:16.764Z"
 }
