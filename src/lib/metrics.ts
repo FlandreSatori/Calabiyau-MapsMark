@@ -55,8 +55,10 @@ export const aggregateByMetric = (state: AppState, metric: keyof RatingDimension
         .sort((left, right) => right.score - left.score || right.reviewCount - left.reviewCount);
 };
 
-export const topEvents = (state: AppState, count = 8) =>
-    [...state.events].sort((left, right) => right.timestamp.localeCompare(left.timestamp)).slice(0, count);
+export const topEvents = (state: AppState, count?: number) => {
+    const sorted = [...state.events].sort((left, right) => right.timestamp.localeCompare(left.timestamp));
+    return typeof count === "number" ? sorted.slice(0, count) : sorted;
+};
 
 export const visibleMaps = (state: AppState) => state.maps.filter((item) => !item.deletedAt);
 

@@ -13,6 +13,8 @@ type MapCardProps = {
 
 export function MapCard({ map, reviews }: MapCardProps) {
     const score = averageRatings(reviews, map.id);
+    const reviewCount = reviews.filter((review) => review.mapId === map.id && !review.deletedAt).length;
+
     return (
         <Link href={`/maps/${map.id}`} className="cover-card" title={`${map.name} · 点击查看详情`}>
             <img
@@ -26,13 +28,16 @@ export function MapCard({ map, reviews }: MapCardProps) {
                     }
                 }}
             />
+            <div className="cover-corners" aria-hidden="true">
+                <span className="cover-corner-badge cover-corner-score">{score.overall.toFixed(1)}</span>
+                <span className="cover-corner-badge cover-corner-reviews">{reviewCount} 条评价</span>
+            </div>
             <div className="cover-overlay">
                 <h3 className="card-title">{map.name}</h3>
                 <div className="card-meta">
                     <div>{map.author}</div>
                     <div>{map.type} · {map.code}</div>
                     <div>{formatDateTime(map.submittedAt)}</div>
-                    <div>综合评分：{score.overall.toFixed(1)}</div>
                 </div>
             </div>
         </Link>

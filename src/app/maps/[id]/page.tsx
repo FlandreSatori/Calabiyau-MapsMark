@@ -137,7 +137,7 @@ export default async function MapDetailPage({ params }: { params: Promise<{ id: 
 
                     <div className="panel panel-pad">
                         <p className="section-title">History</p>
-                        <HistoryList events={state.events.filter((event) => event.subjectId === map.id || event.detail === map.code)} />
+                        <HistoryList events={state.events.filter((event) => event.subjectId === map.id || event.detail === map.id || event.detail === map.code)} />
                     </div>
                 </section>
             </div>

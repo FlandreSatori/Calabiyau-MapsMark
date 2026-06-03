@@ -1,5 +1,7 @@
 "use client";
 
+import { useId } from "react";
+
 import type { RatingDimensions } from "@/lib/types";
 import { ratingLabelText } from "@/lib/types";
 
@@ -15,14 +17,24 @@ const radius = 150;
 
 const negativeColor = { red: 255, green: 95, blue: 121 };
 const positiveColor = { red: 119, green: 215, blue: 255 };
+const positiveColorLow = { red: 190, green: 228, blue: 255 };
+const positiveColorHigh = { red: 104, green: 205, blue: 255 };
 
 const clampScore = (value: number) => Math.max(-5, Math.min(5, value));
 
-const colorForValue = (value: number) => {
+const colorForDiverging = (value: number) => {
     const t = (clampScore(value) + 5) / 10;
     const red = Math.round(negativeColor.red + (positiveColor.red - negativeColor.red) * t);
     const green = Math.round(negativeColor.green + (positiveColor.green - negativeColor.green) * t);
     const blue = Math.round(negativeColor.blue + (positiveColor.blue - negativeColor.blue) * t);
+    return `rgb(${red} ${green} ${blue})`;
+};
+
+const colorForPositive = (value: number) => {
+    const normalized = Math.max(0, clampScore(value)) / 5;
+    const red = Math.round(positiveColorLow.red + (positiveColorHigh.red - positiveColorLow.red) * normalized);
+    const green = Math.round(positiveColorLow.green + (positiveColorHigh.green - positiveColorLow.green) * normalized);
+    const blue = Math.round(positiveColorLow.blue + (positiveColorHigh.blue - positiveColorLow.blue) * normalized);
     return `rgb(${red} ${green} ${blue})`;
 };
 
@@ -36,22 +48,41 @@ const pointFor = (index: number, total: number, value: number) => {
 };
 
 export function RadarChart({ values, dimensions, size = 440 }: RadarChartProps) {
+    const gradientIdPrefix = useId().replace(/:/g, "");
+    const hasNegative = dimensions.some((dimension) => values[dimension] < 0);
     const points = dimensions.map((dimension, index) => pointFor(index, dimensions.length, values[dimension]));
+    const pointColors = dimensions.map((dimension) => {
+        const value = values[dimension];
+        return hasNegative ? colorForDiverging(value) : colorForPositive(value);
+    });
+    const edgeGradients = points.map((point, index) => {
+        const nextPoint = points[(index + 1) % points.length];
+        return {
+            id: `${gradientIdPrefix}-edge-${index}`,
+            x1: point.x,
+            y1: point.y,
+            x2: nextPoint.x,
+            y2: nextPoint.y,
+            startColor: pointColors[index],
+            endColor: pointColors[(index + 1) % pointColors.length]
+        };
+    });
     const polygon = points.map((point) => `${point.x},${point.y}`).join(" ");
+    const polygonFill = hasNegative ? "rgba(119, 215, 255, 0.18)" : "url(#radar-fill-positive)";
 
     return (
         <svg className="radar-svg" viewBox={`0 0 ${viewBoxSize} ${viewBoxSize}`} width={size} height={size} role="img" aria-label="雷达图">
             <defs>
-                <linearGradient id="radar-fill" x1="0" y1="1" x2="1" y2="0">
-                    <stop offset="0%" stopColor="rgba(255, 95, 121, 0.42)" />
-                    <stop offset="50%" stopColor="rgba(232, 171, 205, 0.26)" />
-                    <stop offset="100%" stopColor="rgba(119, 215, 255, 0.34)" />
+                <linearGradient id="radar-fill-positive" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stopColor="rgba(119, 215, 255, 0.85)" />
+                    <stop offset="100%" stopColor="rgba(76, 195, 255, 0.25)" />
                 </linearGradient>
-                <linearGradient id="radar-stroke" x1="0" y1="1" x2="1" y2="0">
-                    <stop offset="0%" stopColor="rgba(255, 95, 121, 0.92)" />
-                    <stop offset="50%" stopColor="rgba(232, 171, 205, 0.88)" />
-                    <stop offset="100%" stopColor="rgba(119, 215, 255, 0.92)" />
-                </linearGradient>
+                {edgeGradients.map((edge) => (
+                    <linearGradient key={edge.id} id={edge.id} gradientUnits="userSpaceOnUse" x1={edge.x1} y1={edge.y1} x2={edge.x2} y2={edge.y2}>
+                        <stop offset="0%" stopColor={edge.startColor} />
+                        <stop offset="100%" stopColor={edge.endColor} />
+                    </linearGradient>
+                ))}
             </defs>
             {[1, 2, 3, 4, 5].map((step) => (
                 <polygon
@@ -69,8 +100,7 @@ export function RadarChart({ values, dimensions, size = 440 }: RadarChartProps) 
             ))}
             {dimensions.map((dimension, index) => {
                 const endpoint = pointFor(index, dimensions.length, 5);
-                const value = values[dimension];
-                const axisColor = colorForValue(value);
+                const axisColor = pointColors[index];
                 return (
                     <g key={dimension}>
                         <line
@@ -94,10 +124,24 @@ export function RadarChart({ values, dimensions, size = 440 }: RadarChartProps) 
                     </g>
                 );
             })}
-            <polygon points={polygon} fill="url(#radar-fill)" stroke="url(#radar-stroke)" strokeWidth="2.2" opacity="0.96" />
+            <polygon points={polygon} fill={polygonFill} stroke="none" opacity="0.96" />
             {points.map((point, index) => {
-                const value = values[dimensions[index]];
-                const pointColor = colorForValue(value);
+                const nextPoint = points[(index + 1) % points.length];
+                const edge = edgeGradients[index];
+                return (
+                    <line
+                        key={edge.id}
+                        x1={point.x}
+                        y1={point.y}
+                        x2={nextPoint.x}
+                        y2={nextPoint.y}
+                        stroke={`url(#${edge.id})`}
+                        strokeWidth="2.2"
+                    />
+                );
+            })}
+            {points.map((point, index) => {
+                const pointColor = pointColors[index];
                 return (
                     <circle
                         key={dimensions[index]}

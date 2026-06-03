@@ -10,11 +10,20 @@ type HistoryListProps = {
     maps?: MapRecord[];
 };
 
+const eventKindLabel: Record<EventRecord["kind"], string> = {
+    "map-create": "地图新增",
+    "map-update": "地图更新",
+    "map-delete": "地图删除",
+    "review-create": "评价新增",
+    "review-update": "评价更新",
+    "review-delete": "评价删除"
+};
+
 export function HistoryList({ events, maps = [] }: HistoryListProps) {
     const mapNameById = new Map(maps.map((map) => [map.id, map.name]));
 
     return (
-        <div className="history">
+        <div className="history history-scroll" role="log" aria-live="polite">
             {events.map((event) => {
                 const isReviewCreate = event.kind === "review-create";
                 const mapName = isReviewCreate ? mapNameById.get(event.detail ?? "") : undefined;
@@ -22,7 +31,10 @@ export function HistoryList({ events, maps = [] }: HistoryListProps) {
                 return (
                     <div className="history-item" key={event.id}>
                         <div>
-                            <strong>{event.title}</strong>
+                            <div className="history-head">
+                                <strong>{event.title}</strong>
+                                <span className="history-kind">{eventKindLabel[event.kind]}</span>
+                            </div>
                             <div>
                                 <small>
                                     {isReviewCreate && event.detail ? (
