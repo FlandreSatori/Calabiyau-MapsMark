@@ -409,6 +409,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-b6ab47d4-1947-4279-9a8f-546fd56511e3",
+      "reviewerName": "AAA卡丘解密大王批发",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": -1,
+        "aesthetics": 3,
+        "guidance": -4,
+        "difficulty": 4.1,
+        "overall": 2.5
+      },
+      "comment": "你就造吧，一造一个不吱声，无提示找按钮喵，套路复用喵，凿似作者喵，考虑到有一定场景设计，给到2.50喵，噎泣泣喵",
+      "id": "review-c967202a-d15b-40a5-bc8a-e3ba65a428b0",
+      "submittedAt": "2026-06-04T02:42:34.829Z",
+      "updatedAt": "2026-06-04T02:42:34.829Z"
+    },
+    {
       "mapId": "map-53804f28-d922-4fe3-9c54-650931cb22b0",
       "reviewerName": "很新颖的大世界寻地标解密喵",
       "anonymous": false,
@@ -587,6 +603,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-c967202a-d15b-40a5-bc8a-e3ba65a428b0",
+      "title": "新增评价 AAA卡丘解密大王批发",
+      "detail": "map-b6ab47d4-1947-4279-9a8f-546fd56511e3",
+      "id": "event-f8266c96-7f51-4563-bc3c-09890804f56b",
+      "timestamp": "2026-06-04T02:42:34.829Z"
+    },
     {
       "kind": "review-create",
       "subjectId": "review-338096e3-7829-4493-820e-d2cecc272a2f",
@@ -916,5 +940,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-03T16:13:29.613Z"
+  "updatedAt": "2026-06-04T02:42:34.829Z"
 }
