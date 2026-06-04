@@ -409,6 +409,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-a6abb700-46c1-4d61-b588-89384005cd82",
+      "reviewerName": "AAA卡丘解密大王批发",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 4.5,
+        "aesthetics": 4,
+        "guidance": 3,
+        "difficulty": 2,
+        "overall": 4.5
+      },
+      "comment": "好玩喵，地图设计我说大就是好有没有懂的，作者造大场景有一爪喵。路线规划很棒喵，解密的部分对于mmr可能有点强度，而老登要考虑的就很多了，比如享受、enjoy、楽しも……总之老登玩起来很舒服喵，打高分喵，就是太短了喵！",
+      "id": "review-b3ed8a9c-cccb-4b79-a93b-991c4f43dd2c",
+      "submittedAt": "2026-06-04T02:47:14.626Z",
+      "updatedAt": "2026-06-04T02:47:14.626Z"
+    },
+    {
       "mapId": "map-b6ab47d4-1947-4279-9a8f-546fd56511e3",
       "reviewerName": "AAA卡丘解密大王批发",
       "anonymous": false,
@@ -603,6 +619,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-b3ed8a9c-cccb-4b79-a93b-991c4f43dd2c",
+      "title": "新增评价 AAA卡丘解密大王批发",
+      "detail": "map-a6abb700-46c1-4d61-b588-89384005cd82",
+      "id": "event-39d7b086-eea0-4d77-a2f7-507e1e15ba63",
+      "timestamp": "2026-06-04T02:47:14.626Z"
+    },
     {
       "kind": "review-create",
       "subjectId": "review-c967202a-d15b-40a5-bc8a-e3ba65a428b0",
@@ -940,5 +964,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-04T02:42:34.829Z"
+  "updatedAt": "2026-06-04T02:47:14.626Z"
 }
