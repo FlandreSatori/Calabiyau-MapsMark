@@ -423,6 +423,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-3d25699d-cd82-46d3-ba0b-b428d6f83c5a",
+      "reviewerName": "AAA解密批发小王",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 1,
+        "aesthetics": 2,
+        "guidance": 2.5,
+        "difficulty": 2,
+        "overall": 5
+      },
+      "comment": "放在现在来看，此图作为早期作品确实在各方面略有欠缺，不过他仍是真正意义上的解密开山作品，具有里程碑意义，其中的关卡设计思路为后人提供了相当多的参考方向。野史传闻，准心凭借此图让柴郡芳心大乱，从此一发不可收拾……",
+      "id": "review-3944346e-9df1-4381-b948-47748373e8b2",
+      "submittedAt": "2026-06-05T09:42:34.635Z",
+      "updatedAt": "2026-06-05T09:42:34.635Z"
+    },
+    {
       "mapId": "map-a6abb700-46c1-4d61-b588-89384005cd82",
       "reviewerName": "AAA卡丘解密大王批发",
       "anonymous": false,
@@ -633,6 +649,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-3944346e-9df1-4381-b948-47748373e8b2",
+      "title": "新增评价 AAA解密批发小王",
+      "detail": "map-3d25699d-cd82-46d3-ba0b-b428d6f83c5a",
+      "id": "event-6b61f57f-da6b-4ed6-9df9-4f3e11a84b6d",
+      "timestamp": "2026-06-05T09:42:34.636Z"
+    },
     {
       "kind": "map-create",
       "subjectId": "map-b009edd9-7806-4281-beb3-41700e740419",
@@ -986,5 +1010,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-05T09:36:30.181Z"
+  "updatedAt": "2026-06-05T09:42:34.636Z"
 }
