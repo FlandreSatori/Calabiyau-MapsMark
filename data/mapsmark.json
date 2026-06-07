@@ -423,6 +423,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-3e9d28cc-104d-45c6-99a1-d45edae292cc",
+      "reviewerName": "AAA卡丘解密大王批发",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 5,
+        "aesthetics": 0,
+        "guidance": 2.5,
+        "difficulty": 2,
+        "overall": 3.5
+      },
+      "comment": "美观性，没造景啊kora；引导性，如果是地图内对路的暗示，其实还行，没有刻意隐藏。使用闪影进行解密趣味性十足，但碍于卡丘早期工坊（包括现在）的乐色性能与自由度，导致很难玩到后面的内容，地图总体还是mmr不容错过的一张图喵",
+      "id": "review-5ce7ac4a-595f-47de-8cc7-deeaa151b4f6",
+      "submittedAt": "2026-06-07T15:13:01.461Z",
+      "updatedAt": "2026-06-07T15:13:01.461Z"
+    },
+    {
       "mapId": "map-3d25699d-cd82-46d3-ba0b-b428d6f83c5a",
       "reviewerName": "AAA解密批发小王",
       "anonymous": false,
@@ -649,6 +665,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-5ce7ac4a-595f-47de-8cc7-deeaa151b4f6",
+      "title": "新增评价 AAA卡丘解密大王批发",
+      "detail": "map-3e9d28cc-104d-45c6-99a1-d45edae292cc",
+      "id": "event-bdfe2763-592d-4560-9ab2-dffae9914abf",
+      "timestamp": "2026-06-07T15:13:01.461Z"
+    },
     {
       "kind": "review-create",
       "subjectId": "review-3944346e-9df1-4381-b948-47748373e8b2",
@@ -1010,5 +1034,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-05T09:42:34.636Z"
+  "updatedAt": "2026-06-07T15:13:01.461Z"
 }
