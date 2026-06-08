@@ -106,7 +106,7 @@ export const getMapRatingLabel = (reviews: ReviewRecord[], mapId: string, sentim
 
 export const getScoreBucketKey = (score: number) => {
     if (score >= 4) {
-        return "4plus";
+        return "4";
     }
     if (score >= 3) {
         return "3";
@@ -121,7 +121,7 @@ export const getScoreBucketKey = (score: number) => {
 };
 
 export const matchesScoreBucket = (score: number, bucket: string) => {
-    if (bucket === "4plus") return score >= 4;
+    if (bucket === "4") return score >= 4;
     if (bucket === "3") return score >= 3 && score < 4;
     if (bucket === "2") return score >= 2 && score < 3;
     if (bucket === "1") return score >= 1 && score < 2;

@@ -12,8 +12,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
     return (
-        <html lang="zh-CN">
-            <body>
+        <html lang="zh-CN" suppressHydrationWarning>
+            <body suppressHydrationWarning>
                 <SiteTopBar />
                 {children}
                 <BackToTopButton />

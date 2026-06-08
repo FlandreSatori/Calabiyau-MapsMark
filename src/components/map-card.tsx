@@ -2,8 +2,9 @@
 
 import Link from "next/link";
 
+import { FallbackImage } from "@/components/fallback-image";
 import type { MapRecord, ReviewRecord } from "@/lib/types";
-import { formatDateTime, getProxiedGithubUrl } from "@/lib/format";
+import { formatDateTime } from "@/lib/format";
 import { averageRatings, getMapRatingLabel } from "@/lib/metrics";
 
 type MapCardProps = {
@@ -18,16 +19,9 @@ export function MapCard({ map, reviews }: MapCardProps) {
 
     return (
         <Link href={`/maps/${map.id}`} className="cover-card" title={`${map.name} · 点击查看详情`}>
-            <img
+            <FallbackImage
                 src={map.coverImage}
                 alt={map.name}
-                onError={(e) => {
-                    const target = e.currentTarget;
-                    if (!target.dataset.retried) {
-                        target.dataset.retried = 'true';
-                        target.src = getProxiedGithubUrl(map.coverImage) ?? map.coverImage;
-                    }
-                }}
             />
             <div className="cover-corners" aria-hidden="true">
                 <div className="cover-corner-stack">

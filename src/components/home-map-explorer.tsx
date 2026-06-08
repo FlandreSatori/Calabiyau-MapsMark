@@ -28,7 +28,7 @@ type ActiveFilter =
     | { kind: "all" }
     | { kind: "type"; value: string }
     | { kind: "category"; value: "good" | "god" | "shenren" | "poop" }
-    | { kind: "score"; value: string };
+    | { kind: "score"; value: "0" | "1" | "2" | "3" | "4" };
 
 type MapMeta = {
     map: MapRecord;
@@ -53,7 +53,7 @@ export function HomeMapExplorer({ maps, reviews, mapTypes, typeCounts, categoryC
     }, [maps, reviews]);
 
     const scoreBuckets = useMemo(() => {
-        const totals = { "0": 0, "1": 0, "2": 0, "3": 0, "4plus": 0 };
+        const totals = { "0": 0, "1": 0, "2": 0, "3": 0, "4": 0 };
         mapMeta.forEach((entry) => {
             totals[entry.scoreBucket as keyof typeof totals] += 1;
         });
@@ -71,7 +71,10 @@ export function HomeMapExplorer({ maps, reviews, mapTypes, typeCounts, categoryC
             if (filter.kind === "category") {
                 return entry.ratingLabel === ({ good: "好图", god: "神图", shenren: "神人图", poop: "史图" }[filter.value]);
             }
-            return matchesScoreBucket(entry.score, filter.value);
+            if (filter.kind === "score") {
+                return matchesScoreBucket(entry.score, filter.value);
+            }
+            return false;
         });
     }, [filter, mapMeta]);
 
@@ -79,7 +82,14 @@ export function HomeMapExplorer({ maps, reviews, mapTypes, typeCounts, categoryC
         if (filter.kind === "all") return "全部";
         if (filter.kind === "type") return filter.value;
         if (filter.kind === "category") return ({ good: "好图", god: "神图", shenren: "神人图", poop: "史图" }[filter.value]);
-        return filter.value === "4plus" ? "4分以上" : `${filter.value}分`;
+        if (filter.kind === "score") {
+            if (filter.value === "4") return "4分以上";
+            if (filter.value === "3") return "3分以上";
+            if (filter.value === "2") return "2分以上";
+            if (filter.value === "1") return "1分以上";
+            return "0分以上";
+        }
+        return "全部";
     })();
 
     const renderFilterButton = (key: string, label: string, active: boolean, onClick: () => void, count?: number) => (
@@ -111,7 +121,7 @@ export function HomeMapExplorer({ maps, reviews, mapTypes, typeCounts, categoryC
                         <p className="overview-group-title">分数筛选</p>
                         <div className="filter-chip-grid">
                             {renderFilterButton("score-all", "显示全部", filter.kind === "all", () => setFilter({ kind: "all" }), mapMeta.length)}
-                            {renderFilterButton("score-4plus", "4分以上", filter.kind === "score" && filter.value === "4plus", () => setFilter({ kind: "score", value: "4plus" }), scoreBuckets["4plus"])}
+                            {renderFilterButton("score-4", "4分以上", filter.kind === "score" && filter.value === "4", () => setFilter({ kind: "score", value: "4" }), scoreBuckets["4"])}
                             {renderFilterButton("score-3", "3分以上", filter.kind === "score" && filter.value === "3", () => setFilter({ kind: "score", value: "3" }), scoreBuckets["3"])}
                             {renderFilterButton("score-2", "2分以上", filter.kind === "score" && filter.value === "2", () => setFilter({ kind: "score", value: "2" }), scoreBuckets["2"])}
                             {renderFilterButton("score-1", "1分以上", filter.kind === "score" && filter.value === "1", () => setFilter({ kind: "score", value: "1" }), scoreBuckets["1"])}
