@@ -1,6 +1,6 @@
-import Link from "next/link";
+import Image from "next/image";
 
-import { MapForm, ReviewForm } from "@/components/forms";
+import { MapForm } from "@/components/forms";
 import { HistoryList } from "@/components/history-list";
 import { MapCard } from "@/components/map-card";
 // 使用表单内部的全局通知（避免从服务器组件传函数到客户端）
@@ -8,51 +8,45 @@ import { formatDateTime } from "@/lib/format";
 import { buildTime } from "@/lib/build-meta";
 import { loadState } from "@/lib/github-store";
 import { summarizeState } from "@/lib/state-utils";
-import { defaultMapTypes, ratingLabelText } from "@/lib/types";
+import { defaultMapTypes } from "@/lib/types";
+import titleIcon from "../../assets/images/icon.jpg";
 
 export default async function HomePage({ searchParams }: { searchParams?: { bg?: string } }) {
     const state = await loadState();
     const summary = summarizeState(state);
     const background = searchParams?.bg ?? state.ui?.background;
+    const allMapTypes = Array.from(new Set([...defaultMapTypes, ...Object.keys(summary.typeCounts)]));
 
     return (
         <main className="app-shell" style={background ? { background } : undefined}>
             <div className="container grid gap-18">
-                <div className="topbar">
-                    <div className="brand">
-                        <div className="brand-mark" />
-                        <div>
-                            <h1>卡丘工坊地图评价</h1>
-                            <p>你是怎么发现这里的喵</p>
-                        </div>
-                    </div>
-                    <div className="toolbar">
-                        <Link className="pill" href="#submit-map">上传地图</Link>
-                        <Link className="pill" href="#submit-review">提交评价</Link>
-                        <Link className="pill" href="/admin">后台管理</Link>
-                        <Link className="pill" href="/embed">展示页</Link>
-                    </div>
-                </div>
-
                 <section className="grid grid-hero">
                     <div className="panel panel-pad">
-                        <p className="section-title">是啊玩什么</p>
-                        <p className="hero-text">
-                            请做出评价吧！
-                        </p>
-                        <div className="stat-strip" style={{ marginTop: 18 }}>
-                            <span className="stat">地图总数 {summary.mapCount}</span>
-                            <span className="stat">评价总数 {summary.reviewCount}</span>
+                        <div className="overview-heading">
+                            <Image className="overview-icon" src={titleIcon} alt="标题图标" width={56} height={56} priority />
+                            <div>
+                                <p className="section-title overview-title">是啊玩什么？</p>
+                                <p className="help overview-subtitle">请做出评价吧！</p>
+                            </div>
+                        </div>
+
+                        <div className="stat-strip overview-summary-strip" style={{ marginTop: 18 }}>
+                            <span className="stat">地图数 {summary.mapCount}</span>
+                            <span className="stat">评价数 {summary.reviewCount}</span>
                             <span className="stat">更新时间 {formatDateTime(state.updatedAt)}</span>
                         </div>
-                        <div className="type-count-grid" style={{ marginTop: 20 }}>
-                            {Object.entries(summary.typeCounts).map(([type, count]) => (
+
+                        <p className="overview-group-title">地图类型</p>
+                        <div className="type-count-grid" style={{ marginTop: 12 }}>
+                            {allMapTypes.map((type) => (
                                 <div className="metric" key={type}>
-                                    <strong>{count}</strong>
+                                    <strong>{summary.typeCounts[type] ?? 0}</strong>
                                     <span>{type}</span>
                                 </div>
                             ))}
                         </div>
+
+                        <p className="overview-group-title">地图评级</p>
                         <div className="type-count-grid" style={{ marginTop: 12 }}>
                             <div className="metric">
                                 <strong>{summary.categoryCounts.good}</strong>
@@ -101,67 +95,16 @@ export default async function HomePage({ searchParams }: { searchParams?: { bg?:
                     </div>
                 </section>
 
-                <section className="panel panel-pad">
-                    <p className="section-title">判定方式</p>
-                    <div className="classification-grid">
-                        <div className="classification-item">
-                            <strong>好图</strong>
-                            <p>在趣味性、美观性、引导性、总体评价的平均分里<br />超过 0 分的维度有 2 项</p>
-                        </div>
-                        <div className="classification-item">
-                            <strong>神图</strong>
-                            <p>在同样四项里<br />超过 3 分的维度有 2 项</p>
-                        </div>
-                        <div className="classification-item">
-                            <strong>神人图</strong>
-                            <p>在同样四项里<br />低于 0 分的维度有 1 项</p>
-                        </div>
-                        <div className="classification-item">
-                            <strong>粪图</strong>
-                            <p>在同样四项里<br />低于 0 分的维度有 3 项</p>
-                        </div>
-                    </div>
-                    <p className="help" style={{ marginTop: 12, marginBottom: 0 }}>难易度不参与评价</p>
-                </section>
-
                 <section className="panel panel-pad" id="submit-map">
                     <p className="section-title">上传地图</p>
                     <MapForm mapTypes={[...defaultMapTypes]} />
                 </section>
 
-                <section className="panel panel-pad" id="submit-review">
-                    <p className="section-title">提交评价</p>
-                    <ReviewForm maps={summary.maps} />
+                <section className="panel panel-pad">
+                    <p className="section-title">日志</p>
+                    <HistoryList events={summary.events} maps={summary.maps} reviews={summary.reviews} mode="split" />
                 </section>
 
-                <section className="grid grid-hero">
-                    <div className="panel panel-pad">
-                        <p className="section-title">排行榜</p>
-                        <div className="list">
-                            {Object.entries(summary.bestByMetric).map(([metric, items]) => (
-                                <div className="list-item" key={metric}>
-                                    <div className="list-row">
-                                        <strong>{ratingLabelText[metric as keyof typeof ratingLabelText]}</strong>
-                                        <span className="badge">Top {items.length}</span>
-                                    </div>
-                                    <div className="list">
-                                        {items.slice(0, 3).map(({ map, score, reviewCount }) => (
-                                            <div key={map.id} className="list-row">
-                                                <span>{map.name}</span>
-                                                <span>{score.toFixed(1)} · {reviewCount} 条评价</span>
-                                            </div>
-                                        ))}
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-
-                    <div className="panel panel-pad">
-                        <p className="section-title">日志</p>
-                        <HistoryList events={summary.events} maps={summary.maps} />
-                    </div>
-                </section>
             </div>
         </main>
     );

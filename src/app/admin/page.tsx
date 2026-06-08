@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import { useSearchParams } from "next/navigation";
 
 import { AdminLogin } from "@/components/forms";
 import { HistoryList } from "@/components/history-list";
@@ -13,11 +14,12 @@ import { formatDateTime } from "@/lib/format";
 
 const emptyState: AppState = { maps: [], reviews: [], events: [], updatedAt: new Date().toISOString() };
 
-export default function AdminPage({ searchParams }: { searchParams?: { bg?: string } }) {
+export default function AdminPage() {
+    const searchParams = useSearchParams();
     const [token, setToken] = useState("");
     const [state, setState] = useState<AppState>(emptyState);
     const [ready, setReady] = useState(false);
-    const background = searchParams?.bg;
+    const background = searchParams.get("bg") ?? "";
 
     useEffect(() => {
         setToken(localStorage.getItem("mapsmark-admin-token") ?? "");

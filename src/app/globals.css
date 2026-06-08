@@ -59,7 +59,7 @@ img {
     position: relative;
     isolation: isolate;
     min-height: 100vh;
-    padding: 32px 20px 80px;
+    padding: 96px 20px 80px;
 }
 
 .app-shell::before {
@@ -77,6 +77,59 @@ img {
 .container {
     width: min(1200px, 100%);
     margin: 0 auto;
+}
+
+.site-topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    border-bottom: 1px solid var(--panel-border);
+    background: rgba(7, 13, 24, 0.88);
+    backdrop-filter: blur(14px);
+}
+
+.site-topbar-inner {
+    min-height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+
+.site-topbar-left {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    min-width: 0;
+}
+
+.site-domain {
+    color: rgba(206, 222, 241, 0.58);
+    font-size: 0.8rem;
+    padding: 5px 9px;
+    border-radius: 999px;
+    border: 1px solid rgba(159, 176, 201, 0.14);
+    background: rgba(159, 176, 201, 0.06);
+    letter-spacing: 0.02em;
+    opacity: 0.78;
+    white-space: nowrap;
+}
+
+.site-brand {
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    color: #dff4ff;
+    white-space: nowrap;
+}
+
+.site-nav {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
 }
 
 /* Full-width container for embed pages or full-bleed layouts */
@@ -227,6 +280,40 @@ img {
     line-height: 1.8;
     font-size: 1rem;
     max-width: 60ch;
+}
+
+.overview-heading {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.overview-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
+    object-fit: cover;
+}
+
+.overview-title {
+    margin-bottom: 6px;
+}
+
+.overview-subtitle {
+    margin: 0;
+}
+
+.overview-summary-strip {
+    flex-wrap: wrap;
+}
+
+.overview-group-title {
+    margin: 16px 0 0;
+    font-size: 0.92rem;
+    color: #cde4ff;
+    letter-spacing: 0.04em;
 }
 
 .map-introduction {
@@ -956,6 +1043,23 @@ img {
     gap: 10px;
 }
 
+.history-columns {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.history-pane {
+    padding: 12px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.history-pane .section-title {
+    margin-bottom: 10px;
+}
+
 .history-scroll {
     max-height: 440px;
     overflow-y: auto;
@@ -1141,7 +1245,8 @@ img {
 
     .grid-hero,
     .detail-layout,
-    .radar-wrap {
+    .radar-wrap,
+    .history-columns {
         grid-template-columns: 1fr;
     }
 
@@ -1196,7 +1301,28 @@ img {
 
 @media (max-width: 640px) {
     .app-shell {
+        padding-top: 120px;
         padding-inline: 14px;
+    }
+
+    .site-topbar-left {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .site-domain {
+        font-size: 0.74rem;
+        padding: 4px 7px;
+        opacity: 0.68;
+    }
+
+    .overview-heading {
+        align-items: flex-start;
+    }
+
+    .overview-icon {
+        width: 48px;
+        height: 48px;
     }
 
     .back-to-top {

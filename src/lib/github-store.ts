@@ -196,7 +196,7 @@ export const addMap = async (input: MapInput) => {
     appendEvent(state, {
         kind: "map-create",
         subjectId: record.id,
-        title: `发布地图 ${record.name}`,
+        title: record.name,
         detail: record.code
     });
     await saveState(state);
@@ -216,7 +216,7 @@ export const addReview = async (input: ReviewInput) => {
     appendEvent(state, {
         kind: "review-create",
         subjectId: record.id,
-        title: `新增评价 ${record.anonymous ? "匿名" : record.reviewerName}`,
+        title: record.anonymous ? "匿名" : record.reviewerName,
         detail: record.mapId
     });
     await saveState(state);

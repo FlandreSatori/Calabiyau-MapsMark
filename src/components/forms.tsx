@@ -277,7 +277,7 @@ export function MapForm({ mapTypes, onSuccess, notify }: MapFormProps) {
                     <span className="help">上传后会保存到 GitHub 仓库并将 URL 写入数据中。</span>
                 </label>
                 <label className="label full">
-                    内容预览图 <span style={{ color: "#9aa0a6", marginLeft: 6 }}></span>
+                    内容预览图（可选） <span style={{ color: "#9aa0a6", marginLeft: 6 }}></span>
                     <input
                         className="input"
                         type="file"

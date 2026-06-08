@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { RadarChart } from "@/components/radar-chart";
@@ -51,9 +50,6 @@ export default async function MapDetailPage({ params }: { params: Promise<{ id: 
     return (
         <main className="app-shell">
             <div className="container grid gap-18">
-                <Link className="pill" href="/">
-                    ← 返回首页
-                </Link>
                 <section className="detail-layout">
                     <div className="panel panel-pad">
                         <p className="section-title">Map Detail</p>
@@ -137,7 +133,7 @@ export default async function MapDetailPage({ params }: { params: Promise<{ id: 
 
                     <div className="panel panel-pad">
                         <p className="section-title">History</p>
-                        <HistoryList events={state.events.filter((event) => event.subjectId === map.id || event.detail === map.id || event.detail === map.code)} />
+                        <HistoryList events={state.events.filter((event) => event.subjectId === map.id || event.detail === map.id || event.detail === map.code)} maps={[map]} reviews={reviews} mode="single" />
                     </div>
                 </section>
             </div>
