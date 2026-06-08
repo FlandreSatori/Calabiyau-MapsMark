@@ -4,6 +4,7 @@ import { MapForm } from "@/components/forms";
 import { HistoryList } from "@/components/history-list";
 import { MapCard } from "@/components/map-card";
 // 使用表单内部的全局通知（避免从服务器组件传函数到客户端）
+// 当前网页需要在vercel远端构建，谨慎处理客户端函数
 import { formatDateTime } from "@/lib/format";
 import { buildTime } from "@/lib/build-meta";
 import { loadState } from "@/lib/github-store";
