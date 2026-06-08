@@ -1,0 +1,114 @@
+{
+    "global": {
+        "colors": {
+            "background": {
+                "default": {
+                    "value": "#07111f",
+                    "type": "color"
+                },
+                "soft": {
+                    "value": "rgba(11, 19, 34, 0.72)",
+                    "type": "color"
+                },
+                "panel": {
+                    "value": "rgba(10, 18, 33, 0.72)",
+                    "type": "color"
+                },
+                "panelStrong": {
+                    "value": "rgba(14, 26, 46, 0.92)",
+                    "type": "color"
+                },
+                "panelBorder": {
+                    "value": "rgba(146, 181, 255, 0.18)",
+                    "type": "color"
+                }
+            },
+            "text": {
+                "primary": {
+                    "value": "#edf4ff",
+                    "type": "color"
+                },
+                "muted": {
+                    "value": "#9fb0c9",
+                    "type": "color"
+                }
+            },
+            "brand": {
+                "accent": {
+                    "value": "#77d7ff",
+                    "type": "color"
+                },
+                "accentStrong": {
+                    "value": "#4cc3ff",
+                    "type": "color"
+                }
+            },
+            "semantic": {
+                "danger": {
+                    "value": "#ff7d90",
+                    "type": "color"
+                }
+            }
+        },
+        "radii": {
+            "md": {
+                "value": "16px",
+                "type": "borderRadius"
+            },
+            "lg": {
+                "value": "22px",
+                "type": "borderRadius"
+            },
+            "xl": {
+                "value": "28px",
+                "type": "borderRadius"
+            }
+        },
+        "boxShadow": {
+            "default": {
+                "value": {
+                    "x": "0",
+                    "y": "24",
+                    "blur": "80",
+                    "spread": "0",
+                    "color": "rgba(0, 0, 0, 0.38)",
+                    "type": "dropShadow"
+                },
+                "type": "boxShadow"
+            },
+            "hover": {
+                "value": {
+                    "x": "0",
+                    "y": "32",
+                    "blur": "90",
+                    "spread": "0",
+                    "color": "rgba(0, 0, 0, 0.45)",
+                    "type": "dropShadow"
+                },
+                "type": "boxShadow"
+            }
+        },
+        "typography": {
+            "fontFamilies": {
+                "base": {
+                    "value": "Segoe UI, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif",
+                    "type": "fontFamilies"
+                }
+            },
+            "fontSize": {
+                "title": {
+                    "value": "1.8rem",
+                    "type": "fontSizes"
+                },
+                "body": {
+                    "value": "1rem",
+                    "type": "fontSizes"
+                },
+                "small": {
+                    "value": "0.86rem",
+                    "type": "fontSizes"
+                }
+            }
+        }
+    }
+}

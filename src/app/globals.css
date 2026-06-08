@@ -259,6 +259,11 @@ img {
     border-radius: var(--radius-xl);
     box-shadow: var(--shadow);
     backdrop-filter: blur(18px);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.panel:hover {
+    box-shadow: 0 32px 90px rgba(0, 0, 0, 0.45);
 }
 
 .panel-strong {
@@ -289,16 +294,27 @@ img {
 }
 
 .overview-icon {
-    width: 56px;
-    height: 56px;
-    border-radius: 14px;
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
+    width: 64px;
+    height: 64px;
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4);
     object-fit: cover;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.overview-icon:hover {
+    transform: scale(1.08) rotate(-3deg);
 }
 
 .overview-title {
     margin-bottom: 6px;
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    background: linear-gradient(135deg, #fff, #9fb0c9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .overview-subtitle {
@@ -344,6 +360,13 @@ img {
     border-radius: 18px;
     background: rgba(255, 255, 255, 0.04);
     border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.metric:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.12);
 }
 
 .metric strong {
