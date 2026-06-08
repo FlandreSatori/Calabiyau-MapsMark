@@ -8,13 +8,26 @@ export const emptyRatings = (): RatingDimensions => ({
     overall: 0
 });
 
-export const averageRatings = (reviews: ReviewRecord[], mapId?: string) => {
-    const filtered = mapId ? reviews.filter((item) => item.mapId === mapId && !item.deletedAt) : reviews.filter((item) => !item.deletedAt);
-    if (filtered.length === 0) {
+type ReviewSentimentFilter = "all" | "positive" | "negative";
+
+const filterReviewsBySentiment = (reviews: ReviewRecord[], sentiment: ReviewSentimentFilter) => {
+    if (sentiment === "positive") {
+        return reviews.filter((review) => review.ratings.overall >= 0);
+    }
+    if (sentiment === "negative") {
+        return reviews.filter((review) => review.ratings.overall < 0);
+    }
+    return reviews;
+};
+
+export const averageRatings = (reviews: ReviewRecord[], mapId?: string, sentiment: ReviewSentimentFilter = "positive") => {
+    const filtered = (mapId ? reviews.filter((item) => item.mapId === mapId && !item.deletedAt) : reviews.filter((item) => !item.deletedAt));
+    const sentimentFiltered = filterReviewsBySentiment(filtered, sentiment);
+    if (sentimentFiltered.length === 0) {
         return emptyRatings();
     }
 
-    const totals = filtered.reduce(
+    const totals = sentimentFiltered.reduce(
         (accumulator, review) => {
             accumulator.entertainment += review.ratings.entertainment;
             accumulator.aesthetics += review.ratings.aesthetics;
@@ -27,21 +40,93 @@ export const averageRatings = (reviews: ReviewRecord[], mapId?: string) => {
     );
 
     return {
-        entertainment: totals.entertainment / filtered.length,
-        aesthetics: totals.aesthetics / filtered.length,
-        guidance: totals.guidance / filtered.length,
-        difficulty: totals.difficulty / filtered.length,
-        overall: totals.overall / filtered.length
+        entertainment: totals.entertainment / sentimentFiltered.length,
+        aesthetics: totals.aesthetics / sentimentFiltered.length,
+        guidance: totals.guidance / sentimentFiltered.length,
+        difficulty: totals.difficulty / sentimentFiltered.length,
+        overall: totals.overall / sentimentFiltered.length
     };
 };
 
-export const mapScore = (reviews: ReviewRecord[], mapId: string, metric: keyof RatingDimensions) => {
-    const filtered = reviews.filter((item) => item.mapId === mapId && !item.deletedAt);
+export const mapScore = (reviews: ReviewRecord[], mapId: string, metric: keyof RatingDimensions, sentiment: ReviewSentimentFilter = "positive") => {
+    const filtered = filterReviewsBySentiment(reviews.filter((item) => item.mapId === mapId && !item.deletedAt), sentiment);
     if (filtered.length === 0) {
         return 0;
     }
     const total = filtered.reduce((sum, review) => sum + review.ratings[metric], 0);
     return total / filtered.length;
+};
+
+export const overallScore = (reviews: ReviewRecord[], mapId: string, sentiment: ReviewSentimentFilter = "positive") => {
+    return averageRatings(reviews, mapId, sentiment).overall;
+};
+
+export const getRatingLabelByOverallScore = (score: number) => {
+    if (score >= 4) {
+        return "神图";
+    }
+    if (score >= 3) {
+        return "好图";
+    }
+    if (score >= 2) {
+        return "神人图";
+    }
+    return "史图";
+};
+
+export const getScoreBucketLabel = (score: number) => {
+    if (score >= 4) {
+        return "4分以上";
+    }
+    if (score >= 3) {
+        return "3分以上";
+    }
+    if (score >= 2) {
+        return "2分以上";
+    }
+    if (score >= 1) {
+        return "1分以上";
+    }
+    return "0分以上";
+};
+
+export const getMapRatingLabel = (reviews: ReviewRecord[], mapId: string, sentiment: ReviewSentimentFilter = "positive") => {
+    const filtered = reviews.filter((item) => item.mapId === mapId && !item.deletedAt);
+    if (filtered.length === 0) {
+        return null;
+    }
+    const ratings = averageRatings(filtered, undefined, sentiment);
+    const category = classifyMapCategoryByRatings(ratings);
+    if (category === "god") return "神图";
+    if (category === "good") return "好图";
+    if (category === "poop") return "史图";
+    if (category === "shenren") return "神人图";
+    return null;
+};
+
+export const getScoreBucketKey = (score: number) => {
+    if (score >= 4) {
+        return "4plus";
+    }
+    if (score >= 3) {
+        return "3";
+    }
+    if (score >= 2) {
+        return "2";
+    }
+    if (score >= 1) {
+        return "1";
+    }
+    return "0";
+};
+
+export const matchesScoreBucket = (score: number, bucket: string) => {
+    if (bucket === "4plus") return score >= 4;
+    if (bucket === "3") return score >= 3 && score < 4;
+    if (bucket === "2") return score >= 2 && score < 3;
+    if (bucket === "1") return score >= 1 && score < 2;
+    if (bucket === "0") return score >= 0 && score < 1;
+    return true;
 };
 
 export const aggregateByMetric = (state: AppState, metric: keyof RatingDimensions) => {
@@ -75,11 +160,20 @@ export const countBelowThreshold = (ratings: RatingDimensions, threshold: number
     dimensions.filter((dimension) => ratings[dimension] < threshold).length;
 
 export const classifyRatings = (ratings: RatingDimensions) => ({
-    good: countAboveThreshold(ratings, 0) >= 2 && countAboveThreshold(ratings, 0) <= 3,
-    god: countAboveThreshold(ratings, 3) >= 2 && countAboveThreshold(ratings, 3) <= 3,
-    shenren: countBelowThreshold(ratings, 0) >= 1 && countBelowThreshold(ratings, 0) <= 2,
-    poop: countBelowThreshold(ratings, 0) >= 3
+    god: countAboveThreshold(ratings, 3.5) >= 3,
+    good: countAboveThreshold(ratings, 2) >= 3,
+    shenren: countBelowThreshold(ratings, 2) >= 1,
+    poop: countBelowThreshold(ratings, 2) >= 3
 });
+
+const classifyMapCategoryByRatings = (ratings: RatingDimensions): "good" | "god" | "shenren" | "poop" | null => {
+    const classification = classifyRatings(ratings);
+    if (classification.god) return "god";
+    if (classification.good) return "good";
+    if (classification.poop) return "poop";
+    if (classification.shenren) return "shenren";
+    return null;
+};
 
 export const countMapTypes = (state: AppState) =>
     visibleMaps(state).reduce<Record<string, number>>((accumulator, map) => {
@@ -90,12 +184,11 @@ export const countMapTypes = (state: AppState) =>
 export const countMapCategories = (state: AppState) => {
     const totals = { good: 0, god: 0, shenren: 0, poop: 0 };
     visibleMaps(state).forEach((map) => {
-        const ratings = averageRatings(state.reviews, map.id);
-        const classification = classifyRatings(ratings);
-        if (classification.good) totals.good += 1;
-        if (classification.god) totals.god += 1;
-        if (classification.shenren) totals.shenren += 1;
-        if (classification.poop) totals.poop += 1;
+        const label = getMapRatingLabel(state.reviews, map.id);
+        if (label === "神图") totals.god += 1;
+        else if (label === "好图") totals.good += 1;
+        else if (label === "史图") totals.poop += 1;
+        else if (label === "神人图") totals.shenren += 1;
     });
     return totals;
 };

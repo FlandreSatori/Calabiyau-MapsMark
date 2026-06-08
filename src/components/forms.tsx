@@ -444,14 +444,37 @@ export function ReviewForm({ maps, onSuccess, notify }: ReviewFormProps) {
                             </label>
                         </div>
                         <span className="help">匿名后评价将不会上传名称</span>
-                        <div className="help" style={{ marginTop: 8 }}>
-                            <div><strong>维度说明：</strong></div>
-                            <div style={{ marginTop: 6 }}>
-                                <div><strong>趣味性：</strong>是否有趣，是否值得二刷/带人，设计的谜题是否有创造性，是否环环相扣引人入胜，关卡节奏安排是否合理；  0为无聊 +5为流连忘返</div>
-                                <div style={{ marginTop: 6 }}><strong>美观性：</strong>场景是否自洽和谐，是否赏心悦目，是否有完整的世界观和气氛构建；  0为简陋 +5为叹为观止</div>
-                                <div style={{ marginTop: 6 }}><strong>引导性：</strong>游玩的时候是否感觉到迷茫，不知道干什么，卡关但不是因为被难住，试图无差别的蹭墙蹭草钻水;    0为动线混沌，+5为动线清晰</div>
-                                <div style={{ marginTop: 6 }}><strong>难易度：</strong>相较之下，需要思考/花费的时间多少，需要的知识储备多少；  0为简单 +5为极难</div>
-                                <div style={{ marginTop: 6 }}><strong>负分：</strong>表示该维度不及格，存在严重问题，或令人不适</div>
+                        <div className="review-dimension-guide">
+                            <div className="review-dimension-guide-row">
+                                <span>
+                                    <strong>趣味性：</strong>
+                                    是否有趣，是否值得二刷/带人，设计的谜题是否有创造性，是否环环相扣引人入胜，关卡节奏安排是否合理
+                                </span>
+                                <span className="review-dimension-guide-scale">无聊 0 ~　+5 流连忘返</span>
+                            </div>
+
+                            <div className="review-dimension-guide-row">
+                                <span>
+                                    <strong>美观性：</strong>
+                                    场景是否自洽和谐，是否赏心悦目，是否有完整的世界观和气氛构建
+                                </span>
+                                <span className="review-dimension-guide-scale">简陋 0 ~　+5 叹为观止</span>
+                            </div>
+
+                            <div className="review-dimension-guide-row">
+                                <span>
+                                    <strong>引导性：</strong>
+                                    游玩的时候是否感觉到迷茫，不知道干什么，卡关但不是因为被难住
+                                </span>
+                                <span className="review-dimension-guide-scale">动线混沌 0 ~　+5 动线清晰</span>
+                            </div>
+
+                            <div className="review-dimension-guide-row">
+                                <span>
+                                    <strong>难易度：</strong>
+                                    相较之下，需要思考/花费的时间多少，需要的知识储备多少
+                                </span>
+                                <span className="review-dimension-guide-scale">简单 0 ~　+5 极难&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                             </div>
                         </div>
                     </label>

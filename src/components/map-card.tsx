@@ -4,7 +4,7 @@ import Link from "next/link";
 
 import type { MapRecord, ReviewRecord } from "@/lib/types";
 import { formatDateTime, getProxiedGithubUrl } from "@/lib/format";
-import { averageRatings } from "@/lib/metrics";
+import { averageRatings, getMapRatingLabel } from "@/lib/metrics";
 
 type MapCardProps = {
     map: MapRecord;
@@ -14,6 +14,7 @@ type MapCardProps = {
 export function MapCard({ map, reviews }: MapCardProps) {
     const score = averageRatings(reviews, map.id);
     const reviewCount = reviews.filter((review) => review.mapId === map.id && !review.deletedAt).length;
+    const ratingLabel = reviewCount > 0 ? getMapRatingLabel(reviews, map.id) : null;
 
     return (
         <Link href={`/maps/${map.id}`} className="cover-card" title={`${map.name} · 点击查看详情`}>
@@ -29,7 +30,10 @@ export function MapCard({ map, reviews }: MapCardProps) {
                 }}
             />
             <div className="cover-corners" aria-hidden="true">
-                <span className="cover-corner-badge cover-corner-score">{score.overall.toFixed(1)}</span>
+                <div className="cover-corner-stack">
+                    <span className="cover-corner-badge cover-corner-score">{score.overall.toFixed(1)}</span>
+                    {ratingLabel ? <span className="cover-corner-badge cover-corner-tag">{ratingLabel}</span> : null}
+                </div>
                 <span className="cover-corner-badge cover-corner-reviews">{reviewCount} 条评价</span>
             </div>
             <div className="cover-overlay">
