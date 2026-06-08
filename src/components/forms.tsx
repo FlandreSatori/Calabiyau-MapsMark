@@ -476,6 +476,13 @@ export function ReviewForm({ maps, onSuccess, notify }: ReviewFormProps) {
                                 </span>
                                 <span className="review-dimension-guide-scale">简单 0 ~　+5 极难&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                             </div>
+                            <div className="review-dimension-guide-row">
+                                <span>
+                                    <strong>负分：</strong>
+                                    表示该维度不及格，存在严重问题，或令人不适
+                                </span>
+                            </div>
+
                         </div>
                     </label>
                 </div>
