@@ -423,6 +423,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-63c6c5a0-8aae-40c0-b60f-06588c9ae196",
+      "reviewerName": "。",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 5,
+        "aesthetics": 2.7,
+        "guidance": 2.9,
+        "difficulty": 3.2,
+        "overall": 5
+      },
+      "comment": "当时少有新颖好图，让人眼前一亮。",
+      "id": "review-66372056-b677-4745-abac-78618e9df379",
+      "submittedAt": "2026-06-09T16:00:00.936Z",
+      "updatedAt": "2026-06-09T16:00:00.936Z"
+    },
+    {
       "mapId": "map-3e9d28cc-104d-45c6-99a1-d45edae292cc",
       "reviewerName": "AAA卡丘解密大王批发",
       "anonymous": false,
@@ -665,6 +681,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-66372056-b677-4745-abac-78618e9df379",
+      "title": "。",
+      "detail": "map-63c6c5a0-8aae-40c0-b60f-06588c9ae196",
+      "id": "event-8574c866-9ce5-4a1a-9923-d0f33b7b7f9e",
+      "timestamp": "2026-06-09T16:00:00.936Z"
+    },
     {
       "kind": "review-create",
       "subjectId": "review-5ce7ac4a-595f-47de-8cc7-deeaa151b4f6",
@@ -1034,5 +1058,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-07T15:13:01.461Z"
+  "updatedAt": "2026-06-09T16:00:00.936Z"
 }
