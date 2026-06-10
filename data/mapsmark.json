@@ -423,6 +423,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-f35d749f-2a1b-4d16-ae48-fe8ee6291d70",
+      "reviewerName": "ZXCVSKA",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 3.5,
+        "aesthetics": 3.5,
+        "guidance": 4,
+        "difficulty": 1.5,
+        "overall": 4.5
+      },
+      "comment": "作为最早的一张解密图，其解密的深度并不是很足，但对于刚入坑解密的新手来说，是非常友好的，整体引导，实际上都是一环套一环的,关卡之间的设计都是有关联的(虽然说实际玩体验中感觉到的人并不多)趣味性和引导性都挺不错，也有不少小巧思，美观度说实话也尽力了，毕竟作者当时是花了半天左右赶工出来的，从凌晨到下午，差点没把作者累死，在这样的情况下仍能保持一定的剧情，结构，颜色已经是很不容易了(更别说当时的颜色错位bug的非常严重)所以美观度上给一个较高的分数是完全可以的，至于整体评价就4.5吧，虽然有一定瑕疵，但仍是非常不错且优秀的作品",
+      "id": "review-08f3632c-b50a-4143-a5fc-ecf85ef75542",
+      "submittedAt": "2026-06-10T16:23:53.650Z",
+      "updatedAt": "2026-06-10T16:23:53.650Z"
+    },
+    {
       "mapId": "map-63c6c5a0-8aae-40c0-b60f-06588c9ae196",
       "reviewerName": "。",
       "anonymous": false,
@@ -681,6 +697,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-08f3632c-b50a-4143-a5fc-ecf85ef75542",
+      "title": "ZXCVSKA",
+      "detail": "map-f35d749f-2a1b-4d16-ae48-fe8ee6291d70",
+      "id": "event-216e6724-2719-4a0f-86e5-a3e93745f852",
+      "timestamp": "2026-06-10T16:23:53.651Z"
+    },
     {
       "kind": "review-create",
       "subjectId": "review-66372056-b677-4745-abac-78618e9df379",
@@ -1058,5 +1082,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-09T16:00:00.936Z"
+  "updatedAt": "2026-06-10T16:23:53.651Z"
 }
