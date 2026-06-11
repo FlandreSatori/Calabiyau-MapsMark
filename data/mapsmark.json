@@ -152,7 +152,9 @@
       "estimatedMinutes": 120,
       "id": "map-436f31ba-334b-4503-8db8-80217e5d1fdd",
       "submittedAt": "2026-05-31T11:37:16.716Z",
-      "updatedAt": "2026-05-31T11:37:16.716Z"
+      "updatedAt": "2026-06-11T15:12:10.102Z",
+      "customCoverImage": "https://pic1.imgdb.cn/item/6a2ad03efdb1c84b8401a863.jpg",
+      "customPreviewImage": ""
     },
     {
       "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780226839925-MMR___.png",
@@ -737,6 +739,14 @@
   "events": [
     {
       "kind": "map-update",
+      "subjectId": "map-436f31ba-334b-4503-8db8-80217e5d1fdd",
+      "title": "编辑地图 MMR解密之矢图来袭",
+      "detail": "6d4r9e",
+      "id": "event-6186b543-306c-4923-a9da-c15614f7af6e",
+      "timestamp": "2026-06-11T15:12:10.102Z"
+    },
+    {
+      "kind": "map-update",
       "subjectId": "map-3e9d28cc-104d-45c6-99a1-d45edae292cc",
       "title": "编辑地图 MMR解密之不玩闪影的有难了喵",
       "detail": "v49fx2",
@@ -1272,5 +1282,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-11T15:12:05.734Z"
+  "updatedAt": "2026-06-11T15:12:10.102Z"
 }
