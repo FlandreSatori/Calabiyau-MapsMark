@@ -196,7 +196,9 @@
       "estimatedMinutes": 30,
       "id": "map-6554e08d-b080-4deb-991d-d894e328275f",
       "submittedAt": "2026-05-31T11:14:55.166Z",
-      "updatedAt": "2026-05-31T11:14:55.166Z"
+      "updatedAt": "2026-06-11T15:11:45.197Z",
+      "customCoverImage": "https://pic1.imgdb.cn/item/6a2ad02afdb1c84b8401a857.jpg",
+      "customPreviewImage": ""
     },
     {
       "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780225756780-_______.png",
@@ -733,6 +735,14 @@
   "events": [
     {
       "kind": "map-update",
+      "subjectId": "map-6554e08d-b080-4deb-991d-d894e328275f",
+      "title": "编辑地图 双人解密闯关",
+      "detail": "j429pv",
+      "id": "event-1c2c7c09-841a-4a04-8f00-d8c8dc3f9b30",
+      "timestamp": "2026-06-11T15:11:45.206Z"
+    },
+    {
+      "kind": "map-update",
       "subjectId": "map-3d25699d-cd82-46d3-ba0b-b428d6f83c5a",
       "title": "编辑地图 MMR也能过的解密",
       "detail": "btsl97",
@@ -1252,5 +1262,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-11T15:11:31.812Z"
+  "updatedAt": "2026-06-11T15:11:45.206Z"
 }
