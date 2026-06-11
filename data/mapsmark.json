@@ -418,7 +418,9 @@
       "estimatedMinutes": 60,
       "id": "map-f35d749f-2a1b-4d16-ae48-fe8ee6291d70",
       "submittedAt": "2026-05-31T09:42:56.101Z",
-      "updatedAt": "2026-05-31T09:42:56.101Z"
+      "updatedAt": "2026-06-11T15:07:47.246Z",
+      "customCoverImage": "https://pic1.imgdb.cn/item/6a2acd07fdb1c84b84015e5a.jpg",
+      "customPreviewImage": ""
     }
   ],
   "reviews": [
@@ -697,6 +699,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "map-update",
+      "subjectId": "map-f35d749f-2a1b-4d16-ae48-fe8ee6291d70",
+      "title": "编辑地图 构式解密，逃离古堡之贪玩蓝门",
+      "detail": "9trdrv",
+      "id": "event-6f36fb6e-b640-439a-94c2-ee7ee7da7d9b",
+      "timestamp": "2026-06-11T15:07:47.246Z"
+    },
     {
       "kind": "review-create",
       "subjectId": "review-08f3632c-b50a-4143-a5fc-ecf85ef75542",
@@ -1082,5 +1092,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-10T16:23:53.651Z"
+  "updatedAt": "2026-06-11T15:07:47.246Z"
 }
