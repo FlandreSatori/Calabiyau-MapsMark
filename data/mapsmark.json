@@ -180,7 +180,9 @@
       "estimatedMinutes": 15,
       "id": "map-3d25699d-cd82-46d3-ba0b-b428d6f83c5a",
       "submittedAt": "2026-05-31T11:23:26.072Z",
-      "updatedAt": "2026-05-31T11:23:26.072Z"
+      "updatedAt": "2026-06-11T15:11:31.812Z",
+      "customCoverImage": "https://pic1.imgdb.cn/item/6a2acfedfdb1c84b8401a82b.jpg",
+      "customPreviewImage": ""
     },
     {
       "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780226076543-______.png",
@@ -731,6 +733,14 @@
   "events": [
     {
       "kind": "map-update",
+      "subjectId": "map-3d25699d-cd82-46d3-ba0b-b428d6f83c5a",
+      "title": "编辑地图 MMR也能过的解密",
+      "detail": "btsl97",
+      "id": "event-d2b86a32-64c9-436e-afff-516b471b0de2",
+      "timestamp": "2026-06-11T15:11:31.812Z"
+    },
+    {
+      "kind": "map-update",
       "subjectId": "map-fdfb60c0-26cf-4cb8-951e-c9ef210ae266",
       "title": "编辑地图 调查伊薇特小熊喵",
       "detail": "k8b6o5",
@@ -1242,5 +1252,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-11T15:11:13.783Z"
+  "updatedAt": "2026-06-11T15:11:31.812Z"
 }
