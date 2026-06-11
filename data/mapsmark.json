@@ -364,7 +364,9 @@
       "estimatedMinutes": 60,
       "id": "map-98f00295-ae37-4a25-9bdd-2dc15593dcce",
       "submittedAt": "2026-05-31T10:41:06.394Z",
-      "updatedAt": "2026-05-31T10:41:06.394Z"
+      "updatedAt": "2026-06-11T15:08:35.588Z",
+      "customCoverImage": "https://pic1.imgdb.cn/item/6a2acd07fdb1c84b84015e5b.jpg",
+      "customPreviewImage": ""
     },
     {
       "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780223427422-_____.png",
@@ -705,6 +707,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "map-update",
+      "subjectId": "map-98f00295-ae37-4a25-9bdd-2dc15593dcce",
+      "title": "编辑地图 逃离监狱",
+      "detail": "zee85y",
+      "id": "event-90a0050e-8087-4847-a0d0-3d1be853dbd2",
+      "timestamp": "2026-06-11T15:08:35.588Z"
+    },
     {
       "kind": "map-update",
       "subjectId": "map-8ff6810e-ab5f-47c1-9855-57622484ef5c",
@@ -1122,5 +1132,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-11T15:08:22.202Z"
+  "updatedAt": "2026-06-11T15:08:35.588Z"
 }
