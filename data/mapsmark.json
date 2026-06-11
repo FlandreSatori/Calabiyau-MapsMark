@@ -390,7 +390,9 @@
       "estimatedMinutes": 15,
       "id": "map-859e43c7-c7a6-4693-9597-2a07616a0d0c",
       "submittedAt": "2026-05-31T10:23:43.823Z",
-      "updatedAt": "2026-05-31T10:23:43.823Z"
+      "updatedAt": "2026-06-11T15:07:59.013Z",
+      "customCoverImage": "https://pic1.imgdb.cn/item/6a2acd07fdb1c84b84015e5e.jpg",
+      "customPreviewImage": ""
     },
     {
       "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780221409617-____.png",
@@ -699,6 +701,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "map-update",
+      "subjectId": "map-859e43c7-c7a6-4693-9597-2a07616a0d0c",
+      "title": "编辑地图 逃离虐猫咖啡馆",
+      "detail": "8j6r8z",
+      "id": "event-b997d374-9a5a-47b3-bd3a-8dbf17ec16c5",
+      "timestamp": "2026-06-11T15:07:59.013Z"
+    },
     {
       "kind": "map-update",
       "subjectId": "map-f35d749f-2a1b-4d16-ae48-fe8ee6291d70",
@@ -1092,5 +1102,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-11T15:07:47.246Z"
+  "updatedAt": "2026-06-11T15:07:59.013Z"
 }
