@@ -348,7 +348,9 @@
       "estimatedMinutes": 45,
       "id": "map-8ff6810e-ab5f-47c1-9855-57622484ef5c",
       "submittedAt": "2026-05-31T10:44:40.606Z",
-      "updatedAt": "2026-05-31T10:44:40.606Z"
+      "updatedAt": "2026-06-11T15:08:22.202Z",
+      "customCoverImage": "https://pic1.imgdb.cn/item/6a2acd07fdb1c84b84015e5c.jpg",
+      "customPreviewImage": ""
     },
     {
       "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780224055881-____.png",
@@ -703,6 +705,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "map-update",
+      "subjectId": "map-8ff6810e-ab5f-47c1-9855-57622484ef5c",
+      "title": "编辑地图 随机复活解密",
+      "detail": "fwl5my",
+      "id": "event-25a6439f-68ac-4c2e-99c6-89f29a478e10",
+      "timestamp": "2026-06-11T15:08:22.202Z"
+    },
     {
       "kind": "map-update",
       "subjectId": "map-98a6bfaa-269f-4528-81cb-f547e79d4eb7",
@@ -1112,5 +1122,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-11T15:08:07.501Z"
+  "updatedAt": "2026-06-11T15:08:22.202Z"
 }
