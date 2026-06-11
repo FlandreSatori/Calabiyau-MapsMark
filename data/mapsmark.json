@@ -96,7 +96,9 @@
       "estimatedMinutes": 120,
       "id": "map-0cc4bcd8-81d6-4028-84b7-b197c6c92ef8",
       "submittedAt": "2026-05-31T12:07:02.203Z",
-      "updatedAt": "2026-05-31T12:07:02.203Z"
+      "updatedAt": "2026-06-11T15:12:33.427Z",
+      "customCoverImage": "https://pic1.imgdb.cn/item/6a2ad03efdb1c84b8401a85f.jpg",
+      "customPreviewImage": ""
     },
     {
       "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780228519556-______.png",
@@ -745,6 +747,14 @@
   "events": [
     {
       "kind": "map-update",
+      "subjectId": "map-0cc4bcd8-81d6-4028-84b7-b197c6c92ef8",
+      "title": "编辑地图 MMR解密之老登有难了喵DLC",
+      "detail": "zou7mr",
+      "id": "event-58588135-5ec2-45db-b84a-88d7bb68c64f",
+      "timestamp": "2026-06-11T15:12:33.427Z"
+    },
+    {
+      "kind": "map-update",
       "subjectId": "map-4ff9fd49-3d04-45b6-94b0-bd7a76e40f56",
       "title": "编辑地图 MMR解密之江一楠大冒险V2",
       "detail": "w2zjhy",
@@ -1312,5 +1322,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-11T15:12:25.605Z"
+  "updatedAt": "2026-06-11T15:12:33.427Z"
 }
