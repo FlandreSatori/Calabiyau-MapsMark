@@ -40,7 +40,9 @@
       "estimatedMinutes": 30,
       "id": "map-a6abb700-46c1-4d61-b588-89384005cd82",
       "submittedAt": "2026-05-31T14:57:53.606Z",
-      "updatedAt": "2026-05-31T14:57:53.606Z"
+      "updatedAt": "2026-06-11T15:13:16.167Z",
+      "customCoverImage": "https://pic1.imgdb.cn/item/6a2ad06afdb1c84b8401a872.jpg",
+      "customPreviewImage": ""
     },
     {
       "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780238856280-__________.png",
@@ -753,6 +755,14 @@
   "events": [
     {
       "kind": "map-update",
+      "subjectId": "map-a6abb700-46c1-4d61-b588-89384005cd82",
+      "title": "编辑地图 地下探险",
+      "detail": "stz3bp",
+      "id": "event-14553a68-0adf-4742-a431-b5d2335ef5d9",
+      "timestamp": "2026-06-11T15:13:16.167Z"
+    },
+    {
+      "kind": "map-update",
       "subjectId": "map-b6ab47d4-1947-4279-9a8f-546fd56511e3",
       "title": "编辑地图 逃离此处，找到最初猫窝",
       "detail": "wnh09o",
@@ -1352,5 +1362,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-11T15:13:10.759Z"
+  "updatedAt": "2026-06-11T15:13:16.167Z"
 }
