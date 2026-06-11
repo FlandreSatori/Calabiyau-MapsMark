@@ -222,7 +222,9 @@
       "estimatedMinutes": 90,
       "id": "map-28971207-c22d-44c7-8787-f70909194b72",
       "submittedAt": "2026-05-31T11:06:10.091Z",
-      "updatedAt": "2026-05-31T11:06:10.091Z"
+      "updatedAt": "2026-06-11T15:11:08.311Z",
+      "customCoverImage": "https://pic1.imgdb.cn/item/6a2acfedfdb1c84b8401a82d.jpg",
+      "customPreviewImage": ""
     },
     {
       "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780225516098-____MMR.png",
@@ -727,6 +729,14 @@
   "events": [
     {
       "kind": "map-update",
+      "subjectId": "map-28971207-c22d-44c7-8787-f70909194b72",
+      "title": "编辑地图 双人成行困难",
+      "detail": "gryb9l",
+      "id": "event-12b90c4b-cecf-460f-907c-22fce062e751",
+      "timestamp": "2026-06-11T15:11:08.311Z"
+    },
+    {
+      "kind": "map-update",
       "subjectId": "map-27bbe770-6267-429d-a7e1-992cdffba9d4",
       "title": "编辑地图 双人成行MMR",
       "detail": "mzv9k9",
@@ -1222,5 +1232,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-11T15:11:03.262Z"
+  "updatedAt": "2026-06-11T15:11:08.311Z"
 }
