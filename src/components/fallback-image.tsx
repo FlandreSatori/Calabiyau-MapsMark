@@ -6,19 +6,23 @@ import { getProxiedGithubUrl } from "@/lib/format";
 
 type FallbackImageProps = Omit<React.ImgHTMLAttributes<HTMLImageElement>, "src"> & {
     src?: string;
+    customSrc?: string;
 };
 
-export function FallbackImage({ src, alt, ...rest }: FallbackImageProps) {
+export function FallbackImage({ src, customSrc, alt, ...rest }: FallbackImageProps) {
+    const effectiveSrc = customSrc && customSrc.trim() ? customSrc : src;
+    const useCustom = Boolean(customSrc && customSrc.trim());
+
     const [hasRetried, setHasRetried] = useState(false);
     const [isLoaded, setIsLoaded] = useState(false);
 
-    const fallbackSrc = useMemo(() => getProxiedGithubUrl(src), [src]);
-    const shouldUseFallback = Boolean(src && fallbackSrc && fallbackSrc !== src);
+    const fallbackSrc = useMemo(() => (useCustom ? undefined : getProxiedGithubUrl(effectiveSrc)), [effectiveSrc, useCustom]);
+    const shouldUseFallback = !useCustom && Boolean(effectiveSrc && fallbackSrc && fallbackSrc !== effectiveSrc);
 
     useEffect(() => {
         setHasRetried(false);
         setIsLoaded(false);
-    }, [src]);
+    }, [effectiveSrc]);
 
     useEffect(() => {
         if (!shouldUseFallback || hasRetried || isLoaded) {
@@ -34,7 +38,7 @@ export function FallbackImage({ src, alt, ...rest }: FallbackImageProps) {
         };
     }, [hasRetried, isLoaded, shouldUseFallback]);
 
-    const resolvedSrc = hasRetried ? (fallbackSrc ?? src) : src;
+    const resolvedSrc = useCustom ? effectiveSrc : (hasRetried ? (fallbackSrc ?? effectiveSrc) : effectiveSrc);
     const { onLoad, onError, ...imgProps } = rest;
 
     return (

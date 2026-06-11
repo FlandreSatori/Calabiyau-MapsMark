@@ -21,6 +21,7 @@ export function MapCard({ map, reviews }: MapCardProps) {
         <Link href={`/maps/${map.id}`} className="cover-card" title={`${map.name} · 点击查看详情`}>
             <FallbackImage
                 src={map.coverImage}
+                customSrc={map.customCoverImage}
                 alt={map.name}
             />
             <div className="cover-corners" aria-hidden="true">

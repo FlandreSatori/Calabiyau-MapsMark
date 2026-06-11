@@ -104,7 +104,9 @@ export function HomeMapExplorer({ maps, reviews, mapTypes, typeCounts, categoryC
             <section className="grid home-map-explorer-grid">
                 <div className="panel panel-pad">
                     <div className="overview-heading">
-                        <Image className="overview-icon" src={titleIcon} alt="标题图标" width={56} height={56} priority />
+                        <a href="https://space.bilibili.com/2199618" target="_blank" rel="noopener noreferrer">
+                            <Image className="overview-icon" src={titleIcon} alt="标题图标" width={56} height={56} priority />
+                        </a>
                         <div>
                             <p className="section-title overview-title">是啊玩什么？</p>
                             <p className="help overview-subtitle">请做出评价吧！</p>

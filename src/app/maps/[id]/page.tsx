@@ -27,8 +27,8 @@ export default async function MapDetailPage({ params }: { params: Promise<{ id: 
     const positiveAverage = averageRatings(reviews, map.id, "positive");
     const negativeAverage = averageRatings(reviews, map.id, "negative");
     const gallery = [
-        { src: map.coverImage, label: "封面图" },
-        { src: map.previewImage, label: "预览图" }
+        { src: map.coverImage, customSrc: map.customCoverImage, label: "封面图" },
+        { src: map.previewImage, customSrc: map.customPreviewImage, label: "预览图" }
     ].filter((item) => Boolean(item.src));
 
     return (
@@ -50,7 +50,7 @@ export default async function MapDetailPage({ params }: { params: Promise<{ id: 
                                 {gallery.map((image) => (
                                     <figure className="map-gallery-item" key={`${map.id}-${image.label}`}>
                                         <div className="preview-frame map-gallery-frame">
-                                            <FallbackImage src={image.src} alt={`${map.name} ${image.label}`} />
+                                            <FallbackImage src={image.src} customSrc={image.customSrc} alt={`${map.name} ${image.label}`} />
                                         </div>
                                         <figcaption className="help map-gallery-caption">{image.label}</figcaption>
                                     </figure>
