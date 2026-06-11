@@ -82,7 +82,9 @@
       "estimatedMinutes": 90,
       "id": "map-c435497d-8c81-4c04-a89f-d05462935597",
       "submittedAt": "2026-05-31T12:09:07.362Z",
-      "updatedAt": "2026-05-31T12:09:07.362Z"
+      "updatedAt": "2026-06-11T15:12:49.579Z",
+      "customCoverImage": "https://pic1.imgdb.cn/item/6a2ad06afdb1c84b8401a871.jpg",
+      "customPreviewImage": ""
     },
     {
       "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780229219923-____.png",
@@ -747,6 +749,14 @@
   "events": [
     {
       "kind": "map-update",
+      "subjectId": "map-c435497d-8c81-4c04-a89f-d05462935597",
+      "title": "编辑地图 MMR解密之猫娘大调查喵V2",
+      "detail": "965p1o",
+      "id": "event-333d5e87-0a2e-41fd-b362-01a03a2909eb",
+      "timestamp": "2026-06-11T15:12:49.579Z"
+    },
+    {
+      "kind": "map-update",
       "subjectId": "map-0cc4bcd8-81d6-4028-84b7-b197c6c92ef8",
       "title": "编辑地图 MMR解密之老登有难了喵DLC",
       "detail": "zou7mr",
@@ -1322,5 +1332,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-11T15:12:33.427Z"
+  "updatedAt": "2026-06-11T15:12:49.579Z"
 }
