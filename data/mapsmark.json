@@ -2,7 +2,7 @@
   "maps": [
     {
       "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780652153706-scrp.png",
-      "previewImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780652162855-scrp.png",
+      "previewImage": "",
       "code": "6up3al",
       "type": "解密",
       "name": "答辩依托解密",
@@ -12,7 +12,9 @@
       "estimatedMinutes": 60,
       "id": "map-b009edd9-7806-4281-beb3-41700e740419",
       "submittedAt": "2026-06-05T09:36:30.181Z",
-      "updatedAt": "2026-06-05T09:36:30.181Z"
+      "updatedAt": "2026-06-11T15:13:31.818Z",
+      "customCoverImage": "https://pic1.imgdb.cn/item/6a2ad06afdb1c84b8401a875.jpg",
+      "customPreviewImage": ""
     },
     {
       "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780239561085-____.png",
@@ -757,6 +759,14 @@
   "events": [
     {
       "kind": "map-update",
+      "subjectId": "map-b009edd9-7806-4281-beb3-41700e740419",
+      "title": "编辑地图 答辩依托解密",
+      "detail": "6up3al",
+      "id": "event-86dd14cb-52d2-477c-a192-968c48a03c1a",
+      "timestamp": "2026-06-11T15:13:31.818Z"
+    },
+    {
+      "kind": "map-update",
       "subjectId": "map-53804f28-d922-4fe3-9c54-650931cb22b0",
       "title": "编辑地图 猫娘乐园V3",
       "detail": "48gy1q",
@@ -1372,5 +1382,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-11T15:13:22.331Z"
+  "updatedAt": "2026-06-11T15:13:31.818Z"
 }
