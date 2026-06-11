@@ -250,7 +250,9 @@
       "estimatedMinutes": 30,
       "id": "map-f73cc454-b3c9-4331-ae33-4483af0c0d61",
       "submittedAt": "2026-05-31T11:04:28.029Z",
-      "updatedAt": "2026-05-31T11:04:28.029Z"
+      "updatedAt": "2026-06-11T15:10:57.202Z",
+      "customCoverImage": "https://pic1.imgdb.cn/item/6a2acfedfdb1c84b8401a82c.jpg",
+      "customPreviewImage": ""
     },
     {
       "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780225391541-______.png",
@@ -721,6 +723,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "map-update",
+      "subjectId": "map-f73cc454-b3c9-4331-ae33-4483af0c0d61",
+      "title": "编辑地图 大画家突破牢笼",
+      "detail": "7au748",
+      "id": "event-70d8da52-5770-4870-b24b-a9f3fab16b8c",
+      "timestamp": "2026-06-11T15:10:57.203Z"
+    },
     {
       "kind": "map-update",
       "subjectId": "map-4685def4-103e-4197-9135-f6668c1de2f8",
@@ -1202,5 +1212,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-11T15:10:50.517Z"
+  "updatedAt": "2026-06-11T15:10:57.203Z"
 }
