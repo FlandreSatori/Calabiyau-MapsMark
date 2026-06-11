@@ -292,7 +292,9 @@
       "estimatedMinutes": 30,
       "id": "map-21e99ba2-0480-485a-b10b-a82ef46338e6",
       "submittedAt": "2026-05-31T10:55:46.550Z",
-      "updatedAt": "2026-05-31T10:55:46.550Z"
+      "updatedAt": "2026-06-11T15:09:20.744Z",
+      "customCoverImage": "https://pic1.imgdb.cn/item/6a2acd44fdb1c84b8401a713.jpg",
+      "customPreviewImage": ""
     },
     {
       "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780224874826-___02.png",
@@ -711,6 +713,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "map-update",
+      "subjectId": "map-21e99ba2-0480-485a-b10b-a82ef46338e6",
+      "title": "编辑地图 神奇猫娘大冒险03：作者居然给自己打差评",
+      "detail": "vn8yry",
+      "id": "event-5afbcf3b-0dd7-4423-9249-0fa29ff8473a",
+      "timestamp": "2026-06-11T15:09:20.744Z"
+    },
     {
       "kind": "map-update",
       "subjectId": "map-45853138-c6bd-47ad-b1bd-2ddff1b6375b",
@@ -1152,5 +1162,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-11T15:09:14.413Z"
+  "updatedAt": "2026-06-11T15:09:20.744Z"
 }
