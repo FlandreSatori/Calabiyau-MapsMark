@@ -320,7 +320,9 @@
       "estimatedMinutes": 30,
       "id": "map-fe9aded8-70c4-4e8a-9095-2f18b2df4e43",
       "submittedAt": "2026-05-31T10:53:15.784Z",
-      "updatedAt": "2026-05-31T10:53:15.784Z"
+      "updatedAt": "2026-06-11T15:09:06.896Z",
+      "customCoverImage": "https://pic1.imgdb.cn/item/6a2acd44fdb1c84b8401a712.jpg",
+      "customPreviewImage": ""
     },
     {
       "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780224580768-______.png",
@@ -707,6 +709,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "map-update",
+      "subjectId": "map-fe9aded8-70c4-4e8a-9095-2f18b2df4e43",
+      "title": "编辑地图 神奇猫娘大冒险01：奇怪的脑回路",
+      "detail": "jy9r3e",
+      "id": "event-0a19e56b-e8ac-4985-9ad1-fb693ea96e8a",
+      "timestamp": "2026-06-11T15:09:06.897Z"
+    },
     {
       "kind": "map-update",
       "subjectId": "map-98f00295-ae37-4a25-9bdd-2dc15593dcce",
@@ -1132,5 +1142,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-11T15:08:35.588Z"
+  "updatedAt": "2026-06-11T15:09:06.897Z"
 }
