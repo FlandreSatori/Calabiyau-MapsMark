@@ -208,7 +208,9 @@
       "estimatedMinutes": 90,
       "id": "map-fdfb60c0-26cf-4cb8-951e-c9ef210ae266",
       "submittedAt": "2026-05-31T11:09:19.705Z",
-      "updatedAt": "2026-05-31T11:09:19.705Z"
+      "updatedAt": "2026-06-11T15:11:13.783Z",
+      "customCoverImage": "https://pic1.imgdb.cn/item/6a2acfedfdb1c84b8401a82f.jpg",
+      "customPreviewImage": ""
     },
     {
       "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780225555481-______.png",
@@ -729,6 +731,14 @@
   "events": [
     {
       "kind": "map-update",
+      "subjectId": "map-fdfb60c0-26cf-4cb8-951e-c9ef210ae266",
+      "title": "编辑地图 调查伊薇特小熊喵",
+      "detail": "k8b6o5",
+      "id": "event-a22ae7aa-f505-42ad-9fdd-357239a05c99",
+      "timestamp": "2026-06-11T15:11:13.783Z"
+    },
+    {
+      "kind": "map-update",
       "subjectId": "map-28971207-c22d-44c7-8787-f70909194b72",
       "title": "编辑地图 双人成行困难",
       "detail": "gryb9l",
@@ -1232,5 +1242,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-11T15:11:08.311Z"
+  "updatedAt": "2026-06-11T15:11:13.783Z"
 }
