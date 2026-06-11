@@ -54,7 +54,9 @@
       "estimatedMinutes": 60,
       "id": "map-b6ab47d4-1947-4279-9a8f-546fd56511e3",
       "submittedAt": "2026-05-31T14:47:39.091Z",
-      "updatedAt": "2026-05-31T14:47:39.091Z"
+      "updatedAt": "2026-06-11T15:13:10.759Z",
+      "customCoverImage": "https://pic1.imgdb.cn/item/6a2ad06afdb1c84b8401a870.jpg",
+      "customPreviewImage": ""
     },
     {
       "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780238692130-MMR__18.png",
@@ -751,6 +753,14 @@
   "events": [
     {
       "kind": "map-update",
+      "subjectId": "map-b6ab47d4-1947-4279-9a8f-546fd56511e3",
+      "title": "编辑地图 逃离此处，找到最初猫窝",
+      "detail": "wnh09o",
+      "id": "event-1ee0fc0a-45c0-4eab-9bad-b297f885e1ce",
+      "timestamp": "2026-06-11T15:13:10.759Z"
+    },
+    {
+      "kind": "map-update",
       "subjectId": "map-8c3f0601-5bcf-4fff-8f3b-058813684475",
       "title": "编辑地图 MMR入门解密18关",
       "detail": "ifk22m",
@@ -1342,5 +1352,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-11T15:13:02.209Z"
+  "updatedAt": "2026-06-11T15:13:10.759Z"
 }
