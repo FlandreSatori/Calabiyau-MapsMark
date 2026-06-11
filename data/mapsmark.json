@@ -388,7 +388,9 @@
       "estimatedMinutes": 30,
       "id": "map-387ee9e3-5c38-46b9-9aea-257b68844c4d",
       "submittedAt": "2026-05-31T10:31:04.288Z",
-      "updatedAt": "2026-05-31T10:31:04.288Z"
+      "updatedAt": "2026-06-11T15:09:54.034Z",
+      "customCoverImage": "https://pic1.imgdb.cn/item/6a2acd07fdb1c84b84015e5f.jpg",
+      "customPreviewImage": ""
     },
     {
       "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780222903004-_______.png",
@@ -715,6 +717,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "map-update",
+      "subjectId": "map-387ee9e3-5c38-46b9-9aea-257b68844c4d",
+      "title": "编辑地图 重生之我是哈基米德",
+      "detail": "cloz0r",
+      "id": "event-8b5dfe14-906a-485a-95fd-eeb9759783f8",
+      "timestamp": "2026-06-11T15:09:54.034Z"
+    },
     {
       "kind": "map-update",
       "subjectId": "map-aa61b510-66ef-4999-8398-e1aa821fb6d1",
@@ -1172,5 +1182,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-11T15:09:27.990Z"
+  "updatedAt": "2026-06-11T15:09:54.034Z"
 }
