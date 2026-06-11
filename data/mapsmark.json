@@ -166,7 +166,9 @@
       "estimatedMinutes": 45,
       "id": "map-3e9d28cc-104d-45c6-99a1-d45edae292cc",
       "submittedAt": "2026-05-31T11:27:26.298Z",
-      "updatedAt": "2026-05-31T11:27:26.298Z"
+      "updatedAt": "2026-06-11T15:12:05.734Z",
+      "customCoverImage": "https://pic1.imgdb.cn/item/6a2ad03efdb1c84b8401a860.jpg",
+      "customPreviewImage": ""
     },
     {
       "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780226603871-MMR__.png",
@@ -735,6 +737,14 @@
   "events": [
     {
       "kind": "map-update",
+      "subjectId": "map-3e9d28cc-104d-45c6-99a1-d45edae292cc",
+      "title": "编辑地图 MMR解密之不玩闪影的有难了喵",
+      "detail": "v49fx2",
+      "id": "event-b96b78ef-ceea-44a4-965b-943591f166e2",
+      "timestamp": "2026-06-11T15:12:05.734Z"
+    },
+    {
+      "kind": "map-update",
       "subjectId": "map-6554e08d-b080-4deb-991d-d894e328275f",
       "title": "编辑地图 双人解密闯关",
       "detail": "j429pv",
@@ -1262,5 +1272,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-11T15:11:45.206Z"
+  "updatedAt": "2026-06-11T15:12:05.734Z"
 }
