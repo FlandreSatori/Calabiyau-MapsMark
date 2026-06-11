@@ -306,7 +306,9 @@
       "estimatedMinutes": 30,
       "id": "map-45853138-c6bd-47ad-b1bd-2ddff1b6375b",
       "submittedAt": "2026-05-31T10:54:37.523Z",
-      "updatedAt": "2026-05-31T10:54:37.523Z"
+      "updatedAt": "2026-06-11T15:09:14.413Z",
+      "customCoverImage": "https://pic1.imgdb.cn/item/6a2acd44fdb1c84b8401a711.jpg",
+      "customPreviewImage": ""
     },
     {
       "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780224761427-___01.png",
@@ -709,6 +711,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "map-update",
+      "subjectId": "map-45853138-c6bd-47ad-b1bd-2ddff1b6375b",
+      "title": "编辑地图 神奇猫娘大冒险02：小美去哪了喵",
+      "detail": "dsa5jj",
+      "id": "event-b6f48aaf-5317-4504-b0ca-80eb56831ef2",
+      "timestamp": "2026-06-11T15:09:14.413Z"
+    },
     {
       "kind": "map-update",
       "subjectId": "map-fe9aded8-70c4-4e8a-9095-2f18b2df4e43",
@@ -1142,5 +1152,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-11T15:09:06.897Z"
+  "updatedAt": "2026-06-11T15:09:14.413Z"
 }
