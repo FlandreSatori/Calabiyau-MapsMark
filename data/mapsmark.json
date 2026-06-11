@@ -264,7 +264,9 @@
       "estimatedMinutes": 90,
       "id": "map-4685def4-103e-4197-9135-f6668c1de2f8",
       "submittedAt": "2026-05-31T11:03:14.401Z",
-      "updatedAt": "2026-05-31T11:03:14.401Z"
+      "updatedAt": "2026-06-11T15:10:50.517Z",
+      "customCoverImage": "https://pic1.imgdb.cn/item/6a2acfedfdb1c84b8401a830.jpg",
+      "customPreviewImage": ""
     },
     {
       "coverImage": "https://raw.githubusercontent.com/FlandreSatori/Calabiyau-MapsMark/main/assets/images/1780225006182-___04.png",
@@ -719,6 +721,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "map-update",
+      "subjectId": "map-4685def4-103e-4197-9135-f6668c1de2f8",
+      "title": "编辑地图  小基咪喵解密",
+      "detail": "6thn20",
+      "id": "event-3dff49d0-f339-4484-9e8d-3a55aa1d7f6e",
+      "timestamp": "2026-06-11T15:10:50.517Z"
+    },
     {
       "kind": "map-update",
       "subjectId": "map-b4a6746b-d178-4955-a68f-74fc5dacf77a",
@@ -1192,5 +1202,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-11T15:10:23.657Z"
+  "updatedAt": "2026-06-11T15:10:50.517Z"
 }
