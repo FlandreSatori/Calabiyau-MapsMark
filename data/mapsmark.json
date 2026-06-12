@@ -483,6 +483,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-b6ab47d4-1947-4279-9a8f-546fd56511e3",
+      "reviewerName": "弦化猫",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 2.5,
+        "aesthetics": 2,
+        "guidance": 2.5,
+        "difficulty": 5,
+        "overall": 3
+      },
+      "comment": "有些难，卡关了，引导做的不好。有三个开关都在相同的地方藏。",
+      "id": "review-949aff89-5937-4688-a972-8b18fae75e63",
+      "submittedAt": "2026-06-12T14:00:12.477Z",
+      "updatedAt": "2026-06-12T14:00:12.477Z"
+    },
+    {
       "mapId": "map-b009edd9-7806-4281-beb3-41700e740419",
       "reviewerName": "弦化猫",
       "anonymous": false,
@@ -805,6 +821,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-949aff89-5937-4688-a972-8b18fae75e63",
+      "title": "弦化猫",
+      "detail": "map-b6ab47d4-1947-4279-9a8f-546fd56511e3",
+      "id": "event-63248009-7158-4b4a-8eae-ab6eccc48640",
+      "timestamp": "2026-06-12T14:00:12.477Z"
+    },
     {
       "kind": "review-create",
       "subjectId": "review-c687041b-b0c0-4d90-b34a-b98009f5c786",
@@ -1454,5 +1478,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-12T13:58:26.203Z"
+  "updatedAt": "2026-06-12T14:00:12.477Z"
 }
