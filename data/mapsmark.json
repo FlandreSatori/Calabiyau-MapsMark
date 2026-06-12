@@ -483,6 +483,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-436f31ba-334b-4503-8db8-80217e5d1fdd",
+      "reviewerName": "弦化猫",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 4.5,
+        "aesthetics": 5,
+        "guidance": 2,
+        "difficulty": 4.5,
+        "overall": 4.8
+      },
+      "comment": "地图nb，翻转世界。引导做的不好，很有挑战性，最后双人通关。",
+      "id": "review-986936bb-0f81-426b-8960-8b0bc09351b6",
+      "submittedAt": "2026-06-12T14:17:05.431Z",
+      "updatedAt": "2026-06-12T14:17:05.431Z"
+    },
+    {
       "mapId": "map-4ff9fd49-3d04-45b6-94b0-bd7a76e40f56",
       "reviewerName": "弦化猫",
       "anonymous": false,
@@ -869,6 +885,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-986936bb-0f81-426b-8960-8b0bc09351b6",
+      "title": "弦化猫",
+      "detail": "map-436f31ba-334b-4503-8db8-80217e5d1fdd",
+      "id": "event-6163000a-2808-437e-a824-deb2b141ec73",
+      "timestamp": "2026-06-12T14:17:05.431Z"
+    },
     {
       "kind": "review-create",
       "subjectId": "review-23fd8139-4839-40f5-8036-1fede9e2ba05",
@@ -1550,5 +1574,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-12T14:15:43.558Z"
+  "updatedAt": "2026-06-12T14:17:05.431Z"
 }
