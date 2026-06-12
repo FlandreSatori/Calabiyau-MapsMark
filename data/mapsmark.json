@@ -483,6 +483,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-8ff6810e-ab5f-47c1-9855-57622484ef5c",
+      "reviewerName": "弦化猫",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 5,
+        "aesthetics": 4.8,
+        "guidance": 5,
+        "difficulty": 5,
+        "overall": 4.9
+      },
+      "comment": "好玩值得挑战，略难一些。前面忘了，后面也忘了。",
+      "id": "review-1acaf884-e461-4a22-aeb1-80fcef105e1d",
+      "submittedAt": "2026-06-12T14:27:47.040Z",
+      "updatedAt": "2026-06-12T14:27:47.040Z"
+    },
+    {
       "mapId": "map-98f00295-ae37-4a25-9bdd-2dc15593dcce",
       "reviewerName": "弦化猫",
       "anonymous": false,
@@ -981,6 +997,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-1acaf884-e461-4a22-aeb1-80fcef105e1d",
+      "title": "弦化猫",
+      "detail": "map-8ff6810e-ab5f-47c1-9855-57622484ef5c",
+      "id": "event-41c9860e-80bb-4f8a-b7a3-b51a40abbeaf",
+      "timestamp": "2026-06-12T14:27:47.040Z"
+    },
     {
       "kind": "review-create",
       "subjectId": "review-24a1bbf6-952f-4305-97a8-5097438955ed",
@@ -1718,5 +1742,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-12T14:26:26.255Z"
+  "updatedAt": "2026-06-12T14:27:47.040Z"
 }
