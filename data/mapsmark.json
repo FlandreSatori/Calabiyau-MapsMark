@@ -483,6 +483,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-a6abb700-46c1-4d61-b588-89384005cd82",
+      "reviewerName": "弦化猫",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 3.1,
+        "aesthetics": 4.5,
+        "guidance": 5,
+        "difficulty": 5,
+        "overall": 4.5
+      },
+      "comment": "非常休闲简单的解密小游戏，唐猫都能通关，值得玩",
+      "id": "review-ebe800a4-0e09-42ca-8b4b-903b3ade3387",
+      "submittedAt": "2026-06-12T13:55:55.484Z",
+      "updatedAt": "2026-06-12T13:55:55.484Z"
+    },
+    {
       "mapId": "map-f35d749f-2a1b-4d16-ae48-fe8ee6291d70",
       "reviewerName": "匿名",
       "anonymous": true,
@@ -773,6 +789,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-ebe800a4-0e09-42ca-8b4b-903b3ade3387",
+      "title": "弦化猫",
+      "detail": "map-a6abb700-46c1-4d61-b588-89384005cd82",
+      "id": "event-b878d8a8-0391-4ca2-b0e5-9ffa9394b18f",
+      "timestamp": "2026-06-12T13:55:55.484Z"
+    },
     {
       "kind": "review-create",
       "subjectId": "review-ef2fb589-99fa-41eb-a758-ae8190c10a80",
@@ -1406,5 +1430,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-12T13:52:19.300Z"
+  "updatedAt": "2026-06-12T13:55:55.484Z"
 }
