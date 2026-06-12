@@ -484,6 +484,22 @@
   "reviews": [
     {
       "mapId": "map-f35d749f-2a1b-4d16-ae48-fe8ee6291d70",
+      "reviewerName": "匿名",
+      "anonymous": true,
+      "ratings": {
+        "entertainment": 3,
+        "aesthetics": 2,
+        "guidance": 3.5,
+        "difficulty": 3,
+        "overall": 2.5
+      },
+      "comment": "前面几关还算轻松愉悦，第四关透过窗户找开关找久了一些，第七关的火中取栗我已急哭喵，最后才意识到要先飘到对面再在开关蓝火上飘飞争取到宝贵的0.5s开关时机，跑了十几趟喵，三百六十五里路喵，最后的结局也是意料之外喵，地图这么暗一开始懒得检查了，没想到直接初始房到结局，出去要疯狂死不断的走第五关门第六关迷宫第七关死亡的循环外，整体还算简单舒适，呃啊",
+      "id": "review-ef2fb589-99fa-41eb-a758-ae8190c10a80",
+      "submittedAt": "2026-06-12T13:52:19.300Z",
+      "updatedAt": "2026-06-12T13:52:19.300Z"
+    },
+    {
+      "mapId": "map-f35d749f-2a1b-4d16-ae48-fe8ee6291d70",
       "reviewerName": "ZXCVSKA",
       "anonymous": false,
       "ratings": {
@@ -757,6 +773,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-ef2fb589-99fa-41eb-a758-ae8190c10a80",
+      "title": "匿名",
+      "detail": "map-f35d749f-2a1b-4d16-ae48-fe8ee6291d70",
+      "id": "event-9ace403e-4140-4d1b-8cf6-5e30f272b5c0",
+      "timestamp": "2026-06-12T13:52:19.300Z"
+    },
     {
       "kind": "map-update",
       "subjectId": "map-b009edd9-7806-4281-beb3-41700e740419",
@@ -1382,5 +1406,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-11T15:13:31.818Z"
+  "updatedAt": "2026-06-12T13:52:19.300Z"
 }
