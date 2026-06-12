@@ -483,6 +483,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-aa61b510-66ef-4999-8398-e1aa821fb6d1",
+      "reviewerName": "弦化猫",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 4,
+        "aesthetics": 5,
+        "guidance": 5,
+        "difficulty": 5,
+        "overall": 4.5
+      },
+      "comment": "短小无力，适合猫娘一起玩。有很多猫娘像素画。",
+      "id": "review-2e3de629-15ce-4d03-8a84-7cff09fce1c2",
+      "submittedAt": "2026-06-12T14:58:15.334Z",
+      "updatedAt": "2026-06-12T14:58:15.334Z"
+    },
+    {
       "mapId": "map-387ee9e3-5c38-46b9-9aea-257b68844c4d",
       "reviewerName": "弦化猫",
       "anonymous": false,
@@ -1045,6 +1061,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-2e3de629-15ce-4d03-8a84-7cff09fce1c2",
+      "title": "弦化猫",
+      "detail": "map-aa61b510-66ef-4999-8398-e1aa821fb6d1",
+      "id": "event-cb820c6e-e581-4437-b2df-0b551a4503f6",
+      "timestamp": "2026-06-12T14:58:15.334Z"
+    },
     {
       "kind": "review-create",
       "subjectId": "review-1652174e-089e-461a-b4f5-ec29cb676fd1",
@@ -1814,5 +1838,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-12T14:34:08.132Z"
+  "updatedAt": "2026-06-12T14:58:15.334Z"
 }
