@@ -483,6 +483,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-4ff9fd49-3d04-45b6-94b0-bd7a76e40f56",
+      "reviewerName": "弦化猫",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 5,
+        "aesthetics": 4,
+        "guidance": 5,
+        "difficulty": 5,
+        "overall": 4.9
+      },
+      "comment": "简单好玩太短，熊熊。",
+      "id": "review-23fd8139-4839-40f5-8036-1fede9e2ba05",
+      "submittedAt": "2026-06-12T14:15:43.558Z",
+      "updatedAt": "2026-06-12T14:15:43.558Z"
+    },
+    {
       "mapId": "map-c435497d-8c81-4c04-a89f-d05462935597",
       "reviewerName": "弦化猫",
       "anonymous": false,
@@ -853,6 +869,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-23fd8139-4839-40f5-8036-1fede9e2ba05",
+      "title": "弦化猫",
+      "detail": "map-4ff9fd49-3d04-45b6-94b0-bd7a76e40f56",
+      "id": "event-7a052ab8-6281-4d4b-9e3f-7ae0c71a2f5e",
+      "timestamp": "2026-06-12T14:15:43.558Z"
+    },
     {
       "kind": "review-create",
       "subjectId": "review-519149e0-8363-4411-90d0-6d0fb7b14473",
@@ -1526,5 +1550,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-12T14:11:41.784Z"
+  "updatedAt": "2026-06-12T14:15:43.558Z"
 }
