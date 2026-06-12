@@ -483,6 +483,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-c435497d-8c81-4c04-a89f-d05462935597",
+      "reviewerName": "弦化猫",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 5,
+        "aesthetics": 3,
+        "guidance": 5,
+        "difficulty": 5,
+        "overall": 4.5
+      },
+      "comment": "好玩，但是草丛那边很折磨。总体很有挑战性，最后彩蛋关也是非常有意思，拷打了作者才知道答案。",
+      "id": "review-519149e0-8363-4411-90d0-6d0fb7b14473",
+      "submittedAt": "2026-06-12T14:11:41.784Z",
+      "updatedAt": "2026-06-12T14:11:41.784Z"
+    },
+    {
       "mapId": "map-0cc4bcd8-81d6-4028-84b7-b197c6c92ef8",
       "reviewerName": "弦化猫",
       "anonymous": false,
@@ -837,6 +853,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-519149e0-8363-4411-90d0-6d0fb7b14473",
+      "title": "弦化猫",
+      "detail": "map-c435497d-8c81-4c04-a89f-d05462935597",
+      "id": "event-05aebd0e-d098-405c-b10e-306105f07c8f",
+      "timestamp": "2026-06-12T14:11:41.784Z"
+    },
     {
       "kind": "review-create",
       "subjectId": "review-09cd5078-3175-4c74-bda0-15d20df07dea",
@@ -1502,5 +1526,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-12T14:10:03.820Z"
+  "updatedAt": "2026-06-12T14:11:41.784Z"
 }
