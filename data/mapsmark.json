@@ -483,6 +483,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-3d25699d-cd82-46d3-ba0b-b428d6f83c5a",
+      "reviewerName": "弦化猫",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 4,
+        "aesthetics": 2.5,
+        "guidance": 3.5,
+        "difficulty": 5,
+        "overall": 3.9
+      },
+      "comment": "没通关，最后一关的多控制门把我cpu烧了。",
+      "id": "review-89036b9f-6271-4575-bd62-fe7bc45e6d5a",
+      "submittedAt": "2026-06-12T14:22:23.190Z",
+      "updatedAt": "2026-06-12T14:22:23.190Z"
+    },
+    {
       "mapId": "map-3e9d28cc-104d-45c6-99a1-d45edae292cc",
       "reviewerName": "弦化猫",
       "anonymous": false,
@@ -917,6 +933,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-89036b9f-6271-4575-bd62-fe7bc45e6d5a",
+      "title": "弦化猫",
+      "detail": "map-3d25699d-cd82-46d3-ba0b-b428d6f83c5a",
+      "id": "event-8e64846c-fb3b-489d-8a71-76d06a011ce8",
+      "timestamp": "2026-06-12T14:22:23.190Z"
+    },
     {
       "kind": "review-create",
       "subjectId": "review-773d4674-ac0d-4150-9c22-c69644c64a7c",
@@ -1622,5 +1646,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-12T14:20:22.329Z"
+  "updatedAt": "2026-06-12T14:22:23.190Z"
 }
