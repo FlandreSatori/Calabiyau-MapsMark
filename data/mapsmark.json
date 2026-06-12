@@ -483,6 +483,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-387ee9e3-5c38-46b9-9aea-257b68844c4d",
+      "reviewerName": "弦化猫",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 5,
+        "aesthetics": 5,
+        "guidance": 5,
+        "difficulty": 5,
+        "overall": 5
+      },
+      "comment": "作者简直就是个天才，前几关找到窍门，后面动动脑就能通关。难度适中，趣味性拉满了。",
+      "id": "review-9db1a247-1035-48f1-afe2-fe2a5536b59c",
+      "submittedAt": "2026-06-12T14:24:39.778Z",
+      "updatedAt": "2026-06-12T14:24:39.778Z"
+    },
+    {
       "mapId": "map-6554e08d-b080-4deb-991d-d894e328275f",
       "reviewerName": "弦化猫",
       "anonymous": false,
@@ -949,6 +965,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-9db1a247-1035-48f1-afe2-fe2a5536b59c",
+      "title": "弦化猫",
+      "detail": "map-387ee9e3-5c38-46b9-9aea-257b68844c4d",
+      "id": "event-25fad0d7-6112-43d4-9c35-6b049b859992",
+      "timestamp": "2026-06-12T14:24:39.778Z"
+    },
     {
       "kind": "review-create",
       "subjectId": "review-ba673201-7d88-45f1-ac69-e0e93c23c555",
@@ -1670,5 +1694,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-12T14:23:07.229Z"
+  "updatedAt": "2026-06-12T14:24:39.778Z"
 }
