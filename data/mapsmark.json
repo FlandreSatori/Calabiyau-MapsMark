@@ -483,6 +483,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-63c6c5a0-8aae-40c0-b60f-06588c9ae196",
+      "reviewerName": "弦化猫",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 4,
+        "aesthetics": 1,
+        "guidance": 4,
+        "difficulty": 4.5,
+        "overall": 4.5
+      },
+      "comment": "挺早出的解密，现在看没有什么难度，还是推荐一下。",
+      "id": "review-c5ae8a96-3294-4d25-845a-36bb7934d2cb",
+      "submittedAt": "2026-06-12T14:18:56.094Z",
+      "updatedAt": "2026-06-12T14:18:56.094Z"
+    },
+    {
       "mapId": "map-436f31ba-334b-4503-8db8-80217e5d1fdd",
       "reviewerName": "弦化猫",
       "anonymous": false,
@@ -885,6 +901,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-c5ae8a96-3294-4d25-845a-36bb7934d2cb",
+      "title": "弦化猫",
+      "detail": "map-63c6c5a0-8aae-40c0-b60f-06588c9ae196",
+      "id": "event-d29be107-2f63-45ad-acdd-c73daf582581",
+      "timestamp": "2026-06-12T14:18:56.094Z"
+    },
     {
       "kind": "review-create",
       "subjectId": "review-986936bb-0f81-426b-8960-8b0bc09351b6",
@@ -1574,5 +1598,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-12T14:17:05.431Z"
+  "updatedAt": "2026-06-12T14:18:56.094Z"
 }
