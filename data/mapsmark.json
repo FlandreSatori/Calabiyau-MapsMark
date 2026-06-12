@@ -493,6 +493,22 @@
         "difficulty": 0,
         "overall": 0
       },
+      "comment": "",
+      "id": "review-a8a87e14-c98e-41ef-b250-7e756fb6860e",
+      "submittedAt": "2026-06-12T15:01:37.755Z",
+      "updatedAt": "2026-06-12T15:01:37.755Z"
+    },
+    {
+      "mapId": "map-63c6c5a0-8aae-40c0-b60f-06588c9ae196",
+      "reviewerName": "好喵好喵",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 0,
+        "aesthetics": 0,
+        "guidance": 0,
+        "difficulty": 0,
+        "overall": 0
+      },
       "comment": "好喵好喵",
       "id": "review-aef7e849-88a2-4eb5-a888-4eeff9a549e9",
       "submittedAt": "2026-06-12T15:01:36.266Z",
@@ -1093,6 +1109,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-a8a87e14-c98e-41ef-b250-7e756fb6860e",
+      "title": "好喵好喵",
+      "detail": "map-63c6c5a0-8aae-40c0-b60f-06588c9ae196",
+      "id": "event-916411fe-2762-4590-aa81-dbb8dc6f7fed",
+      "timestamp": "2026-06-12T15:01:37.755Z"
+    },
     {
       "kind": "review-create",
       "subjectId": "review-aef7e849-88a2-4eb5-a888-4eeff9a549e9",
@@ -1886,5 +1910,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-12T15:01:36.266Z"
+  "updatedAt": "2026-06-12T15:01:37.755Z"
 }
