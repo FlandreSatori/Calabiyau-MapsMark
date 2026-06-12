@@ -483,6 +483,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-6554e08d-b080-4deb-991d-d894e328275f",
+      "reviewerName": "弦化猫",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 5,
+        "aesthetics": 5,
+        "guidance": 5,
+        "difficulty": 5,
+        "overall": 5
+      },
+      "comment": "好玩，有挑战。强力推荐和猫娘组队通关。",
+      "id": "review-ba673201-7d88-45f1-ac69-e0e93c23c555",
+      "submittedAt": "2026-06-12T14:23:07.228Z",
+      "updatedAt": "2026-06-12T14:23:07.228Z"
+    },
+    {
       "mapId": "map-3d25699d-cd82-46d3-ba0b-b428d6f83c5a",
       "reviewerName": "弦化猫",
       "anonymous": false,
@@ -933,6 +949,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-ba673201-7d88-45f1-ac69-e0e93c23c555",
+      "title": "弦化猫",
+      "detail": "map-6554e08d-b080-4deb-991d-d894e328275f",
+      "id": "event-0d0b1624-8b4b-4213-9d9f-a8b8cce659ac",
+      "timestamp": "2026-06-12T14:23:07.228Z"
+    },
     {
       "kind": "review-create",
       "subjectId": "review-89036b9f-6271-4575-bd62-fe7bc45e6d5a",
@@ -1646,5 +1670,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-12T14:22:23.190Z"
+  "updatedAt": "2026-06-12T14:23:07.229Z"
 }
