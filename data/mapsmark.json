@@ -483,6 +483,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-859e43c7-c7a6-4693-9597-2a07616a0d0c",
+      "reviewerName": "弦化猫",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 5,
+        "aesthetics": 3.5,
+        "guidance": -1,
+        "difficulty": 5,
+        "overall": 3.9
+      },
+      "comment": "传送门出来后的解密，引导做的不好，容易卡在第一关。内容短但是还是可以玩一玩。",
+      "id": "review-1cd443c8-2d29-43e2-bb1d-704a2ec22050",
+      "submittedAt": "2026-06-12T14:29:44.237Z",
+      "updatedAt": "2026-06-12T14:29:44.237Z"
+    },
+    {
       "mapId": "map-8ff6810e-ab5f-47c1-9855-57622484ef5c",
       "reviewerName": "弦化猫",
       "anonymous": false,
@@ -997,6 +1013,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-1cd443c8-2d29-43e2-bb1d-704a2ec22050",
+      "title": "弦化猫",
+      "detail": "map-859e43c7-c7a6-4693-9597-2a07616a0d0c",
+      "id": "event-390a4959-535e-41a8-9095-5fdac8937e43",
+      "timestamp": "2026-06-12T14:29:44.237Z"
+    },
     {
       "kind": "review-create",
       "subjectId": "review-1acaf884-e461-4a22-aeb1-80fcef105e1d",
@@ -1742,5 +1766,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-12T14:27:47.040Z"
+  "updatedAt": "2026-06-12T14:29:44.237Z"
 }
