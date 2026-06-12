@@ -17,12 +17,31 @@ export const formatDate = (value: string) =>
 
 export const clampScore = (value: number) => Math.max(-5, Math.min(5, Math.round(value * 10) / 10));
 
-export const getProxiedGithubUrl = (url?: string) => {
+export const resolveMapImageUrl = (url?: string) => {
     if (!url) return url;
-    if (url.includes("github.com") || url.includes("raw.githubusercontent.com")) {
-        return `https://gh.llkk.cc/${url}`;
+    const trimmed = url.trim();
+    if (!trimmed) return "";
+
+    if (
+        trimmed.startsWith("/") ||
+        trimmed.startsWith("./") ||
+        trimmed.startsWith("../") ||
+        trimmed.startsWith("data:") ||
+        trimmed.startsWith("blob:")
+    ) {
+        return trimmed;
     }
-    return url;
+
+    const marker = "/assets/images/";
+    const markerIndex = trimmed.indexOf(marker);
+    if (markerIndex >= 0) {
+        const filePart = trimmed.slice(markerIndex + marker.length).split("?")[0].split("#")[0];
+        if (filePart) {
+            return `/assets/images/${filePart}`;
+        }
+    }
+
+    return trimmed;
 };
 
 

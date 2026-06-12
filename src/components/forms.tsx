@@ -5,7 +5,7 @@ import { notify as globalNotify } from "@/components/toast";
 import { useRouter } from "next/navigation";
 
 import type { MapRecord, RatingDimensions, ReviewRecord } from "@/lib/types";
-import { clampScore, getProxiedGithubUrl } from "@/lib/format";
+import { clampScore, resolveMapImageUrl } from "@/lib/format";
 import { ratingLabelText } from "@/lib/types";
 
 type ToastState = { title: string; message: string } | null;
@@ -497,15 +497,8 @@ export function ReviewForm({ maps, onSuccess, notify }: ReviewFormProps) {
                                 <div className="review-map-head">
                                     <img
                                         className="review-map-thumb"
-                                        src={map.coverImage}
+                                        src={resolveMapImageUrl(map.coverImage)}
                                         alt={map.name}
-                                        onError={(e) => {
-                                            const target = e.currentTarget;
-                                            if (!target.dataset.retried) {
-                                                target.dataset.retried = 'true';
-                                                target.src = getProxiedGithubUrl(map.coverImage) ?? map.coverImage;
-                                            }
-                                        }}
                                     />
                                     <div>
                                         <strong>{map.name}</strong>

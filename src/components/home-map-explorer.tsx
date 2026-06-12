@@ -6,7 +6,7 @@ import { useMemo, useState } from "react";
 import { MapCard } from "@/components/map-card";
 import { averageRatings, getMapRatingLabel, getScoreBucketKey, matchesScoreBucket } from "@/lib/metrics";
 import type { MapRecord, ReviewRecord } from "@/lib/types";
-import titleIcon from "../../assets/images/icon.jpg";
+import titleIcon from "../../public/assets/icon.jpg";
 
 type HomeMapExplorerProps = {
     maps: MapRecord[];

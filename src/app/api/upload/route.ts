@@ -20,7 +20,7 @@ export async function POST(request: Request) {
             return NextResponse.json({ message: "Invalid upload payload" }, { status: 400 });
         }
 
-        const path = `assets/images/${Date.now()}-${body.filename}`;
+        const path = `public/assets/images/${Date.now()}-${body.filename}`;
         const url = `https://api.github.com/repos/${config.owner}/${config.repo}/contents/${path}`;
 
         const res = await fetch(url, {
@@ -66,9 +66,8 @@ export async function POST(request: Request) {
             return NextResponse.json({ message: payload?.message ?? `GitHub upload failed (${res.status})`, detail: payload }, { status: 500 });
         }
 
-        // Try to return download_url if available
-        const downloadUrl = payload?.content?.download_url ?? `https://raw.githubusercontent.com/${config.owner}/${config.repo}/${config.branch}/${path}`;
-        return NextResponse.json({ url: downloadUrl }, { status: 201 });
+        const localUrl = path.replace(/^public\//, "/");
+        return NextResponse.json({ url: localUrl }, { status: 201 });
     } catch (err) {
         // eslint-disable-next-line no-console
         console.error("/api/upload error:", err);

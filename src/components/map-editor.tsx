@@ -7,7 +7,7 @@ import type { MapInput, MapRecord } from "@/lib/types";
 
 type MapDraft = Pick<
     MapInput,
-    "coverImage" | "customCoverImage" | "previewImage" | "customPreviewImage" | "code" | "type" | "name" | "author" | "mappedAt" | "introduction" | "estimatedMinutes"
+    "coverImage" | "previewImage" | "code" | "type" | "name" | "author" | "mappedAt" | "introduction" | "estimatedMinutes"
 >;
 
 type MapEditorProps = {
@@ -18,9 +18,7 @@ type MapEditorProps = {
 
 const createDraft = (map: MapRecord): MapDraft => ({
     coverImage: map.coverImage,
-    customCoverImage: map.customCoverImage ?? "",
     previewImage: map.previewImage,
-    customPreviewImage: map.customPreviewImage ?? "",
     code: map.code,
     type: map.type,
     name: map.name,
@@ -120,16 +118,8 @@ export function MapEditor({ maps, token, onSaved }: MapEditorProps) {
                                 <input className="input" value={draft.coverImage} onChange={(event) => updateDraft(map.id, { coverImage: event.target.value })} />
                             </label>
                             <label className="label full">
-                                封面自定义图床链接
-                                <input className="input" value={draft.customCoverImage ?? ""} placeholder="留空则使用 GitHub 直链/加速链" onChange={(event) => updateDraft(map.id, { customCoverImage: event.target.value })} />
-                            </label>
-                            <label className="label full">
                                 预览图地址
                                 <input className="input" value={draft.previewImage} onChange={(event) => updateDraft(map.id, { previewImage: event.target.value })} />
-                            </label>
-                            <label className="label full">
-                                预览图自定义图床链接
-                                <input className="input" value={draft.customPreviewImage ?? ""} placeholder="留空则使用 GitHub 直链/加速链" onChange={(event) => updateDraft(map.id, { customPreviewImage: event.target.value })} />
                             </label>
                             <label className="label full">
                                 地图介绍

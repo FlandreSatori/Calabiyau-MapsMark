@@ -6,7 +6,7 @@ import type { SimulationNodeDatum, Simulation } from "d3-force";
 import { forceSimulation, forceX, forceY } from "d3-force";
 
 import { averageRatings } from "@/lib/metrics";
-import { getProxiedGithubUrl } from "@/lib/format";
+import { resolveMapImageUrl } from "@/lib/format";
 import { ratingLabelText, ratingLabels, type MapRecord, type RatingDimensions, type ReviewRecord } from "@/lib/types";
 
 type MetricDashboardProps = {
@@ -305,16 +305,9 @@ function ForceStage({ maps, xMetric, yMetric }: { maps: MapMetric[], xMetric: ke
                             onMouseLeave={() => setHoveredId(null)}
                         >
                             <img
-                                src={entry.map.coverImage}
+                                src={resolveMapImageUrl(entry.map.coverImage)}
                                 alt={entry.map.name}
                                 className="metric-node-cover"
-                                onError={(e) => {
-                                    const target = e.currentTarget;
-                                    if (!target.dataset.retried) {
-                                        target.dataset.retried = 'true';
-                                        target.src = getProxiedGithubUrl(entry.map.coverImage) ?? entry.map.coverImage;
-                                    }
-                                }}
                             />
                             <div className="metric-node-body">
                                 <strong>{entry.map.name}</strong>
@@ -451,16 +444,9 @@ export function MetricDashboard({ maps, reviews, initialSelected = ["overall"] }
                                     }}
                                 >
                                     <img
-                                        src={map.coverImage}
+                                        src={resolveMapImageUrl(map.coverImage)}
                                         alt={map.name}
                                         style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-                                        onError={(e) => {
-                                            const target = e.currentTarget;
-                                            if (!target.dataset.retried) {
-                                                target.dataset.retried = 'true';
-                                                target.src = getProxiedGithubUrl(map.coverImage) ?? map.coverImage;
-                                            }
-                                        }}
                                     />
                                     <div style={{
                                         position: 'absolute',

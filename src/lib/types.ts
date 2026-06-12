@@ -11,9 +11,7 @@ export type RatingDimensions = {
 export type MapRecord = {
     id: string;
     coverImage: string;
-    customCoverImage?: string;
     previewImage: string;
-    customPreviewImage?: string;
     code: string;
     type: MapType;
     name: string;
