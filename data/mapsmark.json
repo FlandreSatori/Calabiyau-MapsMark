@@ -483,6 +483,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-98f00295-ae37-4a25-9bdd-2dc15593dcce",
+      "reviewerName": "弦化猫",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 0,
+        "aesthetics": 0,
+        "guidance": 0,
+        "difficulty": 0,
+        "overall": 2
+      },
+      "comment": "饿啊，第一个关就有些折磨。地图太大很绕，跑图太累。内容有些单一，后面也就懒得玩了。",
+      "id": "review-24a1bbf6-952f-4305-97a8-5097438955ed",
+      "submittedAt": "2026-06-12T14:26:26.255Z",
+      "updatedAt": "2026-06-12T14:26:26.255Z"
+    },
+    {
       "mapId": "map-387ee9e3-5c38-46b9-9aea-257b68844c4d",
       "reviewerName": "弦化猫",
       "anonymous": false,
@@ -965,6 +981,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-24a1bbf6-952f-4305-97a8-5097438955ed",
+      "title": "弦化猫",
+      "detail": "map-98f00295-ae37-4a25-9bdd-2dc15593dcce",
+      "id": "event-53f50990-8d2b-45e2-9d22-c2f8268abc46",
+      "timestamp": "2026-06-12T14:26:26.255Z"
+    },
     {
       "kind": "review-create",
       "subjectId": "review-9db1a247-1035-48f1-afe2-fe2a5536b59c",
@@ -1694,5 +1718,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-12T14:24:39.778Z"
+  "updatedAt": "2026-06-12T14:26:26.255Z"
 }
