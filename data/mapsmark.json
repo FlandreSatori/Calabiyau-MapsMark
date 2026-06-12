@@ -483,6 +483,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-387ee9e3-5c38-46b9-9aea-257b68844c4d",
+      "reviewerName": "弦化猫",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 0,
+        "aesthetics": 0,
+        "guidance": 0,
+        "difficulty": 0,
+        "overall": 0
+      },
+      "comment": "这个猫娘做的小熊解密第一好玩！我认为做好玩的解密，不过现在怎么找不到了？",
+      "id": "review-1652174e-089e-461a-b4f5-ec29cb676fd1",
+      "submittedAt": "2026-06-12T14:34:08.131Z",
+      "updatedAt": "2026-06-12T14:34:08.131Z"
+    },
+    {
       "mapId": "map-f35d749f-2a1b-4d16-ae48-fe8ee6291d70",
       "reviewerName": "弦化猫",
       "anonymous": false,
@@ -1029,6 +1045,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-1652174e-089e-461a-b4f5-ec29cb676fd1",
+      "title": "弦化猫",
+      "detail": "map-387ee9e3-5c38-46b9-9aea-257b68844c4d",
+      "id": "event-1a4c4f20-1e8d-4b28-93ea-d31b6788352b",
+      "timestamp": "2026-06-12T14:34:08.132Z"
+    },
     {
       "kind": "review-create",
       "subjectId": "review-83024416-2916-45cf-9429-0487f34a5258",
@@ -1790,5 +1814,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-12T14:30:50.671Z"
+  "updatedAt": "2026-06-12T14:34:08.132Z"
 }
