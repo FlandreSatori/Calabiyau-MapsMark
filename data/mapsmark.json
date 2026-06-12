@@ -483,6 +483,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-f35d749f-2a1b-4d16-ae48-fe8ee6291d70",
+      "reviewerName": "弦化猫",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 5,
+        "aesthetics": 5,
+        "guidance": 5,
+        "difficulty": 5,
+        "overall": 5
+      },
+      "comment": "好玩，场景氛围拉满，吸引了大量猫娘一起游玩。很有挑战性，好多隐藏开关技巧都是在这里学的。",
+      "id": "review-83024416-2916-45cf-9429-0487f34a5258",
+      "submittedAt": "2026-06-12T14:30:50.671Z",
+      "updatedAt": "2026-06-12T14:30:50.671Z"
+    },
+    {
       "mapId": "map-859e43c7-c7a6-4693-9597-2a07616a0d0c",
       "reviewerName": "弦化猫",
       "anonymous": false,
@@ -1013,6 +1029,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-83024416-2916-45cf-9429-0487f34a5258",
+      "title": "弦化猫",
+      "detail": "map-f35d749f-2a1b-4d16-ae48-fe8ee6291d70",
+      "id": "event-ed11cc3a-5046-49d4-8de7-a1c667803e16",
+      "timestamp": "2026-06-12T14:30:50.671Z"
+    },
     {
       "kind": "review-create",
       "subjectId": "review-1cd443c8-2d29-43e2-bb1d-704a2ec22050",
@@ -1766,5 +1790,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-12T14:29:44.237Z"
+  "updatedAt": "2026-06-12T14:30:50.671Z"
 }
