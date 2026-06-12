@@ -483,6 +483,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-3e9d28cc-104d-45c6-99a1-d45edae292cc",
+      "reviewerName": "弦化猫",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 5,
+        "aesthetics": 2,
+        "guidance": 5,
+        "difficulty": 5,
+        "overall": 4.5
+      },
+      "comment": "最有特色的解密，后面有些难。卡在第五关，好像玩了四五把才通关。",
+      "id": "review-773d4674-ac0d-4150-9c22-c69644c64a7c",
+      "submittedAt": "2026-06-12T14:20:22.329Z",
+      "updatedAt": "2026-06-12T14:20:22.329Z"
+    },
+    {
       "mapId": "map-63c6c5a0-8aae-40c0-b60f-06588c9ae196",
       "reviewerName": "弦化猫",
       "anonymous": false,
@@ -901,6 +917,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-773d4674-ac0d-4150-9c22-c69644c64a7c",
+      "title": "弦化猫",
+      "detail": "map-3e9d28cc-104d-45c6-99a1-d45edae292cc",
+      "id": "event-5c28b227-824c-4330-aa33-71ccddeeebc3",
+      "timestamp": "2026-06-12T14:20:22.329Z"
+    },
     {
       "kind": "review-create",
       "subjectId": "review-c5ae8a96-3294-4d25-845a-36bb7934d2cb",
@@ -1598,5 +1622,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-12T14:18:56.094Z"
+  "updatedAt": "2026-06-12T14:20:22.329Z"
 }
