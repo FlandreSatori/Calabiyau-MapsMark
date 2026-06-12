@@ -483,6 +483,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-0cc4bcd8-81d6-4028-84b7-b197c6c92ef8",
+      "reviewerName": "弦化猫",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 4,
+        "aesthetics": 3.5,
+        "guidance": 4,
+        "difficulty": 5,
+        "overall": 4.5
+      },
+      "comment": "较难，最后一关最难。第七关没引导，关卡都挺有意思。",
+      "id": "review-09cd5078-3175-4c74-bda0-15d20df07dea",
+      "submittedAt": "2026-06-12T14:10:03.820Z",
+      "updatedAt": "2026-06-12T14:10:03.820Z"
+    },
+    {
       "mapId": "map-b6ab47d4-1947-4279-9a8f-546fd56511e3",
       "reviewerName": "弦化猫",
       "anonymous": false,
@@ -821,6 +837,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-09cd5078-3175-4c74-bda0-15d20df07dea",
+      "title": "弦化猫",
+      "detail": "map-0cc4bcd8-81d6-4028-84b7-b197c6c92ef8",
+      "id": "event-a4ac13f4-4716-4380-9356-26c5b1cbe4c6",
+      "timestamp": "2026-06-12T14:10:03.820Z"
+    },
     {
       "kind": "review-create",
       "subjectId": "review-949aff89-5937-4688-a972-8b18fae75e63",
@@ -1478,5 +1502,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-12T14:00:12.477Z"
+  "updatedAt": "2026-06-12T14:10:03.820Z"
 }
