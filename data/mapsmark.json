@@ -483,6 +483,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-b009edd9-7806-4281-beb3-41700e740419",
+      "reviewerName": "弦化猫",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 4.5,
+        "aesthetics": 4,
+        "guidance": 2.5,
+        "difficulty": 5,
+        "overall": 4.5
+      },
+      "comment": "好久之前玩的，还有些印象。需要动脑，大概要3只糖猫才能通关。有一些挑战，挺有意思的，有很多不同风格的场景。",
+      "id": "review-c687041b-b0c0-4d90-b34a-b98009f5c786",
+      "submittedAt": "2026-06-12T13:58:26.202Z",
+      "updatedAt": "2026-06-12T13:58:26.202Z"
+    },
+    {
       "mapId": "map-a6abb700-46c1-4d61-b588-89384005cd82",
       "reviewerName": "弦化猫",
       "anonymous": false,
@@ -789,6 +805,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-c687041b-b0c0-4d90-b34a-b98009f5c786",
+      "title": "弦化猫",
+      "detail": "map-b009edd9-7806-4281-beb3-41700e740419",
+      "id": "event-a96d9319-ca28-4976-ba5a-513d4c82101b",
+      "timestamp": "2026-06-12T13:58:26.203Z"
+    },
     {
       "kind": "review-create",
       "subjectId": "review-ebe800a4-0e09-42ca-8b4b-903b3ade3387",
@@ -1430,5 +1454,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-12T13:55:55.484Z"
+  "updatedAt": "2026-06-12T13:58:26.203Z"
 }
