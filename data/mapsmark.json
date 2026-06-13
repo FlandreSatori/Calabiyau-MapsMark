@@ -483,6 +483,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-28971207-c22d-44c7-8787-f70909194b72",
+      "reviewerName": "AAA卡丘解密大王批发",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 4.4,
+        "aesthetics": 5,
+        "guidance": 2.9,
+        "difficulty": 2.5,
+        "overall": 4.2
+      },
+      "comment": "需要游戏的最高配置：朋友\n同时一个人是大脑子来解密，一个人是大手子来跑酷。地图布景美观，浑然天成逻辑自洽，如果对工坊方块小特性熟悉的话，应该会比较容易。同时安包和爆破模式感觉是饺子醋喵",
+      "id": "review-3e9a5245-da06-43b1-b0fb-bccc628763f9",
+      "submittedAt": "2026-06-13T12:35:54.365Z",
+      "updatedAt": "2026-06-13T12:35:54.365Z"
+    },
+    {
       "mapId": "map-436f31ba-334b-4503-8db8-80217e5d1fdd",
       "reviewerName": "AAA卡丘解密大王批发",
       "anonymous": false,
@@ -1127,6 +1143,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-3e9a5245-da06-43b1-b0fb-bccc628763f9",
+      "title": "AAA卡丘解密大王批发",
+      "detail": "map-28971207-c22d-44c7-8787-f70909194b72",
+      "id": "event-13cb8ade-c442-4768-b3b9-050b3a33ab06",
+      "timestamp": "2026-06-13T12:35:54.365Z"
+    },
     {
       "kind": "review-create",
       "subjectId": "review-cf685c0a-d6d0-4fb7-b879-e34853c2f3c6",
@@ -1960,5 +1984,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-13T12:24:17.347Z"
+  "updatedAt": "2026-06-13T12:35:54.365Z"
 }
