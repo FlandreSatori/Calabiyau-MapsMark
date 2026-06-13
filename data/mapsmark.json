@@ -529,7 +529,8 @@
       "comment": "",
       "id": "review-07915905-4b8e-443d-89f2-f44c58171d5e",
       "submittedAt": "2026-06-12T15:01:27.986Z",
-      "updatedAt": "2026-06-12T15:01:27.986Z"
+      "updatedAt": "2026-06-13T06:53:33.017Z",
+      "deletedAt": "2026-06-13T06:53:33.017Z"
     },
     {
       "mapId": "map-aa61b510-66ef-4999-8398-e1aa821fb6d1",
@@ -1110,6 +1111,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-delete",
+      "subjectId": "review-07915905-4b8e-443d-89f2-f44c58171d5e",
+      "title": "删除评价 好喵好喵",
+      "detail": "map-63c6c5a0-8aae-40c0-b60f-06588c9ae196",
+      "id": "event-636d17b8-8484-4156-83ca-1aabf11afc37",
+      "timestamp": "2026-06-13T06:53:33.017Z"
+    },
     {
       "kind": "review-delete",
       "subjectId": "review-a8a87e14-c98e-41ef-b250-7e756fb6860e",
@@ -1919,5 +1928,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-13T06:53:30.309Z"
+  "updatedAt": "2026-06-13T06:53:33.017Z"
 }
