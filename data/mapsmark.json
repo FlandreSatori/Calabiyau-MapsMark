@@ -483,6 +483,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-98f00295-ae37-4a25-9bdd-2dc15593dcce",
+      "reviewerName": "AAA卡丘解密大王批发",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 4.5,
+        "aesthetics": 4.7,
+        "guidance": 1,
+        "difficulty": 2,
+        "overall": 4
+      },
+      "comment": "非常适合团建的地图，有多条路径选择，可以使用自己的方式通关，难点在于是否理解简介内容，核心内容是探索找路偶尔找按钮。最后通关需要找一个按钮，需要观察和一定空间思维，我在玩了Arkane的《掠食》之后，才意识的这种大地图设计精妙之处——前期限制探索，后期四通八达。正如前文建议的，请尝试多人游玩喵。",
+      "id": "review-f21e02b5-a55e-4564-8598-63efdb618685",
+      "submittedAt": "2026-06-13T12:40:27.308Z",
+      "updatedAt": "2026-06-13T12:40:27.308Z"
+    },
+    {
       "mapId": "map-28971207-c22d-44c7-8787-f70909194b72",
       "reviewerName": "AAA卡丘解密大王批发",
       "anonymous": false,
@@ -1143,6 +1159,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-f21e02b5-a55e-4564-8598-63efdb618685",
+      "title": "AAA卡丘解密大王批发",
+      "detail": "map-98f00295-ae37-4a25-9bdd-2dc15593dcce",
+      "id": "event-eb462e9b-5080-4a26-aa7f-8cfcf11e4baa",
+      "timestamp": "2026-06-13T12:40:27.308Z"
+    },
     {
       "kind": "review-create",
       "subjectId": "review-3e9a5245-da06-43b1-b0fb-bccc628763f9",
@@ -1984,5 +2008,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-13T12:35:54.365Z"
+  "updatedAt": "2026-06-13T12:40:27.308Z"
 }
