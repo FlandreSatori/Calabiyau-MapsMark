@@ -348,6 +348,8 @@ export function ReviewForm({ maps, onSuccess, notify }: ReviewFormProps) {
     const [reviewerName, setReviewerName] = useState("");
     const [nameInvalid, setNameInvalid] = useState(false);
     const [submittingMapId, setSubmittingMapId] = useState<string | null>(null);
+    const [cooldownUntilByMap, setCooldownUntilByMap] = useState<Record<string, number>>({});
+    const [now, setNow] = useState(() => Date.now());
     const router = useRouter();
     const [drafts, setDrafts] = useState<Record<string, ReviewDraft>>(() =>
         Object.fromEntries(maps.map((map) => [map.id, createReviewDraft()]))
@@ -363,6 +365,11 @@ export function ReviewForm({ maps, onSuccess, notify }: ReviewFormProps) {
         });
     }, [maps]);
 
+    useEffect(() => {
+        const timer = window.setInterval(() => setNow(Date.now()), 1000);
+        return () => window.clearInterval(timer);
+    }, []);
+
     const updateDraft = (mapId: string, patch: Partial<ReviewDraft>) => {
         setDrafts((current) => ({
             ...current,
@@ -375,6 +382,17 @@ export function ReviewForm({ maps, onSuccess, notify }: ReviewFormProps) {
 
     const submitReview = async (mapId: string) => {
         const draft = drafts[mapId] ?? createReviewDraft();
+        const cooldownUntil = cooldownUntilByMap[mapId] ?? 0;
+        if (cooldownUntil > Date.now()) {
+            const remain = Math.ceil((cooldownUntil - Date.now()) / 1000);
+            const message = `请等待 ${remain} 秒后再提交。`;
+            if (notify) {
+                notify({ title: "操作过快", message });
+            } else {
+                globalNotify("info", "操作过快", message);
+            }
+            return;
+        }
         if (!anonymous && !reviewerName.trim()) {
             setNameInvalid(true);
             if (notify) {
@@ -411,7 +429,15 @@ export function ReviewForm({ maps, onSuccess, notify }: ReviewFormProps) {
                 }
                 throw new Error(message);
             }
-            notify?.({ title: "评价已提交", message: "该地图的评分已保存。" });
+            setCooldownUntilByMap((current) => ({
+                ...current,
+                [mapId]: Date.now() + 15_000
+            }));
+            if (notify) {
+                notify({ title: "评价已提交", message: "评价提交后将在一分钟后显示，请勿重复提交" });
+            } else {
+                globalNotify("success", "评价已提交", "评价提交后将在一分钟后显示，请勿重复提交");
+            }
             setDrafts((current) => ({
                 ...current,
                 [mapId]: createReviewDraft()
@@ -437,12 +463,13 @@ export function ReviewForm({ maps, onSuccess, notify }: ReviewFormProps) {
                     <label className="label full review-name-row">
                         <span>名称</span>
                         <div className="review-name-control">
-                            <input className="input" disabled={anonymous} value={reviewerName} onChange={(event) => setReviewerName(event.target.value)} placeholder="提交评价时须填写名称或匿名" />
+                            <input className={`input${nameInvalid && !anonymous && !reviewerName.trim() ? " input-invalid" : ""}`} disabled={anonymous} value={reviewerName} onChange={(event) => { setReviewerName(event.target.value); if (event.target.value.trim()) setNameInvalid(false); }} placeholder="提交评价时须填写名称或匿名" />
                             <label className="review-anonymous-toggle">
-                                <input type="checkbox" className="review-anonymous-checkbox" checked={anonymous} onChange={(event) => setAnonymous(event.target.checked)} />
+                                <input type="checkbox" className="review-anonymous-checkbox" checked={anonymous} onChange={(event) => { setAnonymous(event.target.checked); if (event.target.checked) setNameInvalid(false); }} />
                                 <span>匿名提交</span>
                             </label>
                         </div>
+                        {nameInvalid && !anonymous && !reviewerName.trim() ? <span className="help" style={{ color: "#ffb1bb" }}>请填写名称，或勾选匿名提交。</span> : null}
                         <span className="help">匿名后评价将不会上传名称</span>
                         <div className="review-dimension-guide">
                             <div className="review-dimension-guide-row">
@@ -491,6 +518,8 @@ export function ReviewForm({ maps, onSuccess, notify }: ReviewFormProps) {
             <div className="review-board">
                 {maps.map((map) => {
                     const draft = drafts[map.id] ?? createReviewDraft();
+                    const cooldownRemain = Math.max(0, Math.ceil(((cooldownUntilByMap[map.id] ?? 0) - now) / 1000));
+                    const isCoolingDown = cooldownRemain > 0;
                     return (
                         <section className="review-row panel panel-pad" key={map.id}>
                             <div className="list-row">
@@ -505,8 +534,8 @@ export function ReviewForm({ maps, onSuccess, notify }: ReviewFormProps) {
                                         <div className="help">{map.type} · {map.code} · {map.author}</div>
                                     </div>
                                 </div>
-                                <button className="button button-primary button-rect review-submit-button" type="button" onClick={() => void submitReview(map.id)} disabled={submittingMapId === map.id || (!anonymous && !reviewerName.trim())}>
-                                    {submittingMapId === map.id ? "提交中..." : "提交评价"}
+                                <button className="button button-primary button-rect review-submit-button" type="button" onClick={() => void submitReview(map.id)} disabled={submittingMapId === map.id || isCoolingDown}>
+                                    {submittingMapId === map.id ? "提交中..." : isCoolingDown ? `冷却中(${cooldownRemain}s)` : "提交评价"}
                                 </button>
                             </div>
                             <div className="review-content-grid">

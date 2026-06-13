@@ -9,10 +9,11 @@ import { loadState } from "@/lib/github-store";
 import { summarizeState } from "@/lib/state-utils";
 import { defaultMapTypes } from "@/lib/types";
 
-export default async function HomePage({ searchParams }: { searchParams?: { bg?: string } }) {
+export default async function HomePage({ searchParams }: { searchParams?: Promise<{ bg?: string }> }) {
     const state = await loadState();
     const summary = summarizeState(state);
-    const background = searchParams?.bg ?? state.ui?.background;
+    const resolvedSearchParams = searchParams ? await searchParams : undefined;
+    const background = resolvedSearchParams?.bg ?? state.ui?.background;
 
     return (
         <main className="app-shell" style={background ? { background } : undefined}>

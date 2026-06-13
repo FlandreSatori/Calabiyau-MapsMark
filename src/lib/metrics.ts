@@ -10,51 +10,59 @@ export const emptyRatings = (): RatingDimensions => ({
 
 type ReviewSentimentFilter = "all" | "positive" | "negative";
 
-const filterReviewsBySentiment = (reviews: ReviewRecord[], sentiment: ReviewSentimentFilter) => {
+const sentimentMatchesValue = (value: number, sentiment: ReviewSentimentFilter) => {
     if (sentiment === "positive") {
-        return reviews.filter((review) => review.ratings.overall >= 0);
+        return value > 0;
     }
     if (sentiment === "negative") {
-        return reviews.filter((review) => review.ratings.overall < 0);
+        return value < 0;
     }
-    return reviews;
+    return true;
 };
+
+const ratingDimensionKeys: Array<keyof RatingDimensions> = ["entertainment", "aesthetics", "guidance", "difficulty", "overall"];
 
 export const averageRatings = (reviews: ReviewRecord[], mapId?: string, sentiment: ReviewSentimentFilter = "positive") => {
     const filtered = (mapId ? reviews.filter((item) => item.mapId === mapId && !item.deletedAt) : reviews.filter((item) => !item.deletedAt));
-    const sentimentFiltered = filterReviewsBySentiment(filtered, sentiment);
-    if (sentimentFiltered.length === 0) {
+    if (filtered.length === 0) {
         return emptyRatings();
     }
 
-    const totals = sentimentFiltered.reduce(
-        (accumulator, review) => {
-            accumulator.entertainment += review.ratings.entertainment;
-            accumulator.aesthetics += review.ratings.aesthetics;
-            accumulator.guidance += review.ratings.guidance;
-            accumulator.difficulty += review.ratings.difficulty;
-            accumulator.overall += review.ratings.overall;
-            return accumulator;
-        },
-        emptyRatings()
-    );
+    const totals = emptyRatings();
+    const counts = emptyRatings();
+
+    filtered.forEach((review) => {
+        ratingDimensionKeys.forEach((metric) => {
+            const value = review.ratings[metric];
+            if (sentimentMatchesValue(value, sentiment)) {
+                totals[metric] += value;
+                counts[metric] += 1;
+            }
+        });
+    });
 
     return {
-        entertainment: totals.entertainment / sentimentFiltered.length,
-        aesthetics: totals.aesthetics / sentimentFiltered.length,
-        guidance: totals.guidance / sentimentFiltered.length,
-        difficulty: totals.difficulty / sentimentFiltered.length,
-        overall: totals.overall / sentimentFiltered.length
+        entertainment: counts.entertainment > 0 ? totals.entertainment / counts.entertainment : 0,
+        aesthetics: counts.aesthetics > 0 ? totals.aesthetics / counts.aesthetics : 0,
+        guidance: counts.guidance > 0 ? totals.guidance / counts.guidance : 0,
+        difficulty: counts.difficulty > 0 ? totals.difficulty / counts.difficulty : 0,
+        overall: counts.overall > 0 ? totals.overall / counts.overall : 0
     };
 };
 
 export const mapScore = (reviews: ReviewRecord[], mapId: string, metric: keyof RatingDimensions, sentiment: ReviewSentimentFilter = "positive") => {
-    const filtered = filterReviewsBySentiment(reviews.filter((item) => item.mapId === mapId && !item.deletedAt), sentiment);
+    const filtered = reviews.filter((item) => item.mapId === mapId && !item.deletedAt);
     if (filtered.length === 0) {
         return 0;
     }
-    const total = filtered.reduce((sum, review) => sum + review.ratings[metric], 0);
-    return total / filtered.length;
+    const picked = filtered
+        .map((review) => review.ratings[metric])
+        .filter((value) => sentimentMatchesValue(value, sentiment));
+    if (picked.length === 0) {
+        return 0;
+    }
+    const total = picked.reduce((sum, value) => sum + value, 0);
+    return total / picked.length;
 };
 
 export const overallScore = (reviews: ReviewRecord[], mapId: string, sentiment: ReviewSentimentFilter = "positive") => {

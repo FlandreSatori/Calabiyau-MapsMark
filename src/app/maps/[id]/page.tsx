@@ -22,10 +22,10 @@ export default async function MapDetailPage({ params }: { params: Promise<{ id: 
     }
     const summary = summarizeState(state);
     const reviews = summary.reviews.filter((review) => review.mapId === map.id);
-    const positiveReviews = reviews.filter((review) => review.ratings.overall >= 0);
-    const negativeReviews = reviews.filter((review) => review.ratings.overall < 0);
     const positiveAverage = averageRatings(reviews, map.id, "positive");
     const negativeAverage = averageRatings(reviews, map.id, "negative");
+    const positiveCount = reviews.filter((review) => ratingLabels.some((key) => review.ratings[key] > 0)).length;
+    const negativeCount = reviews.filter((review) => ratingLabels.some((key) => review.ratings[key] < 0)).length;
     const gallery = [
         { src: map.coverImage, label: "封面图" },
         { src: map.previewImage, label: "预览图" }
@@ -73,8 +73,8 @@ export default async function MapDetailPage({ params }: { params: Promise<{ id: 
                         <ReviewRadarToggle
                             positiveValues={positiveAverage}
                             negativeValues={negativeAverage}
-                            positiveCount={positiveReviews.length}
-                            negativeCount={negativeReviews.length}
+                            positiveCount={positiveCount}
+                            negativeCount={negativeCount}
                         />
                     </div>
                 </section>
