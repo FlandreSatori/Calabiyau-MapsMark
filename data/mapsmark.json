@@ -562,7 +562,7 @@
       "comment": "这个猫娘做的小熊解密第一好玩！我认为做好玩的解密，不过现在怎么找不到了？",
       "id": "review-1652174e-089e-461a-b4f5-ec29cb676fd1",
       "submittedAt": "2026-06-12T14:34:08.131Z",
-      "updatedAt": "2026-06-12T14:34:08.131Z"
+      "updatedAt": "2026-06-13T06:55:05.934Z"
     },
     {
       "mapId": "map-f35d749f-2a1b-4d16-ae48-fe8ee6291d70",
@@ -1111,6 +1111,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-update",
+      "subjectId": "review-1652174e-089e-461a-b4f5-ec29cb676fd1",
+      "title": "编辑评价 弦化猫",
+      "detail": "map-387ee9e3-5c38-46b9-9aea-257b68844c4d",
+      "id": "event-16a6634f-e1d8-416a-93ef-de7e857447f5",
+      "timestamp": "2026-06-13T06:55:05.934Z"
+    },
     {
       "kind": "review-delete",
       "subjectId": "review-07915905-4b8e-443d-89f2-f44c58171d5e",
@@ -1928,5 +1936,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-13T06:53:33.017Z"
+  "updatedAt": "2026-06-13T06:55:05.934Z"
 }
