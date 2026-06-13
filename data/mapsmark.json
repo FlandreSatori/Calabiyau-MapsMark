@@ -483,6 +483,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-436f31ba-334b-4503-8db8-80217e5d1fdd",
+      "reviewerName": "AAA卡丘解密大王批发",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 3,
+        "aesthetics": 3.9,
+        "guidance": 2,
+        "difficulty": 4,
+        "overall": 3.5
+      },
+      "comment": "准心之前反复强调他在造史的成果，终于有布景的一集，见到大世界的时候真的有被惊艳到喵，部分关卡提示略微晦涩，十分有难度，建议多人游玩喵",
+      "id": "review-cf685c0a-d6d0-4fb7-b879-e34853c2f3c6",
+      "submittedAt": "2026-06-13T12:24:17.347Z",
+      "updatedAt": "2026-06-13T12:24:17.347Z"
+    },
+    {
       "mapId": "map-63c6c5a0-8aae-40c0-b60f-06588c9ae196",
       "reviewerName": "好喵好喵",
       "anonymous": false,
@@ -1111,6 +1127,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-cf685c0a-d6d0-4fb7-b879-e34853c2f3c6",
+      "title": "AAA卡丘解密大王批发",
+      "detail": "map-436f31ba-334b-4503-8db8-80217e5d1fdd",
+      "id": "event-8acfd809-6f4a-488d-8355-ef196f6de409",
+      "timestamp": "2026-06-13T12:24:17.347Z"
+    },
     {
       "kind": "review-update",
       "subjectId": "review-1652174e-089e-461a-b4f5-ec29cb676fd1",
@@ -1936,5 +1960,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-13T06:55:05.934Z"
+  "updatedAt": "2026-06-13T12:24:17.347Z"
 }
