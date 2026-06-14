@@ -227,16 +227,16 @@
     {
       "coverImage": "/assets/images/1780225756780-_______.png",
       "previewImage": "",
-      "code": "k8b6o5",
+      "code": "wqjwcj",
       "type": "解密",
       "name": "调查伊薇特小熊喵",
       "author": "古明地小五",
       "mappedAt": "",
-      "introduction": "1.多人解密也可以，可能会更简单/更难，请不要打扰其他小熊，请不要抛弃最后的小熊。\n2.菲是伊薇特最好的伙伴，但活动45秒后会变回玩偶，离开伊薇特超过80米后会失去力量。\n3.请先游玩 柴郡Ch3shire 的《MMR解密之江一楠大冒险》吧！",
+      "introduction": "1.多人解密也可以，可能会更简单/更难，请不要打扰其他小熊，请不要抛弃最后的小熊。\n2.菲是伊薇特最好的伙伴，但活动45秒后会变回玩偶，离开伊薇特超过80米后会失去力量。\n3.请先游玩 柴郡Ch3shire 的《MMR解密之江一楠大冒险》吧！\n4. 地图反馈请访问 klbq.lolser.fun",
       "estimatedMinutes": 90,
       "id": "map-fdfb60c0-26cf-4cb8-951e-c9ef210ae266",
       "submittedAt": "2026-05-31T11:09:19.705Z",
-      "updatedAt": "2026-06-11T15:11:13.783Z",
+      "updatedAt": "2026-06-14T04:26:21.774Z",
       "customCoverImage": "https://pic1.imgdb.cn/item/6a2acfedfdb1c84b8401a82f.jpg",
       "customPreviewImage": ""
     },
@@ -1161,6 +1161,14 @@
   "events": [
     {
       "kind": "map-update",
+      "subjectId": "map-fdfb60c0-26cf-4cb8-951e-c9ef210ae266",
+      "title": "编辑地图 调查伊薇特小熊喵",
+      "detail": "wqjwcj",
+      "id": "event-1d24a2ff-2f2e-4ca6-a689-7168dee78f5d",
+      "timestamp": "2026-06-14T04:26:21.774Z"
+    },
+    {
+      "kind": "map-update",
       "subjectId": "map-98a6bfaa-269f-4528-81cb-f547e79d4eb7",
       "title": "编辑地图 怪异迷宫V4",
       "detail": "d95u5k",
@@ -2016,5 +2024,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-14T04:21:53.659Z"
+  "updatedAt": "2026-06-14T04:26:21.774Z"
 }
