@@ -483,6 +483,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-3d25699d-cd82-46d3-ba0b-b428d6f83c5a",
+      "reviewerName": "轮椅侦探宅宅👁",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 2,
+        "aesthetics": 0.8,
+        "guidance": 2.5,
+        "difficulty": 4,
+        "overall": 3.5
+      },
+      "comment": "第一代解密图，准心老师的开山之作，无需多言\n\n总分3+0.5",
+      "id": "review-f063a9f7-d405-4e6d-b318-c2b5a535f273",
+      "submittedAt": "2026-06-15T03:34:59.079Z",
+      "updatedAt": "2026-06-15T03:34:59.079Z"
+    },
+    {
       "mapId": "map-3e9d28cc-104d-45c6-99a1-d45edae292cc",
       "reviewerName": "轮椅侦探宅宅👁",
       "anonymous": false,
@@ -1287,6 +1303,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-f063a9f7-d405-4e6d-b318-c2b5a535f273",
+      "title": "轮椅侦探宅宅👁",
+      "detail": "map-3d25699d-cd82-46d3-ba0b-b428d6f83c5a",
+      "id": "event-9571dfaa-b379-4691-9e6d-7d50d2f21f95",
+      "timestamp": "2026-06-15T03:34:59.079Z"
+    },
     {
       "kind": "review-create",
       "subjectId": "review-2ea63031-0094-47d8-921b-bf8a5775d0d4",
@@ -2216,5 +2240,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-15T03:33:27.798Z"
+  "updatedAt": "2026-06-15T03:34:59.079Z"
 }
