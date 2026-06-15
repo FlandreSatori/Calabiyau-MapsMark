@@ -483,6 +483,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-387ee9e3-5c38-46b9-9aea-257b68844c4d",
+      "reviewerName": "轮椅侦探宅宅👁",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 3.5,
+        "aesthetics": 0.1,
+        "guidance": 5,
+        "difficulty": 2,
+        "overall": 3
+      },
+      "comment": "纯粹的逻辑，但不像那个四角机关门的地狱史图\n\n适合当作小游戏来玩",
+      "id": "review-18d77669-c1e4-44ea-aa8d-96d2950faabf",
+      "submittedAt": "2026-06-15T03:44:42.363Z",
+      "updatedAt": "2026-06-15T03:44:42.363Z"
+    },
+    {
       "mapId": "map-98f00295-ae37-4a25-9bdd-2dc15593dcce",
       "reviewerName": "轮椅侦探宅宅👁",
       "anonymous": false,
@@ -1367,6 +1383,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-18d77669-c1e4-44ea-aa8d-96d2950faabf",
+      "title": "轮椅侦探宅宅👁",
+      "detail": "map-387ee9e3-5c38-46b9-9aea-257b68844c4d",
+      "id": "event-9772d710-19a4-438b-9b11-f33c7f00aabb",
+      "timestamp": "2026-06-15T03:44:42.363Z"
+    },
     {
       "kind": "review-create",
       "subjectId": "review-75125b1e-91df-4319-8475-10d58380b16f",
@@ -2336,5 +2360,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-15T03:43:15.791Z"
+  "updatedAt": "2026-06-15T03:44:42.363Z"
 }
