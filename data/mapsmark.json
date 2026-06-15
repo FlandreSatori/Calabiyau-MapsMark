@@ -483,6 +483,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-3e9d28cc-104d-45c6-99a1-d45edae292cc",
+      "reviewerName": "轮椅侦探宅宅👁",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 4.5,
+        "aesthetics": 0.5,
+        "guidance": 2.5,
+        "difficulty": 2.5,
+        "overall": 4
+      },
+      "comment": "第一个也是目前唯一一个闪影解密的图\n\n刀战出来的时候就想过会不会有人出这样的解密图，Bingo\n\n准心老师一如既往的高质量，当时他还很高产，而不是op",
+      "id": "review-2ea63031-0094-47d8-921b-bf8a5775d0d4",
+      "submittedAt": "2026-06-15T03:33:27.798Z",
+      "updatedAt": "2026-06-15T03:33:27.798Z"
+    },
+    {
       "mapId": "map-436f31ba-334b-4503-8db8-80217e5d1fdd",
       "reviewerName": "轮椅侦探宅宅👁",
       "anonymous": false,
@@ -1271,6 +1287,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-2ea63031-0094-47d8-921b-bf8a5775d0d4",
+      "title": "轮椅侦探宅宅👁",
+      "detail": "map-3e9d28cc-104d-45c6-99a1-d45edae292cc",
+      "id": "event-fe564efd-ef17-40bb-af35-8ff581a5930d",
+      "timestamp": "2026-06-15T03:33:27.798Z"
+    },
     {
       "kind": "review-create",
       "subjectId": "review-d423410d-5208-4f80-81dc-f2c0ea25614e",
@@ -2192,5 +2216,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-15T03:31:36.295Z"
+  "updatedAt": "2026-06-15T03:33:27.798Z"
 }
