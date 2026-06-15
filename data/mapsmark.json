@@ -483,6 +483,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-6554e08d-b080-4deb-991d-d894e328275f",
+      "reviewerName": "轮椅侦探宅宅👁",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 4,
+        "aesthetics": 1.5,
+        "guidance": 4.5,
+        "difficulty": 2,
+        "overall": 5
+      },
+      "comment": "第一代解密图，第一张双人解密图，无需多言\n\n双人题材的作品在3A大作流行的如今也是一个难题，你能在工坊里玩到的精品合作图绝对不多，友谊是魔法\n\n有小镇的建模，美观性加一分\n\n总体给到夯",
+      "id": "review-9cc16b9d-27d4-4029-9bd9-87df3d4e5fad",
+      "submittedAt": "2026-06-15T03:37:13.722Z",
+      "updatedAt": "2026-06-15T03:37:13.722Z"
+    },
+    {
       "mapId": "map-3d25699d-cd82-46d3-ba0b-b428d6f83c5a",
       "reviewerName": "轮椅侦探宅宅👁",
       "anonymous": false,
@@ -1303,6 +1319,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-9cc16b9d-27d4-4029-9bd9-87df3d4e5fad",
+      "title": "轮椅侦探宅宅👁",
+      "detail": "map-6554e08d-b080-4deb-991d-d894e328275f",
+      "id": "event-b1dd1717-a6d2-443a-b0ed-e8efdcc771a3",
+      "timestamp": "2026-06-15T03:37:13.723Z"
+    },
     {
       "kind": "review-create",
       "subjectId": "review-f063a9f7-d405-4e6d-b318-c2b5a535f273",
@@ -2240,5 +2264,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-15T03:34:59.079Z"
+  "updatedAt": "2026-06-15T03:37:13.723Z"
 }
