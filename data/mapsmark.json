@@ -483,6 +483,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-98f00295-ae37-4a25-9bdd-2dc15593dcce",
+      "reviewerName": "轮椅侦探宅宅👁",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 3.5,
+        "aesthetics": 4,
+        "guidance": 3.2,
+        "difficulty": 2,
+        "overall": 4.2
+      },
+      "comment": "誓随老师的开山之作，沉浸式解密的开端\n\n“希望以后能玩到更多类似的图”\n作者这盛世如你所愿",
+      "id": "review-75125b1e-91df-4319-8475-10d58380b16f",
+      "submittedAt": "2026-06-15T03:43:15.790Z",
+      "updatedAt": "2026-06-15T03:43:15.790Z"
+    },
+    {
       "mapId": "map-8ff6810e-ab5f-47c1-9855-57622484ef5c",
       "reviewerName": "轮椅侦探宅宅👁",
       "anonymous": false,
@@ -1351,6 +1367,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-75125b1e-91df-4319-8475-10d58380b16f",
+      "title": "轮椅侦探宅宅👁",
+      "detail": "map-98f00295-ae37-4a25-9bdd-2dc15593dcce",
+      "id": "event-504bbfa6-f273-4fe7-9f8e-75201bdde7cb",
+      "timestamp": "2026-06-15T03:43:15.791Z"
+    },
     {
       "kind": "review-create",
       "subjectId": "review-350202c8-2708-4db0-a859-0f65870bf0b4",
@@ -2312,5 +2336,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-15T03:41:36.895Z"
+  "updatedAt": "2026-06-15T03:43:15.791Z"
 }
