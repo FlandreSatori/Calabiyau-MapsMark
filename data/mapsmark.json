@@ -483,6 +483,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-0cc4bcd8-81d6-4028-84b7-b197c6c92ef8",
+      "reviewerName": "轮椅侦探宅宅👁",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 4,
+        "aesthetics": 3,
+        "guidance": 4,
+        "difficulty": 4.5,
+        "overall": 4.6
+      },
+      "comment": "第二代解密图的开端，掀起了一阵解密制图热潮，在此之前自定义解密只有冰心老师和准心老师的图，不够玩。\n\n初版发布时熬夜打通了，花了3小时，和作者思维同频的时候会很舒服，但有人XY坐标搞反了我不说是谁其实柴郡是千代厨你们知道吗\n\n美观性尚有欠缺，看得出来还是玩法主导，场景逻辑只能稍微靠边站了其实柴郡是玛德蕾娜厨你们知道吗\n\nDLC的发布给本图的量大管饱又上了一个档次，给到夯\n",
+      "id": "review-1d952802-3132-4972-b1c3-28ff5368aa76",
+      "submittedAt": "2026-06-15T03:21:37.782Z",
+      "updatedAt": "2026-06-15T03:21:37.782Z"
+    },
+    {
       "mapId": "map-8c3f0601-5bcf-4fff-8f3b-058813684475",
       "reviewerName": "轮椅侦探宅宅👁",
       "anonymous": false,
@@ -1207,6 +1223,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-1d952802-3132-4972-b1c3-28ff5368aa76",
+      "title": "轮椅侦探宅宅👁",
+      "detail": "map-0cc4bcd8-81d6-4028-84b7-b197c6c92ef8",
+      "id": "event-97411e7e-db33-406c-99dc-66c214c87dcb",
+      "timestamp": "2026-06-15T03:21:37.782Z"
+    },
     {
       "kind": "review-create",
       "subjectId": "review-f33dbcac-eab6-44a0-b79c-ba7806c51a77",
@@ -2096,5 +2120,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-15T03:15:15.925Z"
+  "updatedAt": "2026-06-15T03:21:37.782Z"
 }
