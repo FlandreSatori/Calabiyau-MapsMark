@@ -483,6 +483,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-f35d749f-2a1b-4d16-ae48-fe8ee6291d70",
+      "reviewerName": "米花町产的基米花（耐活）",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 4.3,
+        "aesthetics": 3.9,
+        "guidance": 2.7,
+        "difficulty": 3.8,
+        "overall": 4.8
+      },
+      "comment": "入坑图 引导方面有一点差 复活点有明显的信息 但是只有绕完之后才能反应过来蛮不错的",
+      "id": "review-7e96595e-e9dc-4265-abfb-3453880e7f28",
+      "submittedAt": "2026-06-15T18:54:10.552Z",
+      "updatedAt": "2026-06-15T18:54:10.552Z"
+    },
+    {
       "mapId": "map-fdfb60c0-26cf-4cb8-951e-c9ef210ae266",
       "reviewerName": "小熊惯性好大喵",
       "anonymous": false,
@@ -1495,6 +1511,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-7e96595e-e9dc-4265-abfb-3453880e7f28",
+      "title": "米花町产的基米花（耐活）",
+      "detail": "map-f35d749f-2a1b-4d16-ae48-fe8ee6291d70",
+      "id": "event-2ed045c6-6644-468a-b3dd-2b1d3b0035f3",
+      "timestamp": "2026-06-15T18:54:10.552Z"
+    },
     {
       "kind": "review-create",
       "subjectId": "review-245d8e9c-6aad-49e4-831f-0089a7c807e2",
@@ -2528,5 +2552,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-15T18:42:37.326Z"
+  "updatedAt": "2026-06-15T18:54:10.552Z"
 }
