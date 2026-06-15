@@ -483,6 +483,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-8c3f0601-5bcf-4fff-8f3b-058813684475",
+      "reviewerName": "蹭墙连接大脑 钻草代替思考",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 4.3,
+        "aesthetics": 4,
+        "guidance": 4.5,
+        "difficulty": 4.7,
+        "overall": 5
+      },
+      "comment": "不乱 整体都很有条理 方便拎出来逐一消化",
+      "id": "review-fd328438-a68e-46d5-b069-7a3559a838ec",
+      "submittedAt": "2026-06-15T18:14:43.145Z",
+      "updatedAt": "2026-06-15T18:14:43.145Z"
+    },
+    {
       "mapId": "map-b009edd9-7806-4281-beb3-41700e740419",
       "reviewerName": "这里是JM（解密）天堂吗？",
       "anonymous": false,
@@ -1463,6 +1479,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-fd328438-a68e-46d5-b069-7a3559a838ec",
+      "title": "蹭墙连接大脑 钻草代替思考",
+      "detail": "map-8c3f0601-5bcf-4fff-8f3b-058813684475",
+      "id": "event-109932f8-d026-4297-877f-e14d1f553c9d",
+      "timestamp": "2026-06-15T18:14:43.145Z"
+    },
     {
       "kind": "review-create",
       "subjectId": "review-ab4d5d12-adaa-4257-afd5-5fd5c113cc7e",
@@ -2480,5 +2504,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-15T18:08:56.498Z"
+  "updatedAt": "2026-06-15T18:14:43.145Z"
 }
