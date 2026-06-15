@@ -497,6 +497,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-c752fa18-bf8f-4657-b9c8-205fd997e372",
+      "reviewerName": "凯尔希尔",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 5,
+        "aesthetics": 5,
+        "guidance": 5,
+        "difficulty": 5,
+        "overall": 5
+      },
+      "comment": "这图小时候抱过我喵",
+      "id": "review-2e2eb763-8dd0-488c-95dc-cab533a0ea79",
+      "submittedAt": "2026-06-15T22:46:46.739Z",
+      "updatedAt": "2026-06-15T22:46:46.739Z"
+    },
+    {
       "mapId": "map-859e43c7-c7a6-4693-9597-2a07616a0d0c",
       "reviewerName": "来点米予人",
       "anonymous": false,
@@ -1541,6 +1557,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-2e2eb763-8dd0-488c-95dc-cab533a0ea79",
+      "title": "凯尔希尔",
+      "detail": "map-c752fa18-bf8f-4657-b9c8-205fd997e372",
+      "id": "event-bec17553-e1fd-4dfa-859d-98190f781690",
+      "timestamp": "2026-06-15T22:46:46.739Z"
+    },
     {
       "kind": "map-create",
       "subjectId": "map-c752fa18-bf8f-4657-b9c8-205fd997e372",
@@ -2598,5 +2622,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-15T22:46:02.984Z"
+  "updatedAt": "2026-06-15T22:46:46.739Z"
 }
