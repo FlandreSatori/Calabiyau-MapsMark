@@ -1,6 +1,20 @@
 {
   "maps": [
     {
+      "coverImage": "/assets/images/1781563417650-29acaa14fb9fa8718f0a5a7c81a34dcc.png",
+      "previewImage": "",
+      "code": "1bp1fg",
+      "type": "跑酷",
+      "name": "螺旋跑酷塔卡丘版",
+      "author": "鱼肉夹心饼干",
+      "mappedAt": "",
+      "introduction": "卡拉彼丘版螺旋跑酷塔\n分为基础版和加强版两部分，基础版的终点可以往上走到达终点，也可以往下跳去往加强版关卡，但是跳下去之后无法返回基础版关卡，切记。\n难度也是有的喵，不要红温，多加练习喵",
+      "estimatedMinutes": 120,
+      "id": "map-c752fa18-bf8f-4657-b9c8-205fd997e372",
+      "submittedAt": "2026-06-15T22:46:02.984Z",
+      "updatedAt": "2026-06-15T22:46:02.984Z"
+    },
+    {
       "coverImage": "/assets/images/1780652153706-scrp.png",
       "previewImage": "",
       "code": "6up3al",
@@ -1528,6 +1542,14 @@
   ],
   "events": [
     {
+      "kind": "map-create",
+      "subjectId": "map-c752fa18-bf8f-4657-b9c8-205fd997e372",
+      "title": "螺旋跑酷塔卡丘版",
+      "detail": "1bp1fg",
+      "id": "event-7d4b361e-533e-47c7-8c66-194bc13eef97",
+      "timestamp": "2026-06-15T22:46:02.984Z"
+    },
+    {
       "kind": "review-create",
       "subjectId": "review-e87b8307-6d4e-452d-ae70-e9e8af877db4",
       "title": "来点米予人",
@@ -2576,5 +2598,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-15T19:14:42.425Z"
+  "updatedAt": "2026-06-15T22:46:02.984Z"
 }
