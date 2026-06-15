@@ -483,6 +483,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-b009edd9-7806-4281-beb3-41700e740419",
+      "reviewerName": "这里是JM（解密）天堂吗？",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 4.5,
+        "aesthetics": 4,
+        "guidance": 3,
+        "difficulty": 4.5,
+        "overall": 4.5
+      },
+      "comment": "难度不高 可以当做新手入门向 过关有很明显的消化线索的过程 解完成就感很足",
+      "id": "review-ab4d5d12-adaa-4257-afd5-5fd5c113cc7e",
+      "submittedAt": "2026-06-15T18:08:56.498Z",
+      "updatedAt": "2026-06-15T18:08:56.498Z"
+    },
+    {
       "mapId": "map-98a6bfaa-269f-4528-81cb-f547e79d4eb7",
       "reviewerName": "这是JM（解密）天堂吗？",
       "anonymous": false,
@@ -1447,6 +1463,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-ab4d5d12-adaa-4257-afd5-5fd5c113cc7e",
+      "title": "这里是JM（解密）天堂吗？",
+      "detail": "map-b009edd9-7806-4281-beb3-41700e740419",
+      "id": "event-2d5c1302-7bbd-4080-bc3c-9d64d91f1bcb",
+      "timestamp": "2026-06-15T18:08:56.498Z"
+    },
     {
       "kind": "review-create",
       "subjectId": "review-f0e843c3-6272-435f-9832-125b3a81f6d0",
@@ -2456,5 +2480,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-15T18:00:18.797Z"
+  "updatedAt": "2026-06-15T18:08:56.498Z"
 }
