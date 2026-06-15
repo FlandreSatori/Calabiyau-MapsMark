@@ -483,6 +483,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-b4a6746b-d178-4955-a68f-74fc5dacf77a",
+      "reviewerName": "轮椅侦探宅宅👁",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 3.5,
+        "aesthetics": 1,
+        "guidance": 2,
+        "difficulty": 4.5,
+        "overall": 3
+      },
+      "comment": "纯粹的玩法导向，延续了老登有难的风格，但用料过猛，仍然要猜测作者想法，很难留住玩家\n\n适合老登游玩",
+      "id": "review-b6d1793c-82f5-48be-b106-5ae15740d225",
+      "submittedAt": "2026-06-15T03:39:26.794Z",
+      "updatedAt": "2026-06-15T03:39:26.794Z"
+    },
+    {
       "mapId": "map-6554e08d-b080-4deb-991d-d894e328275f",
       "reviewerName": "轮椅侦探宅宅👁",
       "anonymous": false,
@@ -1319,6 +1335,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-b6d1793c-82f5-48be-b106-5ae15740d225",
+      "title": "轮椅侦探宅宅👁",
+      "detail": "map-b4a6746b-d178-4955-a68f-74fc5dacf77a",
+      "id": "event-d81c1fc0-01e5-4bc5-b02f-1a3f62d98b71",
+      "timestamp": "2026-06-15T03:39:26.794Z"
+    },
     {
       "kind": "review-create",
       "subjectId": "review-9cc16b9d-27d4-4029-9bd9-87df3d4e5fad",
@@ -2264,5 +2288,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-15T03:37:13.723Z"
+  "updatedAt": "2026-06-15T03:39:26.794Z"
 }
