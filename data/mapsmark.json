@@ -483,6 +483,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-fdfb60c0-26cf-4cb8-951e-c9ef210ae266",
+      "reviewerName": "小熊惯性好大喵",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 5,
+        "aesthetics": 5,
+        "guidance": 5,
+        "difficulty": 5,
+        "overall": 5
+      },
+      "comment": "除了最后一关难度不太适合跑酷苦手以外，别的各个方面给到夯",
+      "id": "review-245d8e9c-6aad-49e4-831f-0089a7c807e2",
+      "submittedAt": "2026-06-15T18:42:37.326Z",
+      "updatedAt": "2026-06-15T18:42:37.326Z"
+    },
+    {
       "mapId": "map-8c3f0601-5bcf-4fff-8f3b-058813684475",
       "reviewerName": "蹭墙连接大脑 钻草代替思考",
       "anonymous": false,
@@ -1479,6 +1495,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-245d8e9c-6aad-49e4-831f-0089a7c807e2",
+      "title": "小熊惯性好大喵",
+      "detail": "map-fdfb60c0-26cf-4cb8-951e-c9ef210ae266",
+      "id": "event-45d4c448-1db5-4bce-91b5-e14328a260ca",
+      "timestamp": "2026-06-15T18:42:37.326Z"
+    },
     {
       "kind": "review-create",
       "subjectId": "review-fd328438-a68e-46d5-b069-7a3559a838ec",
@@ -2504,5 +2528,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-15T18:14:43.145Z"
+  "updatedAt": "2026-06-15T18:42:37.326Z"
 }
