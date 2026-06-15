@@ -483,6 +483,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-f35d749f-2a1b-4d16-ae48-fe8ee6291d70",
+      "reviewerName": "凯尔希尔",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 3,
+        "aesthetics": 3,
+        "guidance": 3,
+        "difficulty": 2.1,
+        "overall": 3
+      },
+      "comment": "梦开始的地方喵",
+      "id": "review-a23c2a41-5cf8-4174-af36-4ae09d2f60f1",
+      "submittedAt": "2026-06-15T17:14:38.537Z",
+      "updatedAt": "2026-06-15T17:14:38.537Z"
+    },
+    {
       "mapId": "map-98a6bfaa-269f-4528-81cb-f547e79d4eb7",
       "reviewerName": "轮椅侦探宅宅👁",
       "anonymous": false,
@@ -1415,6 +1431,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-a23c2a41-5cf8-4174-af36-4ae09d2f60f1",
+      "title": "凯尔希尔",
+      "detail": "map-f35d749f-2a1b-4d16-ae48-fe8ee6291d70",
+      "id": "event-9e317bde-0ab1-4edd-9b66-688f62979669",
+      "timestamp": "2026-06-15T17:14:38.537Z"
+    },
     {
       "kind": "review-create",
       "subjectId": "review-95c26b8e-4f6c-4656-971e-160ff30d2f6f",
@@ -2408,5 +2432,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-15T03:50:37.516Z"
+  "updatedAt": "2026-06-15T17:14:38.537Z"
 }
