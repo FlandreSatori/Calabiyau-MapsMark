@@ -483,6 +483,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-859e43c7-c7a6-4693-9597-2a07616a0d0c",
+      "reviewerName": "轮椅侦探宅宅👁",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 3.5,
+        "aesthetics": 4,
+        "guidance": 4,
+        "difficulty": 2.5,
+        "overall": 4.2
+      },
+      "comment": "VV的图向来都是先造景\n\n作为高中生的作者从美图的边角料中挤出来一点做成的解密图，对熟悉解密的人来讲很简单——作者不会无缘无故放一些看起来有规律的东西\n\n它的孪生姊妹图叫圣诞琴房",
+      "id": "review-8a67581a-a764-40b4-bf72-6ed4237eacaa",
+      "submittedAt": "2026-06-15T03:47:11.811Z",
+      "updatedAt": "2026-06-15T03:47:11.811Z"
+    },
+    {
       "mapId": "map-387ee9e3-5c38-46b9-9aea-257b68844c4d",
       "reviewerName": "轮椅侦探宅宅👁",
       "anonymous": false,
@@ -1383,6 +1399,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-8a67581a-a764-40b4-bf72-6ed4237eacaa",
+      "title": "轮椅侦探宅宅👁",
+      "detail": "map-859e43c7-c7a6-4693-9597-2a07616a0d0c",
+      "id": "event-b67ef594-75ee-4080-bd05-4a8f066ae278",
+      "timestamp": "2026-06-15T03:47:11.811Z"
+    },
     {
       "kind": "review-create",
       "subjectId": "review-18d77669-c1e4-44ea-aa8d-96d2950faabf",
@@ -2360,5 +2384,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-15T03:44:42.363Z"
+  "updatedAt": "2026-06-15T03:47:11.811Z"
 }
