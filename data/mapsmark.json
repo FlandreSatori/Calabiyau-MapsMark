@@ -483,6 +483,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-859e43c7-c7a6-4693-9597-2a07616a0d0c",
+      "reviewerName": "来点米予人",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 5,
+        "aesthetics": 5,
+        "guidance": 4.8,
+        "difficulty": 4,
+        "overall": 4.4
+      },
+      "comment": "除了咖啡馆后厨的门没什么引导以外，别的都还可以。玩起来很放松。",
+      "id": "review-e87b8307-6d4e-452d-ae70-e9e8af877db4",
+      "submittedAt": "2026-06-15T19:14:42.425Z",
+      "updatedAt": "2026-06-15T19:14:42.425Z"
+    },
+    {
       "mapId": "map-f35d749f-2a1b-4d16-ae48-fe8ee6291d70",
       "reviewerName": "米花町产的基米花（耐活）",
       "anonymous": false,
@@ -1511,6 +1527,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-e87b8307-6d4e-452d-ae70-e9e8af877db4",
+      "title": "来点米予人",
+      "detail": "map-859e43c7-c7a6-4693-9597-2a07616a0d0c",
+      "id": "event-cc652b1a-5aef-42f8-a0f0-1f52d59954b1",
+      "timestamp": "2026-06-15T19:14:42.425Z"
+    },
     {
       "kind": "review-create",
       "subjectId": "review-7e96595e-e9dc-4265-abfb-3453880e7f28",
@@ -2552,5 +2576,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-15T18:54:10.552Z"
+  "updatedAt": "2026-06-15T19:14:42.425Z"
 }
