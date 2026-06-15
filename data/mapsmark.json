@@ -483,6 +483,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-431a8b39-81d2-49cd-a471-b5ea6912c418",
+      "reviewerName": "轮椅侦探宅宅👁",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 3.6,
+        "aesthetics": 4,
+        "guidance": 5,
+        "difficulty": 1,
+        "overall": 4
+      },
+      "comment": "江一楠大冒险的简单版\n\n从出题人的角度看过于简单，但作为玩家来看刚刚好。听说作者是萝莉控你们知道吗不然为什么要叫幼教版，听说作者最初的野心依然是造一个完整逃离基地的世界观但可惜还是没能坚持，残念\n\n本来打算联动的\n\n\n要好好爱护菲哦",
+      "id": "review-799e8559-7e4c-4c9b-97d9-8e644960db91",
+      "submittedAt": "2026-06-15T03:26:27.312Z",
+      "updatedAt": "2026-06-15T03:26:27.312Z"
+    },
+    {
       "mapId": "map-0cc4bcd8-81d6-4028-84b7-b197c6c92ef8",
       "reviewerName": "轮椅侦探宅宅👁",
       "anonymous": false,
@@ -1223,6 +1239,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-799e8559-7e4c-4c9b-97d9-8e644960db91",
+      "title": "轮椅侦探宅宅👁",
+      "detail": "map-431a8b39-81d2-49cd-a471-b5ea6912c418",
+      "id": "event-6d7d0a99-56fc-42bf-80c0-00c12b90c60e",
+      "timestamp": "2026-06-15T03:26:27.312Z"
+    },
     {
       "kind": "review-create",
       "subjectId": "review-1d952802-3132-4972-b1c3-28ff5368aa76",
@@ -2120,5 +2144,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-15T03:21:37.782Z"
+  "updatedAt": "2026-06-15T03:26:27.312Z"
 }
