@@ -483,6 +483,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-a6abb700-46c1-4d61-b588-89384005cd82",
+      "reviewerName": "轮椅侦探宅宅👁",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 3,
+        "aesthetics": 3.5,
+        "guidance": 4.5,
+        "difficulty": 0.5,
+        "overall": 4.9
+      },
+      "comment": "入门级别的解密图，誓随老师的又一力作\n\n巧妙地利用了地底的特性可以随便挖洞而保持场景自洽，山体的搭建也可以简单地呈现较好的效果。\n\n完全的线性关卡，且干扰元素较少，连mmr也能一眼看到路在哪里/可能在哪里\n\n被关押的怪物打死居然会复活，这点会出戏\n\n希望继续出现量大管饱的地图，代入感乃是地图第一要素",
+      "id": "review-f7266dd9-e3b4-4968-b12c-bf5e4092d725",
+      "submittedAt": "2026-06-15T03:08:52.264Z",
+      "updatedAt": "2026-06-15T03:08:52.264Z"
+    },
+    {
       "mapId": "map-53804f28-d922-4fe3-9c54-650931cb22b0",
       "reviewerName": "轮椅侦探宅宅👁",
       "anonymous": false,
@@ -1175,6 +1191,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-f7266dd9-e3b4-4968-b12c-bf5e4092d725",
+      "title": "轮椅侦探宅宅👁",
+      "detail": "map-a6abb700-46c1-4d61-b588-89384005cd82",
+      "id": "event-6af5131b-187b-45f4-8ef7-acbdbde743d0",
+      "timestamp": "2026-06-15T03:08:52.265Z"
+    },
     {
       "kind": "review-create",
       "subjectId": "review-0e92029c-68a0-4991-95f6-f3bfa0bd885f",
@@ -2048,5 +2072,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-15T03:03:02.910Z"
+  "updatedAt": "2026-06-15T03:08:52.265Z"
 }
