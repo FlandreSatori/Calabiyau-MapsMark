@@ -483,6 +483,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-436f31ba-334b-4503-8db8-80217e5d1fdd",
+      "reviewerName": "轮椅侦探宅宅👁",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 4,
+        "aesthetics": 4,
+        "guidance": 3,
+        "difficulty": 3.7,
+        "overall": 3.8
+      },
+      "comment": "低开高走的图，旋转世界是饺子醋\n\n“你怎么知道我要做巨人房间”，作者如是说道\n当然了我可是读心妖怪\n\n替换了一些意义不明的解密，整体难度适中，即使找不到线索也能普通地遍历按钮位置来通关",
+      "id": "review-d423410d-5208-4f80-81dc-f2c0ea25614e",
+      "submittedAt": "2026-06-15T03:31:36.295Z",
+      "updatedAt": "2026-06-15T03:31:36.295Z"
+    },
+    {
       "mapId": "map-63c6c5a0-8aae-40c0-b60f-06588c9ae196",
       "reviewerName": "轮椅侦探宅宅👁",
       "anonymous": false,
@@ -1255,6 +1271,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-d423410d-5208-4f80-81dc-f2c0ea25614e",
+      "title": "轮椅侦探宅宅👁",
+      "detail": "map-436f31ba-334b-4503-8db8-80217e5d1fdd",
+      "id": "event-79241399-3eba-4655-8368-b8fc65fae685",
+      "timestamp": "2026-06-15T03:31:36.295Z"
+    },
     {
       "kind": "review-create",
       "subjectId": "review-7680d276-af56-49d7-93c0-3af0ba94e188",
@@ -2168,5 +2192,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-15T03:28:35.305Z"
+  "updatedAt": "2026-06-15T03:31:36.295Z"
 }
