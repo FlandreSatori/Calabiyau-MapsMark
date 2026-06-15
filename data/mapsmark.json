@@ -483,6 +483,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-8c3f0601-5bcf-4fff-8f3b-058813684475",
+      "reviewerName": "轮椅侦探宅宅👁",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 5,
+        "aesthetics": 3.3,
+        "guidance": 5,
+        "difficulty": 1.5,
+        "overall": 5
+      },
+      "comment": "教学图，很高兴看到ch老师能同时双线开工一边从其他解密游戏里汲取灵感发挥创意一边为mmr制作入门教学\n\n新人玩家的最好的入门知识库，新人作者最好的入门工具库\n\n美观性三分给到后室\n\n在老带新方面有举足轻重的地位，总体给到夯",
+      "id": "review-f33dbcac-eab6-44a0-b79c-ba7806c51a77",
+      "submittedAt": "2026-06-15T03:15:15.925Z",
+      "updatedAt": "2026-06-15T03:15:15.925Z"
+    },
+    {
       "mapId": "map-a6abb700-46c1-4d61-b588-89384005cd82",
       "reviewerName": "轮椅侦探宅宅👁",
       "anonymous": false,
@@ -1191,6 +1207,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-f33dbcac-eab6-44a0-b79c-ba7806c51a77",
+      "title": "轮椅侦探宅宅👁",
+      "detail": "map-8c3f0601-5bcf-4fff-8f3b-058813684475",
+      "id": "event-812300d1-f13f-4e0c-ab88-a36c76edc892",
+      "timestamp": "2026-06-15T03:15:15.925Z"
+    },
     {
       "kind": "review-create",
       "subjectId": "review-f7266dd9-e3b4-4968-b12c-bf5e4092d725",
@@ -2072,5 +2096,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-15T03:08:52.265Z"
+  "updatedAt": "2026-06-15T03:15:15.925Z"
 }
