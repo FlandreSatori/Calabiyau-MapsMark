@@ -483,6 +483,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-98a6bfaa-269f-4528-81cb-f547e79d4eb7",
+      "reviewerName": "轮椅侦探宅宅👁",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 3.5,
+        "aesthetics": 1,
+        "guidance": 2.5,
+        "difficulty": 4,
+        "overall": 3.8
+      },
+      "comment": "不管玩到哪一关都有一种力竭感你们知道吗\n\n一分给到泳池\n\n不过很高兴的是能看到作者在每关的制作过程中都有科研和成长，并且熟练运用后为下一张图奠定了基础\n\n为解密圈贡献了解密思路\n\n为艺术圈贡献了非人艺术",
+      "id": "review-95c26b8e-4f6c-4656-971e-160ff30d2f6f",
+      "submittedAt": "2026-06-15T03:50:37.516Z",
+      "updatedAt": "2026-06-15T03:50:37.516Z"
+    },
+    {
       "mapId": "map-859e43c7-c7a6-4693-9597-2a07616a0d0c",
       "reviewerName": "轮椅侦探宅宅👁",
       "anonymous": false,
@@ -1399,6 +1415,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-95c26b8e-4f6c-4656-971e-160ff30d2f6f",
+      "title": "轮椅侦探宅宅👁",
+      "detail": "map-98a6bfaa-269f-4528-81cb-f547e79d4eb7",
+      "id": "event-029e5944-ed1d-46a9-9f52-4ec8529f7b34",
+      "timestamp": "2026-06-15T03:50:37.516Z"
+    },
     {
       "kind": "review-create",
       "subjectId": "review-8a67581a-a764-40b4-bf72-6ed4237eacaa",
@@ -2384,5 +2408,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-15T03:47:11.811Z"
+  "updatedAt": "2026-06-15T03:50:37.516Z"
 }
