@@ -483,6 +483,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-63c6c5a0-8aae-40c0-b60f-06588c9ae196",
+      "reviewerName": "轮椅侦探宅宅👁",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 4,
+        "aesthetics": 0.5,
+        "guidance": 3.5,
+        "difficulty": 2.5,
+        "overall": 4
+      },
+      "comment": "对于熟知方块特性/跑酷老登来说并不非常规\n\n准心老师的作品，第一代解密图，伟大无需多言",
+      "id": "review-7680d276-af56-49d7-93c0-3af0ba94e188",
+      "submittedAt": "2026-06-15T03:28:35.305Z",
+      "updatedAt": "2026-06-15T03:28:35.305Z"
+    },
+    {
       "mapId": "map-431a8b39-81d2-49cd-a471-b5ea6912c418",
       "reviewerName": "轮椅侦探宅宅👁",
       "anonymous": false,
@@ -1239,6 +1255,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-7680d276-af56-49d7-93c0-3af0ba94e188",
+      "title": "轮椅侦探宅宅👁",
+      "detail": "map-63c6c5a0-8aae-40c0-b60f-06588c9ae196",
+      "id": "event-6e6da587-2465-4516-a0cd-99ce2e6e46ec",
+      "timestamp": "2026-06-15T03:28:35.305Z"
+    },
     {
       "kind": "review-create",
       "subjectId": "review-799e8559-7e4c-4c9b-97d9-8e644960db91",
@@ -2144,5 +2168,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-15T03:26:27.312Z"
+  "updatedAt": "2026-06-15T03:28:35.305Z"
 }
