@@ -483,6 +483,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-8ff6810e-ab5f-47c1-9855-57622484ef5c",
+      "reviewerName": "轮椅侦探宅宅👁",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 3.8,
+        "aesthetics": 2.5,
+        "guidance": 4.5,
+        "difficulty": 2.5,
+        "overall": 4
+      },
+      "comment": "第一张蓝火解密\n\n但本质上和蓝火无关，把蓝火部分去掉其实就是一个大房间解密\n\n对复活点特性的第一步尝试，流程适中，给到顶级",
+      "id": "review-350202c8-2708-4db0-a859-0f65870bf0b4",
+      "submittedAt": "2026-06-15T03:41:36.894Z",
+      "updatedAt": "2026-06-15T03:41:36.894Z"
+    },
+    {
       "mapId": "map-b4a6746b-d178-4955-a68f-74fc5dacf77a",
       "reviewerName": "轮椅侦探宅宅👁",
       "anonymous": false,
@@ -1335,6 +1351,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-350202c8-2708-4db0-a859-0f65870bf0b4",
+      "title": "轮椅侦探宅宅👁",
+      "detail": "map-8ff6810e-ab5f-47c1-9855-57622484ef5c",
+      "id": "event-726e93a8-e2cf-4bbb-9075-b5d808f7e334",
+      "timestamp": "2026-06-15T03:41:36.895Z"
+    },
     {
       "kind": "review-create",
       "subjectId": "review-b6d1793c-82f5-48be-b106-5ae15740d225",
@@ -2288,5 +2312,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-15T03:39:26.794Z"
+  "updatedAt": "2026-06-15T03:41:36.895Z"
 }
