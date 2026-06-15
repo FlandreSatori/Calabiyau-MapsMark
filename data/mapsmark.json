@@ -483,6 +483,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-53804f28-d922-4fe3-9c54-650931cb22b0",
+      "reviewerName": "轮椅侦探宅宅👁",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 4.5,
+        "aesthetics": 4.2,
+        "guidance": 4,
+        "difficulty": 3.6,
+        "overall": 4.8
+      },
+      "comment": "看得出来是作者呕心沥血之作，听说因为卡丘的原因还丢了一次文件 ww\n\n正如我预判的，未来的工坊地图将更多地朝美图发展，而猫娘乐园这种广场式雕塑正是最容易的提高观感且适合塞入私货的方式，参考：各大琴房。\n\n引导性对于老登来讲正合适，对MMR仍需优化，谨记许多常识对MMR来说仍是非常识。\n\n期待更多大世界解密图的出现，大就是好。",
+      "id": "review-0e92029c-68a0-4991-95f6-f3bfa0bd885f",
+      "submittedAt": "2026-06-15T03:03:02.910Z",
+      "updatedAt": "2026-06-15T03:03:02.910Z"
+    },
+    {
       "mapId": "map-98f00295-ae37-4a25-9bdd-2dc15593dcce",
       "reviewerName": "AAA卡丘解密大王批发",
       "anonymous": false,
@@ -1159,6 +1175,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-0e92029c-68a0-4991-95f6-f3bfa0bd885f",
+      "title": "轮椅侦探宅宅👁",
+      "detail": "map-53804f28-d922-4fe3-9c54-650931cb22b0",
+      "id": "event-ad3af2b8-4d4f-42d8-bc67-81871406b3bf",
+      "timestamp": "2026-06-15T03:03:02.910Z"
+    },
     {
       "kind": "map-update",
       "subjectId": "map-fdfb60c0-26cf-4cb8-951e-c9ef210ae266",
@@ -2024,5 +2048,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-14T04:26:21.774Z"
+  "updatedAt": "2026-06-15T03:03:02.910Z"
 }
