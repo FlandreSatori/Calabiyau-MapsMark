@@ -511,6 +511,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-53804f28-d922-4fe3-9c54-650931cb22b0",
+      "reviewerName": "月海原由砂",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 5,
+        "aesthetics": 5,
+        "guidance": 2.8,
+        "difficulty": 3.8,
+        "overall": 4.3
+      },
+      "comment": "造景技术一流有感觉吗❤️出来的一瞬间想抛弃解密直接开始逛地图了。好看！！！我愿意为了纯逛街重开好几次。塞进小角落的抽象画也很有意思。\n⭐引导性和难易度全点在规则理解上。初见是有一位好心人带我，帮忙解释的很详细，如果是我自己可能没办法通关。想有好的游戏体验建议有玩过的玩家带着。\n⭐含有从游戏外获取的线索，很新颖但对于不方便去看的人来说会直接卡住喵。",
+      "id": "review-af632a8c-fac5-481f-8f56-b0290278610a",
+      "submittedAt": "2026-06-16T08:59:59.086Z",
+      "updatedAt": "2026-06-16T08:59:59.086Z"
+    },
+    {
       "mapId": "map-fe5db2af-c8de-45c1-af0e-9e0aaf8291fe",
       "reviewerName": "月海原由砂",
       "anonymous": false,
@@ -1587,6 +1603,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-af632a8c-fac5-481f-8f56-b0290278610a",
+      "title": "月海原由砂",
+      "detail": "map-53804f28-d922-4fe3-9c54-650931cb22b0",
+      "id": "event-22ceee1a-f896-4646-b792-9436ff2600ce",
+      "timestamp": "2026-06-16T08:59:59.086Z"
+    },
     {
       "kind": "review-create",
       "subjectId": "review-4e3ea1e4-2f6d-4f6f-afe4-f02eafa4abcd",
@@ -2668,5 +2692,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-16T08:43:20.357Z"
+  "updatedAt": "2026-06-16T08:59:59.086Z"
 }
