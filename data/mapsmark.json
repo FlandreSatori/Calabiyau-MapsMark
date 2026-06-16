@@ -511,6 +511,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-fe9aded8-70c4-4e8a-9095-2f18b2df4e43",
+      "reviewerName": "凯尔希尔",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 3,
+        "aesthetics": 4,
+        "guidance": 3,
+        "difficulty": 1,
+        "overall": 3.5
+      },
+      "comment": "走着走着就通关了！",
+      "id": "review-e3431f69-248e-4f64-80b9-333d7a8e4cae",
+      "submittedAt": "2026-06-16T12:59:54.425Z",
+      "updatedAt": "2026-06-16T12:59:54.425Z"
+    },
+    {
       "mapId": "map-fe5db2af-c8de-45c1-af0e-9e0aaf8291fe",
       "reviewerName": "匿名",
       "anonymous": true,
@@ -1669,6 +1685,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-e3431f69-248e-4f64-80b9-333d7a8e4cae",
+      "title": "凯尔希尔",
+      "detail": "map-fe9aded8-70c4-4e8a-9095-2f18b2df4e43",
+      "id": "event-77cb6023-b70f-41d7-8e69-5edd6528e030",
+      "timestamp": "2026-06-16T12:59:54.426Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-20695891-3793-4b4b-9751-fe8c40bd6661",
       "title": "匿名",
       "detail": "map-fe5db2af-c8de-45c1-af0e-9e0aaf8291fe",
@@ -2796,5 +2820,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-16T12:56:43.859Z"
+  "updatedAt": "2026-06-16T12:59:54.426Z"
 }
