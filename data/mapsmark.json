@@ -511,6 +511,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-98a6bfaa-269f-4528-81cb-f547e79d4eb7",
+      "reviewerName": "月海原由砂",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 3.5,
+        "aesthetics": 2.4,
+        "guidance": 2.2,
+        "difficulty": 4,
+        "overall": 3.7
+      },
+      "comment": "关卡设计给到神，提示线索给到神人。鉴于卡丘目前没有任何能在地图里加文字说明的方式，我觉得也可以理解，就看你能不能对上作者脑电波了。好在最后也是有朋友想明白了，一起通关来。俩人的脑回路总比一个人多啊（抹泪）\n❤️通关后感觉双向传送设计是夯，做这个的思路非常有创意，可以直接成为参考模板的程度。游玩时想到这个解密方向真的是头脑风暴来，能在卡丘里做出这种关卡效果还是头一次见。\n⭐全程有60%的时间卡关，但想通怎么解题之后又气笑了。推荐有朋友一起。\n⭐地图美术评价为基本都是为了关卡设计，几乎没有造景。你就解吧。\n⭐游玩时有人带感觉会少很多吐槽的乐趣，但纯新手进来玩就是俩人一块赤份大的。心情很复杂，只能说流畅通关和同苦共苦二选一吧。\n\np.s.我卡在第一关的时候半路有个蕾欧娜进来，晃一圈说句“看你也卡关了我就放心了”，然后就走了。真绷不住了有感觉吗，我直接笑飞了",
+      "id": "review-7bf54770-fe4b-43f2-96bd-4877513745b0",
+      "submittedAt": "2026-06-16T09:40:46.850Z",
+      "updatedAt": "2026-06-16T09:40:46.850Z"
+    },
+    {
       "mapId": "map-fe5db2af-c8de-45c1-af0e-9e0aaf8291fe",
       "reviewerName": "阿努莉斯莉莉卡",
       "anonymous": false,
@@ -1621,6 +1637,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-7bf54770-fe4b-43f2-96bd-4877513745b0",
+      "title": "月海原由砂",
+      "detail": "map-98a6bfaa-269f-4528-81cb-f547e79d4eb7",
+      "id": "event-27da2f4f-fcd3-42d8-b92d-f86daaf92f9f",
+      "timestamp": "2026-06-16T09:40:46.850Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-35047334-98c9-4754-a54c-3259aa1a696c",
       "title": "阿努莉斯莉莉卡",
       "detail": "map-fe5db2af-c8de-45c1-af0e-9e0aaf8291fe",
@@ -2716,5 +2740,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-16T09:08:47.585Z"
+  "updatedAt": "2026-06-16T09:40:46.850Z"
 }
