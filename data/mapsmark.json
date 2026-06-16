@@ -511,6 +511,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-fe5db2af-c8de-45c1-af0e-9e0aaf8291fe",
+      "reviewerName": "匿名",
+      "anonymous": true,
+      "ratings": {
+        "entertainment": 5,
+        "aesthetics": 5,
+        "guidance": 3.5,
+        "difficulty": 4.5,
+        "overall": 4
+      },
+      "comment": "我chovy,我是铸币，打了三个CD都没解出来，力竭了喵，有没有大佬B站发份攻略喵。",
+      "id": "review-fd3772bd-2761-435f-bcff-939c6a586ab8",
+      "submittedAt": "2026-06-16T15:57:54.392Z",
+      "updatedAt": "2026-06-16T15:57:54.392Z"
+    },
+    {
       "mapId": "map-fe9aded8-70c4-4e8a-9095-2f18b2df4e43",
       "reviewerName": "凯尔希尔",
       "anonymous": false,
@@ -1685,6 +1701,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-fd3772bd-2761-435f-bcff-939c6a586ab8",
+      "title": "匿名",
+      "detail": "map-fe5db2af-c8de-45c1-af0e-9e0aaf8291fe",
+      "id": "event-b831c14c-a24c-45ea-ad44-2107138cd765",
+      "timestamp": "2026-06-16T15:57:54.392Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-e3431f69-248e-4f64-80b9-333d7a8e4cae",
       "title": "凯尔希尔",
       "detail": "map-fe9aded8-70c4-4e8a-9095-2f18b2df4e43",
@@ -2820,5 +2844,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-16T12:59:54.426Z"
+  "updatedAt": "2026-06-16T15:57:54.392Z"
 }
