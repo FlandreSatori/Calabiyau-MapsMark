@@ -28,6 +28,7 @@ type AdminLoginProps = {
 };
 
 const ratingKeys = Object.keys(ratingLabelText) as Array<keyof RatingDimensions>;
+const reviewerNameStorageKey = "mapsmark-reviewer-name";
 
 const emptyRatings = (): RatingDimensions => ({
     entertainment: 0,
@@ -369,6 +370,29 @@ export function ReviewForm({ maps, onSuccess, notify }: ReviewFormProps) {
         const timer = window.setInterval(() => setNow(Date.now()), 1000);
         return () => window.clearInterval(timer);
     }, []);
+
+    useEffect(() => {
+        try {
+            const savedName = window.sessionStorage.getItem(reviewerNameStorageKey) ?? "";
+            if (savedName) {
+                setReviewerName(savedName);
+            }
+        } catch {
+            // Ignore storage access errors and keep in-memory state.
+        }
+    }, []);
+
+    useEffect(() => {
+        try {
+            if (reviewerName) {
+                window.sessionStorage.setItem(reviewerNameStorageKey, reviewerName);
+            } else {
+                window.sessionStorage.removeItem(reviewerNameStorageKey);
+            }
+        } catch {
+            // Ignore storage write errors and keep in-memory state.
+        }
+    }, [reviewerName]);
 
     const updateDraft = (mapId: string, patch: Partial<ReviewDraft>) => {
         setDrafts((current) => ({
