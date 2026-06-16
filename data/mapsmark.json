@@ -511,6 +511,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-fe5db2af-c8de-45c1-af0e-9e0aaf8291fe",
+      "reviewerName": "解密造💩👑",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 5,
+        "aesthetics": 5,
+        "guidance": 2.5,
+        "difficulty": 3,
+        "overall": 4.5
+      },
+      "comment": "场景&美术无需多言，直接夯喵；关卡与谜题的设计也是顶级\n目前版本更适合拥有足够解密知识&跑酷技巧&耐心毅力的老登游玩，小登可等待mmr版喵\n鉴于中间多次卡关，给引导性一项扣大分喵；卡关可能是因为我是BAKA？但作为一只BAKA，窝想给多少分就给多少喵 :P\n最后搬一句（当然原话评论的不是这张图）：\n不管玩到哪一关都有一种力竭感你们知道吗\n                                                   ——轮椅侦探宅宅[大眼]",
+      "id": "review-5e822eb8-b8f9-48b8-ba1d-22ebd147c484",
+      "submittedAt": "2026-06-16T12:31:44.831Z",
+      "updatedAt": "2026-06-16T12:31:44.831Z"
+    },
+    {
       "mapId": "map-98a6bfaa-269f-4528-81cb-f547e79d4eb7",
       "reviewerName": "月海原由砂",
       "anonymous": false,
@@ -1636,6 +1652,14 @@
   ],
   "events": [
     {
+      "kind": "review-create",
+      "subjectId": "review-5e822eb8-b8f9-48b8-ba1d-22ebd147c484",
+      "title": "解密造💩👑",
+      "detail": "map-fe5db2af-c8de-45c1-af0e-9e0aaf8291fe",
+      "id": "event-f591e9dd-33af-4218-abf4-ed810058bd36",
+      "timestamp": "2026-06-16T12:31:44.832Z"
+    },
+    {
       "kind": "map-update",
       "subjectId": "map-fe5db2af-c8de-45c1-af0e-9e0aaf8291fe",
       "title": "编辑地图 Ib想要独自去看看v1",
@@ -2748,5 +2772,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-16T10:46:19.121Z"
+  "updatedAt": "2026-06-16T12:31:44.832Z"
 }
