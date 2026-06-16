@@ -3,16 +3,16 @@
     {
       "coverImage": "/assets/images/1781578757636-Ib_____.png",
       "previewImage": "",
-      "code": "nih9cq",
+      "code": "warl2h",
       "type": "解密",
       "name": "Ib想要独自去看看v1",
       "author": "古明地小五",
       "mappedAt": "2026-06-16",
-      "introduction": "致敬伊布，我心中的神作\n作者不允许复刻二创，因此与原作无关，请海涵\n- - - - v v v v v - - - -\n请将画面设置-材质-设为低 !\n- - - - ^  ^  ^  ^ ^- - - -\n",
-      "estimatedMinutes": 180,
+      "introduction": "致敬伊布，我心中的神作\n原作者kouri不允许复刻二创，因此与原作无关，请海涵\n- - - - v v v v v - - - -\n请将画面设置-材质-设为低 !\n双人游玩时会有一个人出生在检查点，请紫砂回剧情起点\n- - - - ^  ^  ^  ^ ^- - - -\n",
+      "estimatedMinutes": 240,
       "id": "map-fe5db2af-c8de-45c1-af0e-9e0aaf8291fe",
       "submittedAt": "2026-06-16T03:01:21.322Z",
-      "updatedAt": "2026-06-16T03:01:21.322Z"
+      "updatedAt": "2026-06-16T10:46:19.121Z"
     },
     {
       "coverImage": "/assets/images/1781563417650-29acaa14fb9fa8718f0a5a7c81a34dcc.png",
@@ -1636,6 +1636,14 @@
   ],
   "events": [
     {
+      "kind": "map-update",
+      "subjectId": "map-fe5db2af-c8de-45c1-af0e-9e0aaf8291fe",
+      "title": "编辑地图 Ib想要独自去看看v1",
+      "detail": "warl2h",
+      "id": "event-a9d6c58a-b689-45fc-af57-1ad7c3e05b7e",
+      "timestamp": "2026-06-16T10:46:19.121Z"
+    },
+    {
       "kind": "review-create",
       "subjectId": "review-7bf54770-fe4b-43f2-96bd-4877513745b0",
       "title": "月海原由砂",
@@ -2740,5 +2748,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-16T09:40:46.850Z"
+  "updatedAt": "2026-06-16T10:46:19.121Z"
 }
