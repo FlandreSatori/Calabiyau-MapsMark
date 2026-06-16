@@ -13,6 +13,7 @@
     --radius-xl: 28px;
     --radius-lg: 22px;
     --radius-md: 16px;
+    --review-sticky-top: 78px;
 }
 
 * {
@@ -1064,6 +1065,10 @@ img {
 .review-shell {
     display: grid;
     gap: 12px;
+    position: sticky;
+    top: var(--review-sticky-top);
+    z-index: 40;
+    background: var(--panel-strong);
 }
 
 .review-board {
@@ -1546,6 +1551,10 @@ img {
 }
 
 @media (max-width: 640px) {
+    :root {
+        --review-sticky-top: 102px;
+    }
+
     .app-shell {
         padding-top: 120px;
         padding-inline: 14px;
@@ -1593,6 +1602,10 @@ img {
 }
 
 @media (max-width: 640px) and (orientation: portrait) {
+    :root {
+        --review-sticky-top: 62px;
+    }
+
     .site-topbar-inner {
         min-height: 50px;
         gap: 8px;

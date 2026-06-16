@@ -436,8 +436,7 @@ export function ReviewForm({ maps, onSuccess, notify }: ReviewFormProps) {
     const [cooldownUntilByMap, setCooldownUntilByMap] = useState<Record<string, number>>({});
     const [now, setNow] = useState(() => Date.now());
     const [isPortraitPhone, setIsPortraitPhone] = useState(false);
-    const [isGuideCollapsed, setIsGuideCollapsed] = useState(false);
-    const initializedGuideCollapse = useRef(false);
+    const [isGuideCollapsed, setIsGuideCollapsed] = useState(true);
     const router = useRouter();
     const [drafts, setDrafts] = useState<Record<string, ReviewDraft>>(() =>
         Object.fromEntries(maps.map((map) => [map.id, createReviewDraft()]))
@@ -469,13 +468,6 @@ export function ReviewForm({ maps, onSuccess, notify }: ReviewFormProps) {
             query.removeListener?.(update);
         };
     }, []);
-
-    useEffect(() => {
-        if (isPortraitPhone && !initializedGuideCollapse.current) {
-            setIsGuideCollapsed(true);
-            initializedGuideCollapse.current = true;
-        }
-    }, [isPortraitPhone]);
 
     useEffect(() => {
         try {
