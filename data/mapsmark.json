@@ -511,6 +511,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-fe5db2af-c8de-45c1-af0e-9e0aaf8291fe",
+      "reviewerName": "阿努莉斯莉莉卡",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 4.9,
+        "aesthetics": 5,
+        "guidance": 4,
+        "difficulty": 3,
+        "overall": 5
+      },
+      "comment": "玩过的最有氛围感的一张解密地图。游玩时不像一般地图满脑都想着找路通关，而是期待下一个地点会看到怎样的字画，确实就像在逛美术馆。\n字画表现非常有张力，第一关就给我来了个下马威喵（）后来每一次找到通往下一个地点的路时我都要提前做做心理建设（可能只是我胆小啦）。\n代入感很强喵，不知道是不是作者的小巧思，1000血接着2000血的碎石搭配上墙上的字，能感觉到确实很不想我走了喵（）\n虽然没怎么花式夸夸，但这是我心里非常完美的一张地图，满昏喵。\n（PS：通往粉色门屋子的通道出口太容易碰到蓝火了喵，走位不好连死三次喵qaq.最后一关可能有点难，引导也没有那么好懂，但是很有巧思（两个坑全踩到了）。如果卡关了可以叫上朋友，善用穷举法喵。）",
+      "id": "review-35047334-98c9-4754-a54c-3259aa1a696c",
+      "submittedAt": "2026-06-16T09:08:47.585Z",
+      "updatedAt": "2026-06-16T09:08:47.585Z"
+    },
+    {
       "mapId": "map-53804f28-d922-4fe3-9c54-650931cb22b0",
       "reviewerName": "月海原由砂",
       "anonymous": false,
@@ -1605,6 +1621,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-35047334-98c9-4754-a54c-3259aa1a696c",
+      "title": "阿努莉斯莉莉卡",
+      "detail": "map-fe5db2af-c8de-45c1-af0e-9e0aaf8291fe",
+      "id": "event-97a64048-314f-4322-a697-09a6eb654d21",
+      "timestamp": "2026-06-16T09:08:47.585Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-af632a8c-fac5-481f-8f56-b0290278610a",
       "title": "月海原由砂",
       "detail": "map-53804f28-d922-4fe3-9c54-650931cb22b0",
@@ -2692,5 +2716,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-16T08:59:59.086Z"
+  "updatedAt": "2026-06-16T09:08:47.585Z"
 }
