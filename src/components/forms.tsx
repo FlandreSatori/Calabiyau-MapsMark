@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState, type FormEvent } from "react";
+import { useEffect, useMemo, useRef, useState, type FormEvent } from "react";
 import { notify as globalNotify } from "@/components/toast";
 import { useRouter } from "next/navigation";
 
@@ -45,9 +45,87 @@ const createReviewDraft = () => ({
 
 type ReviewDraft = ReturnType<typeof createReviewDraft>;
 
-function StarSlider({ label, value, min = -5, onChange }: { label: string; value: number; min?: number; onChange: (value: number) => void }) {
+function StarSlider({ label, value, min = -5, onChange, requireHoldToDrag = false }: { label: string; value: number; min?: number; onChange: (value: number) => void; requireHoldToDrag?: boolean }) {
     const fill = `${(Math.abs(value) / 5) * 100}%`;
     const isNegative = value < 0;
+    const rangeRef = useRef<HTMLInputElement | null>(null);
+    const holdTimerRef = useRef<number | null>(null);
+    const touchStateRef = useRef<{ id: number; startY: number; latestX: number; cancelled: boolean } | null>(null);
+    const [isArmed, setIsArmed] = useState(false);
+
+    const clearHoldState = () => {
+        if (holdTimerRef.current !== null) {
+            window.clearTimeout(holdTimerRef.current);
+            holdTimerRef.current = null;
+        }
+        touchStateRef.current = null;
+        setIsArmed(false);
+    };
+
+    useEffect(() => () => clearHoldState(), []);
+
+    const updateByClientX = (clientX: number) => {
+        const input = rangeRef.current;
+        if (!input) {
+            return;
+        }
+        const rect = input.getBoundingClientRect();
+        const ratio = Math.min(1, Math.max(0, (clientX - rect.left) / Math.max(1, rect.width)));
+        const minValue = Number(min);
+        const maxValue = 5;
+        const rawValue = minValue + ratio * (maxValue - minValue);
+        const snapped = Math.round(rawValue * 10) / 10;
+        onChange(clampScore(snapped));
+    };
+
+    const handleTouchStart: React.TouchEventHandler<HTMLInputElement> = (event) => {
+        if (!requireHoldToDrag) {
+            return;
+        }
+        const touch = event.changedTouches[0];
+        if (!touch) {
+            return;
+        }
+        clearHoldState();
+        touchStateRef.current = {
+            id: touch.identifier,
+            startY: touch.clientY,
+            latestX: touch.clientX,
+            cancelled: false
+        };
+        holdTimerRef.current = window.setTimeout(() => {
+            const state = touchStateRef.current;
+            if (!state || state.cancelled) {
+                return;
+            }
+            setIsArmed(true);
+            updateByClientX(state.latestX);
+        }, 180);
+    };
+
+    const handleTouchMove: React.TouchEventHandler<HTMLInputElement> = (event) => {
+        if (!requireHoldToDrag) {
+            return;
+        }
+        const state = touchStateRef.current;
+        if (!state || state.cancelled) {
+            return;
+        }
+        const touch = Array.from(event.touches).find((item) => item.identifier === state.id);
+        if (!touch) {
+            return;
+        }
+        state.latestX = touch.clientX;
+        if (!isArmed) {
+            if (Math.abs(touch.clientY - state.startY) > 12) {
+                state.cancelled = true;
+                clearHoldState();
+            }
+            return;
+        }
+        event.preventDefault();
+        updateByClientX(touch.clientX);
+    };
 
     return (
         <div className="star-slider">
@@ -60,14 +138,20 @@ function StarSlider({ label, value, min = -5, onChange }: { label: string; value
                 <span className="star-slider-fill" style={{ width: fill }}>★★★★★</span>
             </div>
             <input
-                className="star-slider-range"
+                ref={rangeRef}
+                className={`star-slider-range${requireHoldToDrag ? " is-hold-required" : ""}${isArmed ? " is-armed" : ""}`}
                 type="range"
                 min={String(min)}
                 max="5"
                 step="0.1"
                 value={value}
                 onChange={(event) => onChange(Number(event.target.value))}
+                onTouchStart={handleTouchStart}
+                onTouchMove={handleTouchMove}
+                onTouchEnd={clearHoldState}
+                onTouchCancel={clearHoldState}
             />
+            {requireHoldToDrag ? <span className="star-slider-hold-hint">{isArmed ? "拖动中" : "按住后拖动"}</span> : null}
         </div>
     );
 }
@@ -351,6 +435,9 @@ export function ReviewForm({ maps, onSuccess, notify }: ReviewFormProps) {
     const [submittingMapId, setSubmittingMapId] = useState<string | null>(null);
     const [cooldownUntilByMap, setCooldownUntilByMap] = useState<Record<string, number>>({});
     const [now, setNow] = useState(() => Date.now());
+    const [isPortraitPhone, setIsPortraitPhone] = useState(false);
+    const [isGuideCollapsed, setIsGuideCollapsed] = useState(false);
+    const initializedGuideCollapse = useRef(false);
     const router = useRouter();
     const [drafts, setDrafts] = useState<Record<string, ReviewDraft>>(() =>
         Object.fromEntries(maps.map((map) => [map.id, createReviewDraft()]))
@@ -370,6 +457,25 @@ export function ReviewForm({ maps, onSuccess, notify }: ReviewFormProps) {
         const timer = window.setInterval(() => setNow(Date.now()), 1000);
         return () => window.clearInterval(timer);
     }, []);
+
+    useEffect(() => {
+        const query = window.matchMedia("(max-width: 640px) and (orientation: portrait)");
+        const update = () => setIsPortraitPhone(query.matches);
+        update();
+        query.addEventListener?.("change", update);
+        query.addListener?.(update);
+        return () => {
+            query.removeEventListener?.("change", update);
+            query.removeListener?.(update);
+        };
+    }, []);
+
+    useEffect(() => {
+        if (isPortraitPhone && !initializedGuideCollapse.current) {
+            setIsGuideCollapsed(true);
+            initializedGuideCollapse.current = true;
+        }
+    }, [isPortraitPhone]);
 
     useEffect(() => {
         try {
@@ -495,7 +601,15 @@ export function ReviewForm({ maps, onSuccess, notify }: ReviewFormProps) {
                         </div>
                         {nameInvalid && !anonymous && !reviewerName.trim() ? <span className="help" style={{ color: "#ffb1bb" }}>请填写名称，或勾选匿名提交。</span> : null}
                         <span className="help">匿名后评价将不会上传名称</span>
-                        <div className="review-dimension-guide">
+                        <button
+                            className="button button-rect review-guide-toggle"
+                            type="button"
+                            onClick={() => setIsGuideCollapsed((current) => !current)}
+                            aria-expanded={!isGuideCollapsed}
+                        >
+                            {isGuideCollapsed ? "展开维度说明" : "收起维度说明"}
+                        </button>
+                        {!isGuideCollapsed ? <div className="review-dimension-guide">
                             <div className="review-dimension-guide-row">
                                 <span>
                                     <strong>趣味性：</strong>
@@ -534,7 +648,7 @@ export function ReviewForm({ maps, onSuccess, notify }: ReviewFormProps) {
                                 </span>
                             </div>
 
-                        </div>
+                        </div> : null}
                     </label>
                 </div>
             </div>
@@ -570,6 +684,7 @@ export function ReviewForm({ maps, onSuccess, notify }: ReviewFormProps) {
                                             label={ratingLabelText[key]}
                                             value={draft.ratings[key]}
                                             min={key === "difficulty" ? 0 : -5}
+                                            requireHoldToDrag={isPortraitPhone}
                                             onChange={(value) => updateDraft(map.id, { ratings: { ...draft.ratings, [key]: clampScore(value) } })}
                                         />
                                     ))}

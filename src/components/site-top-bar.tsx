@@ -11,8 +11,8 @@ export function SiteTopBar() {
                 <nav className="site-nav" aria-label="主导航">
                     <Link className="pill" href="/">返回首页</Link>
                     <Link className="pill" href="/reviews">批量评价</Link>
-                    <Link className="pill" href="/admin">后台管理</Link>
-                    <Link className="pill" href="/embed">展示页</Link>
+                    <Link className="pill site-nav-optional" href="/admin">后台管理</Link>
+                    <Link className="pill site-nav-optional" href="/embed">展示页</Link>
                 </nav>
             </div>
         </header>

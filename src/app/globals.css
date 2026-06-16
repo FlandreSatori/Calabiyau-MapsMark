@@ -343,6 +343,10 @@ img {
     flex-wrap: wrap;
 }
 
+.review-radar-collapse-toggle {
+    justify-self: start;
+}
+
 .review-radar-switch {
     border-radius: 999px;
     opacity: 0.72;
@@ -1126,6 +1130,11 @@ img {
     color: rgba(255, 255, 255, 0.55);
 }
 
+.review-guide-toggle {
+    justify-self: start;
+    width: fit-content;
+}
+
 .review-dimension-guide-row {
     display: flex;
     justify-content: space-between;
@@ -1242,6 +1251,20 @@ img {
     height: 10px;
     border-radius: 999px;
     background: transparent;
+}
+
+.star-slider-hold-hint {
+    color: var(--muted);
+    font-size: 0.78rem;
+    line-height: 1.2;
+}
+
+.star-slider-range.is-hold-required {
+    touch-action: none;
+}
+
+.star-slider-range.is-hold-required:not(.is-armed) {
+    opacity: 0.82;
 }
 
 .legend-grid {
@@ -1566,5 +1589,185 @@ img {
 
     .copy-section {
         flex-direction: column;
+    }
+}
+
+@media (max-width: 640px) and (orientation: portrait) {
+    .site-topbar-inner {
+        min-height: 50px;
+        gap: 8px;
+        padding: 6px 0;
+        flex-wrap: nowrap;
+    }
+
+    .site-topbar-left {
+        width: auto;
+        min-width: 0;
+        flex: 1 1 auto;
+    }
+
+    .site-domain {
+        display: none;
+    }
+
+    .site-brand {
+        font-size: 0.95rem;
+        letter-spacing: 0.01em;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .site-nav {
+        gap: 6px;
+        flex-wrap: nowrap;
+    }
+
+    .site-nav-optional {
+        display: none;
+    }
+
+    .site-nav .pill {
+        padding: 6px 10px;
+        font-size: 0.78rem;
+    }
+
+    .app-shell {
+        padding-top: 74px;
+        padding-inline: 10px;
+        padding-bottom: 56px;
+    }
+
+    .panel-pad {
+        padding: 12px;
+    }
+
+    .button,
+    .pill,
+    .input,
+    .select,
+    .textarea {
+        padding: 8px 10px;
+        font-size: 0.88rem;
+    }
+
+    .section-title {
+        margin-bottom: 10px;
+        font-size: 0.84rem;
+    }
+
+    .hero-title {
+        font-size: clamp(1.3rem, 6vw, 1.7rem);
+    }
+
+    .hero-text {
+        font-size: 0.9rem;
+        line-height: 1.55;
+    }
+
+    .stat {
+        padding: 6px 9px;
+        font-size: 0.78rem;
+    }
+
+    .badge {
+        padding: 5px 8px;
+        font-size: 0.76rem;
+    }
+
+    .list-item {
+        padding: 12px;
+        border-radius: 14px;
+    }
+
+    .review-row {
+        gap: 10px;
+    }
+
+    .review-map-thumb {
+        height: 82px;
+        width: calc(82px * 4 / 3);
+        border-radius: 12px;
+    }
+
+    .review-content-grid {
+        gap: 10px;
+    }
+
+    .review-rating-grid {
+        gap: 8px;
+    }
+
+    .review-comment-textarea {
+        min-height: 130px;
+    }
+
+    .star-slider {
+        gap: 6px;
+    }
+
+    .star-slider-head {
+        font-size: 0.9rem;
+    }
+
+    .star-slider-track {
+        font-size: 1.08rem;
+        letter-spacing: 0.09em;
+    }
+
+    .star-slider-range,
+    .star-slider-range::-webkit-slider-runnable-track,
+    .star-slider-range::-moz-range-track {
+        height: 8px;
+    }
+
+    .star-slider-range::-webkit-slider-thumb,
+    .star-slider-range::-moz-range-thumb {
+        width: 15px;
+        height: 15px;
+    }
+
+    .review-dimension-guide {
+        margin-top: 6px;
+        font-size: 12px;
+    }
+
+    .review-dimension-guide-row {
+        gap: 10px;
+        margin-top: 6px;
+    }
+
+    .review-dimension-guide-scale {
+        min-width: 132px;
+        font-size: 11px;
+    }
+
+    .review-guide-toggle,
+    .review-radar-collapse-toggle {
+        padding: 7px 10px;
+        font-size: 0.8rem;
+    }
+
+    .review-radar-body {
+        gap: 10px;
+    }
+
+    .map-gallery-item {
+        flex-basis: 100%;
+    }
+
+    .map-gallery-frame {
+        min-height: 0;
+        aspect-ratio: 16 / 9;
+    }
+
+    .preview-frame {
+        border-radius: 16px;
+    }
+
+    .preview-frame img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
     }
 }
