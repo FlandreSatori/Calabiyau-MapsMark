@@ -512,6 +512,22 @@
   "reviews": [
     {
       "mapId": "map-fe5db2af-c8de-45c1-af0e-9e0aaf8291fe",
+      "reviewerName": "匿名",
+      "anonymous": true,
+      "ratings": {
+        "entertainment": 2.8,
+        "aesthetics": 5,
+        "guidance": 2.5,
+        "difficulty": 1,
+        "overall": 3.5
+      },
+      "comment": "这期神了喵",
+      "id": "review-20695891-3793-4b4b-9751-fe8c40bd6661",
+      "submittedAt": "2026-06-16T12:56:43.859Z",
+      "updatedAt": "2026-06-16T12:56:43.859Z"
+    },
+    {
+      "mapId": "map-fe5db2af-c8de-45c1-af0e-9e0aaf8291fe",
       "reviewerName": "解密造💩👑",
       "anonymous": false,
       "ratings": {
@@ -1653,6 +1669,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-20695891-3793-4b4b-9751-fe8c40bd6661",
+      "title": "匿名",
+      "detail": "map-fe5db2af-c8de-45c1-af0e-9e0aaf8291fe",
+      "id": "event-6ba1701a-c9fa-4e3c-aa94-39c7204e2336",
+      "timestamp": "2026-06-16T12:56:43.859Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-5e822eb8-b8f9-48b8-ba1d-22ebd147c484",
       "title": "解密造💩👑",
       "detail": "map-fe5db2af-c8de-45c1-af0e-9e0aaf8291fe",
@@ -2772,5 +2796,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-16T12:31:44.832Z"
+  "updatedAt": "2026-06-16T12:56:43.859Z"
 }
