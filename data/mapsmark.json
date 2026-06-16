@@ -511,6 +511,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-fe5db2af-c8de-45c1-af0e-9e0aaf8291fe",
+      "reviewerName": "月海原由砂",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 5,
+        "aesthetics": 5,
+        "guidance": 4.6,
+        "difficulty": 2.6,
+        "overall": 5
+      },
+      "comment": "夯！！！！目前玩过最好玩的一个微恐解密地图！！推荐后台播放ib的音乐进行游玩，沉浸感拉满喵！！和朋友玩的我都起鸡皮疙瘩来。\n文字做的好强，是玩过的里面最清晰的喵❤️感觉是可以直接放进像素游戏的程度。\n⭐游戏全程花费四小时左右\n⭐对建筑的名称和用途没第一时间理解，中途稍微卡了一小会，不过四处转转就能找到！\n⭐最后一关的提示可能需要玩过原作，初见没解出来。但作者稍微提醒一下，思路马上就清晰了喵，感谢老大🙏🏻",
+      "id": "review-4e3ea1e4-2f6d-4f6f-afe4-f02eafa4abcd",
+      "submittedAt": "2026-06-16T08:43:20.357Z",
+      "updatedAt": "2026-06-16T08:43:20.357Z"
+    },
+    {
       "mapId": "map-c752fa18-bf8f-4657-b9c8-205fd997e372",
       "reviewerName": "凯尔希尔",
       "anonymous": false,
@@ -1571,6 +1587,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-create",
+      "subjectId": "review-4e3ea1e4-2f6d-4f6f-afe4-f02eafa4abcd",
+      "title": "月海原由砂",
+      "detail": "map-fe5db2af-c8de-45c1-af0e-9e0aaf8291fe",
+      "id": "event-9a98c246-b718-41cf-902d-bb997ecfcb61",
+      "timestamp": "2026-06-16T08:43:20.357Z"
+    },
     {
       "kind": "map-create",
       "subjectId": "map-fe5db2af-c8de-45c1-af0e-9e0aaf8291fe",
@@ -2644,5 +2668,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-16T03:01:21.322Z"
+  "updatedAt": "2026-06-16T08:43:20.357Z"
 }
