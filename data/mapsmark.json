@@ -511,6 +511,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-8c3f0601-5bcf-4fff-8f3b-058813684475",
+      "reviewerName": "匿名",
+      "anonymous": true,
+      "ratings": {
+        "entertainment": 5,
+        "aesthetics": 5,
+        "guidance": 5,
+        "difficulty": 5,
+        "overall": 5
+      },
+      "comment": "",
+      "id": "review-16139e0d-1ecf-44f1-8fa8-276a7003b9fa",
+      "submittedAt": "2026-06-17T13:02:33.977Z",
+      "updatedAt": "2026-06-17T13:02:33.977Z"
+    },
+    {
       "mapId": "map-0cc4bcd8-81d6-4028-84b7-b197c6c92ef8",
       "reviewerName": "月海原由砂",
       "anonymous": false,
@@ -1797,6 +1813,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-16139e0d-1ecf-44f1-8fa8-276a7003b9fa",
+      "title": "匿名",
+      "detail": "map-8c3f0601-5bcf-4fff-8f3b-058813684475",
+      "id": "event-c8217684-a477-498b-8e7c-db178204cdff",
+      "timestamp": "2026-06-17T13:02:33.977Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-b30db781-f989-4fea-8656-ddf777de09e7",
       "title": "月海原由砂",
       "detail": "map-0cc4bcd8-81d6-4028-84b7-b197c6c92ef8",
@@ -2996,5 +3020,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-17T11:50:52.034Z"
+  "updatedAt": "2026-06-17T13:02:33.977Z"
 }
