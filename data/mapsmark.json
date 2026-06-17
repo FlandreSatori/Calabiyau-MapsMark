@@ -511,6 +511,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-4ff9fd49-3d04-45b6-94b0-bd7a76e40f56",
+      "reviewerName": "月海原由砂",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 4,
+        "aesthetics": 3.4,
+        "guidance": 3.4,
+        "difficulty": 2.7,
+        "overall": 4
+      },
+      "comment": "好玩！！！给爆破里不咋玩伊薇特的我提高了不少角色理解，还是第一次知道熊进门会传伊薇特的。游玩流程中能操控菲进行另一个视角的观察很有意思，感觉本作主要熟悉了控熊探路的思路，好评。\n❤️地图设计也蛮有意思，虽然基本都是室内房间，但是建的很好喵\n⭐流程不长，大概一个小时左右就可以通关\n⭐感觉没路了就去找各种小缝隙丢熊吧喵，总能探出来的",
+      "id": "review-767ee548-a898-4916-bd22-f90f04be4b6c",
+      "submittedAt": "2026-06-17T08:23:34.595Z",
+      "updatedAt": "2026-06-17T08:23:34.595Z"
+    },
+    {
       "mapId": "map-98a6bfaa-269f-4528-81cb-f547e79d4eb7",
       "reviewerName": "凯尔希尔",
       "anonymous": false,
@@ -1749,6 +1765,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-767ee548-a898-4916-bd22-f90f04be4b6c",
+      "title": "月海原由砂",
+      "detail": "map-4ff9fd49-3d04-45b6-94b0-bd7a76e40f56",
+      "id": "event-f7765239-55c3-443c-bf93-7ca28ada226c",
+      "timestamp": "2026-06-17T08:23:34.596Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-2085914c-0eb5-462e-ba22-a160f48de50a",
       "title": "凯尔希尔",
       "detail": "map-98a6bfaa-269f-4528-81cb-f547e79d4eb7",
@@ -2924,5 +2948,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-17T06:35:18.486Z"
+  "updatedAt": "2026-06-17T08:23:34.596Z"
 }
