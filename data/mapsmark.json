@@ -511,6 +511,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-28971207-c22d-44c7-8787-f70909194b72",
+      "reviewerName": "凯尔希尔",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 5,
+        "aesthetics": 3.5,
+        "guidance": 4,
+        "difficulty": 1.5,
+        "overall": 4
+      },
+      "comment": "好玩喵，困难路线能者多牢喵",
+      "id": "review-05d7784d-c73d-45a6-a227-8227847357f7",
+      "submittedAt": "2026-06-17T06:31:56.868Z",
+      "updatedAt": "2026-06-17T06:31:56.868Z"
+    },
+    {
       "mapId": "map-8c3f0601-5bcf-4fff-8f3b-058813684475",
       "reviewerName": "凯尔希尔",
       "anonymous": false,
@@ -1717,6 +1733,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-05d7784d-c73d-45a6-a227-8227847357f7",
+      "title": "凯尔希尔",
+      "detail": "map-28971207-c22d-44c7-8787-f70909194b72",
+      "id": "event-7c27777f-39a3-4798-a7fc-17fa19e69b46",
+      "timestamp": "2026-06-17T06:31:56.869Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-313169e3-c5e0-4dc7-924e-16a201350ebc",
       "title": "凯尔希尔",
       "detail": "map-8c3f0601-5bcf-4fff-8f3b-058813684475",
@@ -2876,5 +2900,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-17T06:30:23.558Z"
+  "updatedAt": "2026-06-17T06:31:56.869Z"
 }
