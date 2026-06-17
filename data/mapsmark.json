@@ -3,7 +3,7 @@
     {
       "coverImage": "/assets/images/1781578757636-Ib_____.png",
       "previewImage": "",
-      "code": "warl2h",
+      "code": "zor4o9",
       "type": "解密",
       "name": "Ib想要独自去看看v1",
       "author": "古明地小五",
@@ -12,7 +12,7 @@
       "estimatedMinutes": 240,
       "id": "map-fe5db2af-c8de-45c1-af0e-9e0aaf8291fe",
       "submittedAt": "2026-06-16T03:01:21.322Z",
-      "updatedAt": "2026-06-16T10:46:19.121Z"
+      "updatedAt": "2026-06-17T02:55:30.740Z"
     },
     {
       "coverImage": "/assets/images/1781563417650-29acaa14fb9fa8718f0a5a7c81a34dcc.png",
@@ -1700,6 +1700,14 @@
   ],
   "events": [
     {
+      "kind": "map-update",
+      "subjectId": "map-fe5db2af-c8de-45c1-af0e-9e0aaf8291fe",
+      "title": "编辑地图 Ib想要独自去看看v1",
+      "detail": "zor4o9",
+      "id": "event-5569b223-184e-43e8-a509-e83f23a87762",
+      "timestamp": "2026-06-17T02:55:30.740Z"
+    },
+    {
       "kind": "review-create",
       "subjectId": "review-fd3772bd-2761-435f-bcff-939c6a586ab8",
       "title": "匿名",
@@ -2844,5 +2852,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-16T15:57:54.392Z"
+  "updatedAt": "2026-06-17T02:55:30.740Z"
 }
