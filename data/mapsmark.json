@@ -511,6 +511,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-0cc4bcd8-81d6-4028-84b7-b197c6c92ef8",
+      "reviewerName": "月海原由砂",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 5,
+        "aesthetics": 4.4,
+        "guidance": 3.1,
+        "difficulty": 2.4,
+        "overall": 4.6
+      },
+      "comment": "好玩！！！！夯！！！难易适中，全流程很顺畅基本没有卡关。1-7关局内提示不多但都是关键点，没有提示的房间也不大，随便走走就可以找到路。地图美术很好看！造景和房间设计都在线，无论是单机还是跟朋友一起都是张很有探索性的图❤️。\n⭐全关卡+DLC约两小时\n⭐正常进入DLC刚需三格跳or顶头飘飞，或者让你会三格跳的朋友把你顶过去😋，俩人踩头下面的人狂按空格就好了。（有一条路线不用三格跳，就自己找吧喵\n⭐如果你是老登，请不要放过任何一个可能进去的小路。有成就在等着你口牙😋😋！\n\np.s.如果作者能看到，考虑在第五关的机关门那边加一个火之类的来回档吗）我的神必操作给自己困进门里出不来了hhhh）\n♡感谢帮忙开门救我于水火的草莓小熊，以及最后给我带路DLC，一起探索完地图的jk猫猫❤️爱你们喵",
+      "id": "review-b30db781-f989-4fea-8656-ddf777de09e7",
+      "submittedAt": "2026-06-17T11:50:52.034Z",
+      "updatedAt": "2026-06-17T11:50:52.034Z"
+    },
+    {
       "mapId": "map-fdfb60c0-26cf-4cb8-951e-c9ef210ae266",
       "reviewerName": "月海原由砂",
       "anonymous": false,
@@ -1781,6 +1797,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-b30db781-f989-4fea-8656-ddf777de09e7",
+      "title": "月海原由砂",
+      "detail": "map-0cc4bcd8-81d6-4028-84b7-b197c6c92ef8",
+      "id": "event-39a726b7-da50-4a1f-913b-87d87d21733a",
+      "timestamp": "2026-06-17T11:50:52.034Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-ab0288ad-5308-4ff4-be98-8e88777b9292",
       "title": "月海原由砂",
       "detail": "map-fdfb60c0-26cf-4cb8-951e-c9ef210ae266",
@@ -2972,5 +2996,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-17T08:47:11.246Z"
+  "updatedAt": "2026-06-17T11:50:52.034Z"
 }
