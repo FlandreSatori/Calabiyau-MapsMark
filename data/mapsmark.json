@@ -511,6 +511,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-fdfb60c0-26cf-4cb8-951e-c9ef210ae266",
+      "reviewerName": "月海原由砂",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 4.5,
+        "aesthetics": 3.6,
+        "guidance": 2.1,
+        "difficulty": 3.3,
+        "overall": 4
+      },
+      "comment": "本地图考验你双线程操作！！菲和伊薇特各自的特点与通关方法结合的很好玩！！虽然全程没有直接的线索提示，其实去思考怎么用眼前的机关开门就可以了，没有隐藏在墙后需要找东西之类的设计。一些关卡流程较长，需要玩家理清楚操作顺序喵。\n❤️景是景，关卡是关卡。太好了喵。\n（抹泪）（想起曾经玩其他图的时候，分不清某个建筑是地图美术还是关卡的一部分的痛苦回忆）\n⭐需要比较熟练的操控伊薇特和菲跑图。难点主要在控熊上\n⭐mmr记得点开地图便于控制距离喵\n很好玩的地图！！！期待后续的更新（如果还有的话）！！！\n❤与菲的羁绊加深了↑↑↑",
+      "id": "review-ab0288ad-5308-4ff4-be98-8e88777b9292",
+      "submittedAt": "2026-06-17T08:47:11.246Z",
+      "updatedAt": "2026-06-17T08:47:11.246Z"
+    },
+    {
       "mapId": "map-4ff9fd49-3d04-45b6-94b0-bd7a76e40f56",
       "reviewerName": "月海原由砂",
       "anonymous": false,
@@ -1765,6 +1781,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-ab0288ad-5308-4ff4-be98-8e88777b9292",
+      "title": "月海原由砂",
+      "detail": "map-fdfb60c0-26cf-4cb8-951e-c9ef210ae266",
+      "id": "event-f3463eb7-6d28-4a5e-9121-b0146960d808",
+      "timestamp": "2026-06-17T08:47:11.246Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-767ee548-a898-4916-bd22-f90f04be4b6c",
       "title": "月海原由砂",
       "detail": "map-4ff9fd49-3d04-45b6-94b0-bd7a76e40f56",
@@ -2948,5 +2972,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-17T08:23:34.596Z"
+  "updatedAt": "2026-06-17T08:47:11.246Z"
 }
