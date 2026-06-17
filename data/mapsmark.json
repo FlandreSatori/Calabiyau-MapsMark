@@ -511,6 +511,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-8c3f0601-5bcf-4fff-8f3b-058813684475",
+      "reviewerName": "凯尔希尔",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 3.5,
+        "aesthetics": 5,
+        "guidance": 4,
+        "difficulty": 2,
+        "overall": 4
+      },
+      "comment": "简洁喵，好玩喵",
+      "id": "review-313169e3-c5e0-4dc7-924e-16a201350ebc",
+      "submittedAt": "2026-06-17T06:30:23.558Z",
+      "updatedAt": "2026-06-17T06:30:23.558Z"
+    },
+    {
       "mapId": "map-fe5db2af-c8de-45c1-af0e-9e0aaf8291fe",
       "reviewerName": "匿名",
       "anonymous": true,
@@ -1700,6 +1716,14 @@
   ],
   "events": [
     {
+      "kind": "review-create",
+      "subjectId": "review-313169e3-c5e0-4dc7-924e-16a201350ebc",
+      "title": "凯尔希尔",
+      "detail": "map-8c3f0601-5bcf-4fff-8f3b-058813684475",
+      "id": "event-cbf290d3-47e9-4693-ac58-21fbae87070b",
+      "timestamp": "2026-06-17T06:30:23.558Z"
+    },
+    {
       "kind": "map-update",
       "subjectId": "map-fe5db2af-c8de-45c1-af0e-9e0aaf8291fe",
       "title": "编辑地图 Ib想要独自去看看v1",
@@ -2852,5 +2876,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-17T02:55:30.740Z"
+  "updatedAt": "2026-06-17T06:30:23.558Z"
 }
