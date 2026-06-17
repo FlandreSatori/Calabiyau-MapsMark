@@ -511,6 +511,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-98a6bfaa-269f-4528-81cb-f547e79d4eb7",
+      "reviewerName": "凯尔希尔",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 2.5,
+        "aesthetics": 3.5,
+        "guidance": 3,
+        "difficulty": 2,
+        "overall": 2.5
+      },
+      "comment": "线索太长不看喵",
+      "id": "review-2085914c-0eb5-462e-ba22-a160f48de50a",
+      "submittedAt": "2026-06-17T06:35:18.486Z",
+      "updatedAt": "2026-06-17T06:35:18.486Z"
+    },
+    {
       "mapId": "map-28971207-c22d-44c7-8787-f70909194b72",
       "reviewerName": "凯尔希尔",
       "anonymous": false,
@@ -1733,6 +1749,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-2085914c-0eb5-462e-ba22-a160f48de50a",
+      "title": "凯尔希尔",
+      "detail": "map-98a6bfaa-269f-4528-81cb-f547e79d4eb7",
+      "id": "event-4bdc01c9-a301-474a-9e84-7d26a0bd55c1",
+      "timestamp": "2026-06-17T06:35:18.486Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-05d7784d-c73d-45a6-a227-8227847357f7",
       "title": "凯尔希尔",
       "detail": "map-28971207-c22d-44c7-8787-f70909194b72",
@@ -2900,5 +2924,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-17T06:31:56.869Z"
+  "updatedAt": "2026-06-17T06:35:18.486Z"
 }
