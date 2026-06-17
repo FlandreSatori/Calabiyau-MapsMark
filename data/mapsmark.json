@@ -511,6 +511,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-98a6bfaa-269f-4528-81cb-f547e79d4eb7",
+      "reviewerName": "explorer",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 5,
+        "aesthetics": 3.5,
+        "guidance": 4,
+        "difficulty": 4,
+        "overall": 5
+      },
+      "comment": "太好玩了这图，第八关的设计我真的吹爆，没看线索房前发现不对劲的那一刻真的是头皮发麻，太神了第八关！",
+      "id": "review-b64fc1a5-46f0-4dc6-98a7-a7ba577ee732",
+      "submittedAt": "2026-06-17T21:27:35.201Z",
+      "updatedAt": "2026-06-17T21:27:35.201Z"
+    },
+    {
       "mapId": "map-8c3f0601-5bcf-4fff-8f3b-058813684475",
       "reviewerName": "匿名",
       "anonymous": true,
@@ -1812,6 +1828,14 @@
   ],
   "events": [
     {
+      "kind": "review-create",
+      "subjectId": "review-b64fc1a5-46f0-4dc6-98a7-a7ba577ee732",
+      "title": "explorer",
+      "detail": "map-98a6bfaa-269f-4528-81cb-f547e79d4eb7",
+      "id": "event-7cf5e68c-004b-43fd-9c1d-54b6b562d316",
+      "timestamp": "2026-06-17T21:27:35.201Z"
+    },
+    {
       "kind": "map-update",
       "subjectId": "map-fe5db2af-c8de-45c1-af0e-9e0aaf8291fe",
       "title": "编辑地图 Ib想要独自去看看",
@@ -3028,5 +3052,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-17T13:43:23.217Z"
+  "updatedAt": "2026-06-17T21:27:35.202Z"
 }
