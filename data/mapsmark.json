@@ -511,6 +511,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-8c3f0601-5bcf-4fff-8f3b-058813684475",
+      "reviewerName": "浮力场",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 5,
+        "aesthetics": 4.5,
+        "guidance": 3.3,
+        "difficulty": 2.5,
+        "overall": 3.7
+      },
+      "comment": "很好玩喵 很多常见解密元素融到一起 后面的后室也好玩喵",
+      "id": "review-8f6b152b-302f-4aeb-bd6e-5b117c23f4cb",
+      "submittedAt": "2026-06-18T07:06:00.623Z",
+      "updatedAt": "2026-06-18T07:06:00.623Z"
+    },
+    {
       "mapId": "map-98a6bfaa-269f-4528-81cb-f547e79d4eb7",
       "reviewerName": "explorer",
       "anonymous": false,
@@ -1829,6 +1845,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-8f6b152b-302f-4aeb-bd6e-5b117c23f4cb",
+      "title": "浮力场",
+      "detail": "map-8c3f0601-5bcf-4fff-8f3b-058813684475",
+      "id": "event-c8fd1c7f-0aa0-4649-ba00-e8e09e05e66d",
+      "timestamp": "2026-06-18T07:06:00.623Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-b64fc1a5-46f0-4dc6-98a7-a7ba577ee732",
       "title": "explorer",
       "detail": "map-98a6bfaa-269f-4528-81cb-f547e79d4eb7",
@@ -3052,5 +3076,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-17T21:27:35.202Z"
+  "updatedAt": "2026-06-18T07:06:00.623Z"
 }
