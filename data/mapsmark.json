@@ -1,6 +1,20 @@
 {
   "maps": [
     {
+      "coverImage": "/assets/images/1781790776418-696195080218af178a65cfff49cbb8a5.png",
+      "previewImage": "",
+      "code": "knslcy",
+      "type": "解密",
+      "name": "简单逻辑门解密入门喵",
+      "author": "今天也是人下人",
+      "mappedAt": "",
+      "introduction": "耐心观察游玩五分钟就能看懂喵\n找其他人代发的喵，不要骂我喵",
+      "estimatedMinutes": 30,
+      "id": "map-e7441680-9e0b-462e-a66b-80ff4e4e9317",
+      "submittedAt": "2026-06-18T13:57:19.206Z",
+      "updatedAt": "2026-06-18T13:57:19.206Z"
+    },
+    {
       "coverImage": "/assets/images/1781578757636-Ib_____.png",
       "previewImage": "",
       "code": "l2maoo",
@@ -1924,6 +1938,14 @@
   ],
   "events": [
     {
+      "kind": "map-create",
+      "subjectId": "map-e7441680-9e0b-462e-a66b-80ff4e4e9317",
+      "title": "简单逻辑门解密入门喵",
+      "detail": "knslcy",
+      "id": "event-2cf37020-988a-43cc-9148-2b706f9be77b",
+      "timestamp": "2026-06-18T13:57:19.206Z"
+    },
+    {
       "kind": "review-create",
       "subjectId": "review-14cb1659-fbf6-44d9-a92b-e1411118f05b",
       "title": "作者？！糖糖！？",
@@ -3204,5 +3226,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-18T13:30:27.146Z"
+  "updatedAt": "2026-06-18T13:57:19.206Z"
 }
