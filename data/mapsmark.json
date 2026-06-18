@@ -511,6 +511,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-c752fa18-bf8f-4657-b9c8-205fd997e372",
+      "reviewerName": "AAA卡丘解密大王批发",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 4.3,
+        "aesthetics": 3.4,
+        "guidance": 4.7,
+        "difficulty": 2.1,
+        "overall": 3.9
+      },
+      "comment": "时代的眼泪，来扫个坟（不是）",
+      "id": "review-9600864b-e2b9-4096-9473-b4c326a525cc",
+      "submittedAt": "2026-06-18T11:06:49.451Z",
+      "updatedAt": "2026-06-18T11:06:49.451Z"
+    },
+    {
       "mapId": "map-fe5db2af-c8de-45c1-af0e-9e0aaf8291fe",
       "reviewerName": "AAA卡丘解密大王批发",
       "anonymous": false,
@@ -1893,6 +1909,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-9600864b-e2b9-4096-9473-b4c326a525cc",
+      "title": "AAA卡丘解密大王批发",
+      "detail": "map-c752fa18-bf8f-4657-b9c8-205fd997e372",
+      "id": "event-c2005feb-cc3e-4327-b4b3-c7d5051ddf0e",
+      "timestamp": "2026-06-18T11:06:49.451Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-0770b1b1-8ef2-4a42-89e9-0ba7bd30b8b8",
       "title": "AAA卡丘解密大王批发",
       "detail": "map-fe5db2af-c8de-45c1-af0e-9e0aaf8291fe",
@@ -3156,5 +3180,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-18T11:05:11.742Z"
+  "updatedAt": "2026-06-18T11:06:49.451Z"
 }
