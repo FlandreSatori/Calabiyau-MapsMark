@@ -95,16 +95,16 @@
     {
       "coverImage": "/assets/images/1780238692130-MMR__18.png",
       "previewImage": "",
-      "code": "ifk22m",
+      "code": "h7wk73",
       "type": "解密",
-      "name": "MMR入门解密18关",
+      "name": "MMR入门解密18关v2",
       "author": "柴郡Ch3shire",
       "mappedAt": "",
-      "introduction": "许多常见的解密巧思，排除了许多干扰项的合集喵\n解密最原始的样貌——于此呈现\n\n——当真如此吗\n逃逃逃逃兆兆兆兆兆兆兆兆兆兆兆兆兆兆兆北北北北北北北……十十十十十八……八八八八八八八八八八…………",
+      "introduction": "许多常见的解密巧思，排除了许多干扰项的合集喵\n解密最原始的样貌——于此呈现\n\n——当真如此吗\n逃逃逃逃兆兆兆兆兆兆兆兆兆兆兆兆兆兆兆北北北北北北北……十十十十十八……八八八八八八八八八八…………\n\n请用klbq.lolser.fun这个网站来评价卡丘的解密地图喵\nV2：平衡部分关卡难度使其更加适合教学用途，删除蓝火紫砂，修复部分bug，增加了实体",
       "estimatedMinutes": 30,
       "id": "map-8c3f0601-5bcf-4fff-8f3b-058813684475",
       "submittedAt": "2026-05-31T14:44:54.944Z",
-      "updatedAt": "2026-06-11T15:13:02.209Z",
+      "updatedAt": "2026-06-18T10:37:54.052Z",
       "customCoverImage": "https://pic1.imgdb.cn/item/6a2ad06afdb1c84b8401a873.jpg",
       "customPreviewImage": ""
     },
@@ -1876,6 +1876,14 @@
   ],
   "events": [
     {
+      "kind": "map-update",
+      "subjectId": "map-8c3f0601-5bcf-4fff-8f3b-058813684475",
+      "title": "编辑地图 MMR入门解密18关v2",
+      "detail": "h7wk73",
+      "id": "event-0582a95c-91e2-40ba-a39a-56ae36396f04",
+      "timestamp": "2026-06-18T10:37:54.052Z"
+    },
+    {
       "kind": "review-create",
       "subjectId": "review-8531aeea-beda-42ec-a81d-b0199b844789",
       "title": "月海原由砂",
@@ -3124,5 +3132,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-18T10:00:54.359Z"
+  "updatedAt": "2026-06-18T10:37:54.052Z"
 }
