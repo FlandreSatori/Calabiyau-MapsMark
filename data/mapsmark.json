@@ -511,6 +511,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-fe5db2af-c8de-45c1-af0e-9e0aaf8291fe",
+      "reviewerName": "AAA卡丘解密大王批发",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 5,
+        "aesthetics": 5,
+        "guidance": 2.5,
+        "difficulty": 4,
+        "overall": 4
+      },
+      "comment": "地图相当沉浸式，解密老登需要140分钟左右通关，可能是没玩过原作的原因，由于是自由探索，引导性存在不足，解密部分比较简单，mmr玩到后期可能有点难度，本质另类江一楠解密（？）。跑图跑的很力竭，数数不好很力竭，行测不好就更力竭了。\n至此，领域展开，铜丝作者铜丝作者铜丝作者铜丝作者铜丝作者铜丝作者铜丝作者铜丝作者铜丝作者铜丝作者铜丝作者铜丝作者铜丝作者铜丝作者铜丝作者铜丝作者铜丝作者铜丝作者铜丝作者铜丝作者铜丝作者铜丝作者铜丝作者铜丝作者铜丝作者铜丝作者铜丝作者铜丝作者铜丝作者铜丝作者铜丝作者铜丝作者铜丝作者铜丝作者",
+      "id": "review-0770b1b1-8ef2-4a42-89e9-0ba7bd30b8b8",
+      "submittedAt": "2026-06-18T11:05:11.742Z",
+      "updatedAt": "2026-06-18T11:05:11.742Z"
+    },
+    {
       "mapId": "map-859e43c7-c7a6-4693-9597-2a07616a0d0c",
       "reviewerName": "月海原由砂",
       "anonymous": false,
@@ -1876,6 +1892,14 @@
   ],
   "events": [
     {
+      "kind": "review-create",
+      "subjectId": "review-0770b1b1-8ef2-4a42-89e9-0ba7bd30b8b8",
+      "title": "AAA卡丘解密大王批发",
+      "detail": "map-fe5db2af-c8de-45c1-af0e-9e0aaf8291fe",
+      "id": "event-e9bd535d-7baf-42f5-826c-efe27b6b9c1b",
+      "timestamp": "2026-06-18T11:05:11.742Z"
+    },
+    {
       "kind": "map-update",
       "subjectId": "map-8c3f0601-5bcf-4fff-8f3b-058813684475",
       "title": "编辑地图 MMR入门解密18关v2",
@@ -3132,5 +3156,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-18T10:37:54.052Z"
+  "updatedAt": "2026-06-18T11:05:11.742Z"
 }
