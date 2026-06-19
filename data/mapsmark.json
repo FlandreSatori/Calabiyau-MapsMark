@@ -525,6 +525,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-6554e08d-b080-4deb-991d-d894e328275f",
+      "reviewerName": "AAA卡丘解密大王批发",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 5,
+        "aesthetics": 2.8,
+        "guidance": 5,
+        "difficulty": 2,
+        "overall": 5
+      },
+      "comment": "双人解密的开篇作品，味大无需多盐。要和队友积极沟通哦~",
+      "id": "review-5a71840d-01c9-4925-a7f7-e783d6c161ef",
+      "submittedAt": "2026-06-19T15:24:19.295Z",
+      "updatedAt": "2026-06-19T15:24:19.295Z"
+    },
+    {
       "mapId": "map-63c6c5a0-8aae-40c0-b60f-06588c9ae196",
       "reviewerName": "AAA卡丘解密大王批发",
       "anonymous": false,
@@ -1987,6 +2003,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-5a71840d-01c9-4925-a7f7-e783d6c161ef",
+      "title": "AAA卡丘解密大王批发",
+      "detail": "map-6554e08d-b080-4deb-991d-d894e328275f",
+      "id": "event-3f1356bd-4de6-47e9-ac48-c28c2077eb0f",
+      "timestamp": "2026-06-19T15:24:19.295Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-ad75c291-0c4d-4de3-8dd3-3148834972b8",
       "title": "AAA卡丘解密大王批发",
       "detail": "map-63c6c5a0-8aae-40c0-b60f-06588c9ae196",
@@ -3298,5 +3322,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-19T15:22:43.057Z"
+  "updatedAt": "2026-06-19T15:24:19.295Z"
 }
