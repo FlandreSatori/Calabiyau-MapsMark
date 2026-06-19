@@ -525,6 +525,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-53804f28-d922-4fe3-9c54-650931cb22b0",
+      "reviewerName": "AAA卡丘解密大王批发",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 4,
+        "aesthetics": 5,
+        "guidance": 3.5,
+        "difficulty": 4,
+        "overall": 4.2
+      },
+      "comment": "改了好几版才玩的，帧率相对稳定下来后细看布景相当用心，没事当成游乐园逛也行。主要玩法为解读线索、理解作者思路，存在一定的meta玩法。地图里存在比较虾头的东西，整体难度算是偏上，主要看能不能和作者脑电波对上。比上一次进步不少喵。",
+      "id": "review-a1778370-e437-486a-96cd-edb2458088f0",
+      "submittedAt": "2026-06-19T15:16:15.749Z",
+      "updatedAt": "2026-06-19T15:16:15.749Z"
+    },
+    {
       "mapId": "map-e7441680-9e0b-462e-a66b-80ff4e4e9317",
       "reviewerName": "AAA卡丘解密大王批发",
       "anonymous": false,
@@ -1955,6 +1971,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-a1778370-e437-486a-96cd-edb2458088f0",
+      "title": "AAA卡丘解密大王批发",
+      "detail": "map-53804f28-d922-4fe3-9c54-650931cb22b0",
+      "id": "event-cc876e00-ae7b-4eaf-86eb-966eca93d0e1",
+      "timestamp": "2026-06-19T15:16:15.749Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-20949e48-8724-4d67-904e-5e12318f20c7",
       "title": "AAA卡丘解密大王批发",
       "detail": "map-e7441680-9e0b-462e-a66b-80ff4e4e9317",
@@ -3250,5 +3274,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-19T15:10:04.455Z"
+  "updatedAt": "2026-06-19T15:16:15.749Z"
 }
