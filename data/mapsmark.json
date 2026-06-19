@@ -525,6 +525,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-63c6c5a0-8aae-40c0-b60f-06588c9ae196",
+      "reviewerName": "AAA卡丘解密大王批发",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 4,
+        "aesthetics": 2,
+        "guidance": 2.8,
+        "difficulty": 2.5,
+        "overall": 4
+      },
+      "comment": "早期一代解密图，处于工坊特性摸索期。里面很多技巧在如今已经相当常见，但是对mmr仍有不小挑战。似乎从这张图后，解密地图里包含工坊特性的特性关卡越来越多，是从纯粹找按钮找路向合理结合工坊特性造图的分水岭（？）。部分关卡需要尝试解读作者思路，mmr建议多人游玩。",
+      "id": "review-ad75c291-0c4d-4de3-8dd3-3148834972b8",
+      "submittedAt": "2026-06-19T15:22:43.057Z",
+      "updatedAt": "2026-06-19T15:22:43.057Z"
+    },
+    {
       "mapId": "map-53804f28-d922-4fe3-9c54-650931cb22b0",
       "reviewerName": "AAA卡丘解密大王批发",
       "anonymous": false,
@@ -1971,6 +1987,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-ad75c291-0c4d-4de3-8dd3-3148834972b8",
+      "title": "AAA卡丘解密大王批发",
+      "detail": "map-63c6c5a0-8aae-40c0-b60f-06588c9ae196",
+      "id": "event-40b17099-e818-41af-a4be-d5d7ef86dad5",
+      "timestamp": "2026-06-19T15:22:43.057Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-a1778370-e437-486a-96cd-edb2458088f0",
       "title": "AAA卡丘解密大王批发",
       "detail": "map-53804f28-d922-4fe3-9c54-650931cb22b0",
@@ -3274,5 +3298,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-19T15:16:15.749Z"
+  "updatedAt": "2026-06-19T15:22:43.057Z"
 }
