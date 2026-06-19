@@ -525,6 +525,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-e7441680-9e0b-462e-a66b-80ff4e4e9317",
+      "reviewerName": "AAA卡丘解密大王批发",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 3,
+        "aesthetics": 1,
+        "guidance": 0,
+        "difficulty": 1,
+        "overall": 2.5
+      },
+      "comment": "给到及格，思路想明白就通关了，算是纯计时器逻辑门。10分钟左右就可以通关",
+      "id": "review-20949e48-8724-4d67-904e-5e12318f20c7",
+      "submittedAt": "2026-06-19T15:10:04.455Z",
+      "updatedAt": "2026-06-19T15:10:04.455Z"
+    },
+    {
       "mapId": "map-fe5db2af-c8de-45c1-af0e-9e0aaf8291fe",
       "reviewerName": "作者？！糖糖！？",
       "anonymous": false,
@@ -1938,6 +1954,14 @@
   ],
   "events": [
     {
+      "kind": "review-create",
+      "subjectId": "review-20949e48-8724-4d67-904e-5e12318f20c7",
+      "title": "AAA卡丘解密大王批发",
+      "detail": "map-e7441680-9e0b-462e-a66b-80ff4e4e9317",
+      "id": "event-1a3f59ee-a7b4-4514-8565-8243ea01ea40",
+      "timestamp": "2026-06-19T15:10:04.455Z"
+    },
+    {
       "kind": "map-create",
       "subjectId": "map-e7441680-9e0b-462e-a66b-80ff4e4e9317",
       "title": "简单逻辑门解密入门喵",
@@ -3226,5 +3250,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-18T13:57:19.206Z"
+  "updatedAt": "2026-06-19T15:10:04.455Z"
 }
