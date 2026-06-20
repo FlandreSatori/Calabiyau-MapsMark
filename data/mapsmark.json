@@ -525,6 +525,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-4ff9fd49-3d04-45b6-94b0-bd7a76e40f56",
+      "reviewerName": "我真的不挖矿",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 5,
+        "aesthetics": 3,
+        "guidance": 5,
+        "difficulty": 3,
+        "overall": 5
+      },
+      "comment": "作者详尽阐述了菲的所有可操作区间，关卡简单易懂适合入门，为之后江一楠的各种展开图打了基础，催生其他作者创作了相关系列好图，必须给老登5.0，假若创作有仙道，作者必是齁哦哦哦齁噢噢噢祖师母",
+      "id": "review-3ead82c5-0470-43d5-9f3a-9cdd70b27806",
+      "submittedAt": "2026-06-20T03:39:18.361Z",
+      "updatedAt": "2026-06-20T03:39:18.361Z"
+    },
+    {
       "mapId": "map-fdfb60c0-26cf-4cb8-951e-c9ef210ae266",
       "reviewerName": "我真的不挖矿",
       "anonymous": false,
@@ -2019,6 +2035,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-3ead82c5-0470-43d5-9f3a-9cdd70b27806",
+      "title": "我真的不挖矿",
+      "detail": "map-4ff9fd49-3d04-45b6-94b0-bd7a76e40f56",
+      "id": "event-4607e0bb-d725-4b96-8869-2f15571d1104",
+      "timestamp": "2026-06-20T03:39:18.361Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-d80e7ef3-64bb-4a20-bd49-e51d57997c73",
       "title": "我真的不挖矿",
       "detail": "map-fdfb60c0-26cf-4cb8-951e-c9ef210ae266",
@@ -3346,5 +3370,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-20T03:32:41.179Z"
+  "updatedAt": "2026-06-20T03:39:18.361Z"
 }
