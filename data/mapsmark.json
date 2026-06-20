@@ -1,6 +1,20 @@
 {
   "maps": [
     {
+      "coverImage": "/assets/images/1781947124748-QQ__20260620171708.png",
+      "previewImage": "",
+      "code": "4PETS1",
+      "type": "解密",
+      "name": "MMR解密之只会大画家喵",
+      "author": "柴郡Ch3shire",
+      "mappedAt": "",
+      "introduction": "难度适中的主题式线性解密瞄，如果卡关想想大画家能干什么瞄,还是过不去的话就哈气瞄\n无高阶跑酷技巧，流程大概一小时左右\n请用klbq.lolser.fun这个网站来评价卡丘的解密地图瞄V2:优化了7关的线索提示，减小了5关跑酷难度，更改了4关可能产生歧义的布景，丰富布景，修复了卡死、偷鸡bug\n",
+      "estimatedMinutes": 60,
+      "id": "map-bbcc37a1-c8f5-4dbd-b4ca-84e4a60bc6df",
+      "submittedAt": "2026-06-20T09:20:00.813Z",
+      "updatedAt": "2026-06-20T09:20:00.813Z"
+    },
+    {
       "coverImage": "/assets/images/1781790776418-696195080218af178a65cfff49cbb8a5.png",
       "previewImage": "",
       "code": "knslcy",
@@ -2034,6 +2048,14 @@
   ],
   "events": [
     {
+      "kind": "map-create",
+      "subjectId": "map-bbcc37a1-c8f5-4dbd-b4ca-84e4a60bc6df",
+      "title": "MMR解密之只会大画家喵",
+      "detail": "4PETS1",
+      "id": "event-60eab46b-93ee-4b74-97c0-ac26fa4cc9bd",
+      "timestamp": "2026-06-20T09:20:00.814Z"
+    },
+    {
       "kind": "review-create",
       "subjectId": "review-3ead82c5-0470-43d5-9f3a-9cdd70b27806",
       "title": "我真的不挖矿",
@@ -3370,5 +3392,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-20T03:39:18.361Z"
+  "updatedAt": "2026-06-20T09:20:00.814Z"
 }
