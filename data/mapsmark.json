@@ -525,6 +525,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-fdfb60c0-26cf-4cb8-951e-c9ef210ae266",
+      "reviewerName": "我真的不挖矿",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 5,
+        "aesthetics": 3,
+        "guidance": 5,
+        "difficulty": 5,
+        "overall": 5
+      },
+      "comment": "好图，我觉得作者目前做的最好的一张，具有开创性和新颖性，美观在我这猫娘v3算5.0因此打分3.0，其余没啥好说的，后续系列的开山鼻祖",
+      "id": "review-d80e7ef3-64bb-4a20-bd49-e51d57997c73",
+      "submittedAt": "2026-06-20T03:32:41.179Z",
+      "updatedAt": "2026-06-20T03:32:41.179Z"
+    },
+    {
       "mapId": "map-6554e08d-b080-4deb-991d-d894e328275f",
       "reviewerName": "AAA卡丘解密大王批发",
       "anonymous": false,
@@ -2003,6 +2019,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-d80e7ef3-64bb-4a20-bd49-e51d57997c73",
+      "title": "我真的不挖矿",
+      "detail": "map-fdfb60c0-26cf-4cb8-951e-c9ef210ae266",
+      "id": "event-42c7fe6a-7448-4e5a-a4da-eb9e505735e8",
+      "timestamp": "2026-06-20T03:32:41.179Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-5a71840d-01c9-4925-a7f7-e783d6c161ef",
       "title": "AAA卡丘解密大王批发",
       "detail": "map-6554e08d-b080-4deb-991d-d894e328275f",
@@ -3322,5 +3346,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-19T15:24:19.295Z"
+  "updatedAt": "2026-06-20T03:32:41.179Z"
 }
