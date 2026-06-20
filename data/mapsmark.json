@@ -539,6 +539,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-bbcc37a1-c8f5-4dbd-b4ca-84e4a60bc6df",
+      "reviewerName": "轮椅侦探宅宅👁",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 4,
+        "aesthetics": 3.6,
+        "guidance": 4.5,
+        "difficulty": 3,
+        "overall": 4.8
+      },
+      "comment": "柴郡Ch3shire, LOVE～\n\n又一标杆作，在难度与趣味之间达到了完美的平衡，除了需要关上的机关门之外，所有谜题都与卡牌分身有关，具有十分强烈的思考导向效果\n\n场景方面，第四关的实验装置加2分，第七关的饺子醋加0.5分\n\n在路线管理上仍有小瑕疵，希望尽量考虑到纯正mmr和普通玩家和蹭墙老登的招路体验\n\n另外，一眼就能看出作者还藏了私货，谜题基本上没有嵌套（偷懒！）\n",
+      "id": "review-04739d71-7e07-413a-bffa-e8189ed8e107",
+      "submittedAt": "2026-06-20T15:40:55.609Z",
+      "updatedAt": "2026-06-20T15:40:55.609Z"
+    },
+    {
       "mapId": "map-4ff9fd49-3d04-45b6-94b0-bd7a76e40f56",
       "reviewerName": "我真的不挖矿",
       "anonymous": false,
@@ -2048,6 +2064,14 @@
   ],
   "events": [
     {
+      "kind": "review-create",
+      "subjectId": "review-04739d71-7e07-413a-bffa-e8189ed8e107",
+      "title": "轮椅侦探宅宅👁",
+      "detail": "map-bbcc37a1-c8f5-4dbd-b4ca-84e4a60bc6df",
+      "id": "event-3d061f6e-d2e4-4fc2-838e-6c4022e3b81c",
+      "timestamp": "2026-06-20T15:40:55.610Z"
+    },
+    {
       "kind": "map-create",
       "subjectId": "map-bbcc37a1-c8f5-4dbd-b4ca-84e4a60bc6df",
       "title": "MMR解密之只会大画家喵",
@@ -3392,5 +3416,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-20T09:20:00.814Z"
+  "updatedAt": "2026-06-20T15:40:55.610Z"
 }
