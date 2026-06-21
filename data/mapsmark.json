@@ -540,6 +540,22 @@
   "reviews": [
     {
       "mapId": "map-bbcc37a1-c8f5-4dbd-b4ca-84e4a60bc6df",
+      "reviewerName": "月海原由砂",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 4,
+        "aesthetics": 4.1,
+        "guidance": 2.5,
+        "difficulty": 3,
+        "overall": 4.1
+      },
+      "comment": "偏向跑酷解密的一张图，文字线索很少，大多靠技能操作通关。对卡牌q技能的运用非常灵活了，玩完感觉可以直接游龙了喵（bus）。\n❤️地图建的很有趣，穿越到最后一关的大场景直接眼前一亮喵。引导优化之后更清晰了，好评好评！\n⭐全流程花费约一个半小时\n⭐每一关都需要使用技能，感觉卡关的时候多想想q的特性吧\n⭐第六关需要一点身位控制\n\ny1s1，对于不怎么熟悉大画家的我其实一半时间都在想往哪丢牌，但是没有任何效果hhhh（依旧感谢匹配大佬带飞desuwa",
+      "id": "review-c8f50669-7361-4f11-99e9-7b2a249cdbc8",
+      "submittedAt": "2026-06-21T12:15:41.407Z",
+      "updatedAt": "2026-06-21T12:15:41.407Z"
+    },
+    {
+      "mapId": "map-bbcc37a1-c8f5-4dbd-b4ca-84e4a60bc6df",
       "reviewerName": "轮椅侦探宅宅👁",
       "anonymous": false,
       "ratings": {
@@ -2065,6 +2081,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-c8f50669-7361-4f11-99e9-7b2a249cdbc8",
+      "title": "月海原由砂",
+      "detail": "map-bbcc37a1-c8f5-4dbd-b4ca-84e4a60bc6df",
+      "id": "event-4ae719c8-bd93-4a1c-a441-b9e57b1efe88",
+      "timestamp": "2026-06-21T12:15:41.408Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-04739d71-7e07-413a-bffa-e8189ed8e107",
       "title": "轮椅侦探宅宅👁",
       "detail": "map-bbcc37a1-c8f5-4dbd-b4ca-84e4a60bc6df",
@@ -3416,5 +3440,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-20T15:40:55.610Z"
+  "updatedAt": "2026-06-21T12:15:41.408Z"
 }
