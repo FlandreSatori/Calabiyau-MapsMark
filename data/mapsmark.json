@@ -540,6 +540,22 @@
   "reviews": [
     {
       "mapId": "map-c752fa18-bf8f-4657-b9c8-205fd997e372",
+      "reviewerName": "匿名",
+      "anonymous": true,
+      "ratings": {
+        "entertainment": 5,
+        "aesthetics": 5,
+        "guidance": 5,
+        "difficulty": 2.1,
+        "overall": 5
+      },
+      "comment": "",
+      "id": "review-949ca533-b4a6-4b12-9008-7ab1b3b72dd4",
+      "submittedAt": "2026-06-23T11:49:45.398Z",
+      "updatedAt": "2026-06-23T11:49:45.398Z"
+    },
+    {
+      "mapId": "map-c752fa18-bf8f-4657-b9c8-205fd997e372",
       "reviewerName": "轮椅侦探宅宅👁",
       "anonymous": false,
       "ratings": {
@@ -2097,6 +2113,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-949ca533-b4a6-4b12-9008-7ab1b3b72dd4",
+      "title": "匿名",
+      "detail": "map-c752fa18-bf8f-4657-b9c8-205fd997e372",
+      "id": "event-c0db7a41-732e-45bf-a892-d7c64040091e",
+      "timestamp": "2026-06-23T11:49:45.398Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-b9fce397-2dd5-45ec-b5f8-26decbef3cbb",
       "title": "轮椅侦探宅宅👁",
       "detail": "map-c752fa18-bf8f-4657-b9c8-205fd997e372",
@@ -3464,5 +3488,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-23T02:53:56.802Z"
+  "updatedAt": "2026-06-23T11:49:45.398Z"
 }
