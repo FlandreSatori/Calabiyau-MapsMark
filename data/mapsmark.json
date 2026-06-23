@@ -539,6 +539,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-c752fa18-bf8f-4657-b9c8-205fd997e372",
+      "reviewerName": "轮椅侦探宅宅👁",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 3.5,
+        "aesthetics": 3,
+        "guidance": 4,
+        "difficulty": 1.5,
+        "overall": 3.4
+      },
+      "comment": "一遍过的地图，然后马上就去糖旅了，扫墓\n太有MC味了",
+      "id": "review-b9fce397-2dd5-45ec-b5f8-26decbef3cbb",
+      "submittedAt": "2026-06-23T02:53:56.802Z",
+      "updatedAt": "2026-06-23T02:53:56.802Z"
+    },
+    {
       "mapId": "map-bbcc37a1-c8f5-4dbd-b4ca-84e4a60bc6df",
       "reviewerName": "月海原由砂",
       "anonymous": false,
@@ -2081,6 +2097,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-b9fce397-2dd5-45ec-b5f8-26decbef3cbb",
+      "title": "轮椅侦探宅宅👁",
+      "detail": "map-c752fa18-bf8f-4657-b9c8-205fd997e372",
+      "id": "event-ed4009bd-4638-48d5-a7d6-75b593ffb69d",
+      "timestamp": "2026-06-23T02:53:56.802Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-c8f50669-7361-4f11-99e9-7b2a249cdbc8",
       "title": "月海原由砂",
       "detail": "map-bbcc37a1-c8f5-4dbd-b4ca-84e4a60bc6df",
@@ -3440,5 +3464,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-21T12:15:41.408Z"
+  "updatedAt": "2026-06-23T02:53:56.802Z"
 }
