@@ -31,7 +31,7 @@
     {
       "coverImage": "/assets/images/1781578757636-Ib_____.png",
       "previewImage": "",
-      "code": "l2maoo",
+      "code": "gfbsr8",
       "type": "解密",
       "name": "Ib想要独自去看看",
       "author": "古明地小五",
@@ -40,7 +40,7 @@
       "estimatedMinutes": 240,
       "id": "map-fe5db2af-c8de-45c1-af0e-9e0aaf8291fe",
       "submittedAt": "2026-06-16T03:01:21.322Z",
-      "updatedAt": "2026-06-17T13:43:23.217Z"
+      "updatedAt": "2026-06-24T15:08:20.769Z"
     },
     {
       "coverImage": "/assets/images/1781563417650-29acaa14fb9fa8718f0a5a7c81a34dcc.png",
@@ -2112,6 +2112,14 @@
   ],
   "events": [
     {
+      "kind": "map-update",
+      "subjectId": "map-fe5db2af-c8de-45c1-af0e-9e0aaf8291fe",
+      "title": "编辑地图 Ib想要独自去看看",
+      "detail": "gfbsr8",
+      "id": "event-46b86768-947f-4c82-91bb-2a594f099667",
+      "timestamp": "2026-06-24T15:08:20.769Z"
+    },
+    {
       "kind": "review-create",
       "subjectId": "review-949ca533-b4a6-4b12-9008-7ab1b3b72dd4",
       "title": "匿名",
@@ -3488,5 +3496,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-23T11:49:45.398Z"
+  "updatedAt": "2026-06-24T15:08:20.769Z"
 }
