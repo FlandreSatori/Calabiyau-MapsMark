@@ -31,16 +31,16 @@
     {
       "coverImage": "/assets/images/1781578757636-Ib_____.png",
       "previewImage": "",
-      "code": "gfbsr8",
+      "code": "alkmt3",
       "type": "解密",
       "name": "Ib想要独自去看看",
       "author": "古明地小五",
       "mappedAt": "2026-06-16",
-      "introduction": "致敬伊布，我心中的神作\n原作者kouri不允许复刻二创，因此与原作无关，请海涵\n- - - - v v v v v - - - -\n请将画面设置-材质-设为低 !\n双人游玩时会有一个人出生在检查点，请紫砂回剧情起点\n- - - - ^  ^  ^  ^ ^- - - -\n",
+      "introduction": "MMR版大幅削弱了跑酷要求、冷门特性和死亡点，提前了检查点\n\n致敬伊布，我心中的神作\n原作者kouri不允许复刻二创，因此与原作无关，请海涵\n- - - - v v v v v - - - -\n请将画面设置-材质-设为低 !\n双人游玩时会有一个人出生在检查点，请紫砂回剧情起点\n- - - - ^  ^  ^  ^ ^- - - -\n",
       "estimatedMinutes": 240,
       "id": "map-fe5db2af-c8de-45c1-af0e-9e0aaf8291fe",
       "submittedAt": "2026-06-16T03:01:21.322Z",
-      "updatedAt": "2026-06-24T15:08:20.769Z"
+      "updatedAt": "2026-06-25T02:17:05.364Z"
     },
     {
       "coverImage": "/assets/images/1781563417650-29acaa14fb9fa8718f0a5a7c81a34dcc.png",
@@ -2115,6 +2115,14 @@
       "kind": "map-update",
       "subjectId": "map-fe5db2af-c8de-45c1-af0e-9e0aaf8291fe",
       "title": "编辑地图 Ib想要独自去看看",
+      "detail": "alkmt3",
+      "id": "event-76649d81-620c-4df2-a233-87c6fb78390a",
+      "timestamp": "2026-06-25T02:17:05.364Z"
+    },
+    {
+      "kind": "map-update",
+      "subjectId": "map-fe5db2af-c8de-45c1-af0e-9e0aaf8291fe",
+      "title": "编辑地图 Ib想要独自去看看",
       "detail": "gfbsr8",
       "id": "event-46b86768-947f-4c82-91bb-2a594f099667",
       "timestamp": "2026-06-24T15:08:20.769Z"
@@ -3496,5 +3504,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-24T15:08:20.769Z"
+  "updatedAt": "2026-06-25T02:17:05.364Z"
 }
