@@ -539,6 +539,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-f35d749f-2a1b-4d16-ae48-fe8ee6291d70",
+      "reviewerName": "轮椅侦探宅宅👁",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 4,
+        "aesthetics": 3.5,
+        "guidance": 4.5,
+        "difficulty": 2.6,
+        "overall": 4.2
+      },
+      "comment": "机关门上线后的第一张解密图，祖师爷，总体给到夯\n\n关卡制，所以引导性给满\n\n解题人和出题人的博弈是解密不得不品的一环，流程包含了完整的解密思想，完全体现了作者的功底\n\n刚出时卡关了并且沉迷跑酷，现在变成解密高叟之后补票，依然能感受到作者的用心\n\n另外，作者也很可爱，说话会带颜文字，嘻嘻(●'◡'●)",
+      "id": "review-29a34b2d-c88f-4d9c-9560-4e7859ca96a9",
+      "submittedAt": "2026-06-26T10:15:02.970Z",
+      "updatedAt": "2026-06-26T10:15:02.970Z"
+    },
+    {
       "mapId": "map-c752fa18-bf8f-4657-b9c8-205fd997e372",
       "reviewerName": "匿名",
       "anonymous": true,
@@ -2112,6 +2128,14 @@
   ],
   "events": [
     {
+      "kind": "review-create",
+      "subjectId": "review-29a34b2d-c88f-4d9c-9560-4e7859ca96a9",
+      "title": "轮椅侦探宅宅👁",
+      "detail": "map-f35d749f-2a1b-4d16-ae48-fe8ee6291d70",
+      "id": "event-6a8a9760-05e5-4c69-864d-2507b73e0848",
+      "timestamp": "2026-06-26T10:15:02.971Z"
+    },
+    {
       "kind": "map-update",
       "subjectId": "map-fe5db2af-c8de-45c1-af0e-9e0aaf8291fe",
       "title": "编辑地图 Ib想要独自去看看",
@@ -3504,5 +3528,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-25T02:17:05.364Z"
+  "updatedAt": "2026-06-26T10:15:02.971Z"
 }
