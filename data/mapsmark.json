@@ -171,16 +171,16 @@
     {
       "coverImage": "/assets/images/1780228519556-______.png",
       "previewImage": "",
-      "code": "w2zjhy",
+      "code": "lux7dr",
       "type": "解密",
-      "name": "MMR解密之江一楠大冒险V2",
+      "name": "MMR解密之江一楠大冒险V3",
       "author": "柴郡Ch3shire",
       "mappedAt": "",
-      "introduction": "“菲，我们快离开这个奇怪的地方”\n“哼唧”\n非常简短的解密，可以帮你了解伊薇特和菲的一些小技巧\n1.菲可以开自动门，不能按机关门按钮\n2.菲可以通过细小缝隙被丢出去\n3.菲经过传送门会传送伊薇特\n4.菲可以进行简单跑酷\nV2更新：对关卡内可能出现歧义的提示进行了修改，略微降低了最后一关的难度",
+      "introduction": "“菲，我们快离开这个奇怪的地方”\n“哼唧”\n非常简短的解密，可以帮你了解伊薇特和菲的一些小技巧\n1.菲可以开自动门，不能按机关门按钮\n2.菲可以通过细小缝隙被丢出去\n3.菲经过传送门会传送伊薇特\n4.菲可以进行简单跑酷\nV3更新：对终点进行了简单修葺(修复世界观desuwa)，增加了一个存档点，略微简化图书馆\n攻略BV1UHiiB6EaN\n",
       "estimatedMinutes": 45,
       "id": "map-4ff9fd49-3d04-45b6-94b0-bd7a76e40f56",
       "submittedAt": "2026-05-31T11:55:21.788Z",
-      "updatedAt": "2026-06-11T15:12:25.605Z",
+      "updatedAt": "2026-06-26T11:14:23.066Z",
       "customCoverImage": "https://pic1.imgdb.cn/item/6a2ad03efdb1c84b8401a861.jpg",
       "customPreviewImage": ""
     },
@@ -2128,6 +2128,14 @@
   ],
   "events": [
     {
+      "kind": "map-update",
+      "subjectId": "map-4ff9fd49-3d04-45b6-94b0-bd7a76e40f56",
+      "title": "编辑地图 MMR解密之江一楠大冒险V3",
+      "detail": "lux7dr",
+      "id": "event-8f0bfc0d-cde1-4292-a231-7307143e44a6",
+      "timestamp": "2026-06-26T11:14:23.066Z"
+    },
+    {
       "kind": "review-create",
       "subjectId": "review-29a34b2d-c88f-4d9c-9560-4e7859ca96a9",
       "title": "轮椅侦探宅宅👁",
@@ -3528,5 +3536,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-26T10:15:02.971Z"
+  "updatedAt": "2026-06-26T11:14:23.066Z"
 }
