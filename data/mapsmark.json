@@ -539,6 +539,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-b6ab47d4-1947-4279-9a8f-546fd56511e3",
+      "reviewerName": "月海原由砂",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 2,
+        "aesthetics": 3.9,
+        "guidance": -4.5,
+        "difficulty": 4.4,
+        "overall": 2
+      },
+      "comment": "又名《老大我们这样一直蹭墙真的能通关吗》\n兜兜转转兜兜喵，我说自己打通的猫娘可以评为耐心大王有感觉吗。虽然其实开关设计的还是挺好的，但是真的完全没有引导啊！！完全没有！！😭😭😭甚至有的开了门都不知道对应的是哪个。\n严格来讲我不算全通关，不过已经到了end房间，就先写一下吧。还有一扇门的开关没有找到，听说B站有作者攻略，然而会被嘲讽hhhh，我还想再努力一下啊！\n⭐全程大约三个多小时，开了两局\n⭐纯靠玩过的解密经验判断开关在哪，没有任何线索。mmr不建议作为第一张解谜图食用\n❤️地图美化倒是不错的，很好看耶。（似乎还有故事线？",
+      "id": "review-36f6bdd2-d090-4912-aa2f-58dedf2cdc6c",
+      "submittedAt": "2026-06-27T06:55:34.404Z",
+      "updatedAt": "2026-06-27T06:55:34.404Z"
+    },
+    {
       "mapId": "map-f35d749f-2a1b-4d16-ae48-fe8ee6291d70",
       "reviewerName": "轮椅侦探宅宅👁",
       "anonymous": false,
@@ -2128,6 +2144,14 @@
   ],
   "events": [
     {
+      "kind": "review-create",
+      "subjectId": "review-36f6bdd2-d090-4912-aa2f-58dedf2cdc6c",
+      "title": "月海原由砂",
+      "detail": "map-b6ab47d4-1947-4279-9a8f-546fd56511e3",
+      "id": "event-bbfd9d6d-a193-4eb5-88a8-2faebdf27e85",
+      "timestamp": "2026-06-27T06:55:34.404Z"
+    },
+    {
       "kind": "map-update",
       "subjectId": "map-4ff9fd49-3d04-45b6-94b0-bd7a76e40f56",
       "title": "编辑地图 MMR解密之江一楠大冒险V3",
@@ -3536,5 +3560,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-26T11:14:23.066Z"
+  "updatedAt": "2026-06-27T06:55:34.404Z"
 }
