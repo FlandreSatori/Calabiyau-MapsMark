@@ -539,6 +539,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-a6abb700-46c1-4d61-b588-89384005cd82",
+      "reviewerName": "月海原由砂",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 3.9,
+        "aesthetics": 3.6,
+        "guidance": 3.7,
+        "difficulty": 2.2,
+        "overall": 4
+      },
+      "comment": "质量上乘，不过我说天生爱爬高刚开局就到终点有懂的吗（bus）\n名副其实地下解密喵，有种探索古墓的代入感。关卡难度适中，不至于一眼解开又恰好在思考之后能找到方向的程度，解开了就很爽😋\n❤️场景很大既是优点也是缺点，虽然很有感觉，但探索的方向不对就要走很多路喵。\n⭐一个多小时左右\n⭐某些关卡需要一点知识储备，了解后就明白去哪了\n⭐某些关卡不适合多人同时解密，不然可能很坐牢。（如果能即时交流会好一些。",
+      "id": "review-3207b33c-2e8b-4158-9ac8-52271c0372e8",
+      "submittedAt": "2026-06-27T07:12:45.568Z",
+      "updatedAt": "2026-06-27T07:12:45.568Z"
+    },
+    {
       "mapId": "map-b6ab47d4-1947-4279-9a8f-546fd56511e3",
       "reviewerName": "月海原由砂",
       "anonymous": false,
@@ -2145,6 +2161,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-3207b33c-2e8b-4158-9ac8-52271c0372e8",
+      "title": "月海原由砂",
+      "detail": "map-a6abb700-46c1-4d61-b588-89384005cd82",
+      "id": "event-cd839045-aa1a-4fb3-a541-f430e5a2f7ee",
+      "timestamp": "2026-06-27T07:12:45.573Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-36f6bdd2-d090-4912-aa2f-58dedf2cdc6c",
       "title": "月海原由砂",
       "detail": "map-b6ab47d4-1947-4279-9a8f-546fd56511e3",
@@ -3560,5 +3584,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-27T06:55:34.404Z"
+  "updatedAt": "2026-06-27T07:12:45.573Z"
 }
