@@ -1,6 +1,20 @@
 {
   "maps": [
     {
+      "coverImage": "/assets/images/1782722847610-_______.png",
+      "previewImage": "",
+      "code": "hizz8z",
+      "type": "解密",
+      "name": "摧毁十二号专列",
+      "author": "Annek",
+      "mappedAt": "2026-06-28",
+      "introduction": "剪刀手的重要任务\n获取炸弹炸毁实验室最后一条地面轨道，防止病毒扩散\n只有一条命 较困难\n最佳体验画质高\n地图很大，伴有解密，没有耐心谨慎游玩，可逃课\nF1查看游戏内帮助\n关卡可以二创请注明出处\n对比解密版本更改了许多必杀点位，但也请勿作死\n群273943977",
+      "estimatedMinutes": 120,
+      "id": "map-1d92ac26-aefd-4f2c-90a0-13eedc44c81c",
+      "submittedAt": "2026-06-29T09:13:58.972Z",
+      "updatedAt": "2026-06-29T09:13:58.972Z"
+    },
+    {
       "coverImage": "/assets/images/1781947124748-QQ__20260620171708.png",
       "previewImage": "",
       "code": "4PETS1",
@@ -2160,6 +2174,14 @@
   ],
   "events": [
     {
+      "kind": "map-create",
+      "subjectId": "map-1d92ac26-aefd-4f2c-90a0-13eedc44c81c",
+      "title": "摧毁十二号专列",
+      "detail": "hizz8z",
+      "id": "event-3f233406-9d1c-4b32-afc8-bba7ddf9e699",
+      "timestamp": "2026-06-29T09:13:58.972Z"
+    },
+    {
       "kind": "review-create",
       "subjectId": "review-3207b33c-2e8b-4158-9ac8-52271c0372e8",
       "title": "月海原由砂",
@@ -3584,5 +3606,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-27T07:12:45.573Z"
+  "updatedAt": "2026-06-29T09:13:58.972Z"
 }
