@@ -1,6 +1,20 @@
 {
   "maps": [
     {
+      "coverImage": "/assets/images/1782724531142-____.png",
+      "previewImage": "",
+      "code": "pivwtn",
+      "type": "解密",
+      "name": "恐怖医院3·0",
+      "author": "诡异泡影",
+      "mappedAt": "2026-06-20",
+      "introduction": "反馈加群1081716058",
+      "estimatedMinutes": 90,
+      "id": "map-c4919e8a-8553-4d5b-a86b-df545ffbc9da",
+      "submittedAt": "2026-06-29T09:15:35.770Z",
+      "updatedAt": "2026-06-29T09:15:35.770Z"
+    },
+    {
       "coverImage": "/assets/images/1782722847610-_______.png",
       "previewImage": "",
       "code": "hizz8z",
@@ -2175,6 +2189,14 @@
   "events": [
     {
       "kind": "map-create",
+      "subjectId": "map-c4919e8a-8553-4d5b-a86b-df545ffbc9da",
+      "title": "恐怖医院3·0",
+      "detail": "pivwtn",
+      "id": "event-c87b9b8c-8970-4fd9-82d7-868372541791",
+      "timestamp": "2026-06-29T09:15:35.770Z"
+    },
+    {
+      "kind": "map-create",
       "subjectId": "map-1d92ac26-aefd-4f2c-90a0-13eedc44c81c",
       "title": "摧毁十二号专列",
       "detail": "hizz8z",
@@ -3606,5 +3628,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-29T09:13:58.972Z"
+  "updatedAt": "2026-06-29T09:15:35.770Z"
 }
