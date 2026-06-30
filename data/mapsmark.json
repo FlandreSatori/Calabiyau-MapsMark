@@ -567,6 +567,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-c4919e8a-8553-4d5b-a86b-df545ffbc9da",
+      "reviewerName": "匿名",
+      "anonymous": true,
+      "ratings": {
+        "entertainment": 5,
+        "aesthetics": 4,
+        "guidance": 4,
+        "difficulty": 4.5,
+        "overall": 5
+      },
+      "comment": "",
+      "id": "review-acfc3953-e3eb-4933-b98a-bf848cbd91be",
+      "submittedAt": "2026-06-30T12:15:18.303Z",
+      "updatedAt": "2026-06-30T12:15:18.303Z"
+    },
+    {
       "mapId": "map-a6abb700-46c1-4d61-b588-89384005cd82",
       "reviewerName": "月海原由砂",
       "anonymous": false,
@@ -2188,6 +2204,14 @@
   ],
   "events": [
     {
+      "kind": "review-create",
+      "subjectId": "review-acfc3953-e3eb-4933-b98a-bf848cbd91be",
+      "title": "匿名",
+      "detail": "map-c4919e8a-8553-4d5b-a86b-df545ffbc9da",
+      "id": "event-38e50ecf-52ff-4810-b9c5-67f1b6e1eca3",
+      "timestamp": "2026-06-30T12:15:18.303Z"
+    },
+    {
       "kind": "map-create",
       "subjectId": "map-c4919e8a-8553-4d5b-a86b-df545ffbc9da",
       "title": "恐怖医院3·0",
@@ -3628,5 +3652,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-29T09:15:35.770Z"
+  "updatedAt": "2026-06-30T12:15:18.303Z"
 }
