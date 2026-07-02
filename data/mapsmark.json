@@ -1,6 +1,20 @@
 {
   "maps": [
     {
+      "coverImage": "/assets/images/1782991793553-2222.png",
+      "previewImage": "",
+      "code": "3eti6v",
+      "type": "解密",
+      "name": "蕾欧娜解密V1",
+      "author": "准心不敢和人对视",
+      "mappedAt": "",
+      "introduction": "蕾欧娜一条命只能放5个方块，同时最多存在16个方块\n除了最后一关每关5方块内都可以过喵。（第三关过不了可以直接跳关，最后一关为线性复合解密，只有最后一关更改了复活点，尽量避免多人同时死亡导致复活点出错）\n8-1的上下层随机开放，上层如果门关上了只能在END房內前往\n小技能可以探草",
+      "estimatedMinutes": 120,
+      "id": "map-b10771bf-14b9-4acd-a05b-d5afd98ecb60",
+      "submittedAt": "2026-07-02T11:32:02.393Z",
+      "updatedAt": "2026-07-02T11:32:02.393Z"
+    },
+    {
       "coverImage": "/assets/images/1782991305632-1111.png",
       "previewImage": "",
       "code": "vstuck",
@@ -2235,6 +2249,14 @@
   "events": [
     {
       "kind": "map-create",
+      "subjectId": "map-b10771bf-14b9-4acd-a05b-d5afd98ecb60",
+      "title": "蕾欧娜解密V1",
+      "detail": "3eti6v",
+      "id": "event-e87dac51-c12d-4d56-951e-285590ca92e1",
+      "timestamp": "2026-07-02T11:32:02.393Z"
+    },
+    {
+      "kind": "map-create",
       "subjectId": "map-b3e103cc-9bfd-4b39-acc4-f46b31a44efc",
       "title": "豆包都能过的解密",
       "detail": "vstuck",
@@ -3698,5 +3720,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-07-02T11:21:49.564Z"
+  "updatedAt": "2026-07-02T11:32:02.393Z"
 }
