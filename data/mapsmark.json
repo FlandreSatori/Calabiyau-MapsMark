@@ -1,6 +1,20 @@
 {
   "maps": [
     {
+      "coverImage": "/assets/images/1782991305632-1111.png",
+      "previewImage": "",
+      "code": "vstuck",
+      "type": "解密",
+      "name": "豆包都能过的解密",
+      "author": "啾啾小鱼儿",
+      "mappedAt": "",
+      "introduction": "",
+      "estimatedMinutes": 120,
+      "id": "map-b3e103cc-9bfd-4b39-acc4-f46b31a44efc",
+      "submittedAt": "2026-07-02T11:21:49.564Z",
+      "updatedAt": "2026-07-02T11:21:49.564Z"
+    },
+    {
       "coverImage": "/assets/images/1782724531142-____.png",
       "previewImage": "",
       "code": "pivwtn",
@@ -2220,6 +2234,14 @@
   ],
   "events": [
     {
+      "kind": "map-create",
+      "subjectId": "map-b3e103cc-9bfd-4b39-acc4-f46b31a44efc",
+      "title": "豆包都能过的解密",
+      "detail": "vstuck",
+      "id": "event-4b919900-eafe-4b71-a3ce-da468e994fe5",
+      "timestamp": "2026-07-02T11:21:49.564Z"
+    },
+    {
       "kind": "review-create",
       "subjectId": "review-40552fbd-2eaa-46f2-b082-ed9bac154733",
       "title": "匿名",
@@ -3676,5 +3698,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-06-30T12:15:48.895Z"
+  "updatedAt": "2026-07-02T11:21:49.564Z"
 }
