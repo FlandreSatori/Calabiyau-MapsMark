@@ -3,13 +3,12 @@
 import { useEffect, useMemo, useState } from "react";
 
 import { AdminLogin } from "@/components/forms";
+import { CopyButton } from "@/components/copy-button";
 import { HistoryList } from "@/components/history-list";
 import { MapEditor } from "@/components/map-editor";
-import { MetricDashboard } from "@/components/metric-dashboard";
 import { notify } from "@/components/toast";
 import type { AppState } from "@/lib/types";
 import { summarizeState } from "@/lib/state-utils";
-import { formatDateTime } from "@/lib/format";
 
 const emptyState: AppState = { maps: [], reviews: [], events: [], updatedAt: new Date().toISOString() };
 
@@ -35,6 +34,43 @@ export default function AdminPage() {
 
     const summary = useMemo(() => summarizeState(state), [state]);
     const [bgInput, setBgInput] = useState("");
+    const [uploadingImage, setUploadingImage] = useState(false);
+    const [uploadedImageUrl, setUploadedImageUrl] = useState("");
+    const [uploadError, setUploadError] = useState("");
+
+    const uploadImage = async (file: File | null) => {
+        if (!file) return;
+        setUploadingImage(true);
+        setUploadError("");
+        try {
+            const dataUrl = await new Promise<string>((resolve, reject) => {
+                const reader = new FileReader();
+                reader.onload = () => resolve(String(reader.result ?? ""));
+                reader.onerror = () => reject(reader.error);
+                reader.readAsDataURL(file);
+            });
+            const base64 = dataUrl.split(",")[1] ?? "";
+            const filename = file.name.replace(/[^a-zA-Z0-9._-]/g, "_");
+            const response = await fetch("/api/upload", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ filename, contentBase64: base64, contentType: file.type || "application/octet-stream" })
+            });
+            const textBody = await response.text();
+            const payload = textBody ? JSON.parse(textBody) : {};
+            if (!response.ok) {
+                throw new Error(payload?.message ?? textBody ?? "上传失败");
+            }
+            setUploadedImageUrl(payload.url ?? "");
+            notify("success", "上传成功", "图片已上传，请复制链接替换地图封面。");
+        } catch (error) {
+            const message = error instanceof Error ? error.message : "上传失败";
+            setUploadError(message);
+            notify("error", "上传失败", message);
+        } finally {
+            setUploadingImage(false);
+        }
+    };
 
     const refresh = async () => {
         const response = await fetch("/api/state", { cache: "no-store" });
@@ -111,23 +147,26 @@ export default function AdminPage() {
 
                 <section className="grid grid-hero">
                     <div className="panel panel-pad">
-                        <p className="section-title">数据概览</p>
-                        <div className="legend-grid">
-                            <div className="legend-row"><span>地图</span><strong>{summary.mapCount}</strong></div>
-                            <div className="legend-row"><span>评价</span><strong>{summary.reviewCount}</strong></div>
-                            <div className="legend-row"><span>最近更新时间</span><strong>{formatDateTime(state.updatedAt)}</strong></div>
-                        </div>
-                        <div style={{ marginTop: 12 }}>
-                            <label className="label">自定义背景（CSS，可填颜色/渐变/rgba）：</label>
-                            <div style={{ display: "flex", gap: 8, alignItems: "center", marginTop: 8 }}>
-                                <input className="input" value={bgInput} onChange={(e) => setBgInput(e.target.value)} placeholder="e.g. rgba(8,12,22,0.6) or linear-gradient(...)" />
-                                <button className="button button-primary" onClick={saveBackground} type="button">保存背景</button>
+                        <p className="section-title">上传图片</p>
+                        <p className="help">返回图片链接地址</p>
+                        <label className="label full">
+                            上传封面图
+                            <input
+                                className="input"
+                                type="file"
+                                accept="image/*"
+                                disabled={uploadingImage}
+                                onChange={(event) => void uploadImage(event.target.files?.[0] ?? null)}
+                            />
+                        </label>
+                        {uploadError ? <p className="help" style={{ color: "#ffb1bb", marginTop: 8 }}>{uploadError}</p> : null}
+                        {uploadedImageUrl ? (
+                            <div className="help" style={{ marginTop: 12, display: "flex", gap: 8, alignItems: "center", flexWrap: "wrap" }}>
+                                <span>图片链接：</span>
+                                <code style={{ wordBreak: "break-all", background: "rgba(255,255,255,0.04)", padding: "6px 10px", borderRadius: 8 }}>{uploadedImageUrl}</code>
+                                <CopyButton value={uploadedImageUrl} label="复制链接" successMessage="图片链接已复制。" />
                             </div>
-                            <div style={{ marginTop: 10 }}>
-                                <div style={{ height: 80, borderRadius: 12, border: "1px solid rgba(255,255,255,0.06)", background: bgInput || "transparent" }} />
-                            </div>
-                        </div>
-                        <MetricDashboard maps={summary.maps} reviews={summary.reviews} />
+                        ) : null}
                     </div>
                     <div className="panel panel-pad">
                         <p className="section-title">历史记录</p>
