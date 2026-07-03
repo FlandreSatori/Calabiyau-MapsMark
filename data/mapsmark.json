@@ -595,6 +595,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-b3e103cc-9bfd-4b39-acc4-f46b31a44efc",
+      "reviewerName": "。。",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 2.4,
+        "aesthetics": 2.7,
+        "guidance": 1.5,
+        "difficulty": 3.2,
+        "overall": 3.2
+      },
+      "comment": "此侧无法开门是什么阴间线索？废话文学这一块。",
+      "id": "review-5d5a86fd-f59b-42e4-bc77-2447fe2e6ab2",
+      "submittedAt": "2026-07-03T11:55:42.989Z",
+      "updatedAt": "2026-07-03T11:55:42.989Z"
+    },
+    {
       "mapId": "map-bbcc37a1-c8f5-4dbd-b4ca-84e4a60bc6df",
       "reviewerName": "一生为令急急哭😭",
       "anonymous": false,
@@ -2280,6 +2296,14 @@
   ],
   "events": [
     {
+      "kind": "review-create",
+      "subjectId": "review-5d5a86fd-f59b-42e4-bc77-2447fe2e6ab2",
+      "title": "。。",
+      "detail": "map-b3e103cc-9bfd-4b39-acc4-f46b31a44efc",
+      "id": "event-81b1f9c0-57f2-41cc-a895-88c1bd53ec24",
+      "timestamp": "2026-07-03T11:55:42.989Z"
+    },
+    {
       "kind": "map-update",
       "subjectId": "map-c4919e8a-8553-4d5b-a86b-df545ffbc9da",
       "title": "编辑地图 恐怖医院6·0",
@@ -3776,5 +3800,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-07-03T08:14:11.259Z"
+  "updatedAt": "2026-07-03T11:55:42.989Z"
 }
