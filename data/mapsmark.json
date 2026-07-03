@@ -29,18 +29,18 @@
       "updatedAt": "2026-07-02T11:21:49.564Z"
     },
     {
-      "coverImage": "/assets/images/1782724531142-____.png",
-      "previewImage": "",
-      "code": "pivwtn",
+      "coverImage": "/assets/images/1783066397542-____60.png",
+      "previewImage": "/assets/images/1782724531142-____.png",
+      "code": "6pq9bt",
       "type": "解密",
-      "name": "恐怖医院3·0",
+      "name": "恐怖医院6·0",
       "author": "诡异泡影",
       "mappedAt": "2026-06-20",
-      "introduction": "反馈加群1081716058",
-      "estimatedMinutes": 90,
+      "introduction": "大更新新增2大楼层，调整部分楼层难度，结局路线大调整，真结局路线将无法使用任何技能一命通关，新增伊维特适合单通游玩。反馈群1081716058",
+      "estimatedMinutes": 120,
       "id": "map-c4919e8a-8553-4d5b-a86b-df545ffbc9da",
       "submittedAt": "2026-06-29T09:15:35.770Z",
-      "updatedAt": "2026-06-29T09:15:35.770Z"
+      "updatedAt": "2026-07-03T08:14:11.259Z"
     },
     {
       "coverImage": "/assets/images/1782722847610-_______.png",
@@ -2280,6 +2280,14 @@
   ],
   "events": [
     {
+      "kind": "map-update",
+      "subjectId": "map-c4919e8a-8553-4d5b-a86b-df545ffbc9da",
+      "title": "编辑地图 恐怖医院6·0",
+      "detail": "6pq9bt",
+      "id": "event-f23459d1-51d7-4637-874b-43ead730e9bc",
+      "timestamp": "2026-07-03T08:14:11.259Z"
+    },
+    {
       "kind": "review-create",
       "subjectId": "review-ffdf935c-70e7-4bb3-949e-e9ede6712ab3",
       "title": "一生为令急急哭😭",
@@ -3768,5 +3776,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-07-03T02:59:55.814Z"
+  "updatedAt": "2026-07-03T08:14:11.259Z"
 }
