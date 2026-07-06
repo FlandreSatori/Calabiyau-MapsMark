@@ -596,6 +596,22 @@
   "reviews": [
     {
       "mapId": "map-b3e103cc-9bfd-4b39-acc4-f46b31a44efc",
+      "reviewerName": "轮椅侦探宅宅👁",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 4,
+        "aesthetics": 3,
+        "guidance": 3.5,
+        "difficulty": 4.4,
+        "overall": 4
+      },
+      "comment": "非常经典的开头风景好！\n然后越造越敷衍（\n\n私货部分美观度较好\n\n蓝火和跑酷环节大幅拉低了趣味度\n\n但总的来说还是具有创新性的解密地图，值得一玩\n（为什么执着于给每个门塞一个无法从这一侧打开但实际上有一个需要从这一侧打开作者的恶意弥散开来了）",
+      "id": "review-6878307e-c095-42e8-be89-a166bc33b43f",
+      "submittedAt": "2026-07-06T01:52:39.336Z",
+      "updatedAt": "2026-07-06T01:52:39.336Z"
+    },
+    {
+      "mapId": "map-b3e103cc-9bfd-4b39-acc4-f46b31a44efc",
       "reviewerName": "。。",
       "anonymous": false,
       "ratings": {
@@ -2296,6 +2312,14 @@
   ],
   "events": [
     {
+      "kind": "review-create",
+      "subjectId": "review-6878307e-c095-42e8-be89-a166bc33b43f",
+      "title": "轮椅侦探宅宅👁",
+      "detail": "map-b3e103cc-9bfd-4b39-acc4-f46b31a44efc",
+      "id": "event-9c3b951e-e8c3-49c3-99c0-7aa1d253867f",
+      "timestamp": "2026-07-06T01:52:39.337Z"
+    },
+    {
       "kind": "map-update",
       "subjectId": "map-fe5db2af-c8de-45c1-af0e-9e0aaf8291fe",
       "title": "编辑地图 Ib想要独自去看看",
@@ -3808,5 +3832,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-07-05T02:51:06.711Z"
+  "updatedAt": "2026-07-06T01:52:39.337Z"
 }
