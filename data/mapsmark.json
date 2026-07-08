@@ -605,6 +605,22 @@
         "difficulty": 5,
         "overall": 5
       },
+      "comment": "小巧思这块你就学吧",
+      "id": "review-61d02f88-b527-435e-8281-557129a5658b",
+      "submittedAt": "2026-07-08T18:01:54.059Z",
+      "updatedAt": "2026-07-08T18:01:54.059Z"
+    },
+    {
+      "mapId": "map-1d92ac26-aefd-4f2c-90a0-13eedc44c81c",
+      "reviewerName": "yemot",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 5,
+        "aesthetics": 5,
+        "guidance": 5,
+        "difficulty": 5,
+        "overall": 5
+      },
       "comment": "",
       "id": "review-c6176291-02e9-4bb9-8524-e837e2342451",
       "submittedAt": "2026-07-08T18:01:18.509Z",
@@ -2361,6 +2377,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-61d02f88-b527-435e-8281-557129a5658b",
+      "title": "yemot",
+      "detail": "map-1d92ac26-aefd-4f2c-90a0-13eedc44c81c",
+      "id": "event-901c5c78-4ac6-4f92-9b10-686675059460",
+      "timestamp": "2026-07-08T18:01:54.059Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-c6176291-02e9-4bb9-8524-e837e2342451",
       "title": "yemot",
       "detail": "map-1d92ac26-aefd-4f2c-90a0-13eedc44c81c",
@@ -3904,5 +3928,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-07-08T18:01:18.509Z"
+  "updatedAt": "2026-07-08T18:01:54.059Z"
 }
