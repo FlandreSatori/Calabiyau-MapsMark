@@ -596,6 +596,22 @@
   "reviews": [
     {
       "mapId": "map-1d92ac26-aefd-4f2c-90a0-13eedc44c81c",
+      "reviewerName": "yemot",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 5,
+        "aesthetics": 5,
+        "guidance": 5,
+        "difficulty": 5,
+        "overall": 5
+      },
+      "comment": "",
+      "id": "review-c6176291-02e9-4bb9-8524-e837e2342451",
+      "submittedAt": "2026-07-08T18:01:18.509Z",
+      "updatedAt": "2026-07-08T18:01:18.509Z"
+    },
+    {
+      "mapId": "map-1d92ac26-aefd-4f2c-90a0-13eedc44c81c",
       "reviewerName": "爱丽丝喵",
       "anonymous": false,
       "ratings": {
@@ -2345,6 +2361,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-c6176291-02e9-4bb9-8524-e837e2342451",
+      "title": "yemot",
+      "detail": "map-1d92ac26-aefd-4f2c-90a0-13eedc44c81c",
+      "id": "event-b26a114a-8cc0-487b-a066-ed814e2cb23f",
+      "timestamp": "2026-07-08T18:01:18.509Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-cb1a9d3e-bd43-4287-ab5f-e16e31dcc34a",
       "title": "爱丽丝喵",
       "detail": "map-1d92ac26-aefd-4f2c-90a0-13eedc44c81c",
@@ -3880,5 +3904,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-07-08T18:00:31.675Z"
+  "updatedAt": "2026-07-08T18:01:18.509Z"
 }
