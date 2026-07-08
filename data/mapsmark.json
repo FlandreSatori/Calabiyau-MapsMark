@@ -596,6 +596,22 @@
   "reviews": [
     {
       "mapId": "map-1d92ac26-aefd-4f2c-90a0-13eedc44c81c",
+      "reviewerName": "爱丽丝喵",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 5,
+        "aesthetics": 5,
+        "guidance": 5,
+        "difficulty": 5,
+        "overall": 5
+      },
+      "comment": "臭牢大喜欢偷偷视奸小猫娘玩喵，坏坏的",
+      "id": "review-cb1a9d3e-bd43-4287-ab5f-e16e31dcc34a",
+      "submittedAt": "2026-07-08T18:00:31.675Z",
+      "updatedAt": "2026-07-08T18:00:31.675Z"
+    },
+    {
+      "mapId": "map-1d92ac26-aefd-4f2c-90a0-13eedc44c81c",
       "reviewerName": "匿名",
       "anonymous": true,
       "ratings": {
@@ -2329,6 +2345,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-cb1a9d3e-bd43-4287-ab5f-e16e31dcc34a",
+      "title": "爱丽丝喵",
+      "detail": "map-1d92ac26-aefd-4f2c-90a0-13eedc44c81c",
+      "id": "event-b5cb9663-8a02-4882-b458-93ddfc15b04f",
+      "timestamp": "2026-07-08T18:00:31.675Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-a4d84dff-8a5f-4ff5-b08f-8f32cd05b12f",
       "title": "匿名",
       "detail": "map-1d92ac26-aefd-4f2c-90a0-13eedc44c81c",
@@ -3856,5 +3880,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-07-08T17:58:39.090Z"
+  "updatedAt": "2026-07-08T18:00:31.675Z"
 }
