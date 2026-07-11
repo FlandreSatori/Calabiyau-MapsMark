@@ -596,6 +596,22 @@
   "reviews": [
     {
       "mapId": "map-fe5db2af-c8de-45c1-af0e-9e0aaf8291fe",
+      "reviewerName": "夜笼星梦舫",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 5,
+        "aesthetics": 3,
+        "guidance": 2.7,
+        "difficulty": 3.8,
+        "overall": 5
+      },
+      "comment": "玩法有趣，提示中等，不建议没玩过但想速通的玩家游玩，总体来说可以一试，不过解密零基础的mmr还是找个会解密的玩伴好些。",
+      "id": "review-dd4bbc80-bf68-4994-b7c2-2c6d567c79aa",
+      "submittedAt": "2026-07-11T10:03:35.176Z",
+      "updatedAt": "2026-07-11T10:03:35.176Z"
+    },
+    {
+      "mapId": "map-fe5db2af-c8de-45c1-af0e-9e0aaf8291fe",
       "reviewerName": "听鲁迅的话",
       "anonymous": false,
       "ratings": {
@@ -2393,6 +2409,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-dd4bbc80-bf68-4994-b7c2-2c6d567c79aa",
+      "title": "夜笼星梦舫",
+      "detail": "map-fe5db2af-c8de-45c1-af0e-9e0aaf8291fe",
+      "id": "event-a692d71a-80ad-472f-9f71-eca54e7e88e1",
+      "timestamp": "2026-07-11T10:03:35.176Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-67e244ab-ce60-4a08-ae79-678937ce699f",
       "title": "听鲁迅的话",
       "detail": "map-fe5db2af-c8de-45c1-af0e-9e0aaf8291fe",
@@ -3952,5 +3976,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-07-11T09:35:45.217Z"
+  "updatedAt": "2026-07-11T10:03:35.176Z"
 }
