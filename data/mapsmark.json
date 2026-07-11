@@ -1,6 +1,20 @@
 {
   "maps": [
     {
+      "coverImage": "/assets/images/1783778306572-_____2026-07-11_215812.png",
+      "previewImage": "",
+      "code": "66e3ux",
+      "type": "解密",
+      "name": "依托答辩解密",
+      "author": "啾啾小鱼儿",
+      "mappedAt": "",
+      "introduction": "",
+      "estimatedMinutes": 120,
+      "id": "map-56705d75-8ab1-4e3e-9eae-74ba5b2e6e5e",
+      "submittedAt": "2026-07-11T13:58:49.744Z",
+      "updatedAt": "2026-07-11T13:58:49.744Z"
+    },
+    {
       "coverImage": "/assets/images/1782991793553-2222.png",
       "previewImage": "",
       "code": "3eti6v",
@@ -2408,6 +2422,14 @@
   ],
   "events": [
     {
+      "kind": "map-create",
+      "subjectId": "map-56705d75-8ab1-4e3e-9eae-74ba5b2e6e5e",
+      "title": "依托答辩解密",
+      "detail": "66e3ux",
+      "id": "event-d3db0b20-ce3b-414c-98ee-0defa4a1ed3c",
+      "timestamp": "2026-07-11T13:58:49.744Z"
+    },
+    {
       "kind": "review-create",
       "subjectId": "review-dd4bbc80-bf68-4994-b7c2-2c6d567c79aa",
       "title": "夜笼星梦舫",
@@ -3976,5 +3998,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-07-11T10:03:35.176Z"
+  "updatedAt": "2026-07-11T13:58:49.744Z"
 }
