@@ -686,7 +686,8 @@
       "comment": "",
       "id": "review-c6176291-02e9-4bb9-8524-e837e2342451",
       "submittedAt": "2026-07-08T18:01:18.509Z",
-      "updatedAt": "2026-07-08T18:01:18.509Z"
+      "updatedAt": "2026-07-11T14:01:41.131Z",
+      "deletedAt": "2026-07-11T14:01:41.131Z"
     },
     {
       "mapId": "map-1d92ac26-aefd-4f2c-90a0-13eedc44c81c",
@@ -2438,6 +2439,14 @@
   ],
   "events": [
     {
+      "kind": "review-delete",
+      "subjectId": "review-c6176291-02e9-4bb9-8524-e837e2342451",
+      "title": "删除评价 yemot",
+      "detail": "map-1d92ac26-aefd-4f2c-90a0-13eedc44c81c",
+      "id": "event-6f306734-9690-40b6-ac1a-7db06aaf1c29",
+      "timestamp": "2026-07-11T14:01:41.131Z"
+    },
+    {
       "kind": "review-create",
       "subjectId": "review-807d5a9b-32c9-4fab-a758-37bc97493389",
       "title": "轮椅侦探宅宅👁",
@@ -4022,5 +4031,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-07-11T14:00:32.649Z"
+  "updatedAt": "2026-07-11T14:01:41.131Z"
 }
