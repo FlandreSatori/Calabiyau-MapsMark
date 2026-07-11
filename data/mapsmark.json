@@ -609,6 +609,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-56705d75-8ab1-4e3e-9eae-74ba5b2e6e5e",
+      "reviewerName": "轮椅侦探宅宅👁",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 0,
+        "aesthetics": 0,
+        "guidance": 0,
+        "difficulty": 0,
+        "overall": 0
+      },
+      "comment": "给第一次游玩的人：\n开头是中中右中左\n\n——————————————\n\n啊哈，我到下架之前都还没通呢，评分将在通关后补齐",
+      "id": "review-807d5a9b-32c9-4fab-a758-37bc97493389",
+      "submittedAt": "2026-07-11T14:00:32.649Z",
+      "updatedAt": "2026-07-11T14:00:32.649Z"
+    },
+    {
       "mapId": "map-fe5db2af-c8de-45c1-af0e-9e0aaf8291fe",
       "reviewerName": "夜笼星梦舫",
       "anonymous": false,
@@ -2422,6 +2438,14 @@
   ],
   "events": [
     {
+      "kind": "review-create",
+      "subjectId": "review-807d5a9b-32c9-4fab-a758-37bc97493389",
+      "title": "轮椅侦探宅宅👁",
+      "detail": "map-56705d75-8ab1-4e3e-9eae-74ba5b2e6e5e",
+      "id": "event-9d4c1026-2e8e-434c-abb7-b82ab42e6765",
+      "timestamp": "2026-07-11T14:00:32.649Z"
+    },
+    {
       "kind": "map-create",
       "subjectId": "map-56705d75-8ab1-4e3e-9eae-74ba5b2e6e5e",
       "title": "依托答辩解密",
@@ -3998,5 +4022,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-07-11T13:58:49.744Z"
+  "updatedAt": "2026-07-11T14:00:32.649Z"
 }
