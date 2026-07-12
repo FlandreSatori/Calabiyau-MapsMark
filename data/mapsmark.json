@@ -610,6 +610,22 @@
   "reviews": [
     {
       "mapId": "map-56705d75-8ab1-4e3e-9eae-74ba5b2e6e5e",
+      "reviewerName": "AAA卡丘解密大王批发",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 2.5,
+        "aesthetics": 3.1,
+        "guidance": 1.5,
+        "difficulty": 2,
+        "overall": 3.8
+      },
+      "comment": "作为新人的第一张地图，应给予鼓励。地图上来并不需要用死来探路，利用第三人称视角可以观察非相邻的洞口是否有火焰；算数那一关设置了误导项，对新人可能不太友好，其余都是常规探索与解密。总之可以一玩喵。啾啾小鱼儿是奇爷喵，解密圈最强战力喵，好厉害喵。",
+      "id": "review-c9bfb1a7-dbac-4472-81bc-2a67648b1a15",
+      "submittedAt": "2026-07-12T08:30:20.379Z",
+      "updatedAt": "2026-07-12T08:30:20.379Z"
+    },
+    {
+      "mapId": "map-56705d75-8ab1-4e3e-9eae-74ba5b2e6e5e",
       "reviewerName": "轮椅侦探宅宅👁",
       "anonymous": false,
       "ratings": {
@@ -2439,6 +2455,14 @@
   ],
   "events": [
     {
+      "kind": "review-create",
+      "subjectId": "review-c9bfb1a7-dbac-4472-81bc-2a67648b1a15",
+      "title": "AAA卡丘解密大王批发",
+      "detail": "map-56705d75-8ab1-4e3e-9eae-74ba5b2e6e5e",
+      "id": "event-cd4beee5-8130-44f5-aa96-3d1cfc2b818e",
+      "timestamp": "2026-07-12T08:30:20.379Z"
+    },
+    {
       "kind": "review-delete",
       "subjectId": "review-c6176291-02e9-4bb9-8524-e837e2342451",
       "title": "删除评价 yemot",
@@ -4031,5 +4055,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-07-11T14:01:41.131Z"
+  "updatedAt": "2026-07-12T08:30:20.379Z"
 }
