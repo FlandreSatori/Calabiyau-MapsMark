@@ -624,6 +624,22 @@
   "reviews": [
     {
       "mapId": "map-3584eb29-7a31-43c2-a6f7-c150e943daaf",
+      "reviewerName": "语夏",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 4.8,
+        "aesthetics": 4.6,
+        "guidance": 4,
+        "difficulty": 1.8,
+        "overall": 4.6
+      },
+      "comment": "好玩，不难，有利于玩家快速上手习惯诺诺的三连跳",
+      "id": "review-dc1bdee5-da81-440e-b37c-fcfaba442643",
+      "submittedAt": "2026-07-21T08:37:54.194Z",
+      "updatedAt": "2026-07-21T08:37:54.194Z"
+    },
+    {
+      "mapId": "map-3584eb29-7a31-43c2-a6f7-c150e943daaf",
       "reviewerName": "匿名",
       "anonymous": true,
       "ratings": {
@@ -2534,6 +2550,14 @@
   ],
   "events": [
     {
+      "kind": "review-create",
+      "subjectId": "review-dc1bdee5-da81-440e-b37c-fcfaba442643",
+      "title": "语夏",
+      "detail": "map-3584eb29-7a31-43c2-a6f7-c150e943daaf",
+      "id": "event-269128b5-ff26-4b33-8b0b-e9e4ee70ac2c",
+      "timestamp": "2026-07-21T08:37:54.194Z"
+    },
+    {
       "kind": "review-delete",
       "subjectId": "review-e4314f99-50cb-4496-821c-4aa0ad43940b",
       "title": "删除评价 前期死了得重来好折磨喵，而且为什么我出图之后不能跳关喵没找到进关卡的入口喵，没有快速跳关通道喵",
@@ -4182,5 +4206,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-07-21T08:34:20.915Z"
+  "updatedAt": "2026-07-21T08:37:54.194Z"
 }
