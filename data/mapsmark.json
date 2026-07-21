@@ -668,7 +668,8 @@
       "comment": "",
       "id": "review-e4314f99-50cb-4496-821c-4aa0ad43940b",
       "submittedAt": "2026-07-21T07:27:13.478Z",
-      "updatedAt": "2026-07-21T07:27:13.478Z"
+      "updatedAt": "2026-07-21T08:34:20.914Z",
+      "deletedAt": "2026-07-21T08:34:20.914Z"
     },
     {
       "mapId": "map-387ee9e3-5c38-46b9-9aea-257b68844c4d",
@@ -2533,6 +2534,14 @@
   ],
   "events": [
     {
+      "kind": "review-delete",
+      "subjectId": "review-e4314f99-50cb-4496-821c-4aa0ad43940b",
+      "title": "删除评价 前期死了得重来好折磨喵，而且为什么我出图之后不能跳关喵没找到进关卡的入口喵，没有快速跳关通道喵",
+      "detail": "map-3584eb29-7a31-43c2-a6f7-c150e943daaf",
+      "id": "event-d6922dfe-bb88-40fb-9be3-e21caf3cb671",
+      "timestamp": "2026-07-21T08:34:20.915Z"
+    },
+    {
       "kind": "review-create",
       "subjectId": "review-394b9be2-089b-43fb-bba5-ee9f0cbe886a",
       "title": "匿名",
@@ -4173,5 +4182,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-07-21T08:32:08.334Z"
+  "updatedAt": "2026-07-21T08:34:20.915Z"
 }
