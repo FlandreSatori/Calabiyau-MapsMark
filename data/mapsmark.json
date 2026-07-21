@@ -624,6 +624,22 @@
   "reviews": [
     {
       "mapId": "map-3584eb29-7a31-43c2-a6f7-c150e943daaf",
+      "reviewerName": "匿名",
+      "anonymous": true,
+      "ratings": {
+        "entertainment": 5,
+        "aesthetics": 5,
+        "guidance": 5,
+        "difficulty": 5,
+        "overall": 5
+      },
+      "comment": "！？诺诺？！",
+      "id": "review-394b9be2-089b-43fb-bba5-ee9f0cbe886a",
+      "submittedAt": "2026-07-21T08:32:08.334Z",
+      "updatedAt": "2026-07-21T08:32:08.334Z"
+    },
+    {
+      "mapId": "map-3584eb29-7a31-43c2-a6f7-c150e943daaf",
       "reviewerName": "前期死了得重来好折磨喵，而且为什么我出图之后不能跳关喵没找到进关卡的入口喵，没有快速跳关通道喵",
       "anonymous": false,
       "ratings": {
@@ -2518,6 +2534,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-394b9be2-089b-43fb-bba5-ee9f0cbe886a",
+      "title": "匿名",
+      "detail": "map-3584eb29-7a31-43c2-a6f7-c150e943daaf",
+      "id": "event-1861c756-8f82-4005-951f-a1aa7563ab8e",
+      "timestamp": "2026-07-21T08:32:08.334Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-586727d2-c4f7-4854-b0c0-bfd1a97881fa",
       "title": "前期死了得重来好折磨喵，而且为什么我出图之后不能跳关喵没找到进关卡的入口喵，没有快速跳关通道喵",
       "detail": "map-3584eb29-7a31-43c2-a6f7-c150e943daaf",
@@ -4149,5 +4173,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-07-21T08:30:48.530Z"
+  "updatedAt": "2026-07-21T08:32:08.334Z"
 }
