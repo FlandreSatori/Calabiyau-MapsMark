@@ -1,6 +1,20 @@
 {
   "maps": [
     {
+      "coverImage": "/assets/images/1784618103339-3465512683.png",
+      "previewImage": "",
+      "code": "jp4rth",
+      "type": "解密",
+      "name": "！？诺诺？！",
+      "author": "古明地小五",
+      "mappedAt": "2026-07-21",
+      "introduction": "没时间加新关卡了喵，将就一下喵！",
+      "estimatedMinutes": 60,
+      "id": "map-3584eb29-7a31-43c2-a6f7-c150e943daaf",
+      "submittedAt": "2026-07-21T07:15:05.602Z",
+      "updatedAt": "2026-07-21T07:15:05.602Z"
+    },
+    {
       "coverImage": "/assets/images/1783778306572-_____2026-07-11_215812.png",
       "previewImage": "",
       "code": "66e3ux",
@@ -2471,6 +2485,14 @@
   ],
   "events": [
     {
+      "kind": "map-create",
+      "subjectId": "map-3584eb29-7a31-43c2-a6f7-c150e943daaf",
+      "title": "！？诺诺？！",
+      "detail": "jp4rth",
+      "id": "event-3c2b9aba-38c1-4781-92c3-e77b17eda08a",
+      "timestamp": "2026-07-21T07:15:05.602Z"
+    },
+    {
       "kind": "review-create",
       "subjectId": "review-b909abd3-3752-4650-961e-296dd4142977",
       "title": "猪",
@@ -4079,5 +4101,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-07-14T10:51:46.934Z"
+  "updatedAt": "2026-07-21T07:15:05.602Z"
 }
