@@ -624,6 +624,22 @@
   "reviews": [
     {
       "mapId": "map-3584eb29-7a31-43c2-a6f7-c150e943daaf",
+      "reviewerName": "追加评论",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 0,
+        "aesthetics": 0,
+        "guidance": 0,
+        "difficulty": 0,
+        "overall": 0
+      },
+      "comment": "地图名看不出来是什么类型的图，想玩解谜的不清楚，不想玩的反而容易误入",
+      "id": "review-91fbdbb3-3589-4f3a-9f55-9ca2a83a9af5",
+      "submittedAt": "2026-07-25T04:13:37.617Z",
+      "updatedAt": "2026-07-25T04:13:37.617Z"
+    },
+    {
+      "mapId": "map-3584eb29-7a31-43c2-a6f7-c150e943daaf",
       "reviewerName": "令令别怕，这是生物防痔",
       "anonymous": false,
       "ratings": {
@@ -2567,6 +2583,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-91fbdbb3-3589-4f3a-9f55-9ca2a83a9af5",
+      "title": "追加评论",
+      "detail": "map-3584eb29-7a31-43c2-a6f7-c150e943daaf",
+      "id": "event-c78dabfa-8634-4746-9105-859c8f5a8c6f",
+      "timestamp": "2026-07-25T04:13:37.617Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-ac3a60e8-c874-4f81-a822-fcd1016d9332",
       "title": "令令别怕，这是生物防痔",
       "detail": "map-3584eb29-7a31-43c2-a6f7-c150e943daaf",
@@ -4230,5 +4254,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-07-24T08:48:15.382Z"
+  "updatedAt": "2026-07-25T04:13:37.617Z"
 }
