@@ -3,7 +3,7 @@
     {
       "coverImage": "/assets/images/1784618103339-3465512683.png",
       "previewImage": "",
-      "code": "hsouc2",
+      "code": "sjwee0",
       "type": "解密",
       "name": "！？诺诺？！",
       "author": "古明地小五",
@@ -12,7 +12,7 @@
       "estimatedMinutes": 60,
       "id": "map-3584eb29-7a31-43c2-a6f7-c150e943daaf",
       "submittedAt": "2026-07-21T07:15:05.602Z",
-      "updatedAt": "2026-07-26T03:25:50.240Z"
+      "updatedAt": "2026-07-26T06:24:05.401Z"
     },
     {
       "coverImage": "/assets/images/1783778306572-_____2026-07-11_215812.png",
@@ -2585,6 +2585,14 @@
       "kind": "map-update",
       "subjectId": "map-3584eb29-7a31-43c2-a6f7-c150e943daaf",
       "title": "编辑地图 ！？诺诺？！",
+      "detail": "sjwee0",
+      "id": "event-62146c74-7818-4c7b-905e-73a6bbabe64d",
+      "timestamp": "2026-07-26T06:24:05.401Z"
+    },
+    {
+      "kind": "map-update",
+      "subjectId": "map-3584eb29-7a31-43c2-a6f7-c150e943daaf",
+      "title": "编辑地图 ！？诺诺？！",
       "detail": "hsouc2",
       "id": "event-0c3e61ba-aa9c-48ba-976e-b913059869f3",
       "timestamp": "2026-07-26T03:25:50.240Z"
@@ -4262,5 +4270,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-07-26T03:25:50.240Z"
+  "updatedAt": "2026-07-26T06:24:05.401Z"
 }
