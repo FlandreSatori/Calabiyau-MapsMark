@@ -3,16 +3,16 @@
     {
       "coverImage": "/assets/images/1784618103339-3465512683.png",
       "previewImage": "",
-      "code": "jp4rth",
+      "code": "hsouc2",
       "type": "解密",
       "name": "！？诺诺？！",
       "author": "古明地小五",
       "mappedAt": "2026-07-21",
-      "introduction": "没时间加新关卡了喵，将就一下喵！",
+      "introduction": "没时间加新关卡了喵，将就一下喵！\n7.26 添加了一些引导",
       "estimatedMinutes": 60,
       "id": "map-3584eb29-7a31-43c2-a6f7-c150e943daaf",
       "submittedAt": "2026-07-21T07:15:05.602Z",
-      "updatedAt": "2026-07-21T07:15:05.602Z"
+      "updatedAt": "2026-07-26T03:25:50.240Z"
     },
     {
       "coverImage": "/assets/images/1783778306572-_____2026-07-11_215812.png",
@@ -2582,6 +2582,14 @@
   ],
   "events": [
     {
+      "kind": "map-update",
+      "subjectId": "map-3584eb29-7a31-43c2-a6f7-c150e943daaf",
+      "title": "编辑地图 ！？诺诺？！",
+      "detail": "hsouc2",
+      "id": "event-0c3e61ba-aa9c-48ba-976e-b913059869f3",
+      "timestamp": "2026-07-26T03:25:50.240Z"
+    },
+    {
       "kind": "review-create",
       "subjectId": "review-91fbdbb3-3589-4f3a-9f55-9ca2a83a9af5",
       "title": "追加评论",
@@ -4254,5 +4262,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-07-25T04:13:37.617Z"
+  "updatedAt": "2026-07-26T03:25:50.240Z"
 }
