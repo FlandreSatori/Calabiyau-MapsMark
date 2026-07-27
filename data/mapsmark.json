@@ -1,6 +1,20 @@
 {
   "maps": [
     {
+      "coverImage": "/assets/images/1785129209601-Snipaste_2026-07-27_13-13-18.png",
+      "previewImage": "",
+      "code": "cdkexn",
+      "type": "解密",
+      "name": "绝密研究所2·0",
+      "author": "诡异泡影",
+      "mappedAt": "2026-07-21",
+      "introduction": "已修复大量bug，发现新bug请加群反馈1081716058。\n各种结局达成条件\n1回收结局：通关即可\n2拯救结局：正确开启1号2号实验罐，拯救隐藏npc【不是科琳娜】即可\n3救世结局：达成以上全部条件后摧毁5号样本获得密钥，开启第7层后通关即可",
+      "estimatedMinutes": 360,
+      "id": "map-708d848c-71ad-4336-b2fd-2b83d0f4b069",
+      "submittedAt": "2026-07-27T05:14:54.023Z",
+      "updatedAt": "2026-07-27T05:14:54.023Z"
+    },
+    {
       "coverImage": "/assets/images/1784618103339-3465512683.png",
       "previewImage": "",
       "code": "sjwee0",
@@ -2582,6 +2596,14 @@
   ],
   "events": [
     {
+      "kind": "map-create",
+      "subjectId": "map-708d848c-71ad-4336-b2fd-2b83d0f4b069",
+      "title": "绝密研究所2·0",
+      "detail": "cdkexn",
+      "id": "event-37b0daf0-fc7d-4c25-b5a2-b9bc53483b5b",
+      "timestamp": "2026-07-27T05:14:54.023Z"
+    },
+    {
       "kind": "map-update",
       "subjectId": "map-3584eb29-7a31-43c2-a6f7-c150e943daaf",
       "title": "编辑地图 ！？诺诺？！",
@@ -4270,5 +4292,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-07-26T06:24:05.401Z"
+  "updatedAt": "2026-07-27T05:14:54.023Z"
 }
