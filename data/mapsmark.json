@@ -638,6 +638,22 @@
   "reviews": [
     {
       "mapId": "map-3584eb29-7a31-43c2-a6f7-c150e943daaf",
+      "reviewerName": "喵猫",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 4.5,
+        "aesthetics": 5,
+        "guidance": 3,
+        "difficulty": 3,
+        "overall": 4
+      },
+      "comment": "新版打墙的那条路走不通了，能打的所有的都打了，剩下的清空三轮弹夹都打不掉，时间也不够了，只能走防御塔那一侧出去",
+      "id": "review-24de6761-9ef4-4b11-8dc2-f19e61e61910",
+      "submittedAt": "2026-07-29T19:10:45.348Z",
+      "updatedAt": "2026-07-29T19:10:45.348Z"
+    },
+    {
+      "mapId": "map-3584eb29-7a31-43c2-a6f7-c150e943daaf",
       "reviewerName": "追加评论",
       "anonymous": false,
       "ratings": {
@@ -2596,6 +2612,14 @@
   ],
   "events": [
     {
+      "kind": "review-create",
+      "subjectId": "review-24de6761-9ef4-4b11-8dc2-f19e61e61910",
+      "title": "喵猫",
+      "detail": "map-3584eb29-7a31-43c2-a6f7-c150e943daaf",
+      "id": "event-decee21a-a975-4a98-898d-79d217a5bf7d",
+      "timestamp": "2026-07-29T19:10:45.348Z"
+    },
+    {
       "kind": "map-create",
       "subjectId": "map-708d848c-71ad-4336-b2fd-2b83d0f4b069",
       "title": "绝密研究所2·0",
@@ -4292,5 +4316,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-07-27T05:14:54.023Z"
+  "updatedAt": "2026-07-29T19:10:45.348Z"
 }
