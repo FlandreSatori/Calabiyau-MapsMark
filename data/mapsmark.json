@@ -637,6 +637,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-3584eb29-7a31-43c2-a6f7-c150e943daaf",
+      "reviewerName": "AAA卡丘解密批发大王",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 4,
+        "aesthetics": 2.5,
+        "guidance": 2.5,
+        "difficulty": 2,
+        "overall": 3.4
+      },
+      "comment": "不喜欢timer =  . =\n在测试服就卷出来的地图，太可恶了喵\n顶一下小五喵",
+      "id": "review-6bed9958-7bfe-4c6a-9a71-2754963f700d",
+      "submittedAt": "2026-07-31T14:15:38.528Z",
+      "updatedAt": "2026-07-31T14:15:38.528Z"
+    },
+    {
       "mapId": "map-0cc4bcd8-81d6-4028-84b7-b197c6c92ef8",
       "reviewerName": "匿名",
       "anonymous": true,
@@ -2629,6 +2645,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-6bed9958-7bfe-4c6a-9a71-2754963f700d",
+      "title": "AAA卡丘解密批发大王",
+      "detail": "map-3584eb29-7a31-43c2-a6f7-c150e943daaf",
+      "id": "event-70b3309c-0a51-49e3-ba08-3313af57c5f3",
+      "timestamp": "2026-07-31T14:15:38.528Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-bee24794-7a9d-4a9f-8461-71e7ae58acf3",
       "title": "匿名",
       "detail": "map-0cc4bcd8-81d6-4028-84b7-b197c6c92ef8",
@@ -4340,5 +4364,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-07-30T15:20:48.107Z"
+  "updatedAt": "2026-07-31T14:15:38.528Z"
 }
