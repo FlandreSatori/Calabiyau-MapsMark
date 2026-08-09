@@ -17,16 +17,16 @@
     {
       "coverImage": "/assets/images/1784618103339-3465512683.png",
       "previewImage": "",
-      "code": "sjwee0",
+      "code": "qyeb0j",
       "type": "解密",
       "name": "！？诺诺？！",
       "author": "古明地小五",
       "mappedAt": "2026-07-21",
-      "introduction": "没时间加新关卡了喵，将就一下喵！\n7.26 添加了一些引导",
+      "introduction": "新增了引导和存档点，降低了难度\n——————————————————\n地图反馈 klbq.lolser.fun",
       "estimatedMinutes": 60,
       "id": "map-3584eb29-7a31-43c2-a6f7-c150e943daaf",
       "submittedAt": "2026-07-21T07:15:05.602Z",
-      "updatedAt": "2026-07-26T06:24:05.401Z"
+      "updatedAt": "2026-08-09T09:46:07.227Z"
     },
     {
       "coverImage": "/assets/images/1783778306572-_____2026-07-11_215812.png",
@@ -2644,6 +2644,14 @@
   ],
   "events": [
     {
+      "kind": "map-update",
+      "subjectId": "map-3584eb29-7a31-43c2-a6f7-c150e943daaf",
+      "title": "编辑地图 ！？诺诺？！",
+      "detail": "qyeb0j",
+      "id": "event-d7ad739a-40de-431f-a143-f6c55d1a6471",
+      "timestamp": "2026-08-09T09:46:07.227Z"
+    },
+    {
       "kind": "review-create",
       "subjectId": "review-6bed9958-7bfe-4c6a-9a71-2754963f700d",
       "title": "AAA卡丘解密批发大王",
@@ -4364,5 +4372,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-07-31T14:15:38.528Z"
+  "updatedAt": "2026-08-09T09:46:07.227Z"
 }
