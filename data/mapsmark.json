@@ -1,6 +1,20 @@
 {
   "maps": [
     {
+      "coverImage": "/assets/images/1786607065903-Snipaste_2026-08-13_15-44-15.png",
+      "previewImage": "",
+      "code": "l9zx1v",
+      "type": "解密",
+      "name": "欧泊的奇妙冒险",
+      "author": "准心不敢和人对视",
+      "mappedAt": "2026-08-12",
+      "introduction": "有概率出BUG（远离机关等一会能解决部分BUG）\n小心自动门吃人（）",
+      "estimatedMinutes": 240,
+      "id": "map-2fc6a6a5-7c40-44ad-97e6-3e5b37bd5294",
+      "submittedAt": "2026-08-13T07:44:35.345Z",
+      "updatedAt": "2026-08-13T07:44:35.345Z"
+    },
+    {
       "coverImage": "/assets/images/1785129209601-Snipaste_2026-07-27_13-13-18.png",
       "previewImage": "",
       "code": "cdkexn",
@@ -2644,6 +2658,14 @@
   ],
   "events": [
     {
+      "kind": "map-create",
+      "subjectId": "map-2fc6a6a5-7c40-44ad-97e6-3e5b37bd5294",
+      "title": "欧泊的奇妙冒险",
+      "detail": "l9zx1v",
+      "id": "event-697169b1-6540-4795-bfef-7ee2f2089428",
+      "timestamp": "2026-08-13T07:44:35.345Z"
+    },
+    {
       "kind": "map-update",
       "subjectId": "map-3584eb29-7a31-43c2-a6f7-c150e943daaf",
       "title": "编辑地图 ！？诺诺？！",
@@ -4372,5 +4394,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-08-09T09:46:07.227Z"
+  "updatedAt": "2026-08-13T07:44:35.345Z"
 }
