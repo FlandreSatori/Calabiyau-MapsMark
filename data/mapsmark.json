@@ -651,6 +651,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-53804f28-d922-4fe3-9c54-650931cb22b0",
+      "reviewerName": "匿名",
+      "anonymous": true,
+      "ratings": {
+        "entertainment": 5,
+        "aesthetics": 5,
+        "guidance": 5,
+        "difficulty": 5,
+        "overall": 5
+      },
+      "comment": "",
+      "id": "review-fda6c694-03cd-4665-bb3a-7728cee655a4",
+      "submittedAt": "2026-08-16T12:12:57.743Z",
+      "updatedAt": "2026-08-16T12:12:57.743Z"
+    },
+    {
       "mapId": "map-3584eb29-7a31-43c2-a6f7-c150e943daaf",
       "reviewerName": "AAA卡丘解密批发大王",
       "anonymous": false,
@@ -2658,6 +2674,14 @@
   ],
   "events": [
     {
+      "kind": "review-create",
+      "subjectId": "review-fda6c694-03cd-4665-bb3a-7728cee655a4",
+      "title": "匿名",
+      "detail": "map-53804f28-d922-4fe3-9c54-650931cb22b0",
+      "id": "event-5427434e-7c82-487f-b2a3-3c5cb70cfce9",
+      "timestamp": "2026-08-16T12:12:57.744Z"
+    },
+    {
       "kind": "map-create",
       "subjectId": "map-2fc6a6a5-7c40-44ad-97e6-3e5b37bd5294",
       "title": "欧泊的奇妙冒险",
@@ -4394,5 +4418,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-08-13T07:44:35.345Z"
+  "updatedAt": "2026-08-16T12:12:57.744Z"
 }
