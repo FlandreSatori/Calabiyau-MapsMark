@@ -1,6 +1,20 @@
 {
   "maps": [
     {
+      "coverImage": "/assets/images/1787312236785-Snipaste_2026-08-21_19-36-58.png",
+      "previewImage": "",
+      "code": "d9ne0t",
+      "type": "解密",
+      "name": "什么构思解密喵V4",
+      "author": " 鸮FST喵",
+      "mappedAt": "2025-12-15",
+      "introduction": "",
+      "estimatedMinutes": 60,
+      "id": "map-5350e3bf-146e-4a25-ae09-050d15c5f254",
+      "submittedAt": "2026-08-21T11:37:50.944Z",
+      "updatedAt": "2026-08-21T11:37:50.944Z"
+    },
+    {
       "coverImage": "/assets/images/1786607065903-Snipaste_2026-08-13_15-44-15.png",
       "previewImage": "",
       "code": "l9zx1v",
@@ -2658,6 +2672,14 @@
   ],
   "events": [
     {
+      "kind": "map-create",
+      "subjectId": "map-5350e3bf-146e-4a25-ae09-050d15c5f254",
+      "title": "什么构思解密喵V4",
+      "detail": "d9ne0t",
+      "id": "event-8905d51c-bc98-4741-935e-899a0ea61107",
+      "timestamp": "2026-08-21T11:37:50.944Z"
+    },
+    {
       "kind": "review-create",
       "subjectId": "review-fda6c694-03cd-4665-bb3a-7728cee655a4",
       "title": "匿名",
@@ -4402,5 +4424,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-08-16T12:12:57.744Z"
+  "updatedAt": "2026-08-21T11:37:50.944Z"
 }
