@@ -1,6 +1,20 @@
 {
   "maps": [
     {
+      "coverImage": "/assets/images/1787325794540-9ffff773e0524ef6f45aaec2c57c18bf.png",
+      "previewImage": "/assets/images/1787326061343-QQ_1787321631855.png",
+      "code": "b58b8v",
+      "type": "解密",
+      "name": "卡丘最最最难解密2.0",
+      "author": "B站晓不晓",
+      "mappedAt": "",
+      "introduction": "别笑，你也过不了第二关。\n这个版本为单人加双人DLC，现已修改为可正常通关。\n游戏内按F1查看地图提示。\n地图由 晓不晓19 & 空蝶猫 共同制作。",
+      "estimatedMinutes": 15,
+      "id": "map-0877b4a3-f7e0-421f-8891-93c8f8564ad8",
+      "submittedAt": "2026-08-21T15:27:45.735Z",
+      "updatedAt": "2026-08-21T15:27:45.735Z"
+    },
+    {
       "coverImage": "/assets/images/1787312236785-Snipaste_2026-08-21_19-36-58.png",
       "previewImage": "",
       "code": "d9ne0t",
@@ -2673,6 +2687,14 @@
   "events": [
     {
       "kind": "map-create",
+      "subjectId": "map-0877b4a3-f7e0-421f-8891-93c8f8564ad8",
+      "title": "卡丘最最最难解密2.0",
+      "detail": "b58b8v",
+      "id": "event-59b6bddb-c538-4de5-8d80-5c0b7670ed5d",
+      "timestamp": "2026-08-21T15:27:45.735Z"
+    },
+    {
+      "kind": "map-create",
       "subjectId": "map-5350e3bf-146e-4a25-ae09-050d15c5f254",
       "title": "什么构思解密喵V4",
       "detail": "d9ne0t",
@@ -4424,5 +4446,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-08-21T11:37:50.944Z"
+  "updatedAt": "2026-08-21T15:27:45.735Z"
 }
