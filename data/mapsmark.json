@@ -677,6 +677,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-0877b4a3-f7e0-421f-8891-93c8f8564ad8",
+      "reviewerName": "匿名",
+      "anonymous": true,
+      "ratings": {
+        "entertainment": 5,
+        "aesthetics": 5,
+        "guidance": 5,
+        "difficulty": 5,
+        "overall": 5
+      },
+      "comment": "",
+      "id": "review-da01bcba-8aee-4697-b805-1398a702c849",
+      "submittedAt": "2026-08-21T15:35:12.896Z",
+      "updatedAt": "2026-08-21T15:35:12.896Z"
+    },
+    {
       "mapId": "map-53804f28-d922-4fe3-9c54-650931cb22b0",
       "reviewerName": "匿名",
       "anonymous": true,
@@ -2700,6 +2716,14 @@
   ],
   "events": [
     {
+      "kind": "review-create",
+      "subjectId": "review-da01bcba-8aee-4697-b805-1398a702c849",
+      "title": "匿名",
+      "detail": "map-0877b4a3-f7e0-421f-8891-93c8f8564ad8",
+      "id": "event-fa40d899-0300-42cc-bfa6-6d6ccfe00ade",
+      "timestamp": "2026-08-21T15:35:12.896Z"
+    },
+    {
       "kind": "map-create",
       "subjectId": "map-1cfb0a35-041b-46fc-b469-fa99e84d80f7",
       "title": "卡丘最最最难解密2.0",
@@ -4468,5 +4492,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-08-21T15:33:51.053Z"
+  "updatedAt": "2026-08-21T15:35:12.896Z"
 }
