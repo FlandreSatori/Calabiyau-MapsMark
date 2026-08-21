@@ -169,22 +169,6 @@
       "updatedAt": "2026-06-15T22:46:02.984Z"
     },
     {
-      "coverImage": "/assets/images/1780652153706-scrp.png",
-      "previewImage": "",
-      "code": "6up3al",
-      "type": "解密",
-      "name": "答辩依托解密",
-      "author": "啾啾小鱼儿",
-      "mappedAt": "",
-      "introduction": "",
-      "estimatedMinutes": 60,
-      "id": "map-b009edd9-7806-4281-beb3-41700e740419",
-      "submittedAt": "2026-06-05T09:36:30.181Z",
-      "updatedAt": "2026-06-11T15:13:31.818Z",
-      "customCoverImage": "https://pic1.imgdb.cn/item/6a2ad06afdb1c84b8401a875.jpg",
-      "customPreviewImage": ""
-    },
-    {
       "coverImage": "/assets/images/1780239561085-____.png",
       "previewImage": "",
       "code": "48gy1q",
@@ -1693,7 +1677,7 @@
       "updatedAt": "2026-06-15T18:14:43.145Z"
     },
     {
-      "mapId": "map-b009edd9-7806-4281-beb3-41700e740419",
+      "mapId": "map-56705d75-8ab1-4e3e-9eae-74ba5b2e6e5e",
       "reviewerName": "这里是JM（解密）天堂吗？",
       "anonymous": false,
       "ratings": {
@@ -2351,7 +2335,7 @@
       "updatedAt": "2026-06-12T14:00:12.477Z"
     },
     {
-      "mapId": "map-b009edd9-7806-4281-beb3-41700e740419",
+      "mapId": "map-56705d75-8ab1-4e3e-9eae-74ba5b2e6e5e",
       "reviewerName": "弦化猫",
       "anonymous": false,
       "ratings": {
