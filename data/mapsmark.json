@@ -1,6 +1,20 @@
 {
   "maps": [
     {
+      "coverImage": "/assets/images/1787326416834-9ffff773e0524ef6f45aaec2c57c18bf.png",
+      "previewImage": "/assets/images/1787326423191-125b4e7a-3dc0-4f27-8ba6-d471b927f2ad.png",
+      "code": "b58b8v",
+      "type": "解密",
+      "name": "卡丘最最最难解密2.0",
+      "author": "B站晓不晓19",
+      "mappedAt": "",
+      "introduction": "别笑，你也过不了第二关。\n这个版本为单人加双人DLC，现已修改为可正常通关。\n游戏内按F1查看地图提示。\n地图由 晓不晓19 & 空蝶猫 共同制作。",
+      "estimatedMinutes": 15,
+      "id": "map-1cfb0a35-041b-46fc-b469-fa99e84d80f7",
+      "submittedAt": "2026-08-21T15:33:51.053Z",
+      "updatedAt": "2026-08-21T15:33:51.053Z"
+    },
+    {
       "coverImage": "/assets/images/1787325794540-9ffff773e0524ef6f45aaec2c57c18bf.png",
       "previewImage": "/assets/images/1787326061343-QQ_1787321631855.png",
       "code": "b58b8v",
@@ -2687,6 +2701,14 @@
   "events": [
     {
       "kind": "map-create",
+      "subjectId": "map-1cfb0a35-041b-46fc-b469-fa99e84d80f7",
+      "title": "卡丘最最最难解密2.0",
+      "detail": "b58b8v",
+      "id": "event-f212f20c-5417-49bc-8523-77d9060cf25d",
+      "timestamp": "2026-08-21T15:33:51.053Z"
+    },
+    {
+      "kind": "map-create",
       "subjectId": "map-0877b4a3-f7e0-421f-8891-93c8f8564ad8",
       "title": "卡丘最最最难解密2.0",
       "detail": "b58b8v",
@@ -4446,5 +4468,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-08-21T15:27:45.735Z"
+  "updatedAt": "2026-08-21T15:33:51.053Z"
 }
