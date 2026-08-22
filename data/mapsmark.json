@@ -706,6 +706,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-c752fa18-bf8f-4657-b9c8-205fd997e372",
+      "reviewerName": "幻想沉溺",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 4,
+        "aesthetics": 4,
+        "guidance": 2.9,
+        "difficulty": 2.7,
+        "overall": 4
+      },
+      "comment": "没玩过的去玩就对了，适合新手的图，能从3小时过关玩到10分钟速通",
+      "id": "review-144fad59-980c-4062-9fb7-53841aa8dc47",
+      "submittedAt": "2026-08-22T04:33:25.650Z",
+      "updatedAt": "2026-08-22T04:33:25.650Z"
+    },
+    {
       "mapId": "map-f35d749f-2a1b-4d16-ae48-fe8ee6291d70",
       "reviewerName": "幻想沉溺",
       "anonymous": false,
@@ -2762,6 +2778,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-144fad59-980c-4062-9fb7-53841aa8dc47",
+      "title": "幻想沉溺",
+      "detail": "map-c752fa18-bf8f-4657-b9c8-205fd997e372",
+      "id": "event-d5d1b7fe-e0e2-4ec6-8827-8d1107fb8b0c",
+      "timestamp": "2026-08-22T04:33:25.650Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-a52b6be1-e3e6-4f0d-b469-9ecd86e495d5",
       "title": "幻想沉溺",
       "detail": "map-f35d749f-2a1b-4d16-ae48-fe8ee6291d70",
@@ -4577,5 +4601,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-08-22T04:30:38.211Z"
+  "updatedAt": "2026-08-22T04:33:25.650Z"
 }
