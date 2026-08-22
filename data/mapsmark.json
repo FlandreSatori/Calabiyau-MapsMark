@@ -706,6 +706,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-f35d749f-2a1b-4d16-ae48-fe8ee6291d70",
+      "reviewerName": "幻想沉溺",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 4,
+        "aesthetics": 3,
+        "guidance": 5,
+        "difficulty": 3,
+        "overall": 4.5
+      },
+      "comment": "基线，第一张解谜地图，一夜出现的神秘巧思\n整体的主题是寻找隐藏的开关，难度循序渐进，有连贯的关卡，也有整张图的一个大巧思，空间简洁却暗藏玄机，提示信息也很有意思，需要充分发挥观察力与想象力\n美术上，整体的环境亮度偏暗，画质低时不太友好，不过这图也不能有美术就是了，不然一堆混淆真找不到了\n引导上，第7关有些事与愿违，本来是个教学关，但重点全被蓝火吸引走了，导致8和9的解法很难回去引用7；第6关是一个不同于其他关卡的思路，没有明确的说明，所以很多人以为到这就结束了，但其实是有提示的，关卡标号承担了不小作用\n难度上，解起来还是挺快的，基本半小时就能通关，不过卡关了就很难办了，这些思路基本没有重复的，更吃玩家的灵光一闪\n\n玩过都说好，头痒痒的，感觉要长脑子了",
+      "id": "review-a52b6be1-e3e6-4f0d-b469-9ecd86e495d5",
+      "submittedAt": "2026-08-22T04:30:38.211Z",
+      "updatedAt": "2026-08-22T04:30:38.211Z"
+    },
+    {
       "mapId": "map-0877b4a3-f7e0-421f-8891-93c8f8564ad8",
       "reviewerName": "匿名",
       "anonymous": true,
@@ -2745,6 +2761,14 @@
   ],
   "events": [
     {
+      "kind": "review-create",
+      "subjectId": "review-a52b6be1-e3e6-4f0d-b469-9ecd86e495d5",
+      "title": "幻想沉溺",
+      "detail": "map-f35d749f-2a1b-4d16-ae48-fe8ee6291d70",
+      "id": "event-ff1aa7ad-305a-42cc-8b3d-e6b2225db68b",
+      "timestamp": "2026-08-22T04:30:38.211Z"
+    },
+    {
       "kind": "map-create",
       "subjectId": "map-52eaded5-6e54-4239-bd15-c8717f359fbd",
       "title": "解密：原初掠影",
@@ -4553,5 +4577,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-08-22T01:39:37.749Z"
+  "updatedAt": "2026-08-22T04:30:38.211Z"
 }
