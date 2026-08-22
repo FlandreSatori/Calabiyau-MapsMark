@@ -706,6 +706,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-6554e08d-b080-4deb-991d-d894e328275f",
+      "reviewerName": "幻想沉溺",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 4.4,
+        "aesthetics": 3,
+        "guidance": 4.5,
+        "difficulty": 2,
+        "overall": 4
+      },
+      "comment": "第一张合作闯关类\n较好地利用了双边的信息差，也有一人创造条件，一人负责过关的经典合作模板\n\n其实最大的难度在于队友能不能理解你的意思（\n\n整体氛围轻松愉快，也有逻辑线路动脑环节\n\n趣味性扣一点怕你骄傲，引导性扣一点是我确实不知道合流后要干嘛，突然就换主题了？\n\n以及，再做迷宫给你刀了( ｀ω′)",
+      "id": "review-58c01a07-3051-413a-991c-52e1889f6abc",
+      "submittedAt": "2026-08-22T05:22:49.423Z",
+      "updatedAt": "2026-08-22T05:22:49.423Z"
+    },
+    {
       "mapId": "map-3d25699d-cd82-46d3-ba0b-b428d6f83c5a",
       "reviewerName": "幻想沉溺",
       "anonymous": false,
@@ -2794,6 +2810,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-58c01a07-3051-413a-991c-52e1889f6abc",
+      "title": "幻想沉溺",
+      "detail": "map-6554e08d-b080-4deb-991d-d894e328275f",
+      "id": "event-84df635e-5f1f-4882-bcf3-62bfd77e9744",
+      "timestamp": "2026-08-22T05:22:49.423Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-75e9b6b5-9db0-4210-b908-04fb61ce7af0",
       "title": "幻想沉溺",
       "detail": "map-3d25699d-cd82-46d3-ba0b-b428d6f83c5a",
@@ -4625,5 +4649,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-08-22T05:10:45.529Z"
+  "updatedAt": "2026-08-22T05:22:49.423Z"
 }
