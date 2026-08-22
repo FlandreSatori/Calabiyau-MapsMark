@@ -706,6 +706,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-63c6c5a0-8aae-40c0-b60f-06588c9ae196",
+      "reviewerName": "幻想沉溺",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 3.5,
+        "aesthetics": 2.9,
+        "guidance": 3,
+        "difficulty": 4,
+        "overall": 3.5
+      },
+      "comment": "一张不怎么解谜的图，里面的内容基本来自跑酷的信息差\n机制并不咋顺滑，能不能过看玩家手法，很多地方也是教了都没用，以及有点过于吃操作了，很多地方容易卡死\n\n有点意思，但不多，很多时候，要么没有线索，要么不用多想，隐藏的手法还是老一套；关卡路径与机制提示倒是有了，但很多操作无法有明确的提示，甚至提示了也不能复现，还是吃操作经验；这难度就很怪了，很多地方对于新人来说太难了，解谜的部分，动脑环节还要吃操作\n\n新的机制很有意思，但很难明白作者的意思\n",
+      "id": "review-fa9d4938-96fe-401a-a10b-9ab8fcd031ec",
+      "submittedAt": "2026-08-22T08:08:36.854Z",
+      "updatedAt": "2026-08-22T08:08:36.854Z"
+    },
+    {
       "mapId": "map-3e9d28cc-104d-45c6-99a1-d45edae292cc",
       "reviewerName": "幻想沉溺",
       "anonymous": false,
@@ -2826,6 +2842,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-fa9d4938-96fe-401a-a10b-9ab8fcd031ec",
+      "title": "幻想沉溺",
+      "detail": "map-63c6c5a0-8aae-40c0-b60f-06588c9ae196",
+      "id": "event-866a7ece-9f21-4557-a35c-d8e8e1b12e87",
+      "timestamp": "2026-08-22T08:08:36.854Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-2a4665e9-189a-44c2-8cc7-4b3e27f0dba5",
       "title": "幻想沉溺",
       "detail": "map-3e9d28cc-104d-45c6-99a1-d45edae292cc",
@@ -4673,5 +4697,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-08-22T05:46:47.642Z"
+  "updatedAt": "2026-08-22T08:08:36.854Z"
 }
