@@ -130,16 +130,16 @@
     {
       "coverImage": "/assets/images/1782991305632-1111.png",
       "previewImage": "",
-      "code": "vstuck",
+      "code": "ym7vh8",
       "type": "解密",
-      "name": "豆包都能过的解密",
+      "name": "豆包都能过的解密10·0",
       "author": "啾啾小鱼儿",
-      "mappedAt": "",
-      "introduction": "",
+      "mappedAt": "2026-08-01",
+      "introduction": "第一关的水里面没有东西喵，钥匙就在房间里面喵。水的右上角是作者通道喵，想去哪里自己飞喵。整张地图难度可能会较高，但并没有无意义的通过堆叠通关步骤或者将钥匙藏在一个找不到的地方去增加通关难度喵。通往下一小关的方式基本上都藏在了你通过上一小关解锁的新地图里面喵。带有颜色的门用来卡复活点，路过的时候一定要按喵。喜欢本地图的猫娘可以订阅一下作者喵，过不了关的猫娘也可以加一下作者作者亲自带你过关喵，觉得地图有些地方不好的猫娘也可以加好友说喵。",
       "estimatedMinutes": 120,
       "id": "map-b3e103cc-9bfd-4b39-acc4-f46b31a44efc",
       "submittedAt": "2026-07-02T11:21:49.564Z",
-      "updatedAt": "2026-07-02T11:21:49.564Z"
+      "updatedAt": "2026-08-22T01:35:52.652Z"
     },
     {
       "coverImage": "/assets/images/1783066397542-____60.png",
@@ -2731,6 +2731,14 @@
   ],
   "events": [
     {
+      "kind": "map-update",
+      "subjectId": "map-b3e103cc-9bfd-4b39-acc4-f46b31a44efc",
+      "title": "编辑地图 豆包都能过的解密10·0",
+      "detail": "ym7vh8",
+      "id": "event-68a4e7ae-3fbd-4df8-abc9-8a52470e7fd5",
+      "timestamp": "2026-08-22T01:35:52.652Z"
+    },
+    {
       "kind": "map-create",
       "subjectId": "map-315bd623-bd35-4cc7-86d6-5631a2a13e81",
       "title": "诺诺闯关v0.65",
@@ -4523,5 +4531,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-08-22T01:34:39.498Z"
+  "updatedAt": "2026-08-22T01:35:52.652Z"
 }
