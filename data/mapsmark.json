@@ -1,6 +1,20 @@
 {
   "maps": [
     {
+      "coverImage": "/assets/images/1787362745438-Snipaste_2026-08-22_09-38-59.png",
+      "previewImage": "",
+      "code": "xrho46",
+      "type": "解密",
+      "name": "解密：原初掠影",
+      "author": "抹茶布丁戏雨烛",
+      "mappedAt": "2026-08-21",
+      "introduction": "路径：本地图为半开放式，以跨过黑色指引块+看见关卡数字标号为进入关卡；通过机关门+跨过黑色指引块为离开关卡范围。蓝色指引块指示回路，黄色指引块指示岔路，路牌指示存档点\n\n注意：地图内存在很多能卡死的点，请逛地图时当心小缝。拦截者时间很长，可以做标记\n\n背景故事：写不下哩\nPS：卡关了可以去前作看看，思路一样的",
+      "estimatedMinutes": 120,
+      "id": "map-52eaded5-6e54-4239-bd15-c8717f359fbd",
+      "submittedAt": "2026-08-22T01:39:37.749Z",
+      "updatedAt": "2026-08-22T01:39:37.749Z"
+    },
+    {
       "coverImage": "/assets/images/1787362433208-Snipaste_2026-08-22_09-33-39.png",
       "previewImage": "",
       "code": "cai6sx",
@@ -2731,6 +2745,14 @@
   ],
   "events": [
     {
+      "kind": "map-create",
+      "subjectId": "map-52eaded5-6e54-4239-bd15-c8717f359fbd",
+      "title": "解密：原初掠影",
+      "detail": "xrho46",
+      "id": "event-aa9ab94e-71e0-4f8b-93a5-880181114204",
+      "timestamp": "2026-08-22T01:39:37.749Z"
+    },
+    {
       "kind": "map-update",
       "subjectId": "map-b3e103cc-9bfd-4b39-acc4-f46b31a44efc",
       "title": "编辑地图 豆包都能过的解密10·0",
@@ -4531,5 +4553,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-08-22T01:35:52.652Z"
+  "updatedAt": "2026-08-22T01:39:37.749Z"
 }
