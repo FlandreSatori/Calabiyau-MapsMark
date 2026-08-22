@@ -26,7 +26,8 @@
       "estimatedMinutes": 15,
       "id": "map-0877b4a3-f7e0-421f-8891-93c8f8564ad8",
       "submittedAt": "2026-08-21T15:27:45.735Z",
-      "updatedAt": "2026-08-21T15:27:45.735Z"
+      "updatedAt": "2026-08-22T01:32:53.880Z",
+      "deletedAt": "2026-08-22T01:32:53.880Z"
     },
     {
       "coverImage": "/assets/images/1787312236785-Snipaste_2026-08-21_19-36-58.png",
@@ -2716,6 +2717,14 @@
   ],
   "events": [
     {
+      "kind": "map-delete",
+      "subjectId": "map-0877b4a3-f7e0-421f-8891-93c8f8564ad8",
+      "title": "删除地图 卡丘最最最难解密2.0",
+      "detail": "b58b8v",
+      "id": "event-fbed5e55-bc41-4b9b-bed9-cd5c6c8255ed",
+      "timestamp": "2026-08-22T01:32:53.880Z"
+    },
+    {
       "kind": "review-create",
       "subjectId": "review-da01bcba-8aee-4697-b805-1398a702c849",
       "title": "匿名",
@@ -4492,5 +4501,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-08-21T15:35:12.896Z"
+  "updatedAt": "2026-08-22T01:32:53.880Z"
 }
