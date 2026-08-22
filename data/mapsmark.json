@@ -706,6 +706,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-3d25699d-cd82-46d3-ba0b-b428d6f83c5a",
+      "reviewerName": "幻想沉溺",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 3,
+        "aesthetics": 3,
+        "guidance": 2.2,
+        "difficulty": 3.5,
+        "overall": 3
+      },
+      "comment": "第二张能称得上解谜的地图\n每一关的机制和目的都不太一样，主题是隐藏与发现，每一处地方都有其存在的意义\n1是凑数的，检验玩家的技能，1过不了的后面玩不了；2和5隐藏方式还是比较有趣的，属于我曾经想过的思路；3那里有个6，完全不知道意味，看不懂提示，搜起来倒是挺快的；4就完全不明白了，反正也是搜着搜着就过去了，不过4的出路还是蛮有意思的，需要一些对跳跃的理解；6，有提示，但完全没用，过于依赖局外知识了，而且放的很隐晦，关卡界限不清，最合理的路径仍然是找对应关系，也就是暴力破解，这到需要多人合作了\n以及，迷宫这种东西是真的无聊吧\n\n趣味上是有的，但不多；难度上，确实简单，但思路对不上；引导上，5和6这一块的场景有点出戏了；美观性没什么好说的\n\n",
+      "id": "review-75e9b6b5-9db0-4210-b908-04fb61ce7af0",
+      "submittedAt": "2026-08-22T05:10:45.529Z",
+      "updatedAt": "2026-08-22T05:10:45.529Z"
+    },
+    {
       "mapId": "map-c752fa18-bf8f-4657-b9c8-205fd997e372",
       "reviewerName": "幻想沉溺",
       "anonymous": false,
@@ -2778,6 +2794,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-75e9b6b5-9db0-4210-b908-04fb61ce7af0",
+      "title": "幻想沉溺",
+      "detail": "map-3d25699d-cd82-46d3-ba0b-b428d6f83c5a",
+      "id": "event-4260d396-04d2-4a9a-a7af-d97059d296ac",
+      "timestamp": "2026-08-22T05:10:45.529Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-144fad59-980c-4062-9fb7-53841aa8dc47",
       "title": "幻想沉溺",
       "detail": "map-c752fa18-bf8f-4657-b9c8-205fd997e372",
@@ -4601,5 +4625,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-08-22T04:33:25.650Z"
+  "updatedAt": "2026-08-22T05:10:45.529Z"
 }
