@@ -1,6 +1,20 @@
 {
   "maps": [
     {
+      "coverImage": "/assets/images/1787362433208-Snipaste_2026-08-22_09-33-39.png",
+      "previewImage": "",
+      "code": "cai6sx",
+      "type": "解密",
+      "name": "诺诺闯关v0.65",
+      "author": "诺诺妈妈的香脚",
+      "mappedAt": "2026-08-01",
+      "introduction": "诺诺3觉闯关V0、65  必须点3觉",
+      "estimatedMinutes": 90,
+      "id": "map-315bd623-bd35-4cc7-86d6-5631a2a13e81",
+      "submittedAt": "2026-08-22T01:34:39.482Z",
+      "updatedAt": "2026-08-22T01:34:39.482Z"
+    },
+    {
       "coverImage": "/assets/images/1787326416834-9ffff773e0524ef6f45aaec2c57c18bf.png",
       "previewImage": "/assets/images/1787326423191-125b4e7a-3dc0-4f27-8ba6-d471b927f2ad.png",
       "code": "b58b8v",
@@ -2717,6 +2731,14 @@
   ],
   "events": [
     {
+      "kind": "map-create",
+      "subjectId": "map-315bd623-bd35-4cc7-86d6-5631a2a13e81",
+      "title": "诺诺闯关v0.65",
+      "detail": "cai6sx",
+      "id": "event-15bf98d2-7462-4aee-8be7-50a570781229",
+      "timestamp": "2026-08-22T01:34:39.498Z"
+    },
+    {
       "kind": "map-delete",
       "subjectId": "map-0877b4a3-f7e0-421f-8891-93c8f8564ad8",
       "title": "删除地图 卡丘最最最难解密2.0",
@@ -4501,5 +4523,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-08-22T01:32:53.880Z"
+  "updatedAt": "2026-08-22T01:34:39.498Z"
 }
