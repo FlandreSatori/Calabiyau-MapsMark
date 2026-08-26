@@ -12,6 +12,7 @@ type ToastState = { title: string; message: string } | null;
 
 type MapFormProps = {
     mapTypes: string[];
+    adminToken?: string;
     onSuccess?: () => void;
     notify?: (toast: ToastState) => void;
 };
@@ -168,7 +169,7 @@ const readFileAsDataUrl = async (file: File | null) => {
     });
 };
 
-const compressAndUpload = async (file: File, opts?: { maxDim?: number; quality?: number; notify?: (t: ToastState) => void }) => {
+const compressAndUpload = async (file: File, opts: { adminToken?: string; maxDim?: number; quality?: number; notify?: (t: ToastState) => void }) => {
     const maxDim = opts?.maxDim ?? 1600;
     const quality = opts?.quality ?? 0.75;
     try {
@@ -210,7 +211,7 @@ const compressAndUpload = async (file: File, opts?: { maxDim?: number; quality?:
         const filename = file.name.replace(/[^a-zA-Z0-9._-]/g, "_");
         const resp = await fetch("/api/upload", {
             method: "POST",
-            headers: { "Content-Type": "application/json" },
+            headers: { "Content-Type": "application/json", ...(opts.adminToken ? { "x-admin-token": opts.adminToken } : {}) },
             body: JSON.stringify({ filename, contentBase64: base64, contentType: "image/jpeg" })
         });
         const text = await resp.text();
@@ -231,7 +232,7 @@ const compressAndUpload = async (file: File, opts?: { maxDim?: number; quality?:
     }
 };
 
-export function MapForm({ mapTypes, onSuccess, notify }: MapFormProps) {
+export function MapForm({ mapTypes, adminToken, onSuccess, notify }: MapFormProps) {
     const [submitting, setSubmitting] = useState(false);
     const [selectedType, setSelectedType] = useState(mapTypes[0] ?? "解密");
     const router = useRouter();
@@ -292,7 +293,7 @@ export function MapForm({ mapTypes, onSuccess, notify }: MapFormProps) {
         try {
             const response = await fetch("/api/state", {
                 method: "POST",
-                headers: { "Content-Type": "application/json" },
+                headers: { "Content-Type": "application/json", ...(adminToken ? { "x-admin-token": adminToken } : {}) },
                 body: JSON.stringify({ type: "map", payload: form })
             });
             if (!response.ok) {
@@ -348,7 +349,7 @@ export function MapForm({ mapTypes, onSuccess, notify }: MapFormProps) {
                             if (file) {
                                 try {
                                     globalNotify("info", "上传中", "正在压缩并上传封面图片，请稍候...");
-                                    const url = await compressAndUpload(file, { notify });
+                                    const url = await compressAndUpload(file, { adminToken, notify });
                                     setForm((current) => ({ ...current, coverImage: url }));
                                     globalNotify("success", "上传成功", "封面已上传。");
                                 } catch (e) {
@@ -373,7 +374,7 @@ export function MapForm({ mapTypes, onSuccess, notify }: MapFormProps) {
                             if (file) {
                                 try {
                                     globalNotify("info", "上传中", "正在压缩并上传预览图片，请稍候...");
-                                    const url = await compressAndUpload(file, { notify });
+                                    const url = await compressAndUpload(file, { adminToken, notify });
                                     setForm((current) => ({ ...current, previewImage: url }));
                                     globalNotify("success", "上传成功", "预览图已上传。");
                                 } catch (e) {

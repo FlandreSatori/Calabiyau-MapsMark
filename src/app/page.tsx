@@ -1,3 +1,4 @@
+import { HomeAdminWorkspace } from "@/components/home-admin-workspace";
 import { MapForm } from "@/components/forms";
 import { HistoryList } from "@/components/history-list";
 import { HomeMapExplorer } from "@/components/home-map-explorer";
@@ -30,9 +31,15 @@ export default async function HomePage({ searchParams }: { searchParams?: Promis
                     topOverall={summary.bestByMetric.overall.slice(0, 5)}
                 />
 
+                <HomeAdminWorkspace
+                    maps={summary.maps}
+                    reviews={summary.reviews}
+                    mapTypes={[...new Set([...defaultMapTypes, ...Object.keys(summary.typeCounts)])]}
+                />
+
                 <section className="panel panel-pad" id="submit-map">
                     <p className="section-title">上传地图</p>
-                    <MapForm mapTypes={[...defaultMapTypes]} />
+                    <MapForm mapTypes={[...new Set([...defaultMapTypes, ...Object.keys(summary.typeCounts)])]} />
                 </section>
 
                 <section className="panel panel-pad">

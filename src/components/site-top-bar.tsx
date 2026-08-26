@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import { ThemeSwitcher } from "@/components/theme-switcher";
+
 export function SiteTopBar() {
     return (
         <header className="site-topbar">
@@ -9,6 +11,7 @@ export function SiteTopBar() {
                     <div className="site-brand">卡丘工坊地图评价</div>
                 </div>
                 <nav className="site-nav" aria-label="主导航">
+                    <ThemeSwitcher />
                     <Link className="pill" href="/">返回首页</Link>
                     <Link className="pill" href="/reviews">批量评价</Link>
                     <Link className="pill site-nav-optional" href="/admin">后台管理</Link>

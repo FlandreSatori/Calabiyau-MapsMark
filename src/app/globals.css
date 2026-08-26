@@ -133,6 +133,32 @@ img {
     flex-wrap: wrap;
 }
 
+.theme-switcher select {
+    min-height: 36px;
+    padding: 7px 30px 7px 10px;
+    border: 1px solid var(--panel-border);
+    border-radius: 999px;
+    color: var(--muted);
+    background: var(--panel);
+}
+
+.theme-switcher select:disabled {
+    cursor: default;
+    opacity: 1;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
 /* Full-width container for embed pages or full-bleed layouts */
 .container.embed-full {
     width: 100%;
@@ -851,7 +877,7 @@ img {
 
 .metric-stage {
     position: relative;
-    overflow: visible;
+    overflow: hidden;
     border-radius: 24px;
     border: 1px solid rgba(255, 255, 255, 0.06);
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.015));
@@ -1420,9 +1446,237 @@ img {
     text-align: center;
 }
 
+.embed-shell {
+    padding-inline: 24px;
+}
+
+.embed-layout {
+    display: grid;
+    gap: 22px;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.embed-header {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 28px clamp(4px, 3vw, 36px) 6px;
+}
+
+.embed-header h1 {
+    margin: 6px 0 8px;
+    font-size: clamp(2rem, 4vw, 4.2rem);
+    line-height: 0.98;
+    letter-spacing: 0;
+}
+
+.embed-header p:not(.section-title) {
+    margin: 0;
+    color: var(--muted);
+}
+
+.embed-stats {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.embed-stats div {
+    min-width: 92px;
+    padding: 12px 14px;
+    border-left: 3px solid var(--accent);
+    background: var(--panel);
+}
+
+.embed-stats strong,
+.embed-stats span {
+    display: block;
+}
+
+.embed-stats strong {
+    font-size: 1.65rem;
+    line-height: 1;
+}
+
+.embed-stats span {
+    margin-top: 5px;
+    color: var(--muted);
+    font-size: 0.78rem;
+}
+
+.embed-map-strip {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.embed-map-strip .cover-card {
+    min-width: 0;
+    border-radius: 12px;
+}
+
+.embed-metrics {
+    min-width: 0;
+    overflow-x: auto;
+    padding: 22px clamp(4px, 3vw, 36px) 34px;
+    background: var(--panel);
+    border: 1px solid var(--panel-border);
+    border-radius: 16px;
+}
+
 .admin-grid {
     display: grid;
     gap: 14px;
+}
+
+.admin-editor-shell {
+    display: grid;
+    gap: 16px;
+}
+
+.home-admin {
+    scroll-margin-top: 88px;
+}
+
+.home-admin-heading,
+.admin-login-inline,
+.admin-tabs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.home-admin-heading h2 {
+    margin: 4px 0 0;
+    font-size: 1.35rem;
+}
+
+.admin-login-inline {
+    align-items: end;
+    max-width: 580px;
+    margin-top: 16px;
+}
+
+.admin-login-inline .label {
+    flex: 1 1 320px;
+}
+
+.admin-tabs {
+    justify-content: flex-start;
+    margin-top: 18px;
+    border-bottom: 1px solid var(--panel-border);
+}
+
+.admin-tabs button {
+    padding: 10px 12px;
+    border: 0;
+    border-bottom: 2px solid transparent;
+    color: var(--muted);
+    background: transparent;
+    cursor: pointer;
+}
+
+.admin-tabs button.is-active {
+    border-bottom-color: var(--accent);
+    color: var(--text);
+}
+
+.admin-tab-panel {
+    margin-top: 18px;
+}
+
+.admin-workspace {
+    display: grid;
+    grid-template-columns: minmax(220px, 0.36fr) minmax(0, 1fr);
+    gap: 16px;
+    align-items: start;
+}
+
+.admin-record-list {
+    display: grid;
+    gap: 10px;
+    position: sticky;
+    top: 82px;
+}
+
+.admin-record-scroll {
+    display: grid;
+    max-height: min(62vh, 680px);
+    overflow-y: auto;
+    border: 1px solid var(--panel-border);
+    background: var(--background-soft);
+}
+
+.admin-record-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    min-width: 0;
+    padding: 12px;
+    border: 0;
+    border-bottom: 1px solid var(--panel-border);
+    color: var(--text);
+    text-align: left;
+    background: transparent;
+    cursor: pointer;
+}
+
+.admin-record-button:last-child {
+    border-bottom: 0;
+}
+
+.admin-record-button:hover,
+.admin-record-button.is-active {
+    background: color-mix(in srgb, var(--accent) 12%, transparent);
+}
+
+.admin-record-button span:first-child {
+    min-width: 0;
+}
+
+.admin-record-button strong,
+.admin-record-button small {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.admin-record-button small {
+    margin-top: 4px;
+    color: var(--muted);
+}
+
+.admin-record-detail {
+    min-width: 0;
+}
+
+.editor-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 14px 16px;
+    border: 1px solid var(--panel-border);
+    border-radius: 12px;
+    background: var(--background-soft);
+}
+
+.editor-toolbar .help {
+    display: block;
+    margin-top: 4px;
+}
+
+.badge-dirty {
+    color: #1b1716;
+    background: var(--accent);
 }
 
 .admin-map-editor {
@@ -1520,6 +1774,41 @@ img {
     .admin-map-fields {
         grid-template-columns: 1fr;
     }
+
+    .embed-map-strip {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .embed-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .embed-stats {
+        justify-content: flex-start;
+    }
+
+    .admin-workspace {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-record-list {
+        position: static;
+    }
+
+    .admin-record-scroll {
+        grid-auto-flow: column;
+        grid-auto-columns: minmax(220px, 0.68fr);
+        grid-template-rows: 1fr;
+        max-height: none;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+    .admin-record-button {
+        border-right: 1px solid var(--panel-border);
+        border-bottom: 0;
+    }
 }
 
 @media (max-width: 980px) and (orientation: portrait) {
@@ -1597,6 +1886,23 @@ img {
     }
 
     .copy-section {
+        flex-direction: column;
+    }
+
+    .embed-shell {
+        padding-inline: 14px;
+    }
+
+    .embed-map-strip {
+        grid-template-columns: 1fr;
+    }
+
+    .embed-metrics {
+        padding-inline: 14px;
+    }
+
+    .editor-toolbar {
+        align-items: stretch;
         flex-direction: column;
     }
 }

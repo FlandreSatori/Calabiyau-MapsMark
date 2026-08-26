@@ -21,6 +21,10 @@ export async function GET() {
 
 export async function POST(request: Request) {
     try {
+        const suppliedToken = request.headers.get("x-admin-token");
+        if (suppliedToken !== null && !adminAllowed(request)) {
+            return NextResponse.json({ message: "Unauthorized" }, { status: 401 });
+        }
         const body = (await request.json()) as { type: "map" | "review"; payload: unknown };
         if (body.type === "map") {
             const state = await addMap(body.payload as Parameters<typeof addMap>[0]);

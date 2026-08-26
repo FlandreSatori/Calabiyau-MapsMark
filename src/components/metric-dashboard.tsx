@@ -89,6 +89,22 @@ function forceRectCollide() {
     return force;
 }
 
+function forcePlotBounds(width: number, height: number, padding: number) {
+    let nodes: GraphNode[];
+    function force() {
+        for (const node of nodes) {
+            const halfWidth = node.width / 2;
+            const halfHeight = node.height / 2;
+            node.x = Math.max(padding + halfWidth, Math.min(width - padding - halfWidth, node.x ?? width / 2));
+            node.y = Math.max(padding + halfHeight, Math.min(height - padding - halfHeight, node.y ?? height / 2));
+            node.vx = node.vx ?? 0;
+            node.vy = node.vy ?? 0;
+        }
+    }
+    force.initialize = (_: GraphNode[]) => nodes = _;
+    return force;
+}
+
 function forceMouse(mousePosRef: React.MutableRefObject<{ x: number, y: number } | null>) {
     let nodes: GraphNode[];
     function force(alpha: number) {
@@ -182,6 +198,7 @@ function ForceStage({ maps, xMetric, yMetric }: { maps: MapMetric[], xMetric: ke
             .force("targetX", forceX<GraphNode>(d => d.targetX).strength(d => d.is2D ? 0.08 : 0.04))
             .force("targetY", forceY<GraphNode>(d => d.targetY).strength(d => d.is2D ? 0.08 : 0.01))
             .force("collide", forceRectCollide())
+            .force("bounds", forcePlotBounds(W, H, 24))
             .force("mouse", forceMouse(mousePosRef))
             .on("tick", () => {
                 nodesRef.current.forEach(node => {

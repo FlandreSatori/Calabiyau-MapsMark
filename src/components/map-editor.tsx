@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 import { notify } from "@/components/toast";
 import type { MapInput, MapRecord } from "@/lib/types";
@@ -31,16 +31,39 @@ const createDraft = (map: MapRecord): MapDraft => ({
 export function MapEditor({ maps, token, onSaved }: MapEditorProps) {
     const [drafts, setDrafts] = useState<Record<string, MapDraft>>({});
     const [savingId, setSavingId] = useState<string | null>(null);
+    const [savingAll, setSavingAll] = useState(false);
+    const [draftReady, setDraftReady] = useState(false);
+    const [selectedId, setSelectedId] = useState(maps[0]?.id ?? "");
+    const [query, setQuery] = useState("");
+
+    const draftStorageKey = "mapsmark-map-drafts";
 
     useEffect(() => {
+        const stored = window.localStorage.getItem(draftStorageKey);
+        const storedDrafts = stored ? (JSON.parse(stored) as Record<string, MapDraft>) : {};
         setDrafts((current) => {
             const next: Record<string, MapDraft> = {};
             maps.forEach((map) => {
-                next[map.id] = current[map.id] ?? createDraft(map);
+                next[map.id] = current[map.id] ?? storedDrafts[map.id] ?? createDraft(map);
             });
             return next;
         });
+        setDraftReady(true);
     }, [maps]);
+
+    useEffect(() => {
+        if (draftReady) {
+            window.localStorage.setItem(draftStorageKey, JSON.stringify(drafts));
+        }
+    }, [draftReady, drafts]);
+
+    const dirtyIds = useMemo(() => maps.filter((map) => JSON.stringify(drafts[map.id]) !== JSON.stringify(createDraft(map))).map((map) => map.id), [drafts, maps]);
+    const visibleMaps = useMemo(() => {
+        const normalized = query.trim().toLowerCase();
+        if (!normalized) return maps;
+        return maps.filter((map) => [map.name, map.author, map.code, map.type].some((value) => value.toLowerCase().includes(normalized)));
+    }, [maps, query]);
+    const selectedMap = maps.find((map) => map.id === selectedId) ?? visibleMaps[0] ?? maps[0];
 
     const updateDraft = (mapId: string, patch: Partial<MapDraft>) => {
         setDrafts((current) => ({
@@ -52,7 +75,7 @@ export function MapEditor({ maps, token, onSaved }: MapEditorProps) {
         }));
     };
 
-    const saveMap = async (map: MapRecord) => {
+    const saveMap = async (map: MapRecord, shouldRefresh = true) => {
         const patch = drafts[map.id] ?? createDraft(map);
         setSavingId(map.id);
         try {
@@ -69,24 +92,68 @@ export function MapEditor({ maps, token, onSaved }: MapEditorProps) {
                 throw new Error(text || "保存地图失败");
             }
             notify("success", "地图已保存", `${patch.name || map.name} 的详情已更新。`);
-            onSaved?.();
+            if (shouldRefresh) {
+                window.localStorage.removeItem(draftStorageKey);
+                onSaved?.();
+            }
+            return true;
         } catch (error) {
             const message = error instanceof Error ? error.message : "请稍后再试";
             notify("error", "保存失败", message);
+            return false;
         } finally {
             setSavingId(null);
         }
     };
 
+    const saveAll = async () => {
+        setSavingAll(true);
+        const dirtyMaps = maps.filter((map) => dirtyIds.includes(map.id));
+        let allSaved = true;
+        for (const map of dirtyMaps) {
+            allSaved = (await saveMap(map, false)) && allSaved;
+        }
+        setSavingAll(false);
+        if (allSaved && dirtyMaps.length > 0) {
+            window.localStorage.removeItem(draftStorageKey);
+            notify("success", "草稿已全部提交", `已更新 ${dirtyMaps.length} 张地图。`);
+            onSaved?.();
+        }
+    };
+
     return (
-        <div className="admin-grid">
-            {maps.map((map) => {
-                const draft = drafts[map.id] ?? createDraft(map);
-                return (
-                    <div className="list-item admin-map-editor" key={map.id}>
+        <div className="admin-editor-shell">
+            <div className="editor-toolbar">
+                <div>
+                    <strong>地图草稿</strong>
+                    <span className="help">{dirtyIds.length ? `${dirtyIds.length} 项未提交，草稿已保存在本机` : "所有修改都会先保存在本机"}</span>
+                </div>
+                <div className="toolbar">
+                    <button className="button button-primary" type="button" onClick={() => void saveAll()} disabled={savingAll || dirtyIds.length === 0}>
+                        {savingAll ? "提交中..." : `提交全部${dirtyIds.length ? ` (${dirtyIds.length})` : ""}`}
+                    </button>
+                </div>
+            </div>
+            {maps.length ? <div className="admin-workspace">
+                <aside className="admin-record-list">
+                    <input className="input" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="搜索地图、作者或代码" aria-label="搜索地图" />
+                    <div className="admin-record-scroll">
+                        {visibleMaps.map((map) => (
+                            <button className={`admin-record-button${selectedMap?.id === map.id ? " is-active" : ""}`} type="button" key={map.id} onClick={() => setSelectedId(map.id)}>
+                                <span><strong>{map.name}</strong><small>{map.author} · {map.code}</small></span>
+                                {dirtyIds.includes(map.id) ? <span className="badge badge-dirty">草稿</span> : null}
+                            </button>
+                        ))}
+                    </div>
+                </aside>
+                {selectedMap ? (() => {
+                    const map = selectedMap;
+                    const draft = drafts[map.id] ?? createDraft(map);
+                    const isDirty = dirtyIds.includes(map.id);
+                    return <div className="list-item admin-map-editor admin-record-detail">
                         <div className="list-row">
                             <strong>{map.name}</strong>
-                            <span className="badge">{map.type}</span>
+                            <span className={`badge ${isDirty ? "badge-dirty" : ""}`}>{isDirty ? "草稿" : map.type}</span>
                         </div>
                         <div className="admin-map-fields">
                             <label className="label">
@@ -127,9 +194,10 @@ export function MapEditor({ maps, token, onSaved }: MapEditorProps) {
                             </label>
                         </div>
                         <div className="admin-map-actions">
-                            <button className="button button-primary" type="button" onClick={() => void saveMap(map)} disabled={savingId === map.id}>
+                            <button className="button button-primary" type="button" onClick={() => void saveMap(map)} disabled={savingId === map.id || savingAll || !isDirty}>
                                 {savingId === map.id ? "保存中..." : "保存修改"}
                             </button>
+                            <button className="button" type="button" onClick={() => updateDraft(map.id, createDraft(map))} disabled={!isDirty || savingAll}>撤销草稿</button>
                             <button className="button button-danger" type="button" onClick={() => void fetch("/api/state", {
                                 method: "DELETE",
                                 headers: {
@@ -151,9 +219,9 @@ export function MapEditor({ maps, token, onSaved }: MapEditorProps) {
                                 删除地图
                             </button>
                         </div>
-                    </div>
-                );
-            })}
+                    </div>;
+                })() : null}
+            </div> : <p className="help">暂无地图。</p>}
         </div>
     );
 }
