@@ -706,6 +706,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-52eaded5-6e54-4239-bd15-c8717f359fbd",
+      "reviewerName": "月海原由砂",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 4,
+        "aesthetics": 4.8,
+        "guidance": 3.6,
+        "difficulty": 2.6,
+        "overall": 4.3
+      },
+      "comment": "你有这么壮观的地图进入解密你记住抹茶老大给出的原理.jpg\n看见封面直接震惊，点进去发现卧槽情报是真的😭😭城堡设计的也太强了，甚至大部分地方都可以登上去看看。申请拎包入住可以吗（？。建筑超多细节但完全不乱，不敢想工作量多大...爽吃的一张大地图。老大辛苦了！！\n⭐有非常清晰易懂的介绍，好评！！推荐游玩之前看看。如果有朋友一起玩记得分开阵营，卡住的时候可以互相救一下）\n⭐全程约2小时（其实大部分都在边找边看风景），部分关卡需要一点小巧思，第10关不太好解。\n❤️地图也太美。。。全通之后依然舍不得走，和朋友继续探索了一整局，量大管饱的来了♡♡♡（后来得知好像走多了？果咩><总之期待续作！！！）\n\np.s.感谢最初碰到的带路小美小汐♡🙏🏻开通简单版本。以及后来给了第8关线索的好友♡",
+      "id": "review-e16a173f-6ead-4eee-89cc-3836647a035d",
+      "submittedAt": "2026-08-26T05:36:31.533Z",
+      "updatedAt": "2026-08-26T05:36:31.533Z"
+    },
+    {
       "mapId": "map-0cc4bcd8-81d6-4028-84b7-b197c6c92ef8",
       "reviewerName": "幻想沉溺",
       "anonymous": false,
@@ -2858,6 +2874,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-e16a173f-6ead-4eee-89cc-3836647a035d",
+      "title": "月海原由砂",
+      "detail": "map-52eaded5-6e54-4239-bd15-c8717f359fbd",
+      "id": "event-77311007-1dc1-4da9-b1a3-c4a5b601717c",
+      "timestamp": "2026-08-26T05:36:31.533Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-999acf28-d692-48b9-93f9-5cb6a1578cbf",
       "title": "幻想沉溺",
       "detail": "map-0cc4bcd8-81d6-4028-84b7-b197c6c92ef8",
@@ -4721,5 +4745,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-08-25T17:27:11.722Z"
+  "updatedAt": "2026-08-26T05:36:31.533Z"
 }
