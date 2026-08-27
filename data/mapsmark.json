@@ -896,7 +896,8 @@
       "comment": "",
       "id": "review-da01bcba-8aee-4697-b805-1398a702c849",
       "submittedAt": "2026-08-21T15:35:12.896Z",
-      "updatedAt": "2026-08-21T15:35:12.896Z"
+      "updatedAt": "2026-08-27T00:52:04.438Z",
+      "deletedAt": "2026-08-27T00:52:04.438Z"
     },
     {
       "mapId": "map-53804f28-d922-4fe3-9c54-650931cb22b0",
@@ -2923,6 +2924,14 @@
   "events": [
     {
       "kind": "review-delete",
+      "subjectId": "review-da01bcba-8aee-4697-b805-1398a702c849",
+      "title": "删除评价 匿名",
+      "detail": "map-0877b4a3-f7e0-421f-8891-93c8f8564ad8",
+      "id": "event-83624f1a-f38c-4f12-bfb9-d9987ce3d59c",
+      "timestamp": "2026-08-27T00:52:04.438Z"
+    },
+    {
+      "kind": "review-delete",
       "subjectId": "review-24f927be-f096-4dbd-892b-989c9b9e2005",
       "title": "删除评价 幻想沉溺",
       "detail": "map-5350e3bf-146e-4a25-ae09-050d15c5f254",
@@ -4826,5 +4835,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-08-27T00:49:23.107Z"
+  "updatedAt": "2026-08-27T00:52:04.438Z"
 }
