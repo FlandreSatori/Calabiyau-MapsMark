@@ -706,6 +706,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-56705d75-8ab1-4e3e-9eae-74ba5b2e6e5e",
+      "reviewerName": "幻想沉溺",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 0,
+        "aesthetics": 0,
+        "guidance": 0,
+        "difficulty": 0,
+        "overall": 0
+      },
+      "comment": "",
+      "id": "review-4f1a1b07-597a-4c7d-beb5-58e17e4007bb",
+      "submittedAt": "2026-08-27T13:05:38.663Z",
+      "updatedAt": "2026-08-27T13:05:38.663Z"
+    },
+    {
       "mapId": "map-98f00295-ae37-4a25-9bdd-2dc15593dcce",
       "reviewerName": "幻想沉溺",
       "anonymous": false,
@@ -2940,6 +2956,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-4f1a1b07-597a-4c7d-beb5-58e17e4007bb",
+      "title": "幻想沉溺",
+      "detail": "map-56705d75-8ab1-4e3e-9eae-74ba5b2e6e5e",
+      "id": "event-63583326-61b3-4776-97b2-90e7b274d06a",
+      "timestamp": "2026-08-27T13:05:38.664Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-afb2f7df-a829-4adb-98ec-a2121016bdd7",
       "title": "幻想沉溺",
       "detail": "map-98f00295-ae37-4a25-9bdd-2dc15593dcce",
@@ -4859,5 +4883,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-08-27T12:55:37.325Z"
+  "updatedAt": "2026-08-27T13:05:38.664Z"
 }
