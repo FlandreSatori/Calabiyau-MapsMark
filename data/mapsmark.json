@@ -710,6 +710,22 @@
       "reviewerName": "幻想沉溺",
       "anonymous": false,
       "ratings": {
+        "entertainment": 2.5,
+        "aesthetics": 3.3,
+        "guidance": 1,
+        "difficulty": 4,
+        "overall": 2.5
+      },
+      "comment": "怎么真是答辩\n\n有很多问题的图，玩起来并不愉快\n\n1，为什么找不同不做完呢，门后？前面的也不需要考虑这个问题；2，整个通关的逻辑顺序我搞不懂，室内藏B，过传送倒是有提示；3.1跟2的末尾一样，隐藏的明示；3.2这个我完全对不上，找不到起点；3.3一道数学题，没什么难度，但这个意思很难理解，形状还是个数？为什么这些指示信息的元素有交叠，这个逻辑控制倒是挺好玩的，最后出乎意料的结果也确实有点惊喜，前面有点被麻到了，没仔细搜图\n\n趣味基本都在3.3上面；但引导和指示问题一堆；最后的算数还有点题，难得理解；几个小房子还看得过去",
+      "id": "review-c8ec4df6-767d-42b1-9399-b75fe964f2da",
+      "submittedAt": "2026-08-27T13:41:14.215Z",
+      "updatedAt": "2026-08-27T13:41:14.215Z"
+    },
+    {
+      "mapId": "map-56705d75-8ab1-4e3e-9eae-74ba5b2e6e5e",
+      "reviewerName": "幻想沉溺",
+      "anonymous": false,
+      "ratings": {
         "entertainment": 0,
         "aesthetics": 0,
         "guidance": 0,
@@ -2956,6 +2972,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-c8ec4df6-767d-42b1-9399-b75fe964f2da",
+      "title": "幻想沉溺",
+      "detail": "map-56705d75-8ab1-4e3e-9eae-74ba5b2e6e5e",
+      "id": "event-d28afc77-922f-4d3e-a00a-ce20bfa0f905",
+      "timestamp": "2026-08-27T13:41:14.216Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-4f1a1b07-597a-4c7d-beb5-58e17e4007bb",
       "title": "幻想沉溺",
       "detail": "map-56705d75-8ab1-4e3e-9eae-74ba5b2e6e5e",
@@ -4883,5 +4907,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-08-27T13:05:38.664Z"
+  "updatedAt": "2026-08-27T13:41:14.216Z"
 }
