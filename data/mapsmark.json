@@ -735,7 +735,8 @@
       "comment": "",
       "id": "review-4f1a1b07-597a-4c7d-beb5-58e17e4007bb",
       "submittedAt": "2026-08-27T13:05:38.663Z",
-      "updatedAt": "2026-08-27T13:05:38.663Z"
+      "updatedAt": "2026-08-28T00:42:18.809Z",
+      "deletedAt": "2026-08-28T00:42:18.809Z"
     },
     {
       "mapId": "map-98f00295-ae37-4a25-9bdd-2dc15593dcce",
@@ -2971,6 +2972,14 @@
   ],
   "events": [
     {
+      "kind": "review-delete",
+      "subjectId": "review-4f1a1b07-597a-4c7d-beb5-58e17e4007bb",
+      "title": "删除评价 幻想沉溺",
+      "detail": "map-56705d75-8ab1-4e3e-9eae-74ba5b2e6e5e",
+      "id": "event-b561f040-3057-414e-ad54-34c30b3f574a",
+      "timestamp": "2026-08-28T00:42:18.809Z"
+    },
+    {
       "kind": "review-create",
       "subjectId": "review-c8ec4df6-767d-42b1-9399-b75fe964f2da",
       "title": "幻想沉溺",
@@ -4907,5 +4916,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-08-27T13:41:14.216Z"
+  "updatedAt": "2026-08-28T00:42:18.809Z"
 }
