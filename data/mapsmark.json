@@ -706,6 +706,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-436f31ba-334b-4503-8db8-80217e5d1fdd",
+      "reviewerName": "月海原由砂",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 4.2,
+        "aesthetics": 4.4,
+        "guidance": 2.3,
+        "difficulty": 5,
+        "overall": 3.6
+      },
+      "comment": "还没玩完，地图很有设计也很好看。但我能接受解密很难，接受不了被吹风机当臭狗一样戏耍。这东西为什要放在解密图而不是跑酷图里",
+      "id": "review-67621897-7298-4ef1-a1f4-b1c0d4e963f6",
+      "submittedAt": "2026-08-28T02:57:56.973Z",
+      "updatedAt": "2026-08-28T02:57:56.973Z"
+    },
+    {
       "mapId": "map-56705d75-8ab1-4e3e-9eae-74ba5b2e6e5e",
       "reviewerName": "幻想沉溺",
       "anonymous": false,
@@ -2972,6 +2988,14 @@
   ],
   "events": [
     {
+      "kind": "review-create",
+      "subjectId": "review-67621897-7298-4ef1-a1f4-b1c0d4e963f6",
+      "title": "月海原由砂",
+      "detail": "map-436f31ba-334b-4503-8db8-80217e5d1fdd",
+      "id": "event-c82e4df5-c678-49e1-8289-1cdec790960b",
+      "timestamp": "2026-08-28T02:57:56.973Z"
+    },
+    {
       "kind": "review-delete",
       "subjectId": "review-4f1a1b07-597a-4c7d-beb5-58e17e4007bb",
       "title": "删除评价 幻想沉溺",
@@ -4916,5 +4940,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-08-28T00:42:18.809Z"
+  "updatedAt": "2026-08-28T02:57:56.973Z"
 }
