@@ -720,6 +720,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-4528335e-2112-474c-904f-61196d5194e3",
+      "reviewerName": "456",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 4,
+        "aesthetics": 5,
+        "guidance": 2,
+        "difficulty": 3,
+        "overall": 5
+      },
+      "comment": "",
+      "id": "review-7bfb22ff-1d09-4f6c-b897-f015e4f53896",
+      "submittedAt": "2026-09-01T10:36:48.437Z",
+      "updatedAt": "2026-09-01T10:36:48.437Z"
+    },
+    {
       "mapId": "map-436f31ba-334b-4503-8db8-80217e5d1fdd",
       "reviewerName": "月海原由砂",
       "anonymous": false,
@@ -3002,6 +3018,14 @@
   ],
   "events": [
     {
+      "kind": "review-create",
+      "subjectId": "review-7bfb22ff-1d09-4f6c-b897-f015e4f53896",
+      "title": "456",
+      "detail": "map-4528335e-2112-474c-904f-61196d5194e3",
+      "id": "event-b55ef20f-a2c0-452e-a975-b86cb85e5ad2",
+      "timestamp": "2026-09-01T10:36:48.438Z"
+    },
+    {
       "kind": "map-create",
       "subjectId": "map-4528335e-2112-474c-904f-61196d5194e3",
       "title": "MC解密",
@@ -4962,5 +4986,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-09-01T10:01:29.413Z"
+  "updatedAt": "2026-09-01T10:36:48.438Z"
 }
