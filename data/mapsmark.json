@@ -1,6 +1,20 @@
 {
   "maps": [
     {
+      "coverImage": "/assets/images/1788256867902-MC__.jpg",
+      "previewImage": "",
+      "code": "nnzz2i",
+      "type": "解密",
+      "name": "MC解密",
+      "author": "456",
+      "mappedAt": "",
+      "introduction": "",
+      "estimatedMinutes": 90,
+      "id": "map-4528335e-2112-474c-904f-61196d5194e3",
+      "submittedAt": "2026-09-01T10:01:29.412Z",
+      "updatedAt": "2026-09-01T10:01:29.412Z"
+    },
+    {
       "coverImage": "/assets/images/1787362745438-Snipaste_2026-08-22_09-38-59.png",
       "previewImage": "",
       "code": "xrho46",
@@ -2988,6 +3002,14 @@
   ],
   "events": [
     {
+      "kind": "map-create",
+      "subjectId": "map-4528335e-2112-474c-904f-61196d5194e3",
+      "title": "MC解密",
+      "detail": "nnzz2i",
+      "id": "event-89fb3d2c-1cd4-40a8-b62e-bcea9f372918",
+      "timestamp": "2026-09-01T10:01:29.413Z"
+    },
+    {
       "kind": "review-create",
       "subjectId": "review-67621897-7298-4ef1-a1f4-b1c0d4e963f6",
       "title": "月海原由砂",
@@ -4940,5 +4962,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-08-28T02:57:56.973Z"
+  "updatedAt": "2026-09-01T10:01:29.413Z"
 }
