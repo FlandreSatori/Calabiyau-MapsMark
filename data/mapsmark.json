@@ -721,6 +721,22 @@
   "reviews": [
     {
       "mapId": "map-4528335e-2112-474c-904f-61196d5194e3",
+      "reviewerName": "卡卡（反MC）",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 3.9,
+        "aesthetics": 5,
+        "guidance": 4.5,
+        "difficulty": 4.5,
+        "overall": 4.8
+      },
+      "comment": "还原度挺高的，指引也比较清晰，没有很难的地方。好玩",
+      "id": "review-98995361-02e7-44bd-9104-6e40d80fce26",
+      "submittedAt": "2026-09-01T16:52:45.675Z",
+      "updatedAt": "2026-09-01T16:52:45.675Z"
+    },
+    {
+      "mapId": "map-4528335e-2112-474c-904f-61196d5194e3",
       "reviewerName": "456",
       "anonymous": false,
       "ratings": {
@@ -3019,6 +3035,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-98995361-02e7-44bd-9104-6e40d80fce26",
+      "title": "卡卡（反MC）",
+      "detail": "map-4528335e-2112-474c-904f-61196d5194e3",
+      "id": "event-63a0c147-3a73-41f0-b412-58b16825e736",
+      "timestamp": "2026-09-01T16:52:45.676Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-7bfb22ff-1d09-4f6c-b897-f015e4f53896",
       "title": "456",
       "detail": "map-4528335e-2112-474c-904f-61196d5194e3",
@@ -4986,5 +5010,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-09-01T10:36:48.438Z"
+  "updatedAt": "2026-09-01T16:52:45.676Z"
 }
