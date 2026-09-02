@@ -721,6 +721,22 @@
   "reviews": [
     {
       "mapId": "map-4528335e-2112-474c-904f-61196d5194e3",
+      "reviewerName": "匿名",
+      "anonymous": true,
+      "ratings": {
+        "entertainment": 5,
+        "aesthetics": 5,
+        "guidance": 5,
+        "difficulty": 3.5,
+        "overall": 5
+      },
+      "comment": "前身是MC躲猫猫爆改的解密图，解密方向可参考原版MC的通关路线，从家中附魔，前往村庄寻找地牢，地狱收集末影之眼，前往末地打龙后找到末影船，最后探索空岛，中途带有矿井和溶洞地形，通关5，9关后解锁跳关节点，难度适中，建筑地形经过了精心打磨，适合所有猫娘观赏探索喵٩(•ᵕ•̤́๑)ᵒᵏᵎᵎᵎᵎ",
+      "id": "review-37a60087-026c-4b42-806c-f94e479247cc",
+      "submittedAt": "2026-09-02T06:16:34.461Z",
+      "updatedAt": "2026-09-02T06:16:34.461Z"
+    },
+    {
+      "mapId": "map-4528335e-2112-474c-904f-61196d5194e3",
       "reviewerName": "卡卡（反MC）",
       "anonymous": false,
       "ratings": {
@@ -3035,6 +3051,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-37a60087-026c-4b42-806c-f94e479247cc",
+      "title": "匿名",
+      "detail": "map-4528335e-2112-474c-904f-61196d5194e3",
+      "id": "event-8e3244cf-806f-4777-be01-231c6fd6e955",
+      "timestamp": "2026-09-02T06:16:34.461Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-98995361-02e7-44bd-9104-6e40d80fce26",
       "title": "卡卡（反MC）",
       "detail": "map-4528335e-2112-474c-904f-61196d5194e3",
@@ -5010,5 +5034,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-09-01T16:52:45.676Z"
+  "updatedAt": "2026-09-02T06:16:34.461Z"
 }
