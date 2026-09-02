@@ -8,11 +8,11 @@
       "name": "MC解密",
       "author": "456",
       "mappedAt": "",
-      "introduction": "",
+      "introduction": "1.一共11关\n2.箭头标注的地方是通关的必经之路\n3.部分解密需要一点我的世界原版知识\n4.如果卡关可以尝试多上下左右看看",
       "estimatedMinutes": 90,
       "id": "map-4528335e-2112-474c-904f-61196d5194e3",
       "submittedAt": "2026-09-01T10:01:29.412Z",
-      "updatedAt": "2026-09-01T10:01:29.412Z"
+      "updatedAt": "2026-09-02T08:21:20.792Z"
     },
     {
       "coverImage": "/assets/images/1787362745438-Snipaste_2026-08-22_09-38-59.png",
@@ -3050,6 +3050,14 @@
   ],
   "events": [
     {
+      "kind": "map-update",
+      "subjectId": "map-4528335e-2112-474c-904f-61196d5194e3",
+      "title": "编辑地图 MC解密",
+      "detail": "nnzz2i",
+      "id": "event-51788b90-62a6-4a43-8e0e-9b2765fb09bc",
+      "timestamp": "2026-09-02T08:21:20.792Z"
+    },
+    {
       "kind": "review-create",
       "subjectId": "review-37a60087-026c-4b42-806c-f94e479247cc",
       "title": "匿名",
@@ -5034,5 +5042,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-09-02T06:16:34.461Z"
+  "updatedAt": "2026-09-02T08:21:20.792Z"
 }
