@@ -734,6 +734,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-dea38ec9-b3e8-4ba4-8286-6b61f883c376",
+      "reviewerName": "神作喵",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 0,
+        "aesthetics": 0,
+        "guidance": 0,
+        "difficulty": 0,
+        "overall": 0
+      },
+      "comment": "",
+      "id": "review-05568ea4-37de-4b88-a181-37e41117bfcc",
+      "submittedAt": "2026-09-04T17:03:12.379Z",
+      "updatedAt": "2026-09-04T17:03:12.379Z"
+    },
+    {
       "mapId": "map-4528335e-2112-474c-904f-61196d5194e3",
       "reviewerName": "匿名",
       "anonymous": true,
@@ -3064,6 +3080,14 @@
   ],
   "events": [
     {
+      "kind": "review-create",
+      "subjectId": "review-05568ea4-37de-4b88-a181-37e41117bfcc",
+      "title": "神作喵",
+      "detail": "map-dea38ec9-b3e8-4ba4-8286-6b61f883c376",
+      "id": "event-832a43b9-cee5-4a99-ae87-d3fb1348e96a",
+      "timestamp": "2026-09-04T17:03:12.379Z"
+    },
+    {
       "kind": "map-create",
       "subjectId": "map-dea38ec9-b3e8-4ba4-8286-6b61f883c376",
       "title": "典中典解密（高难）",
@@ -5064,5 +5088,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-09-04T08:24:43.685Z"
+  "updatedAt": "2026-09-04T17:03:12.379Z"
 }
