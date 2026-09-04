@@ -1,6 +1,20 @@
 {
   "maps": [
     {
+      "coverImage": "/assets/images/1788510194462-QQ20260904-162212.png",
+      "previewImage": "",
+      "code": "10dpe0",
+      "type": "解密",
+      "name": "典中典解密（高难）",
+      "author": "456",
+      "mappedAt": "2026-09-04",
+      "introduction": "本解密适合基本功娴熟，解密技巧高超的猫娘游玩喵\n1.卡关时可以尝试回到前面的关卡寻找线索，很多机关是多个房间联动的\n2.箭头具备一定指引作用，一些线索是告诉你机关在哪个位置\n3.一些传送门会把你传送回前面的关卡，可能与线索有关\nmmr可用星绘",
+      "estimatedMinutes": 120,
+      "id": "map-dea38ec9-b3e8-4ba4-8286-6b61f883c376",
+      "submittedAt": "2026-09-04T08:24:43.685Z",
+      "updatedAt": "2026-09-04T08:24:43.685Z"
+    },
+    {
       "coverImage": "/assets/images/1788256867902-MC__.jpg",
       "previewImage": "",
       "code": "nnzz2i",
@@ -3050,6 +3064,14 @@
   ],
   "events": [
     {
+      "kind": "map-create",
+      "subjectId": "map-dea38ec9-b3e8-4ba4-8286-6b61f883c376",
+      "title": "典中典解密（高难）",
+      "detail": "10dpe0",
+      "id": "event-516a46aa-5bb8-48be-9381-77d78f273b0f",
+      "timestamp": "2026-09-04T08:24:43.685Z"
+    },
+    {
       "kind": "map-update",
       "subjectId": "map-4528335e-2112-474c-904f-61196d5194e3",
       "title": "编辑地图 MC解密",
@@ -5042,5 +5064,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-09-02T08:21:20.792Z"
+  "updatedAt": "2026-09-04T08:24:43.685Z"
 }
