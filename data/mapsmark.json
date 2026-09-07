@@ -734,6 +734,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-a6abb700-46c1-4d61-b588-89384005cd82",
+      "reviewerName": "匿名",
+      "anonymous": true,
+      "ratings": {
+        "entertainment": 4.5,
+        "aesthetics": 4.4,
+        "guidance": 4.4,
+        "difficulty": 4.7,
+        "overall": 4.9
+      },
+      "comment": "",
+      "id": "review-d1aa85ae-03e5-4cfe-9de7-50d2e3958223",
+      "submittedAt": "2026-09-07T09:53:42.630Z",
+      "updatedAt": "2026-09-07T09:53:42.630Z"
+    },
+    {
       "mapId": "map-dea38ec9-b3e8-4ba4-8286-6b61f883c376",
       "reviewerName": "神作喵",
       "anonymous": false,
@@ -3097,6 +3113,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-d1aa85ae-03e5-4cfe-9de7-50d2e3958223",
+      "title": "匿名",
+      "detail": "map-a6abb700-46c1-4d61-b588-89384005cd82",
+      "id": "event-918b5f03-0c5e-4429-9719-15680f46927a",
+      "timestamp": "2026-09-07T09:53:42.630Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-af439ad5-5053-4255-ad01-3c5924421ec8",
       "title": "神作喵",
       "detail": "map-dea38ec9-b3e8-4ba4-8286-6b61f883c376",
@@ -5112,5 +5136,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-09-04T17:03:46.281Z"
+  "updatedAt": "2026-09-07T09:53:42.630Z"
 }
