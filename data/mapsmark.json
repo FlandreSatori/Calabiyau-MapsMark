@@ -779,7 +779,8 @@
       "comment": "",
       "id": "review-05568ea4-37de-4b88-a181-37e41117bfcc",
       "submittedAt": "2026-09-04T17:03:12.379Z",
-      "updatedAt": "2026-09-04T17:03:12.379Z"
+      "updatedAt": "2026-09-10T01:53:50.678Z",
+      "deletedAt": "2026-09-10T01:53:50.678Z"
     },
     {
       "mapId": "map-4528335e-2112-474c-904f-61196d5194e3",
@@ -3112,6 +3113,14 @@
   ],
   "events": [
     {
+      "kind": "review-delete",
+      "subjectId": "review-05568ea4-37de-4b88-a181-37e41117bfcc",
+      "title": "删除评价 神作喵",
+      "detail": "map-dea38ec9-b3e8-4ba4-8286-6b61f883c376",
+      "id": "event-628f63af-556b-41a1-9cc1-714e38e33d14",
+      "timestamp": "2026-09-10T01:53:50.679Z"
+    },
+    {
       "kind": "review-create",
       "subjectId": "review-d1aa85ae-03e5-4cfe-9de7-50d2e3958223",
       "title": "匿名",
@@ -5136,5 +5145,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-09-07T09:53:42.630Z"
+  "updatedAt": "2026-09-10T01:53:50.679Z"
 }
