@@ -734,6 +734,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-fe9aded8-70c4-4e8a-9095-2f18b2df4e43",
+      "reviewerName": "幻想沉溺",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 3.4,
+        "aesthetics": 4,
+        "guidance": 2,
+        "difficulty": 2,
+        "overall": 3.3
+      },
+      "comment": "奇怪的大冒险（\n\n在已知都是坑的情况下，反着正常的来，很多地方都能会心一笑\n\n第一关上来理解可能会遇到些麻烦，毕竟这时还不知道地图的风格，如果想明白作者打算怎么坑你，那就能注意到不对劲的地方，后边整体的难度其实都不如第一关，多摸索一下就好。\n\n没有什么谜题，很多地方只要是试过就能过了；引导就很有问题了，对于如何破关，很多时候能遇到提示，但反而是一开始摆出来明面的提示有问题，要上手理解这一点很麻烦，这是矛盾的，有时候要看提示，有时候要凭理解，反正我解起来很多时候都不顺；内部的关卡看着算顺眼，虽然本质方格子，但在外面补充了很多美观性；趣味主要来源于与作者的巴巴博弈，（哦不对不对，哦对的对的）坑没被坑到都是乐趣的一环\n\n怎么又要选路，气笑了喵（",
+      "id": "review-6f6155cf-21aa-4658-986f-287f2fe3a158",
+      "submittedAt": "2026-09-25T12:38:07.188Z",
+      "updatedAt": "2026-09-25T12:38:07.188Z"
+    },
+    {
       "mapId": "map-a6abb700-46c1-4d61-b588-89384005cd82",
       "reviewerName": "匿名",
       "anonymous": true,
@@ -3113,6 +3129,14 @@
   ],
   "events": [
     {
+      "kind": "review-create",
+      "subjectId": "review-6f6155cf-21aa-4658-986f-287f2fe3a158",
+      "title": "幻想沉溺",
+      "detail": "map-fe9aded8-70c4-4e8a-9095-2f18b2df4e43",
+      "id": "event-9e594696-19fa-4b4e-8dde-f7abe21e277d",
+      "timestamp": "2026-09-25T12:38:07.189Z"
+    },
+    {
       "kind": "review-delete",
       "subjectId": "review-05568ea4-37de-4b88-a181-37e41117bfcc",
       "title": "删除评价 神作喵",
@@ -5145,5 +5169,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-09-10T01:53:50.679Z"
+  "updatedAt": "2026-09-25T12:38:07.189Z"
 }
