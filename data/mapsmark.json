@@ -734,6 +734,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-21e99ba2-0480-485a-b10b-a82ef46338e6",
+      "reviewerName": "幻想沉溺",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 3.5,
+        "aesthetics": 3.7,
+        "guidance": 1,
+        "difficulty": 3,
+        "overall": 3.4
+      },
+      "comment": "可真是让我好找\n\n这次的谜题我认为只有3个，前面跑酷的部分其实没有单独的谜题，藏的都很浅显，不过这个找标志确实有点好玩，找齐后也能看出来这个答案是精心设计的，第一次我确实就差4个。找开关确实没什么提示，基本是到处逛才能遇到\n\n不知道作者是不是没活了，值得体验的部分不多；这次空间占挺大的，景观设计就少了；对于真正需要的提示来说，基本是没有；找标志确实需要一点脑子\n\n你知道吗，其实根本不用跑酷（",
+      "id": "review-688ee516-0053-42fd-9773-d18822079e14",
+      "submittedAt": "2026-09-26T08:13:23.343Z",
+      "updatedAt": "2026-09-26T08:13:23.343Z"
+    },
+    {
       "mapId": "map-45853138-c6bd-47ad-b1bd-2ddff1b6375b",
       "reviewerName": "幻想沉溺",
       "anonymous": false,
@@ -3162,6 +3178,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-688ee516-0053-42fd-9773-d18822079e14",
+      "title": "幻想沉溺",
+      "detail": "map-21e99ba2-0480-485a-b10b-a82ef46338e6",
+      "id": "event-0dd77fed-eeff-43c8-b185-8a470f953b21",
+      "timestamp": "2026-09-26T08:13:23.343Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-7d690756-0243-485a-ab96-c9e795657bed",
       "title": "幻想沉溺",
       "detail": "map-45853138-c6bd-47ad-b1bd-2ddff1b6375b",
@@ -5217,5 +5241,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-09-26T08:12:08.722Z"
+  "updatedAt": "2026-09-26T08:13:23.343Z"
 }
