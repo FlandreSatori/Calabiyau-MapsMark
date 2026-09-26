@@ -734,6 +734,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-45853138-c6bd-47ad-b1bd-2ddff1b6375b",
+      "reviewerName": "幻想沉溺",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 3,
+        "aesthetics": 3.9,
+        "guidance": 3,
+        "difficulty": 2,
+        "overall": 3.1
+      },
+      "comment": "依旧开局蓝火起手\n\n这次要短上许多，看似选择的地方其实不用选择，最坑的仍然是碰到蓝火，其他地方的路径选择其实不多，解谜也没什么难度\n\n引导上做了一些说明，要比上次好的多；没上次好玩，也许是我已经熟悉作者的套路了？；美观感觉少了一点\n\n我不要玩迷宫喵（",
+      "id": "review-4ae41b3d-4b84-46fd-8272-114166f8822b",
+      "submittedAt": "2026-09-26T07:39:00.375Z",
+      "updatedAt": "2026-09-26T07:39:00.375Z"
+    },
+    {
       "mapId": "map-fe9aded8-70c4-4e8a-9095-2f18b2df4e43",
       "reviewerName": "幻想沉溺",
       "anonymous": false,
@@ -3130,6 +3146,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-4ae41b3d-4b84-46fd-8272-114166f8822b",
+      "title": "幻想沉溺",
+      "detail": "map-45853138-c6bd-47ad-b1bd-2ddff1b6375b",
+      "id": "event-d4388f08-78d8-4879-9821-05fefec5af36",
+      "timestamp": "2026-09-26T07:39:00.375Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-6f6155cf-21aa-4658-986f-287f2fe3a158",
       "title": "幻想沉溺",
       "detail": "map-fe9aded8-70c4-4e8a-9095-2f18b2df4e43",
@@ -5169,5 +5193,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-09-25T12:38:07.189Z"
+  "updatedAt": "2026-09-26T07:39:00.375Z"
 }
