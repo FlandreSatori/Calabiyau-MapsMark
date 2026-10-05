@@ -1,6 +1,20 @@
 {
   "maps": [
     {
+      "coverImage": "/assets/images/1791198830600-360__20261005191206063.jpg",
+      "previewImage": "",
+      "code": "9k9z7k",
+      "type": "解密",
+      "name": "神奇猫娘大冒险05：不给糖就捣蛋",
+      "author": "香奈美牌馒头铺",
+      "mappedAt": "",
+      "introduction": "",
+      "estimatedMinutes": 25,
+      "id": "map-a91419c3-13e4-40ad-ada4-edb0b40ddc00",
+      "submittedAt": "2026-10-05T11:54:42.906Z",
+      "updatedAt": "2026-10-05T11:54:42.906Z"
+    },
+    {
       "coverImage": "/assets/images/1790467094191-de027875dc700da1059b6c366ff8d01f.png",
       "previewImage": "",
       "code": "t0976r",
@@ -3193,6 +3207,14 @@
   "events": [
     {
       "kind": "map-create",
+      "subjectId": "map-a91419c3-13e4-40ad-ada4-edb0b40ddc00",
+      "title": "神奇猫娘大冒险05：不给糖就捣蛋",
+      "detail": "9k9z7k",
+      "id": "event-3b98261f-c259-455f-9b8b-675b8ffa42ac",
+      "timestamp": "2026-10-05T11:54:42.906Z"
+    },
+    {
+      "kind": "map-create",
       "subjectId": "map-fa05eab6-ff5f-4534-b6de-7de3db950bab",
       "title": "老登解密之不看简介的有难了",
       "detail": "t0976r",
@@ -5272,5 +5294,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-09-27T00:07:28.030Z"
+  "updatedAt": "2026-10-05T11:54:42.906Z"
 }
