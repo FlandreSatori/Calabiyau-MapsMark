@@ -1,6 +1,20 @@
 {
   "maps": [
     {
+      "coverImage": "/assets/images/1791427754325-b1df5a49-7b46-42b6-b904-3680219e7d01.png",
+      "previewImage": "",
+      "code": "10ou75",
+      "type": "解密",
+      "name": "伊薇特的救赎（小熊解密闯关）",
+      "author": "喵雪儿喵",
+      "mappedAt": "2026-10-01",
+      "introduction": "香奈美为了不让伊薇特和领航者约会，竟派人把小熊关进地下室喵！伊薇特究竟能不能逃离地下室，与领航者重逢呢？\nV4针对传送门bug的修复以及最难关的重做，V5修复bug\n左边为闯关区，右边为观战区，按F1查看游戏提示喵\n1.菲在手上非常小巧，可以丢进很多伊薇特去不到的地方\n2.菲可以帮伊薇特开启自动门，但无法开启机关门的开关\n3.操作菲状态下的伊薇特会被传送门传送，而且无视吹风机效果\n4.菲可以进行标点操作，给伊薇特指引方向\n5.菲的存在时间约为45秒，请妥善利用这段时间\n6.大家一起友好的和菲玩吧喵！",
+      "estimatedMinutes": 90,
+      "id": "map-3e02a6f1-e70f-4e24-adc9-bc142a0401e2",
+      "submittedAt": "2026-10-08T02:52:03.443Z",
+      "updatedAt": "2026-10-08T02:52:03.443Z"
+    },
+    {
       "coverImage": "/assets/images/1791198830600-360__20261005191206063.jpg",
       "previewImage": "",
       "code": "9k9z7k",
@@ -3207,6 +3221,14 @@
   "events": [
     {
       "kind": "map-create",
+      "subjectId": "map-3e02a6f1-e70f-4e24-adc9-bc142a0401e2",
+      "title": "伊薇特的救赎（小熊解密闯关）",
+      "detail": "10ou75",
+      "id": "event-f5244ddd-da4b-4657-aad5-6b1238550d0f",
+      "timestamp": "2026-10-08T02:52:03.444Z"
+    },
+    {
+      "kind": "map-create",
       "subjectId": "map-a91419c3-13e4-40ad-ada4-edb0b40ddc00",
       "title": "神奇猫娘大冒险05：不给糖就捣蛋",
       "detail": "9k9z7k",
@@ -5294,5 +5316,5 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-10-05T11:54:42.906Z"
+  "updatedAt": "2026-10-08T02:52:03.444Z"
 }
