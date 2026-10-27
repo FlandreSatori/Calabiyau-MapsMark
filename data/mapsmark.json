@@ -3237,6 +3237,13 @@
   "events": [
     {
       "kind": "map-update",
+      "subjectId": "map-type",
+      "title": "新增地图类型 推塔",
+      "id": "event-fa73162d-5f0e-4383-bb1b-71f3e7fda2de",
+      "timestamp": "2026-10-27T15:25:10.866Z"
+    },
+    {
+      "kind": "map-update",
       "subjectId": "map-f35d749f-2a1b-4d16-ae48-fe8ee6291d70",
       "title": "编辑地图 构式解密，逃离古堡之贪玩蓝门",
       "detail": "9trdrv",
@@ -5355,8 +5362,9 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-10-27T15:23:27.423Z",
+  "updatedAt": "2026-10-27T15:25:10.866Z",
   "mapTypes": [
-    "PVE"
+    "PVE",
+    "推塔"
   ]
 }
