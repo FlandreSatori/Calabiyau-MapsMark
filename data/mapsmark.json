@@ -1,6 +1,20 @@
 {
   "maps": [
     {
+      "coverImage": "/assets/images/1793115748287-C8DA0AE6D0702BAA71716ED8F1D2C4B4.png",
+      "previewImage": "",
+      "code": "3zcr9r",
+      "type": "追击",
+      "name": "猫娘中学",
+      "author": "宇智波蜗蜗",
+      "mappedAt": "2026-07-01",
+      "introduction": "哈基米摸南北绿豆",
+      "estimatedMinutes": 30,
+      "id": "map-689823c2-fb2b-432b-8bb9-4ff3d72a4c49",
+      "submittedAt": "2026-10-27T15:43:41.642Z",
+      "updatedAt": "2026-10-27T15:43:41.642Z"
+    },
+    {
       "coverImage": "/assets/images/1791427754325-b1df5a49-7b46-42b6-b904-3680219e7d01.png",
       "previewImage": "",
       "code": "10ou75",
@@ -3236,6 +3250,14 @@
   ],
   "events": [
     {
+      "kind": "map-create",
+      "subjectId": "map-689823c2-fb2b-432b-8bb9-4ff3d72a4c49",
+      "title": "猫娘中学",
+      "detail": "3zcr9r",
+      "id": "event-0210c2eb-19b8-441e-a3b2-931f5734e9f2",
+      "timestamp": "2026-10-27T15:43:41.642Z"
+    },
+    {
       "kind": "map-update",
       "subjectId": "map-type",
       "title": "新增地图类型 PVP",
@@ -5369,7 +5391,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-10-27T15:25:15.599Z",
+  "updatedAt": "2026-10-27T15:43:41.642Z",
   "mapTypes": [
     "PVE",
     "推塔",
