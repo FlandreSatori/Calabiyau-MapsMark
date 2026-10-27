@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { ReviewRadarToggle } from "@/components/review-radar-toggle";
@@ -41,7 +42,9 @@ export default async function MapDetailPage({ params }: { params: Promise<{ id: 
                         <div className="stat-strip">
                             <span className="stat">{map.type}</span>
                             <span className="stat">{map.code}</span>
-                            <span className="stat">{map.author}</span>
+                            <Link className="stat stat-link" href={`/authors/${encodeURIComponent(map.author)}`} title={`查看 ${map.author} 的全部地图`}>
+                                {map.author}
+                            </Link>
                             <span className="stat">{map.estimatedMinutes}分钟</span>
                         </div>
                         <p className="hero-text map-introduction">{map.introduction}</p>

@@ -337,7 +337,7 @@ export function MapForm({ mapTypes, adminToken, onSuccess, notify }: MapFormProp
         <form onSubmit={handleSubmit} className="grid gap-12">
             <div className="form-grid">
                 <label className="label full">
-                    封面 <span style={{ color: "#ffcc00", marginLeft: 6 }}>*</span>
+                    封面 <span className="required-mark">*</span>
                     <input
                         className="input"
                         type="file"
@@ -363,7 +363,7 @@ export function MapForm({ mapTypes, adminToken, onSuccess, notify }: MapFormProp
                     <span className="help">上传后会保存到 GitHub 仓库并将 URL 写入数据中。</span>
                 </label>
                 <label className="label full">
-                    内容预览图（可选） <span style={{ color: "#9aa0a6", marginLeft: 6 }}></span>
+                    内容预览图（可选）
                     <input
                         className="input"
                         type="file"
@@ -387,7 +387,7 @@ export function MapForm({ mapTypes, adminToken, onSuccess, notify }: MapFormProp
                     />
                 </label>
                 <label className="label">
-                    地图代码 <span style={{ color: "#ffcc00", marginLeft: 6 }}>*</span>
+                    地图代码 <span className="required-mark">*</span>
                     <input className={`input${isInvalid("code") ? " input-invalid" : ""}`} value={form.code} onBlur={() => setTouched((s) => ({ ...s, code: true }))} onChange={(event) => setForm({ ...form, code: event.target.value })} placeholder="abcdef" />
                 </label>
                 <label className="label">
@@ -401,15 +401,15 @@ export function MapForm({ mapTypes, adminToken, onSuccess, notify }: MapFormProp
                     </select>
                 </label>
                 <label className="label">
-                    地图名 <span style={{ color: "#ffcc00", marginLeft: 6 }}>*</span>
+                    地图名 <span className="required-mark">*</span>
                     <input className={`input${isInvalid("name") ? " input-invalid" : ""}`} value={form.name} onBlur={() => setTouched((s) => ({ ...s, name: true }))} onChange={(event) => setForm({ ...form, name: event.target.value })} />
                 </label>
                 <label className="label">
-                    作者名 <span style={{ color: "#ffcc00", marginLeft: 6 }}>*</span>
+                    作者名 <span className="required-mark">*</span>
                     <input className={`input${isInvalid("author") ? " input-invalid" : ""}`} value={form.author} onBlur={() => setTouched((s) => ({ ...s, author: true }))} onChange={(event) => setForm({ ...form, author: event.target.value })} />
                 </label>
                 <label className="label">
-                    制图时间 <span style={{ color: "#9aa0a6", marginLeft: 6 }}></span>
+                    制图时间
                     <input className="input" type="date" value={form.mappedAt} onChange={(event) => setForm({ ...form, mappedAt: event.target.value })} />
                 </label>
                 <label className="label">
@@ -417,7 +417,7 @@ export function MapForm({ mapTypes, adminToken, onSuccess, notify }: MapFormProp
                     <input className="input" type="number" min="1" max="999" value={form.estimatedMinutes} onChange={(event) => setForm({ ...form, estimatedMinutes: Number(event.target.value) })} />
                 </label>
                 <label className="label full">
-                    地图介绍 <span style={{ color: "#9aa0a6", marginLeft: 6 }}></span>
+                    地图介绍
                     <textarea className="textarea" value={form.introduction} onChange={(event) => setForm({ ...form, introduction: event.target.value })} />
                 </label>
             </div>
@@ -580,7 +580,7 @@ export function ReviewForm({ maps, onSuccess, notify }: ReviewFormProps) {
     };
 
     return (
-        <div className="grid gap-12">
+        <div className="review-form-layout">
             <div className="review-shell panel panel-strong panel-pad">
                 <div className="form-grid">
                     <label className="label full review-name-row">

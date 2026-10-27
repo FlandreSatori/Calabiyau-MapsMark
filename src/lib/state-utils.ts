@@ -1,5 +1,11 @@
 import type { AppState } from "@/lib/types";
+import { defaultMapTypes } from "@/lib/types";
 import { averageRatings, aggregateByMetric, topEvents, visibleMaps, visibleReviews, countMapCategories, countMapTypes } from "@/lib/metrics";
+
+export const collectMapTypes = (state: AppState) => {
+    const usedTypes = state.maps.filter((map) => !map.deletedAt).map((map) => map.type);
+    return Array.from(new Set([...defaultMapTypes, ...(state.mapTypes ?? []), ...usedTypes])).filter(Boolean);
+};
 
 export const summarizeState = (state: AppState) => {
     const maps = visibleMaps(state);
@@ -8,6 +14,7 @@ export const summarizeState = (state: AppState) => {
         maps,
         reviews,
         events: topEvents(state),
+        mapTypes: collectMapTypes(state),
         mapCount: maps.length,
         reviewCount: reviews.length,
         typeCounts: countMapTypes(state),

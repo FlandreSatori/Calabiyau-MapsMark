@@ -1,4 +1,5 @@
 import type { AppState, EventRecord, MapInput, MapRecord, ReviewInput, ReviewRecord } from "@/lib/types";
+import { defaultMapTypes } from "@/lib/types";
 import { seedState } from "@/lib/seed";
 import bundledState from "../../data/mapsmark.json";
 import { readFile } from "node:fs/promises";
@@ -291,6 +292,30 @@ export const removeReview = async (id: string) => {
         subjectId: target.id,
         title: `删除评价 ${target.anonymous ? "匿名" : target.reviewerName}`,
         detail: target.mapId
+    });
+    await saveState(state);
+    return state;
+};
+
+export const addMapType = async (name: string) => {
+    const trimmed = name.trim();
+    if (!trimmed) {
+        throw new Error("地图类型名称不能为空");
+    }
+    const state = await loadState();
+    const existing = new Set<string>([
+        ...defaultMapTypes,
+        ...(state.mapTypes ?? []),
+        ...state.maps.filter((map) => !map.deletedAt).map((map) => map.type)
+    ]);
+    if (existing.has(trimmed)) {
+        throw new Error("该地图类型已存在");
+    }
+    state.mapTypes = [...(state.mapTypes ?? []), trimmed];
+    appendEvent(state, {
+        kind: "map-update",
+        subjectId: "map-type",
+        title: `新增地图类型 ${trimmed}`
     });
     await saveState(state);
     return state;

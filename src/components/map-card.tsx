@@ -4,8 +4,7 @@ import Link from "next/link";
 
 import { FallbackImage } from "@/components/fallback-image";
 import type { MapRecord, ReviewRecord } from "@/lib/types";
-import { formatDateTime } from "@/lib/format";
-import { averageRatings, getMapRatingLabel } from "@/lib/metrics";
+import { averageRatings } from "@/lib/metrics";
 
 type MapCardProps = {
     map: MapRecord;
@@ -13,31 +12,28 @@ type MapCardProps = {
 };
 
 export function MapCard({ map, reviews }: MapCardProps) {
-    const score = averageRatings(reviews, map.id);
     const reviewCount = reviews.filter((review) => review.mapId === map.id && !review.deletedAt).length;
-    const ratingLabel = reviewCount > 0 ? getMapRatingLabel(reviews, map.id) : null;
+    const score = reviewCount > 0 ? averageRatings(reviews, map.id).overall : null;
+    const authorHref = `/authors/${encodeURIComponent(map.author)}`;
 
     return (
-        <Link href={`/maps/${map.id}`} className="cover-card" title={`${map.name} · 点击查看详情`}>
-            <FallbackImage
-                src={map.coverImage}
-                alt={map.name}
-            />
-            <div className="cover-corners" aria-hidden="true">
-                <div className="cover-corner-stack">
-                    <span className="cover-corner-badge cover-corner-score">{score.overall.toFixed(1)}</span>
-                    {ratingLabel ? <span className="cover-corner-badge cover-corner-tag">{ratingLabel}</span> : null}
-                </div>
-                <span className="cover-corner-badge cover-corner-reviews">{reviewCount} 条评价</span>
-            </div>
-            <div className="cover-overlay">
-                <h3 className="card-title">{map.name}</h3>
-                <div className="card-meta">
-                    <div>{map.author}</div>
-                    <div>{map.type} · {map.code}</div>
-                    <div>{formatDateTime(map.submittedAt)}</div>
+        <article className="map-card">
+            <Link className="map-card-media" href={`/maps/${map.id}`} aria-label={`查看 ${map.name} 详情`} title={`${map.name} · 点击查看详情`}>
+                <FallbackImage src={map.coverImage} alt={map.name} />
+            </Link>
+            <div className="map-card-body">
+                <Link className="map-card-title" href={`/maps/${map.id}`}>{map.name}</Link>
+                <div className="map-card-meta">
+                    <Link className="author-link" href={authorHref} title={`查看 ${map.author} 的全部地图`}>
+                        {map.author}
+                    </Link>
+                    {score !== null ? (
+                        <span className="map-score" title={`综合评分 ${score.toFixed(1)} · ${reviewCount} 条评价`}>
+                            {score.toFixed(1)}
+                        </span>
+                    ) : null}
                 </div>
             </div>
-        </Link>
+        </article>
     );
 }

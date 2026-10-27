@@ -50,6 +50,7 @@ export type AppState = {
     reviews: ReviewRecord[];
     events: EventRecord[];
     updatedAt: string;
+    mapTypes?: string[];
     ui?: {
         background?: string;
     };
