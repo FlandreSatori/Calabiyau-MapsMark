@@ -7,26 +7,29 @@ import { MapForm } from "@/components/forms";
 import { MapEditor } from "@/components/map-editor";
 import { MapTypeManager } from "@/components/map-type-manager";
 import { ReviewEditor } from "@/components/review-editor";
+import { ApprovalQueue } from "@/components/approval-queue";
 import { notify } from "@/components/toast";
-import type { MapRecord, ReviewRecord } from "@/lib/types";
+import type { ChangeRequestRecord, MapRecord, ReviewRecord } from "@/lib/types";
 
-type AdminView = "add" | "maps" | "reviews" | "types";
+type AdminView = "add" | "maps" | "reviews" | "types" | "approvals";
 
 type AdminWorkspaceProps = {
     maps: MapRecord[];
     reviews: ReviewRecord[];
     mapTypes: string[];
     typeCounts: Record<string, number>;
+    changeRequests: ChangeRequestRecord[];
 };
 
 const storageKey = "mapsmark-admin-token";
 
-export function AdminWorkspace({ maps, reviews, mapTypes, typeCounts }: AdminWorkspaceProps) {
+export function AdminWorkspace({ maps, reviews, mapTypes, typeCounts, changeRequests }: AdminWorkspaceProps) {
     const router = useRouter();
     const [tokenInput, setTokenInput] = useState("");
     const [token, setToken] = useState("");
     const [checking, setChecking] = useState(false);
     const [view, setView] = useState<AdminView>("add");
+    const pendingCount = changeRequests.filter((item) => item.status === "pending").length;
 
     const verify = async (candidate: string, quiet = false) => {
         if (!candidate) return;
@@ -75,12 +78,14 @@ export function AdminWorkspace({ maps, reviews, mapTypes, typeCounts }: AdminWor
                     <button className={view === "maps" ? "is-active" : ""} type="button" onClick={() => setView("maps")}>地图 {maps.length}</button>
                     <button className={view === "reviews" ? "is-active" : ""} type="button" onClick={() => setView("reviews")}>评价 {reviews.length}</button>
                     <button className={view === "types" ? "is-active" : ""} type="button" onClick={() => setView("types")}>类型 {mapTypes.length}</button>
+                    <button className={view === "approvals" ? "is-active" : ""} type="button" onClick={() => setView("approvals")}>审批 {pendingCount}</button>
                 </div>
                 <div className="admin-tab-panel">
                     {view === "add" ? <MapForm mapTypes={mapTypes} adminToken={token} onSuccess={() => router.refresh()} /> : null}
                     {view === "maps" ? <MapEditor maps={maps} token={token} onSaved={() => router.refresh()} /> : null}
                     {view === "reviews" ? <ReviewEditor maps={maps} reviews={reviews} token={token} onSaved={() => router.refresh()} /> : null}
                     {view === "types" ? <MapTypeManager mapTypes={mapTypes} typeCounts={typeCounts} token={token} onSuccess={() => router.refresh()} /> : null}
+                    {view === "approvals" ? <ApprovalQueue requests={changeRequests} maps={maps} reviews={reviews} token={token} onSaved={() => router.refresh()} /> : null}
                 </div>
             </>}
         </section>

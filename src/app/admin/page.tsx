@@ -17,6 +17,7 @@ export default async function AdminPage() {
                     reviews={summary.reviews}
                     mapTypes={summary.mapTypes}
                     typeCounts={summary.typeCounts}
+                    changeRequests={state.changeRequests ?? []}
                 />
 
                 <section className="panel panel-pad">

@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-import { addMap, addMapType, addReview, loadState, patchMap, patchReview, removeMap, removeReview, patchUI } from "@/lib/github-store";
+import { addChangeRequest, addMap, addMapType, addReview, loadState, patchMap, patchReview, removeMap, removeReview, patchUI, resolveChangeRequest } from "@/lib/github-store";
 
 const adminAllowed = (request: Request) => {
     const token = request.headers.get("x-admin-token") ?? "";
@@ -25,7 +25,7 @@ export async function POST(request: Request) {
         if (suppliedToken !== null && !adminAllowed(request)) {
             return NextResponse.json({ message: "Unauthorized" }, { status: 401 });
         }
-        const body = (await request.json()) as { type: "map" | "review" | "mapType"; payload: unknown };
+        const body = (await request.json()) as { type: "map" | "review" | "mapType" | "change-request" | "change-request-resolve"; payload: unknown };
         if (body.type === "mapType") {
             if (!adminAllowed(request)) {
                 return NextResponse.json({ message: "Unauthorized" }, { status: 401 });
@@ -33,6 +33,18 @@ export async function POST(request: Request) {
             const name = (body.payload as { name?: string } | null)?.name ?? "";
             const state = await addMapType(name);
             return NextResponse.json(state, { status: 201 });
+        }
+        if (body.type === "change-request") {
+            const state = await addChangeRequest(body.payload as Parameters<typeof addChangeRequest>[0]);
+            return NextResponse.json(state, { status: 201 });
+        }
+        if (body.type === "change-request-resolve") {
+            if (!adminAllowed(request)) {
+                return NextResponse.json({ message: "Unauthorized" }, { status: 401 });
+            }
+            const payload = body.payload as { id: string; action: "approve" | "reject"; note?: string };
+            const state = await resolveChangeRequest(payload.id, payload.action, payload.note);
+            return NextResponse.json(state, { status: 200 });
         }
         if (body.type === "map") {
             const state = await addMap(body.payload as Parameters<typeof addMap>[0]);

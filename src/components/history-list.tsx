@@ -26,11 +26,14 @@ export function HistoryList({ events, maps = [], reviews = [], mode = "single" }
                     const isReviewCreate = event.kind === "review-create";
                     const mapName = isReviewCreate ? mapNameById.get(event.detail ?? "") : undefined;
                     const isReviewEvent = event.kind.startsWith("review");
+                    const isRequestEvent = event.kind.startsWith("request");
                     const review = reviewById.get(event.subjectId);
                     const map = mapById.get(event.subjectId);
-                    const singleTag = isReviewEvent
-                        ? (typeof review?.ratings.overall === "number" ? `${review.ratings.overall.toFixed(1)} 分` : "无评分")
-                        : (map?.type ?? "未知类型");
+                    const singleTag = isRequestEvent
+                        ? "审批"
+                        : isReviewEvent
+                          ? (typeof review?.ratings.overall === "number" ? `${review.ratings.overall.toFixed(1)} 分` : "无评分")
+                          : (map?.type ?? "未知类型");
 
                     return (
                         <div className="history-item" key={event.id}>
@@ -46,6 +49,8 @@ export function HistoryList({ events, maps = [], reviews = [], mode = "single" }
                                                 {"地图："}
                                                 <Link href={`/maps/${event.detail}`}>{mapName ?? event.detail}</Link>
                                             </>
+                                        ) : isRequestEvent ? (
+                                            "审批记录"
                                         ) : (
                                             event.detail ?? "历史记录"
                                         )}

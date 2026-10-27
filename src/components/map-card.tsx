@@ -22,7 +22,10 @@ export function MapCard({ map, reviews }: MapCardProps) {
                 <FallbackImage src={map.coverImage} alt={map.name} />
             </Link>
             <div className="map-card-body">
-                <Link className="map-card-title" href={`/maps/${map.id}`}>{map.name}</Link>
+                <Link className="map-card-title" href={`/maps/${map.id}`}>
+                    {map.name}
+                    {map.delisted ? <span title="已下架" style={{ marginLeft: 6 }}>🗑</span> : null}
+                </Link>
                 <div className="map-card-meta">
                     <Link className="author-link" href={authorHref} title={`查看 ${map.author} 的全部地图`}>
                         {map.author}

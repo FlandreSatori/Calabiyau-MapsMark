@@ -1,4 +1,4 @@
-import type { AppState, EventRecord, MapInput, MapRecord, ReviewInput, ReviewRecord } from "@/lib/types";
+import type { AppState, ChangeRequestKind, ChangeRequestRecord, EventRecord, MapInput, MapRecord, ReviewInput, ReviewRecord } from "@/lib/types";
 import { defaultMapTypes } from "@/lib/types";
 import { seedState } from "@/lib/seed";
 import bundledState from "../../data/mapsmark.json";
@@ -330,6 +330,124 @@ export const patchUI = async (background: string) => {
         subjectId: "ui",
         title: `更新 UI 背景`,
         detail: background
+    });
+    await saveState(state);
+    return state;
+};
+
+const changeRequestKindText: Record<ChangeRequestKind, string> = {
+    "map-edit": "地图修改",
+    "review-edit": "评价修改",
+    "review-delete": "评价删除"
+};
+
+export const addChangeRequest = async (input: {
+    kind: ChangeRequestKind;
+    targetId: string;
+    proposerName: string;
+    reason: string;
+    patch?: Partial<MapInput> | Partial<ReviewInput>;
+}) => {
+    const state = await loadState();
+    state.changeRequests = state.changeRequests ?? [];
+    const target =
+        input.kind === "map-edit"
+            ? state.maps.find((item) => item.id === input.targetId && !item.deletedAt)
+            : state.reviews.find((item) => item.id === input.targetId && !item.deletedAt);
+    if (!target) {
+        throw new Error("目标不存在或已被删除");
+    }
+    const proposerName = input.proposerName.trim() || "匿名";
+    const record: ChangeRequestRecord = {
+        id: nextId("request"),
+        kind: input.kind,
+        targetId: input.targetId,
+        proposerName,
+        reason: input.reason.trim(),
+        patch: input.patch,
+        status: "pending",
+        submittedAt: new Date().toISOString()
+    };
+    state.changeRequests.unshift(record);
+    const targetTitle =
+        input.kind === "map-edit"
+            ? (target as MapRecord).name
+            : `评价 ${(target as ReviewRecord).anonymous ? "匿名" : (target as ReviewRecord).reviewerName}`;
+    appendEvent(state, {
+        kind: "request-create",
+        subjectId: record.targetId,
+        title: `${proposerName} 提交了${changeRequestKindText[input.kind]}请求：${targetTitle}`,
+        detail: record.id
+    });
+    await saveState(state);
+    return state;
+};
+
+export const resolveChangeRequest = async (id: string, action: "approve" | "reject", note?: string) => {
+    const state = await loadState();
+    const request = (state.changeRequests ?? []).find((item) => item.id === id);
+    if (!request) {
+        throw new Error("请求不存在");
+    }
+    if (request.status !== "pending") {
+        throw new Error("该请求已被处理");
+    }
+    const now = new Date().toISOString();
+    request.status = action === "approve" ? "approved" : "rejected";
+    request.resolvedAt = now;
+    request.resolveNote = note?.trim() || undefined;
+
+    if (action === "approve") {
+        if (request.kind === "map-edit") {
+            const target = state.maps.find((item) => item.id === request.targetId && !item.deletedAt);
+            if (!target) {
+                throw new Error("目标地图不存在或已被删除");
+            }
+            request.snapshot = structuredClone(target);
+            const patch = (request.patch ?? {}) as Partial<MapInput>;
+            Object.assign(target, patch, {
+                mappedAt: patch.mappedAt !== undefined ? normalizeMappedAt(patch.mappedAt) : target.mappedAt,
+                updatedAt: now
+            });
+            appendEvent(state, {
+                kind: "map-update",
+                subjectId: target.id,
+                title: `编辑地图 ${target.name}（审批通过）`,
+                detail: target.code
+            });
+        } else {
+            const target = state.reviews.find((item) => item.id === request.targetId && !item.deletedAt);
+            if (!target) {
+                throw new Error("目标评价不存在或已被删除");
+            }
+            request.snapshot = structuredClone(target);
+            if (request.kind === "review-delete") {
+                target.deletedAt = now;
+                target.updatedAt = now;
+                appendEvent(state, {
+                    kind: "review-delete",
+                    subjectId: target.id,
+                    title: `删除评价 ${target.anonymous ? "匿名" : target.reviewerName}（审批通过）`,
+                    detail: target.mapId
+                });
+            } else {
+                const patch = (request.patch ?? {}) as Partial<ReviewInput>;
+                Object.assign(target, patch, { updatedAt: now });
+                appendEvent(state, {
+                    kind: "review-update",
+                    subjectId: target.id,
+                    title: `编辑评价 ${target.anonymous ? "匿名" : target.reviewerName}（审批通过）`,
+                    detail: target.mapId
+                });
+            }
+        }
+    }
+
+    appendEvent(state, {
+        kind: action === "approve" ? "request-approve" : "request-reject",
+        subjectId: request.targetId,
+        title: `${action === "approve" ? "通过" : "拒绝"}了 ${request.proposerName} 的${changeRequestKindText[request.kind]}请求`,
+        detail: request.id
     });
     await saveState(state);
     return state;

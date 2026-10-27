@@ -6,8 +6,9 @@ import { ReviewForm } from "@/components/forms";
 import { HistoryList } from "@/components/history-list";
 import { CopyButton } from "@/components/copy-button";
 import { FallbackImage } from "@/components/fallback-image";
+import { MapEditRequest, ReviewRequestControls } from "@/components/change-request-forms";
 import { loadState } from "@/lib/github-store";
-import { summarizeState } from "@/lib/state-utils";
+import { collectMapTypes, summarizeState } from "@/lib/state-utils";
 import { formatDateTime } from "@/lib/format";
 import { averageRatings, getMapById } from "@/lib/metrics";
 import { ratingLabels, ratingLabelText } from "@/lib/types";
@@ -38,7 +39,10 @@ export default async function MapDetailPage({ params }: { params: Promise<{ id: 
                 <section className="detail-layout">
                     <div className="panel panel-pad">
                         <p className="section-title">Map Detail</p>
-                        <h1 className="hero-title" style={{ fontSize: "2.6rem" }}>{map.name}</h1>
+                        <h1 className="hero-title" style={{ fontSize: "2.6rem" }}>
+                            {map.name}
+                            {map.delisted ? <span title="已下架" style={{ marginLeft: 8 }}>🗑</span> : null}
+                        </h1>
                         <div className="stat-strip">
                             <span className="stat">{map.type}</span>
                             <span className="stat">{map.code}</span>
@@ -68,6 +72,7 @@ export default async function MapDetailPage({ params }: { params: Promise<{ id: 
                                     <CopyButton value={map.code} label="复制代码" successMessage="地图代码已复制到剪贴板。" />
                                 </div>
                             </div>
+                            <MapEditRequest map={map} mapTypes={collectMapTypes(state)} />
                         </div>
                     </div>
 
@@ -103,6 +108,7 @@ export default async function MapDetailPage({ params }: { params: Promise<{ id: 
                                         ))}
                                     </div>
                                     <p className="hero-text review-comment-text" style={{ marginBottom: 0 }}>{review.comment}</p>
+                                    <ReviewRequestControls review={review} />
                                 </div>
                             ))}
                         </div>

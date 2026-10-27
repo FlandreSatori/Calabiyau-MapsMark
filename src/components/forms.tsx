@@ -169,7 +169,7 @@ const readFileAsDataUrl = async (file: File | null) => {
     });
 };
 
-const compressAndUpload = async (file: File, opts: { adminToken?: string; maxDim?: number; quality?: number; notify?: (t: ToastState) => void }) => {
+export const compressAndUpload = async (file: File, opts: { adminToken?: string; maxDim?: number; quality?: number; notify?: (t: ToastState) => void }) => {
     const maxDim = opts?.maxDim ?? 1600;
     const quality = opts?.quality ?? 0.75;
     try {
