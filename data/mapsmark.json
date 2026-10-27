@@ -790,6 +790,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-689823c2-fb2b-432b-8bb9-4ff3d72a4c49",
+      "reviewerName": "一只弱小的纸巾盒",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 4.4,
+        "aesthetics": 4.1,
+        "guidance": 4.8,
+        "difficulty": 4.4,
+        "overall": 5
+      },
+      "comment": "爱死你喵",
+      "id": "review-e5a2f28e-c36d-4651-bdf7-45dcd7688cc3",
+      "submittedAt": "2026-10-27T15:45:52.762Z",
+      "updatedAt": "2026-10-27T15:45:52.762Z"
+    },
+    {
       "mapId": "map-98a6bfaa-269f-4528-81cb-f547e79d4eb7",
       "reviewerName": "幻想沉溺",
       "anonymous": false,
@@ -3250,6 +3266,14 @@
   ],
   "events": [
     {
+      "kind": "review-create",
+      "subjectId": "review-e5a2f28e-c36d-4651-bdf7-45dcd7688cc3",
+      "title": "一只弱小的纸巾盒",
+      "detail": "map-689823c2-fb2b-432b-8bb9-4ff3d72a4c49",
+      "id": "event-9cb8d8a2-3b4b-4d58-92e4-0f43d939158e",
+      "timestamp": "2026-10-27T15:45:52.763Z"
+    },
+    {
       "kind": "map-create",
       "subjectId": "map-689823c2-fb2b-432b-8bb9-4ff3d72a4c49",
       "title": "猫娘中学",
@@ -5391,7 +5415,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-10-27T15:43:41.642Z",
+  "updatedAt": "2026-10-27T15:45:52.763Z",
   "mapTypes": [
     "PVE",
     "推塔",
