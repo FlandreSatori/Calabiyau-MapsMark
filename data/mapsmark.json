@@ -763,13 +763,13 @@
       "code": "9trdrv",
       "type": "解密",
       "name": "构式解密，逃离古堡之贪玩蓝门",
-      "author": "抹茶补丁戏雨烛",
+      "author": "抹茶布丁戏雨烛",
       "mappedAt": "2025-08-01",
       "introduction": "星庇所受到一封来自古堡的邀请函\n据说古堡的主人会在这次宴会中露面\n只有受到邀请之人才能参加晚宴\n你不想错过这次机会\n但是星绘事物繁忙\n你只能一人前往\n当你发现情况不对时\n已经来不及离开了\n\n“那么，前辈能逃得出这里吗，❤~~”",
       "estimatedMinutes": 60,
       "id": "map-f35d749f-2a1b-4d16-ae48-fe8ee6291d70",
       "submittedAt": "2026-05-31T09:42:56.101Z",
-      "updatedAt": "2026-06-11T15:07:47.246Z",
+      "updatedAt": "2026-10-27T15:23:27.423Z",
       "customCoverImage": "https://pic1.imgdb.cn/item/6a2acd07fdb1c84b84015e5a.jpg",
       "customPreviewImage": ""
     }
@@ -3237,6 +3237,14 @@
   "events": [
     {
       "kind": "map-update",
+      "subjectId": "map-f35d749f-2a1b-4d16-ae48-fe8ee6291d70",
+      "title": "编辑地图 构式解密，逃离古堡之贪玩蓝门",
+      "detail": "9trdrv",
+      "id": "event-1d9754ea-aa99-4b92-9852-d108dbf4bc02",
+      "timestamp": "2026-10-27T15:23:27.423Z"
+    },
+    {
+      "kind": "map-update",
       "subjectId": "map-type",
       "title": "新增地图类型 PVE",
       "id": "event-e6b11675-afd4-42bd-b666-b89277adfee4",
@@ -5347,7 +5355,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-10-27T15:21:33.430Z",
+  "updatedAt": "2026-10-27T15:23:27.423Z",
   "mapTypes": [
     "PVE"
   ]
