@@ -790,6 +790,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-52eaded5-6e54-4239-bd15-c8717f359fbd",
+      "reviewerName": "对米雪儿一心一意",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 4.8,
+        "aesthetics": 5,
+        "guidance": 3,
+        "difficulty": 2.7,
+        "overall": 4.7
+      },
+      "comment": "特别好的一张图，场景美术非常优秀，除了引导有些差强人意外，其他都非常优秀。还有就是，什么时候把好结局端上来啊。（⌒▽⌒）（⌒▽⌒）（⌒▽⌒）",
+      "id": "review-ad8ee750-f24b-4ac0-be5b-7a07e40bd3e2",
+      "submittedAt": "2026-10-27T17:41:06.004Z",
+      "updatedAt": "2026-10-27T17:41:06.004Z"
+    },
+    {
       "mapId": "map-689823c2-fb2b-432b-8bb9-4ff3d72a4c49",
       "reviewerName": "一只弱小的纸巾盒",
       "anonymous": false,
@@ -3267,6 +3283,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-ad8ee750-f24b-4ac0-be5b-7a07e40bd3e2",
+      "title": "对米雪儿一心一意",
+      "detail": "map-52eaded5-6e54-4239-bd15-c8717f359fbd",
+      "id": "event-4a1caea3-396c-4c2e-b301-fa722041893d",
+      "timestamp": "2026-10-27T17:41:06.005Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-e5a2f28e-c36d-4651-bdf7-45dcd7688cc3",
       "title": "一只弱小的纸巾盒",
       "detail": "map-689823c2-fb2b-432b-8bb9-4ff3d72a4c49",
@@ -5415,7 +5439,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-10-27T15:45:52.763Z",
+  "updatedAt": "2026-10-27T17:41:06.005Z",
   "mapTypes": [
     "PVE",
     "推塔",
