@@ -3236,6 +3236,13 @@
   ],
   "events": [
     {
+      "kind": "map-update",
+      "subjectId": "map-type",
+      "title": "新增地图类型 PVE",
+      "id": "event-e6b11675-afd4-42bd-b666-b89277adfee4",
+      "timestamp": "2026-10-27T15:21:33.430Z"
+    },
+    {
       "kind": "review-create",
       "subjectId": "review-4efe598a-186d-4e52-a3d9-7cc98d4605a9",
       "title": "幻想沉溺",
@@ -5340,5 +5347,8 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-10-25T12:07:25.168Z"
+  "updatedAt": "2026-10-27T15:21:33.430Z",
+  "mapTypes": [
+    "PVE"
+  ]
 }
