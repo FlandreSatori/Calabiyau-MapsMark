@@ -3238,6 +3238,13 @@
     {
       "kind": "map-update",
       "subjectId": "map-type",
+      "title": "新增地图类型 PVP",
+      "id": "event-db6280ef-d1df-41b5-9460-9ace85ffa3f7",
+      "timestamp": "2026-10-27T15:25:15.599Z"
+    },
+    {
+      "kind": "map-update",
+      "subjectId": "map-type",
       "title": "新增地图类型 推塔",
       "id": "event-fa73162d-5f0e-4383-bb1b-71f3e7fda2de",
       "timestamp": "2026-10-27T15:25:10.866Z"
@@ -5362,9 +5369,10 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-10-27T15:25:10.866Z",
+  "updatedAt": "2026-10-27T15:25:15.599Z",
   "mapTypes": [
     "PVE",
-    "推塔"
+    "推塔",
+    "PVP"
   ]
 }
