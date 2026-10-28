@@ -3282,6 +3282,14 @@
   ],
   "events": [
     {
+      "kind": "request-create",
+      "subjectId": "map-52eaded5-6e54-4239-bd15-c8717f359fbd",
+      "title": "匿名 提交了地图修改请求：解密：原初掠影",
+      "detail": "request-a65852c0-b10a-411d-b1ae-2448b9b61c32",
+      "id": "event-53200c28-aea9-4d0a-b498-891ef62fc887",
+      "timestamp": "2026-10-28T06:50:25.980Z"
+    },
+    {
       "kind": "review-create",
       "subjectId": "review-ad8ee750-f24b-4ac0-be5b-7a07e40bd3e2",
       "title": "对米雪儿一心一意",
@@ -5439,10 +5447,27 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-10-27T17:41:06.005Z",
+  "updatedAt": "2026-10-28T06:50:25.980Z",
   "mapTypes": [
     "PVE",
     "推塔",
     "PVP"
+  ],
+  "changeRequests": [
+    {
+      "id": "request-a65852c0-b10a-411d-b1ae-2448b9b61c32",
+      "kind": "map-edit",
+      "targetId": "map-52eaded5-6e54-4239-bd15-c8717f359fbd",
+      "proposerName": "匿名",
+      "reason": "bug存档记录丢失",
+      "patch": {
+        "code": "未确认",
+        "name": "解谜：逃出古堡之梦境重现",
+        "introduction": "【内容丢失】\n\n路径：本地图为半开放式，以跨过黑色指引块+看见关卡数字标号为进入关卡；通过机关门+跨过黑色指引块为离开关卡范围。蓝色指引块指示回路，黄色指引块指示岔路，路牌指示存档点\n\n注意：地图内存在很多能卡死的点，请逛地图时当心小缝。拦截者时间很长，可以做标记\n\n背景故事：写不下哩\nPS：卡关了可以去前作看看，思路一样的",
+        "delisted": true
+      },
+      "status": "pending",
+      "submittedAt": "2026-10-28T06:50:25.980Z"
+    }
   ]
 }
