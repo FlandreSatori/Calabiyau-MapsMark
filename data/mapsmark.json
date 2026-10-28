@@ -805,6 +805,22 @@
   "reviews": [
     {
       "mapId": "map-0762a790-d3c3-4ea9-a65d-1a9cc587aa7d",
+      "reviewerName": "抹茶布丁",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 4.5,
+        "aesthetics": 5,
+        "guidance": 3.5,
+        "difficulty": 4,
+        "overall": 4.5
+      },
+      "comment": "多写点字嘛，球球你门了 口苗",
+      "id": "review-3bb17cd8-021d-4eee-8c2c-0cae15753daa",
+      "submittedAt": "2026-10-28T15:05:22.397Z",
+      "updatedAt": "2026-10-28T15:05:22.397Z"
+    },
+    {
+      "mapId": "map-0762a790-d3c3-4ea9-a65d-1a9cc587aa7d",
       "reviewerName": "匿名",
       "anonymous": true,
       "ratings": {
@@ -3329,6 +3345,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-3bb17cd8-021d-4eee-8c2c-0cae15753daa",
+      "title": "抹茶布丁",
+      "detail": "map-0762a790-d3c3-4ea9-a65d-1a9cc587aa7d",
+      "id": "event-0ff0bfd9-42ab-43fd-80e4-c662b0dd4b87",
+      "timestamp": "2026-10-28T15:05:22.398Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-504d866e-d966-48ff-98fd-bd3ed0de23b5",
       "title": "匿名",
       "detail": "map-0762a790-d3c3-4ea9-a65d-1a9cc587aa7d",
@@ -5517,7 +5541,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-10-28T13:25:16.269Z",
+  "updatedAt": "2026-10-28T15:05:22.398Z",
   "mapTypes": [
     "PVE",
     "推塔",
