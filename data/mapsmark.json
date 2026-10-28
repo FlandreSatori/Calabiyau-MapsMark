@@ -808,6 +808,22 @@
       "reviewerName": "匿名",
       "anonymous": true,
       "ratings": {
+        "entertainment": 3.4,
+        "aesthetics": 4.7,
+        "guidance": 3,
+        "difficulty": 3.8,
+        "overall": 4.7
+      },
+      "comment": "",
+      "id": "review-504d866e-d966-48ff-98fd-bd3ed0de23b5",
+      "submittedAt": "2026-10-28T13:25:16.269Z",
+      "updatedAt": "2026-10-28T13:25:16.269Z"
+    },
+    {
+      "mapId": "map-0762a790-d3c3-4ea9-a65d-1a9cc587aa7d",
+      "reviewerName": "匿名",
+      "anonymous": true,
+      "ratings": {
         "entertainment": 2.9,
         "aesthetics": 4.9,
         "guidance": 2.8,
@@ -3313,6 +3329,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-504d866e-d966-48ff-98fd-bd3ed0de23b5",
+      "title": "匿名",
+      "detail": "map-0762a790-d3c3-4ea9-a65d-1a9cc587aa7d",
+      "id": "event-4389db02-54aa-4468-871d-213e22444852",
+      "timestamp": "2026-10-28T13:25:16.269Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-a4e48a88-8916-444b-b7f4-b74e6d3b9e95",
       "title": "匿名",
       "detail": "map-0762a790-d3c3-4ea9-a65d-1a9cc587aa7d",
@@ -5493,7 +5517,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-10-28T13:22:33.073Z",
+  "updatedAt": "2026-10-28T13:25:16.269Z",
   "mapTypes": [
     "PVE",
     "推塔",
