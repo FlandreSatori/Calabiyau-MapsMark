@@ -1,6 +1,20 @@
 {
   "maps": [
     {
+      "coverImage": "/assets/images/1793170326173-_____2026-10-28_145352.png",
+      "previewImage": "",
+      "code": "未确定",
+      "type": "解密",
+      "name": "解谜：逃出古堡之二次试炼",
+      "author": "抹茶布丁戏雨烛",
+      "mappedAt": "2026-10-23",
+      "introduction": "逃离古堡第二部 V2.0\n特别鸣谢：场景设计规划顾问：ZXCVSKa；地图参考：BV1RPw4zHEGm；关卡支援：准心不敢和人对视\n\n敬告：不适合初次解谜的玩家游玩\n——多人游玩请跟紧队友，否则可能打乱机关顺序\n\n可能存在以下问题：难度刁钻 引导依托 提示隐晦 手法困难\n         \n玩法：寻找隐藏的开关与道路，沿关卡标号前进\n\n目标：破解谜题，传送到天空法阵的END\n\n提示：先依据场景定位，再思考怎么按开关\n——路牌指示存档点，请先去破门\n\nPS：喜欢穷举和路径依赖的小猫娘你们好啊，这次我将狠狠惩罚你们\n\n拷打作者：klbq.lolser.fun\n",
+      "estimatedMinutes": 999,
+      "id": "map-0762a790-d3c3-4ea9-a65d-1a9cc587aa7d",
+      "submittedAt": "2026-10-28T06:56:21.677Z",
+      "updatedAt": "2026-10-28T06:56:21.677Z"
+    },
+    {
       "coverImage": "/assets/images/1793115748287-C8DA0AE6D0702BAA71716ED8F1D2C4B4.png",
       "previewImage": "",
       "code": "3zcr9r",
@@ -3282,6 +3296,14 @@
   ],
   "events": [
     {
+      "kind": "map-create",
+      "subjectId": "map-0762a790-d3c3-4ea9-a65d-1a9cc587aa7d",
+      "title": "解谜：逃出古堡之二次试炼",
+      "detail": "未确定",
+      "id": "event-4816aadb-a49c-478a-bbda-967075cd1301",
+      "timestamp": "2026-10-28T06:56:21.678Z"
+    },
+    {
       "kind": "request-create",
       "subjectId": "map-52eaded5-6e54-4239-bd15-c8717f359fbd",
       "title": "匿名 提交了地图修改请求：解密：原初掠影",
@@ -5447,7 +5469,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-10-28T06:50:25.980Z",
+  "updatedAt": "2026-10-28T06:56:21.678Z",
   "mapTypes": [
     "PVE",
     "推塔",
