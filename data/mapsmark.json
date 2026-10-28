@@ -804,6 +804,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-0762a790-d3c3-4ea9-a65d-1a9cc587aa7d",
+      "reviewerName": "匿名",
+      "anonymous": true,
+      "ratings": {
+        "entertainment": 2.9,
+        "aesthetics": 4.9,
+        "guidance": 2.8,
+        "difficulty": 2,
+        "overall": 4.7
+      },
+      "comment": "",
+      "id": "review-a4e48a88-8916-444b-b7f4-b74e6d3b9e95",
+      "submittedAt": "2026-10-28T13:22:33.073Z",
+      "updatedAt": "2026-10-28T13:22:33.073Z"
+    },
+    {
       "mapId": "map-52eaded5-6e54-4239-bd15-c8717f359fbd",
       "reviewerName": "对米雪儿一心一意",
       "anonymous": false,
@@ -3296,6 +3312,14 @@
   ],
   "events": [
     {
+      "kind": "review-create",
+      "subjectId": "review-a4e48a88-8916-444b-b7f4-b74e6d3b9e95",
+      "title": "匿名",
+      "detail": "map-0762a790-d3c3-4ea9-a65d-1a9cc587aa7d",
+      "id": "event-06f597ec-db35-4a55-a919-94c1afc5ba9d",
+      "timestamp": "2026-10-28T13:22:33.073Z"
+    },
+    {
       "kind": "map-create",
       "subjectId": "map-0762a790-d3c3-4ea9-a65d-1a9cc587aa7d",
       "title": "解谜：逃出古堡之二次试炼",
@@ -5469,7 +5493,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-10-28T06:56:21.678Z",
+  "updatedAt": "2026-10-28T13:22:33.073Z",
   "mapTypes": [
     "PVE",
     "推塔",
