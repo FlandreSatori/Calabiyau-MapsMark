@@ -3457,6 +3457,14 @@
   ],
   "events": [
     {
+      "kind": "request-create",
+      "subjectId": "review-1bcc4e04-0578-49a2-bc18-fb5cd4ea9127",
+      "title": "匿名 提交了评价删除请求：评价 匿名",
+      "detail": "request-d0dcfac9-9b90-4446-ab3e-340f56668ed2",
+      "id": "event-7ada349e-8cc7-4211-bc5a-ae9c34d8485f",
+      "timestamp": "2026-10-30T14:01:43.706Z"
+    },
+    {
       "kind": "review-create",
       "subjectId": "review-1bcc4e04-0578-49a2-bc18-fb5cd4ea9127",
       "title": "匿名",
@@ -5734,13 +5742,22 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-10-30T13:39:40.688Z",
+  "updatedAt": "2026-10-30T14:01:43.706Z",
   "mapTypes": [
     "PVE",
     "推塔",
     "PVP"
   ],
   "changeRequests": [
+    {
+      "id": "request-d0dcfac9-9b90-4446-ab3e-340f56668ed2",
+      "kind": "review-delete",
+      "targetId": "review-1bcc4e04-0578-49a2-bc18-fb5cd4ea9127",
+      "proposerName": "匿名",
+      "reason": "误填了",
+      "status": "pending",
+      "submittedAt": "2026-10-30T14:01:43.706Z"
+    },
     {
       "id": "request-a65852c0-b10a-411d-b1ae-2448b9b61c32",
       "kind": "map-edit",
