@@ -805,6 +805,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-8ff6810e-ab5f-47c1-9855-57622484ef5c",
+      "reviewerName": "幻想沉溺",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 2.3,
+        "aesthetics": 2.9,
+        "guidance": 1,
+        "difficulty": 3,
+        "overall": 2.5
+      },
+      "comment": "动线混乱，逻辑不明\n\n虽然是随机复活解谜，但复活并没有起到太大的用，只有开局的鬼打墙需要不断换位。理论上，去掉这个也能玩\n\n至于关卡内部，则基本是藏比了，反正就搜吧，提醒一下，每个房间都有两个开关（\n\n 不好玩喵，纯藏纯搜喵；场景加了一些装饰，但基本都是挡视野的；钻草的地方完全没引导；用了一个小时所以难度3\n\n真的是随机复活嘛（",
+      "id": "review-7e6078bb-240d-4b5f-a5a9-522140b020e1",
+      "submittedAt": "2026-10-30T11:41:21.335Z",
+      "updatedAt": "2026-10-30T11:41:21.335Z"
+    },
+    {
       "mapId": "map-4528335e-2112-474c-904f-61196d5194e3",
       "reviewerName": "轮椅侦探宅宅👁",
       "anonymous": false,
@@ -3425,6 +3441,14 @@
   ],
   "events": [
     {
+      "kind": "review-create",
+      "subjectId": "review-7e6078bb-240d-4b5f-a5a9-522140b020e1",
+      "title": "幻想沉溺",
+      "detail": "map-8ff6810e-ab5f-47c1-9855-57622484ef5c",
+      "id": "event-b24d5930-72ef-4b93-9841-429d367a0274",
+      "timestamp": "2026-10-30T11:41:21.335Z"
+    },
+    {
       "kind": "request-approve",
       "subjectId": "map-52eaded5-6e54-4239-bd15-c8717f359fbd",
       "title": "通过了 匿名 的地图修改请求",
@@ -5686,7 +5710,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-10-30T08:53:41.271Z",
+  "updatedAt": "2026-10-30T11:41:21.335Z",
   "mapTypes": [
     "PVE",
     "推塔",
