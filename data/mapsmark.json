@@ -50,11 +50,11 @@
       "name": "神奇猫娘大冒险05：不给糖就捣蛋",
       "author": "香奈美牌馒头铺",
       "mappedAt": "",
-      "introduction": "",
+      "introduction": "游戏内长按F1查看游戏玩法\n有地图相关建议或bug欢迎反馈；\n\n正式版补丁：\n修复中立怪不造成伤害的问题；\n\n灵感来源于dwhz的“奇怪的大冒险”\n游戏内有通关需求的交互门（多人影响体验较大），建议单人游玩；\n关卡为偏mmr坑系解密闯关，游玩时长约为20-40分钟；\n因为没有告示牌模块就暂时没有编制原创剧情了，之后官方有出会补的喵；\n\n寄语：爆肝了( ，比预期早了一个月，本来想再优化一会卡在万圣节发的，大家都想玩就提前发了，后续慢慢优化\n（神奇猫娘大冒险06 敬请期待）\n                                   作者：香奈美牌馒头铺",
       "estimatedMinutes": 25,
       "id": "map-a91419c3-13e4-40ad-ada4-edb0b40ddc00",
       "submittedAt": "2026-10-05T11:54:42.906Z",
-      "updatedAt": "2026-10-05T11:54:42.906Z"
+      "updatedAt": "2026-10-30T07:24:10.063Z"
     },
     {
       "coverImage": "/assets/images/1790467094191-de027875dc700da1059b6c366ff8d01f.png",
@@ -3360,6 +3360,14 @@
   ],
   "events": [
     {
+      "kind": "map-update",
+      "subjectId": "map-a91419c3-13e4-40ad-ada4-edb0b40ddc00",
+      "title": "编辑地图 神奇猫娘大冒险05：不给糖就捣蛋",
+      "detail": "9k9z7k",
+      "id": "event-0c65ea22-f1ba-44cc-b43d-4bb689118995",
+      "timestamp": "2026-10-30T07:24:10.063Z"
+    },
+    {
       "kind": "review-create",
       "subjectId": "review-e5f709c3-f681-4f1b-bd31-91dd1dc420a7",
       "title": "轮椅侦探宅宅👁",
@@ -5565,7 +5573,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-10-30T07:23:38.718Z",
+  "updatedAt": "2026-10-30T07:24:10.063Z",
   "mapTypes": [
     "PVE",
     "推塔",
