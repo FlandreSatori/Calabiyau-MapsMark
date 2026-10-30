@@ -804,6 +804,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-3e02a6f1-e70f-4e24-adc9-bc142a0401e2",
+      "reviewerName": "轮椅侦探宅宅👁",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 5,
+        "aesthetics": 2.5,
+        "guidance": 5,
+        "difficulty": 3,
+        "overall": 5
+      },
+      "comment": "痛失沙发喵，抢个地板喵。\n\n老资历图，从调查伊薇特完结后就已经推出，在历经官方多次削弱的情况下依然保持高水准。可以说作者每个版本都在用心维护，敬业程度满昏喵\n\n喵雪儿，LOVE ♥️\n\n丢熊、找路、触发自动门还有时序逻辑门是较为经典的款式，可以说是把调查伊薇特的机关完全重置并且量大管饱了喵\n\n->然后惨遭官方大手\n->然后现在迎面向你走来的是绝版机关倒立自动门！\n\n因为再也放不出来倒立自动门了，所以本图是真正的前无古人后无来者喵\n\ntag：量大管饱，剧情，局内教学，跑酷，MMR",
+      "id": "review-7009d4df-163f-47c5-a962-f782e66587fe",
+      "submittedAt": "2026-10-30T08:36:43.146Z",
+      "updatedAt": "2026-10-30T08:36:43.146Z"
+    },
+    {
       "mapId": "map-0762a790-d3c3-4ea9-a65d-1a9cc587aa7d",
       "reviewerName": "斩男斩女领域大神-两面宿傩",
       "anonymous": false,
@@ -3393,6 +3409,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-7009d4df-163f-47c5-a962-f782e66587fe",
+      "title": "轮椅侦探宅宅👁",
+      "detail": "map-3e02a6f1-e70f-4e24-adc9-bc142a0401e2",
+      "id": "event-dedb4f1e-2d54-4df6-b751-db27ed15aa2d",
+      "timestamp": "2026-10-30T08:36:43.147Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-4da354dc-6b9f-4f49-ad97-ec5bce5f1194",
       "title": "斩男斩女领域大神-两面宿傩",
       "detail": "map-0762a790-d3c3-4ea9-a65d-1a9cc587aa7d",
@@ -5621,7 +5645,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-10-30T08:19:28.271Z",
+  "updatedAt": "2026-10-30T08:36:43.147Z",
   "mapTypes": [
     "PVE",
     "推塔",
