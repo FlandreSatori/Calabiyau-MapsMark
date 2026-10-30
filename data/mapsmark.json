@@ -804,6 +804,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-3e02a6f1-e70f-4e24-adc9-bc142a0401e2",
+      "reviewerName": "疯狂香积寺",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 5,
+        "aesthetics": 5,
+        "guidance": 5,
+        "difficulty": 4.4,
+        "overall": 4.8
+      },
+      "comment": "比之前版本更好玩。\n但是草方块那关风机会吹mmr好久容易冻感冒（指自己被风机吹了五分钟没落地）\n小熊卡自动门那关有点小极限",
+      "id": "review-5e0ee72e-c6a2-4ff3-ae84-8c2d80921bb8",
+      "submittedAt": "2026-10-30T07:51:09.470Z",
+      "updatedAt": "2026-10-30T07:51:09.470Z"
+    },
+    {
       "mapId": "map-a91419c3-13e4-40ad-ada4-edb0b40ddc00",
       "reviewerName": "轮椅侦探宅宅👁",
       "anonymous": false,
@@ -3360,6 +3376,14 @@
   ],
   "events": [
     {
+      "kind": "review-create",
+      "subjectId": "review-5e0ee72e-c6a2-4ff3-ae84-8c2d80921bb8",
+      "title": "疯狂香积寺",
+      "detail": "map-3e02a6f1-e70f-4e24-adc9-bc142a0401e2",
+      "id": "event-2f0ec2ec-fd61-402f-9c07-071e5c044818",
+      "timestamp": "2026-10-30T07:51:09.470Z"
+    },
+    {
       "kind": "map-update",
       "subjectId": "map-a91419c3-13e4-40ad-ada4-edb0b40ddc00",
       "title": "编辑地图 神奇猫娘大冒险05：不给糖就捣蛋",
@@ -5573,7 +5597,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-10-30T07:24:10.063Z",
+  "updatedAt": "2026-10-30T07:51:09.470Z",
   "mapTypes": [
     "PVE",
     "推塔",
