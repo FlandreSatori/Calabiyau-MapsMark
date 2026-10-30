@@ -804,6 +804,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-a91419c3-13e4-40ad-ada4-edb0b40ddc00",
+      "reviewerName": "轮椅侦探宅宅👁",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 5,
+        "aesthetics": 4.5,
+        "guidance": 3,
+        "difficulty": 1,
+        "overall": 4.2
+      },
+      "comment": "作者进步可观！\n最原汁原味还原奇怪大冒险的一集，隐约听到踩坑死亡后的罐头嘲笑声x\n\n如果很擅长应付坑图的话，这张图可以说非常之简单，二十分钟速通了，甚至一眼就能看懂作者的心思。\n\n适合MMR的佳作！",
+      "id": "review-e5f709c3-f681-4f1b-bd31-91dd1dc420a7",
+      "submittedAt": "2026-10-30T07:23:38.717Z",
+      "updatedAt": "2026-10-30T07:23:38.717Z"
+    },
+    {
       "mapId": "map-0762a790-d3c3-4ea9-a65d-1a9cc587aa7d",
       "reviewerName": "抹茶布丁",
       "anonymous": false,
@@ -3345,6 +3361,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-e5f709c3-f681-4f1b-bd31-91dd1dc420a7",
+      "title": "轮椅侦探宅宅👁",
+      "detail": "map-a91419c3-13e4-40ad-ada4-edb0b40ddc00",
+      "id": "event-a2ad8257-23c0-4577-b1cf-cff566e1b6bb",
+      "timestamp": "2026-10-30T07:23:38.718Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-3bb17cd8-021d-4eee-8c2c-0cae15753daa",
       "title": "抹茶布丁",
       "detail": "map-0762a790-d3c3-4ea9-a65d-1a9cc587aa7d",
@@ -5541,7 +5565,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-10-28T15:05:22.398Z",
+  "updatedAt": "2026-10-30T07:23:38.718Z",
   "mapTypes": [
     "PVE",
     "推塔",
