@@ -804,6 +804,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-4528335e-2112-474c-904f-61196d5194e3",
+      "reviewerName": "轮椅侦探宅宅👁",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 4,
+        "aesthetics": 3.5,
+        "guidance": 2,
+        "difficulty": 4,
+        "overall": 3.5
+      },
+      "comment": "新人出佳作喵\n\n美中不足的是学老登有难做老登陷阱喵\n\n除此之外中规中矩，但需要有大量的前置知识（工坊的和MC的）",
+      "id": "review-6afa10e2-b84d-45cd-a81b-b44965000342",
+      "submittedAt": "2026-10-30T08:39:35.762Z",
+      "updatedAt": "2026-10-30T08:39:35.762Z"
+    },
+    {
       "mapId": "map-3e02a6f1-e70f-4e24-adc9-bc142a0401e2",
       "reviewerName": "轮椅侦探宅宅👁",
       "anonymous": false,
@@ -3409,6 +3425,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-6afa10e2-b84d-45cd-a81b-b44965000342",
+      "title": "轮椅侦探宅宅👁",
+      "detail": "map-4528335e-2112-474c-904f-61196d5194e3",
+      "id": "event-e203dff0-6c58-4477-bd70-690195afad09",
+      "timestamp": "2026-10-30T08:39:35.762Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-7009d4df-163f-47c5-a962-f782e66587fe",
       "title": "轮椅侦探宅宅👁",
       "detail": "map-3e02a6f1-e70f-4e24-adc9-bc142a0401e2",
@@ -5645,7 +5669,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-10-30T08:36:43.147Z",
+  "updatedAt": "2026-10-30T08:39:35.762Z",
   "mapTypes": [
     "PVE",
     "推塔",
