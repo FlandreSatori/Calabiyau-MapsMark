@@ -804,6 +804,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-0762a790-d3c3-4ea9-a65d-1a9cc587aa7d",
+      "reviewerName": "斩男斩女领域大神-两面宿傩",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 2.4,
+        "aesthetics": 2.1,
+        "guidance": 2.6,
+        "difficulty": 3.5,
+        "overall": 4.8
+      },
+      "comment": "真是让我好等啊。\n过关像是吃了无量空处，有用的无用的信息直冲我的大脑，还好先过了这个提前适应了无量空处最后才能反杀了五条悟，自豪吧，吃我一发伏魔御厨子。",
+      "id": "review-4da354dc-6b9f-4f49-ad97-ec5bce5f1194",
+      "submittedAt": "2026-10-30T08:19:28.271Z",
+      "updatedAt": "2026-10-30T08:19:28.271Z"
+    },
+    {
       "mapId": "map-3e02a6f1-e70f-4e24-adc9-bc142a0401e2",
       "reviewerName": "疯狂香积寺",
       "anonymous": false,
@@ -3377,6 +3393,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-4da354dc-6b9f-4f49-ad97-ec5bce5f1194",
+      "title": "斩男斩女领域大神-两面宿傩",
+      "detail": "map-0762a790-d3c3-4ea9-a65d-1a9cc587aa7d",
+      "id": "event-fb060e47-6437-4b92-8c9b-7025c14ae99b",
+      "timestamp": "2026-10-30T08:19:28.271Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-5e0ee72e-c6a2-4ff3-ae84-8c2d80921bb8",
       "title": "疯狂香积寺",
       "detail": "map-3e02a6f1-e70f-4e24-adc9-bc142a0401e2",
@@ -5597,7 +5621,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-10-30T07:51:09.470Z",
+  "updatedAt": "2026-10-30T08:19:28.271Z",
   "mapTypes": [
     "PVE",
     "推塔",
