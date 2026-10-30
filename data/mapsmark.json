@@ -805,6 +805,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-0762a790-d3c3-4ea9-a65d-1a9cc587aa7d",
+      "reviewerName": "匿名",
+      "anonymous": true,
+      "ratings": {
+        "entertainment": 2.5,
+        "aesthetics": 5,
+        "guidance": 2.5,
+        "difficulty": 2.5,
+        "overall": 3
+      },
+      "comment": "这种感觉就像是把你丢到一个很大东西很多很杂乱的大房间，然后告诉你你找到对的东西就能出去，但是根本不告诉你要找什么，为难而难。有几个关卡的提示还勉强能算提示，后面就纯瞎找了，说是防穷举法结果不用穷举法根本找不到。我确实不能理解这些。",
+      "id": "review-1bcc4e04-0578-49a2-bc18-fb5cd4ea9127",
+      "submittedAt": "2026-10-30T13:39:40.688Z",
+      "updatedAt": "2026-10-30T13:39:40.688Z"
+    },
+    {
       "mapId": "map-8ff6810e-ab5f-47c1-9855-57622484ef5c",
       "reviewerName": "幻想沉溺",
       "anonymous": false,
@@ -3442,6 +3458,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-1bcc4e04-0578-49a2-bc18-fb5cd4ea9127",
+      "title": "匿名",
+      "detail": "map-0762a790-d3c3-4ea9-a65d-1a9cc587aa7d",
+      "id": "event-3ec64761-4134-41a1-bf5f-8910696acc8a",
+      "timestamp": "2026-10-30T13:39:40.688Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-7e6078bb-240d-4b5f-a5a9-522140b020e1",
       "title": "幻想沉溺",
       "detail": "map-8ff6810e-ab5f-47c1-9855-57622484ef5c",
@@ -5710,7 +5734,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-10-30T11:41:21.335Z",
+  "updatedAt": "2026-10-30T13:39:40.688Z",
   "mapTypes": [
     "PVE",
     "推塔",
