@@ -183,7 +183,7 @@ export function MapEditRequest({ map, mapTypes }: MapEditRequestProps) {
                         style={{ marginTop: 8 }}
                         onClick={() => setForm((current) => ({ ...current, delisted: !current.delisted }))}
                     >
-                        {form.delisted ? "🗑 已下架（点击取消）" : "标记为已下架"}
+                        {form.delisted ? "已下架（点击取消）" : "标记为已下架"}
                     </button>
                     {form.delisted !== Boolean(map.delisted) ? (
                         <span className="help" style={{ color: "#ffb1bb" }}>

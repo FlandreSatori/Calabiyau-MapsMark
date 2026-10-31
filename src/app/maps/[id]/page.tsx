@@ -39,9 +39,18 @@ export default async function MapDetailPage({ params }: { params: Promise<{ id: 
                 <section className="detail-layout">
                     <div className="panel panel-pad">
                         <p className="section-title">Map Detail</p>
-                        <h1 className="hero-title" style={{ fontSize: "2.6rem" }}>
+                        <h1
+                            className="hero-title"
+                            style={{
+                                fontSize: "2.6rem",
+                                textDecoration: map.delisted ? "line-through" : undefined,
+                                textDecorationColor: "var(--warning)",
+                                textDecorationThickness: "2px",
+                                color: map.delisted ? "var(--muted)" : undefined
+                            }}
+                            title={map.delisted ? "已下架" : undefined}
+                        >
                             {map.name}
-                            {map.delisted ? <span title="已下架" style={{ marginLeft: 8 }}>🗑</span> : null}
                         </h1>
                         <div className="stat-strip">
                             <span className="stat">{map.type}</span>

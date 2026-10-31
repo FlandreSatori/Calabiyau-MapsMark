@@ -337,7 +337,7 @@ export function MapForm({ mapTypes, adminToken, onSuccess, notify }: MapFormProp
         <form onSubmit={handleSubmit} className="grid gap-12">
             <div className="form-grid">
                 <label className="label full">
-                    封面 <span className="required-mark">*</span>
+                    <span>封面 <span className="required-mark">*</span></span>
                     <input
                         className="input"
                         type="file"
@@ -387,7 +387,7 @@ export function MapForm({ mapTypes, adminToken, onSuccess, notify }: MapFormProp
                     />
                 </label>
                 <label className="label">
-                    地图代码 <span className="required-mark">*</span>
+                    <span>地图代码 <span className="required-mark">*</span></span>
                     <input className={`input${isInvalid("code") ? " input-invalid" : ""}`} value={form.code} onBlur={() => setTouched((s) => ({ ...s, code: true }))} onChange={(event) => setForm({ ...form, code: event.target.value })} placeholder="abcdef" />
                 </label>
                 <label className="label">
@@ -401,11 +401,11 @@ export function MapForm({ mapTypes, adminToken, onSuccess, notify }: MapFormProp
                     </select>
                 </label>
                 <label className="label">
-                    地图名 <span className="required-mark">*</span>
+                    <span>地图名 <span className="required-mark">*</span></span>
                     <input className={`input${isInvalid("name") ? " input-invalid" : ""}`} value={form.name} onBlur={() => setTouched((s) => ({ ...s, name: true }))} onChange={(event) => setForm({ ...form, name: event.target.value })} />
                 </label>
                 <label className="label">
-                    作者名 <span className="required-mark">*</span>
+                    <span>作者名 <span className="required-mark">*</span></span>
                     <input className={`input${isInvalid("author") ? " input-invalid" : ""}`} value={form.author} onBlur={() => setTouched((s) => ({ ...s, author: true }))} onChange={(event) => setForm({ ...form, author: event.target.value })} />
                 </label>
                 <label className="label">
