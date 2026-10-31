@@ -1,6 +1,20 @@
 {
   "maps": [
     {
+      "coverImage": "/assets/images/1793434841484-Snipaste_2026-10-31_16-20-24.png",
+      "previewImage": "",
+      "code": "rnxivb",
+      "type": "解密",
+      "name": "第七车厢（解密）",
+      "author": "莳芕",
+      "mappedAt": "2026-10-13",
+      "introduction": "找不同的小游戏\n根据第一车厢去找出其他车厢的不同\n有不同，就从起点离开\n没有不同，就从终点离开\n总共7个车厢，通过第7就通关\n\n难度应该比较简单",
+      "estimatedMinutes": 60,
+      "id": "map-b70ba00b-92a3-44b8-98f5-2d47f34b5f70",
+      "submittedAt": "2026-10-31T08:22:03.534Z",
+      "updatedAt": "2026-10-31T08:22:03.534Z"
+    },
+    {
       "coverImage": "/assets/images/1793170326173-_____2026-10-28_145352.png",
       "previewImage": "",
       "code": "未确定",
@@ -3457,6 +3471,14 @@
   ],
   "events": [
     {
+      "kind": "map-create",
+      "subjectId": "map-b70ba00b-92a3-44b8-98f5-2d47f34b5f70",
+      "title": "第七车厢（解密）",
+      "detail": "rnxivb",
+      "id": "event-c1a8efd4-0b81-486e-ad94-c5c61137b95d",
+      "timestamp": "2026-10-31T08:22:03.534Z"
+    },
+    {
       "kind": "request-create",
       "subjectId": "review-1bcc4e04-0578-49a2-bc18-fb5cd4ea9127",
       "title": "匿名 提交了评价删除请求：评价 匿名",
@@ -5742,7 +5764,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-10-30T14:01:43.706Z",
+  "updatedAt": "2026-10-31T08:22:03.534Z",
   "mapTypes": [
     "PVE",
     "推塔",
