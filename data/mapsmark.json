@@ -832,7 +832,8 @@
       "comment": "这种感觉就像是把你丢到一个很大东西很多很杂乱的大房间，然后告诉你你找到对的东西就能出去，但是根本不告诉你要找什么，为难而难。有几个关卡的提示还勉强能算提示，后面就纯瞎找了，说是防穷举法结果不用穷举法根本找不到。我确实不能理解这些。",
       "id": "review-1bcc4e04-0578-49a2-bc18-fb5cd4ea9127",
       "submittedAt": "2026-10-30T13:39:40.688Z",
-      "updatedAt": "2026-10-30T13:39:40.688Z"
+      "updatedAt": "2026-11-02T05:58:12.741Z",
+      "deletedAt": "2026-11-02T05:58:12.741Z"
     },
     {
       "mapId": "map-8ff6810e-ab5f-47c1-9855-57622484ef5c",
@@ -3471,6 +3472,22 @@
   ],
   "events": [
     {
+      "kind": "request-approve",
+      "subjectId": "review-1bcc4e04-0578-49a2-bc18-fb5cd4ea9127",
+      "title": "通过了 匿名 的评价删除请求",
+      "detail": "request-d0dcfac9-9b90-4446-ab3e-340f56668ed2",
+      "id": "event-503884bd-c229-4c6b-ae8b-4ef5e3a47694",
+      "timestamp": "2026-11-02T05:58:12.741Z"
+    },
+    {
+      "kind": "review-delete",
+      "subjectId": "review-1bcc4e04-0578-49a2-bc18-fb5cd4ea9127",
+      "title": "删除评价 匿名（审批通过）",
+      "detail": "map-0762a790-d3c3-4ea9-a65d-1a9cc587aa7d",
+      "id": "event-28c1919e-40d3-4fef-acd9-b1e3f978e32c",
+      "timestamp": "2026-11-02T05:58:12.741Z"
+    },
+    {
       "kind": "map-create",
       "subjectId": "map-b70ba00b-92a3-44b8-98f5-2d47f34b5f70",
       "title": "第七车厢（解密）",
@@ -5764,7 +5781,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-10-31T08:22:03.534Z",
+  "updatedAt": "2026-11-02T05:58:12.741Z",
   "mapTypes": [
     "PVE",
     "推塔",
@@ -5777,8 +5794,25 @@
       "targetId": "review-1bcc4e04-0578-49a2-bc18-fb5cd4ea9127",
       "proposerName": "匿名",
       "reason": "误填了",
-      "status": "pending",
-      "submittedAt": "2026-10-30T14:01:43.706Z"
+      "status": "approved",
+      "submittedAt": "2026-10-30T14:01:43.706Z",
+      "resolvedAt": "2026-11-02T05:58:12.741Z",
+      "snapshot": {
+        "mapId": "map-0762a790-d3c3-4ea9-a65d-1a9cc587aa7d",
+        "reviewerName": "匿名",
+        "anonymous": true,
+        "ratings": {
+          "entertainment": 2.5,
+          "aesthetics": 5,
+          "guidance": 2.5,
+          "difficulty": 2.5,
+          "overall": 3
+        },
+        "comment": "这种感觉就像是把你丢到一个很大东西很多很杂乱的大房间，然后告诉你你找到对的东西就能出去，但是根本不告诉你要找什么，为难而难。有几个关卡的提示还勉强能算提示，后面就纯瞎找了，说是防穷举法结果不用穷举法根本找不到。我确实不能理解这些。",
+        "id": "review-1bcc4e04-0578-49a2-bc18-fb5cd4ea9127",
+        "submittedAt": "2026-10-30T13:39:40.688Z",
+        "updatedAt": "2026-10-30T13:39:40.688Z"
+      }
     },
     {
       "id": "request-a65852c0-b10a-411d-b1ae-2448b9b61c32",
