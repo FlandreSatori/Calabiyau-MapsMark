@@ -819,6 +819,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-3e02a6f1-e70f-4e24-adc9-bc142a0401e2",
+      "reviewerName": "喵啊",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 5,
+        "aesthetics": 5,
+        "guidance": 5,
+        "difficulty": 5,
+        "overall": 5
+      },
+      "comment": "雪儿可爱喵 满昏喵",
+      "id": "review-53dfd485-ef82-4e35-b0f0-8b22abadf326",
+      "submittedAt": "2026-11-09T01:20:45.894Z",
+      "updatedAt": "2026-11-09T01:20:45.894Z"
+    },
+    {
       "mapId": "map-0762a790-d3c3-4ea9-a65d-1a9cc587aa7d",
       "reviewerName": "匿名",
       "anonymous": true,
@@ -3472,6 +3488,14 @@
   ],
   "events": [
     {
+      "kind": "review-create",
+      "subjectId": "review-53dfd485-ef82-4e35-b0f0-8b22abadf326",
+      "title": "喵啊",
+      "detail": "map-3e02a6f1-e70f-4e24-adc9-bc142a0401e2",
+      "id": "event-e525f034-69c3-4c4a-a58b-39f7340c8430",
+      "timestamp": "2026-11-09T01:20:45.894Z"
+    },
+    {
       "kind": "request-approve",
       "subjectId": "review-1bcc4e04-0578-49a2-bc18-fb5cd4ea9127",
       "title": "通过了 匿名 的评价删除请求",
@@ -5781,7 +5805,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-11-02T05:58:12.741Z",
+  "updatedAt": "2026-11-09T01:20:45.894Z",
   "mapTypes": [
     "PVE",
     "推塔",
