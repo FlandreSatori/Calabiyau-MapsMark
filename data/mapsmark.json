@@ -2,7 +2,7 @@
   "maps": [
     {
       "coverImage": "/assets/images/1794684203973-13_2026.07.01-20.44.41_1785071138_img.png",
-      "previewImage": "/assets/images/1794684158363-13_2026.07.01-20.44.41_1785071138_img.png",
+      "previewImage": "",
       "code": "9tn34k",
       "type": "跑酷",
       "name": "中登进阶手册喵",
@@ -12,7 +12,7 @@
       "estimatedMinutes": 120,
       "id": "map-56074a58-bb0e-4e14-b7b8-8dc151bc8137",
       "submittedAt": "2026-11-14T19:23:38.608Z",
-      "updatedAt": "2026-11-14T19:23:38.608Z"
+      "updatedAt": "2026-11-14T19:24:09.629Z"
     },
     {
       "coverImage": "/assets/images/1794684012549-13_2026.01.14-18.05.49_1777395377_img.png",
@@ -3685,6 +3685,14 @@
   ],
   "events": [
     {
+      "kind": "map-update",
+      "subjectId": "map-56074a58-bb0e-4e14-b7b8-8dc151bc8137",
+      "title": "编辑地图 中登进阶手册喵",
+      "detail": "9tn34k",
+      "id": "event-3a2f2a9d-bc9d-4013-ada7-3bb769a4845c",
+      "timestamp": "2026-11-14T19:24:09.630Z"
+    },
+    {
       "kind": "map-create",
       "subjectId": "map-56074a58-bb0e-4e14-b7b8-8dc151bc8137",
       "title": "中登进阶手册喵",
@@ -6138,7 +6146,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-11-14T19:23:38.608Z",
+  "updatedAt": "2026-11-14T19:24:09.630Z",
   "mapTypes": [
     "PVE",
     "推塔",
