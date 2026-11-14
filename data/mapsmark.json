@@ -8,11 +8,11 @@
       "name": "先这样再那样然后就跑酷",
       "author": "喝玖",
       "mappedAt": "",
-      "introduction": "",
+      "introduction": "*简单的跑酷喵*\n制作：喝玖（10528276）\n         婉余生（6513867）\n         白金（2968620）",
       "estimatedMinutes": 120,
       "id": "map-3c6db4be-3292-4b91-ad0a-bf4b698b1ed6",
       "submittedAt": "2026-11-14T17:49:19.660Z",
-      "updatedAt": "2026-11-14T17:49:19.660Z"
+      "updatedAt": "2026-11-14T17:50:22.828Z"
     },
     {
       "coverImage": "/assets/images/1794674600575-QQ_2026-11-15_00-42-47.png",
@@ -3615,6 +3615,14 @@
   ],
   "events": [
     {
+      "kind": "map-update",
+      "subjectId": "map-3c6db4be-3292-4b91-ad0a-bf4b698b1ed6",
+      "title": "编辑地图 先这样再那样然后就跑酷",
+      "detail": "7lumdk",
+      "id": "event-86d1c9b8-6198-4d3b-b981-b952dea4dadb",
+      "timestamp": "2026-11-14T17:50:22.828Z"
+    },
+    {
       "kind": "map-create",
       "subjectId": "map-3c6db4be-3292-4b91-ad0a-bf4b698b1ed6",
       "title": "先这样再那样然后就跑酷",
@@ -6020,7 +6028,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-11-14T17:49:19.660Z",
+  "updatedAt": "2026-11-14T17:50:22.828Z",
   "mapTypes": [
     "PVE",
     "推塔",
