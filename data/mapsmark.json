@@ -1,6 +1,20 @@
 {
   "maps": [
     {
+      "coverImage": "/assets/images/1794678839791-13_2026.05.03-01.27.13_1777775226_img.png",
+      "previewImage": "",
+      "code": "u8b3wt",
+      "type": "跑酷",
+      "name": "随便观里跑酷，叫随便跑酷？",
+      "author": "时雨绮罗糖露星霜",
+      "mappedAt": "",
+      "introduction": "随便建的，经验不足\n由于我的跑酷技术也一般，无法判断地图对mmr的难易水平\n上一次更新于5月2日，最近一次更新于8月30日。降低大量关卡难度\n\n有问题，bug，建议可以直接指出\n直接加我好友，或扣扣群：1078354254\n或者在牢推的群里@时雨绮罗糖露星霜\n比较沉默，直接@我就行\n\n饿啊！\n出生点还在建（没开始），目前只做了部分跑酷内容，真的好累呀，光是建建筑就花光了全部力气\n饿啊！\n\n地图建筑来源\n随便观、圣诞水晶球、月宫：B站@素晴Story\n祥：B站@茯角\n其他：我",
+      "estimatedMinutes": 120,
+      "id": "map-80867e29-e2cc-4563-afc8-bb1e4b225722",
+      "submittedAt": "2026-11-14T17:54:22.627Z",
+      "updatedAt": "2026-11-14T17:54:22.627Z"
+    },
+    {
       "coverImage": "/assets/images/1794678551173-e5a8e183-ab58-447e-8ff0-3c6633967b81.png",
       "previewImage": "",
       "code": "7lumdk",
@@ -3615,6 +3629,14 @@
   ],
   "events": [
     {
+      "kind": "map-create",
+      "subjectId": "map-80867e29-e2cc-4563-afc8-bb1e4b225722",
+      "title": "随便观里跑酷，叫随便跑酷？",
+      "detail": "u8b3wt",
+      "id": "event-d183bcd2-9e92-417c-ad01-dcc29c5fce4c",
+      "timestamp": "2026-11-14T17:54:22.627Z"
+    },
+    {
       "kind": "map-update",
       "subjectId": "map-3c6db4be-3292-4b91-ad0a-bf4b698b1ed6",
       "title": "编辑地图 先这样再那样然后就跑酷",
@@ -6028,7 +6050,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-11-14T17:50:22.828Z",
+  "updatedAt": "2026-11-14T17:54:22.627Z",
   "mapTypes": [
     "PVE",
     "推塔",
