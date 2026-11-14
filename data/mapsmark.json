@@ -1,6 +1,20 @@
 {
   "maps": [
     {
+      "coverImage": "/assets/images/1794662742522-0cbd85da-8b16-42ab-ba7f-41b19202e21c.png",
+      "previewImage": "",
+      "code": "6k9pxm",
+      "type": "跑酷",
+      "name": "难度递增跑酷改（mmr终版",
+      "author": "雪落白樱花如雪",
+      "mappedAt": "",
+      "introduction": "",
+      "estimatedMinutes": 120,
+      "id": "map-f94e9b7a-2f6f-4e3a-ad73-844c8ba882de",
+      "submittedAt": "2026-11-14T13:27:07.905Z",
+      "updatedAt": "2026-11-14T13:27:07.905Z"
+    },
+    {
       "coverImage": "/assets/images/1794660610629-96cd46b6-9272-4e4b-8ab4-69be41fa192c.png",
       "previewImage": "",
       "code": "2pvr5r",
@@ -3545,6 +3559,14 @@
   "events": [
     {
       "kind": "map-create",
+      "subjectId": "map-f94e9b7a-2f6f-4e3a-ad73-844c8ba882de",
+      "title": "难度递增跑酷改（mmr终版",
+      "detail": "6k9pxm",
+      "id": "event-e4f53dac-52f0-458b-8cf3-e07f5adbbf9c",
+      "timestamp": "2026-11-14T13:27:07.905Z"
+    },
+    {
+      "kind": "map-create",
       "subjectId": "map-30ee82b6-4a70-4a06-84ed-402ecaf9c934",
       "title": "单向跑酷",
       "detail": "2pvr5r",
@@ -5893,7 +5915,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-11-14T12:50:55.063Z",
+  "updatedAt": "2026-11-14T13:27:07.905Z",
   "mapTypes": [
     "PVE",
     "推塔",
