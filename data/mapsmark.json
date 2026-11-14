@@ -1,6 +1,20 @@
 {
   "maps": [
     {
+      "coverImage": "/assets/images/1794684203973-13_2026.07.01-20.44.41_1785071138_img.png",
+      "previewImage": "/assets/images/1794684158363-13_2026.07.01-20.44.41_1785071138_img.png",
+      "code": "9tn34k",
+      "type": "跑酷",
+      "name": "中登进阶手册喵",
+      "author": "Y柒柒a",
+      "mappedAt": "",
+      "introduction": "注意！这张地图主要服务一些已经通关了基础跑酷地图的小登及中登游玩喵！如果是mmr请在老登的携带下游玩喵！1~14没有明显的关卡难度递增性所以不要感到害怕喵，多去向老登请教喵。按f1查看地图简单介绍，一定要看！\n特别鸣谢：卡啦啦 余馨雾安 澹月 柚子0721参与地图的设计和椅子提供的关卡授权，以及参加地图测试的众多老登们，柒柒真的真的非常感谢大家！！",
+      "estimatedMinutes": 120,
+      "id": "map-56074a58-bb0e-4e14-b7b8-8dc151bc8137",
+      "submittedAt": "2026-11-14T19:23:38.608Z",
+      "updatedAt": "2026-11-14T19:23:38.608Z"
+    },
+    {
       "coverImage": "/assets/images/1794684012549-13_2026.01.14-18.05.49_1777395377_img.png",
       "previewImage": "",
       "code": "6a67tk",
@@ -3672,6 +3686,14 @@
   "events": [
     {
       "kind": "map-create",
+      "subjectId": "map-56074a58-bb0e-4e14-b7b8-8dc151bc8137",
+      "title": "中登进阶手册喵",
+      "detail": "9tn34k",
+      "id": "event-b0457b88-6e83-449c-ac42-0cff9f3b0047",
+      "timestamp": "2026-11-14T19:23:38.608Z"
+    },
+    {
+      "kind": "map-create",
       "subjectId": "map-e095a302-4ed7-4863-8363-a3959d1694db",
       "title": "我要成为跑酷中手喵！中登修炼手册！",
       "detail": "6a67tk",
@@ -6116,7 +6138,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-11-14T19:20:23.009Z",
+  "updatedAt": "2026-11-14T19:23:38.608Z",
   "mapTypes": [
     "PVE",
     "推塔",
