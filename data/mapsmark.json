@@ -1,6 +1,20 @@
 {
   "maps": [
     {
+      "coverImage": "/assets/images/1794681079753-13_2025.10.21-19.30.37_1761076668_img.png",
+      "previewImage": "",
+      "code": "l496xl",
+      "type": "跑酷",
+      "name": "肖申克的糖猫（正式版）",
+      "author": "咕子不是鸽子姬",
+      "mappedAt": "",
+      "introduction": "作者：爱国雅士东雪莲/bilibili咕子不是鸽子姬\n牢咕第一张正式自制地图喵\n地图借鉴电影肖申克的救赎，但并没有借鉴监狱原型。\n地图难度适中，基础关为本人自制，进阶关找过几个跑酷佬帮忙建造并......略微削减难度。\n该地图攻略会发布B站，给个三连感谢喵！",
+      "estimatedMinutes": 120,
+      "id": "map-ffef6b57-ac32-4e4d-96fa-5ca6e7a0b78e",
+      "submittedAt": "2026-11-14T18:31:39.365Z",
+      "updatedAt": "2026-11-14T18:31:39.365Z"
+    },
+    {
       "coverImage": "/assets/images/1794678839791-13_2026.05.03-01.27.13_1777775226_img.png",
       "previewImage": "",
       "code": "u8b3wt",
@@ -3630,6 +3644,14 @@
   "events": [
     {
       "kind": "map-create",
+      "subjectId": "map-ffef6b57-ac32-4e4d-96fa-5ca6e7a0b78e",
+      "title": "肖申克的糖猫（正式版）",
+      "detail": "l496xl",
+      "id": "event-d1cba96a-a54a-4bb7-b1b8-6fc4759fcdab",
+      "timestamp": "2026-11-14T18:31:39.365Z"
+    },
+    {
+      "kind": "map-create",
       "subjectId": "map-80867e29-e2cc-4563-afc8-bb1e4b225722",
       "title": "随便观里跑酷，叫随便跑酷？",
       "detail": "u8b3wt",
@@ -6050,7 +6072,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-11-14T17:54:22.627Z",
+  "updatedAt": "2026-11-14T18:31:39.365Z",
   "mapTypes": [
     "PVE",
     "推塔",
