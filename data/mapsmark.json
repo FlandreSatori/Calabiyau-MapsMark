@@ -1,6 +1,20 @@
 {
   "maps": [
     {
+      "coverImage": "/assets/images/1794655286103-13_2026.09.19-22.45.42_1790102027_img.png",
+      "previewImage": "",
+      "code": "rtmnio",
+      "type": "跑酷",
+      "name": "盒子跑酷喵",
+      "author": "只会大画家",
+      "mappedAt": "",
+      "introduction": "太好了喵！是新图喵！我们有救了喵！又可以哈气了喵！\n友情提示：本图比较适合有一定跑酷基础的，当然mmr也是可以跳的喵！红温了可以在局内按F1点开右上角查看作者的激励话语喵！\n更新：本次更新了加子弹区域，不用再似回去补子弹了喵！如果在跑图过程中发现BUG、卡死等问题请及时反馈给作者喵！作者会尽快修改的喵！\n特别鸣谢：VVVVWVV提供的糖猫！\n跑酷群：434750916欢迎猫娘们来玩耍喵！进群群名片改成游戏ID方便认猫娘喵！",
+      "estimatedMinutes": 120,
+      "id": "map-a8a456ec-97d4-4483-9c45-cf3784b1681b",
+      "submittedAt": "2026-11-14T11:22:47.401Z",
+      "updatedAt": "2026-11-14T11:22:47.401Z"
+    },
+    {
       "coverImage": "/assets/images/1793434841484-Snipaste_2026-10-31_16-20-24.png",
       "previewImage": "",
       "code": "rnxivb",
@@ -3488,6 +3502,14 @@
   ],
   "events": [
     {
+      "kind": "map-create",
+      "subjectId": "map-a8a456ec-97d4-4483-9c45-cf3784b1681b",
+      "title": "盒子跑酷喵",
+      "detail": "rtmnio",
+      "id": "event-d71a4020-7259-4ff8-908c-d820a8c77d70",
+      "timestamp": "2026-11-14T11:22:47.401Z"
+    },
+    {
       "kind": "review-create",
       "subjectId": "review-53dfd485-ef82-4e35-b0f0-8b22abadf326",
       "title": "喵啊",
@@ -5805,7 +5827,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-11-09T01:20:45.894Z",
+  "updatedAt": "2026-11-14T11:22:47.401Z",
   "mapTypes": [
     "PVE",
     "推塔",
