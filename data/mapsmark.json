@@ -1,6 +1,20 @@
 {
   "maps": [
     {
+      "coverImage": "/assets/images/1794674600575-QQ_2026-11-15_00-42-47.png",
+      "previewImage": "",
+      "code": "o8d2w1",
+      "type": "跑酷",
+      "name": "旋转小塔1",
+      "author": "VVVVWVV",
+      "mappedAt": "",
+      "introduction": "",
+      "estimatedMinutes": 120,
+      "id": "map-068c0cea-b86e-4c61-9a91-f3cb9fbf2b96",
+      "submittedAt": "2026-11-14T16:43:29.698Z",
+      "updatedAt": "2026-11-14T16:43:29.698Z"
+    },
+    {
       "coverImage": "/assets/images/1794669491582-bbb858f3-4ccc-4448-aa7b-6e626bac4195.png",
       "previewImage": "",
       "code": "mk4edt",
@@ -3588,6 +3602,14 @@
   "events": [
     {
       "kind": "map-create",
+      "subjectId": "map-068c0cea-b86e-4c61-9a91-f3cb9fbf2b96",
+      "title": "旋转小塔1",
+      "detail": "o8d2w1",
+      "id": "event-e85320f2-64ff-431a-928d-f74f2bfeb7e6",
+      "timestamp": "2026-11-14T16:43:29.698Z"
+    },
+    {
+      "kind": "map-create",
       "subjectId": "map-6b4dbce4-f665-4fb8-ad7f-26f6ff0f6ff3",
       "title": "四季之旅喵",
       "detail": "mk4edt",
@@ -5976,7 +5998,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-11-14T15:18:44.831Z",
+  "updatedAt": "2026-11-14T16:43:29.698Z",
   "mapTypes": [
     "PVE",
     "推塔",
