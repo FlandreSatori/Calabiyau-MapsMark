@@ -1,6 +1,20 @@
 {
   "maps": [
     {
+      "coverImage": "/assets/images/1794669491582-bbb858f3-4ccc-4448-aa7b-6e626bac4195.png",
+      "previewImage": "",
+      "code": "mk4edt",
+      "type": "跑酷",
+      "name": "四季之旅喵",
+      "author": "祈願QAQ",
+      "mappedAt": "",
+      "introduction": "是猫娘就来群喵937190238",
+      "estimatedMinutes": 120,
+      "id": "map-6b4dbce4-f665-4fb8-ad7f-26f6ff0f6ff3",
+      "submittedAt": "2026-11-14T15:18:44.831Z",
+      "updatedAt": "2026-11-14T15:18:44.831Z"
+    },
+    {
       "coverImage": "",
       "previewImage": "",
       "code": "MK4EDT",
@@ -3573,6 +3587,14 @@
   ],
   "events": [
     {
+      "kind": "map-create",
+      "subjectId": "map-6b4dbce4-f665-4fb8-ad7f-26f6ff0f6ff3",
+      "title": "四季之旅喵",
+      "detail": "mk4edt",
+      "id": "event-d9d47130-9ae8-443a-8643-f2f04725bcae",
+      "timestamp": "2026-11-14T15:18:44.831Z"
+    },
+    {
       "kind": "map-delete",
       "subjectId": "map-76c80352-a3bf-4989-9043-354d4eb1581c",
       "title": "删除地图 四季之旅喵",
@@ -5954,7 +5976,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-11-14T15:17:56.061Z",
+  "updatedAt": "2026-11-14T15:18:44.831Z",
   "mapTypes": [
     "PVE",
     "推塔",
