@@ -1,6 +1,20 @@
 {
   "maps": [
     {
+      "coverImage": "/assets/images/1794683730907-13_2025.11.28-22.48.35_1764804848_img.png",
+      "previewImage": "",
+      "code": "ddx95i",
+      "type": "跑酷",
+      "name": "跳跃十八难关（正式版）",
+      "author": "人更不臭",
+      "mappedAt": "",
+      "introduction": "        隐藏关卡在第一关（有1/4没做好），没有19,20关，只是没删而已，要是感兴趣的可以去跳跳喵\n        地图也没有为了难而制作了啦，其实都不算难的，我感觉都挺丰富的qwq。\n        每关都有个偷鸡点，不过偷鸡点的难度可能会比较难qwq，不过因为bug修复而消失的偷鸡点就没改好，就没有偷鸡点了qwq。\n         *****因为卡丘的不作为，所以我打算退游了，要是敢兴趣的可以自己处置这张图了qwq，帮我改改发布我也会谢谢你的喵*****\n         \n",
+      "estimatedMinutes": 120,
+      "id": "map-2bca3282-e8ac-4d45-a775-f32c8c1e2079",
+      "submittedAt": "2026-11-14T19:15:38.127Z",
+      "updatedAt": "2026-11-14T19:15:38.127Z"
+    },
+    {
       "coverImage": "/assets/images/1794681079753-13_2025.10.21-19.30.37_1761076668_img.png",
       "previewImage": "",
       "code": "l496xl",
@@ -3644,6 +3658,14 @@
   "events": [
     {
       "kind": "map-create",
+      "subjectId": "map-2bca3282-e8ac-4d45-a775-f32c8c1e2079",
+      "title": "跳跃十八难关（正式版）",
+      "detail": "ddx95i",
+      "id": "event-3e605122-d1d9-4f43-b2fe-b221fea29e98",
+      "timestamp": "2026-11-14T19:15:38.127Z"
+    },
+    {
+      "kind": "map-create",
       "subjectId": "map-ffef6b57-ac32-4e4d-96fa-5ca6e7a0b78e",
       "title": "肖申克的糖猫（正式版）",
       "detail": "l496xl",
@@ -6072,7 +6094,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-11-14T18:31:39.365Z",
+  "updatedAt": "2026-11-14T19:15:38.127Z",
   "mapTypes": [
     "PVE",
     "推塔",
