@@ -12,7 +12,8 @@
       "estimatedMinutes": 120,
       "id": "map-76c80352-a3bf-4989-9043-354d4eb1581c",
       "submittedAt": "2026-11-14T15:12:39.337Z",
-      "updatedAt": "2026-11-14T15:14:15.554Z"
+      "updatedAt": "2026-11-14T15:17:56.060Z",
+      "deletedAt": "2026-11-14T15:17:56.060Z"
     },
     {
       "coverImage": "/assets/images/1794662742522-0cbd85da-8b16-42ab-ba7f-41b19202e21c.png",
@@ -3572,6 +3573,14 @@
   ],
   "events": [
     {
+      "kind": "map-delete",
+      "subjectId": "map-76c80352-a3bf-4989-9043-354d4eb1581c",
+      "title": "删除地图 四季之旅喵",
+      "detail": "MK4EDT",
+      "id": "event-6d4cabf4-91b1-4c13-a958-eb6e9e7a9931",
+      "timestamp": "2026-11-14T15:17:56.061Z"
+    },
+    {
       "kind": "map-update",
       "subjectId": "map-76c80352-a3bf-4989-9043-354d4eb1581c",
       "title": "编辑地图 四季之旅喵",
@@ -5945,7 +5954,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-11-14T15:14:15.554Z",
+  "updatedAt": "2026-11-14T15:17:56.061Z",
   "mapTypes": [
     "PVE",
     "推塔",
