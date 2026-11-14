@@ -1,6 +1,20 @@
 {
   "maps": [
     {
+      "coverImage": "/assets/images/1794656583596-b75455c0-53c7-4847-ab19-5a0d0e3dac55.png",
+      "previewImage": "",
+      "code": "rh3qtu",
+      "type": "跑酷",
+      "name": "跑酷天堂100关喵",
+      "author": "VVVVWVV",
+      "mappedAt": "",
+      "introduction": "",
+      "estimatedMinutes": 120,
+      "id": "map-36c10cf9-02df-4bb5-b445-150e1c113380",
+      "submittedAt": "2026-11-14T11:43:18.068Z",
+      "updatedAt": "2026-11-14T11:43:18.068Z"
+    },
+    {
       "coverImage": "/assets/images/1794656193865-01d4cac4-fde3-4908-9333-95c8cc5e1283.png",
       "previewImage": "",
       "code": "csarvy",
@@ -3517,6 +3531,14 @@
   "events": [
     {
       "kind": "map-create",
+      "subjectId": "map-36c10cf9-02df-4bb5-b445-150e1c113380",
+      "title": "跑酷天堂100关喵",
+      "detail": "rh3qtu",
+      "id": "event-cfaa71fd-687b-4515-8996-047a825846e0",
+      "timestamp": "2026-11-14T11:43:18.068Z"
+    },
+    {
+      "kind": "map-create",
       "subjectId": "map-617032a1-5385-4a42-9839-642123ec88f0",
       "title": "观景娱乐跑酷塔5",
       "detail": "csarvy",
@@ -5849,7 +5871,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-11-14T11:38:02.912Z",
+  "updatedAt": "2026-11-14T11:43:18.068Z",
   "mapTypes": [
     "PVE",
     "推塔",
