@@ -1,6 +1,20 @@
 {
   "maps": [
     {
+      "coverImage": "/assets/images/1794678551173-e5a8e183-ab58-447e-8ff0-3c6633967b81.png",
+      "previewImage": "",
+      "code": "7lumdk",
+      "type": "跑酷",
+      "name": "先这样再那样然后就跑酷",
+      "author": "喝玖",
+      "mappedAt": "",
+      "introduction": "",
+      "estimatedMinutes": 120,
+      "id": "map-3c6db4be-3292-4b91-ad0a-bf4b698b1ed6",
+      "submittedAt": "2026-11-14T17:49:19.660Z",
+      "updatedAt": "2026-11-14T17:49:19.660Z"
+    },
+    {
       "coverImage": "/assets/images/1794674600575-QQ_2026-11-15_00-42-47.png",
       "previewImage": "",
       "code": "o8d2w1",
@@ -3602,6 +3616,14 @@
   "events": [
     {
       "kind": "map-create",
+      "subjectId": "map-3c6db4be-3292-4b91-ad0a-bf4b698b1ed6",
+      "title": "先这样再那样然后就跑酷",
+      "detail": "7lumdk",
+      "id": "event-e533f28f-7206-4375-89ff-e884895108d3",
+      "timestamp": "2026-11-14T17:49:19.660Z"
+    },
+    {
+      "kind": "map-create",
       "subjectId": "map-068c0cea-b86e-4c61-9a91-f3cb9fbf2b96",
       "title": "旋转小塔1",
       "detail": "o8d2w1",
@@ -5998,7 +6020,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-11-14T16:43:29.698Z",
+  "updatedAt": "2026-11-14T17:49:19.660Z",
   "mapTypes": [
     "PVE",
     "推塔",
