@@ -1,6 +1,20 @@
 {
   "maps": [
     {
+      "coverImage": "/assets/images/1794660610629-96cd46b6-9272-4e4b-8ab4-69be41fa192c.png",
+      "previewImage": "",
+      "code": "2pvr5r",
+      "type": "跑酷",
+      "name": "单向跑酷",
+      "author": "左柚喵",
+      "mappedAt": "",
+      "introduction": "修复了一些奇奇怪怪的BUG喵 \n特别感谢：VV喵/缪缪/茶语喵/十里长街走马/longtian",
+      "estimatedMinutes": 120,
+      "id": "map-30ee82b6-4a70-4a06-84ed-402ecaf9c934",
+      "submittedAt": "2026-11-14T12:50:55.063Z",
+      "updatedAt": "2026-11-14T12:50:55.063Z"
+    },
+    {
       "coverImage": "/assets/images/1794656583596-b75455c0-53c7-4847-ab19-5a0d0e3dac55.png",
       "previewImage": "",
       "code": "rh3qtu",
@@ -3531,6 +3545,14 @@
   "events": [
     {
       "kind": "map-create",
+      "subjectId": "map-30ee82b6-4a70-4a06-84ed-402ecaf9c934",
+      "title": "单向跑酷",
+      "detail": "2pvr5r",
+      "id": "event-2fcdad01-b4bf-4090-be74-ae686e852a79",
+      "timestamp": "2026-11-14T12:50:55.063Z"
+    },
+    {
+      "kind": "map-create",
       "subjectId": "map-36c10cf9-02df-4bb5-b445-150e1c113380",
       "title": "跑酷天堂100关喵",
       "detail": "rh3qtu",
@@ -5871,7 +5893,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-11-14T11:43:18.068Z",
+  "updatedAt": "2026-11-14T12:50:55.063Z",
   "mapTypes": [
     "PVE",
     "推塔",
