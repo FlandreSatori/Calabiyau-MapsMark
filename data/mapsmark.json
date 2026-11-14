@@ -1,6 +1,20 @@
 {
   "maps": [
     {
+      "coverImage": "/assets/images/1794669059461-bbb858f3-4ccc-4448-aa7b-6e626bac4195.png",
+      "previewImage": "",
+      "code": "MK4EDT",
+      "type": "跑酷",
+      "name": "四季之旅喵",
+      "author": "祈願QAQ",
+      "mappedAt": "",
+      "introduction": "是猫娘就来群喵937190238",
+      "estimatedMinutes": 120,
+      "id": "map-76c80352-a3bf-4989-9043-354d4eb1581c",
+      "submittedAt": "2026-11-14T15:12:39.337Z",
+      "updatedAt": "2026-11-14T15:12:39.337Z"
+    },
+    {
       "coverImage": "/assets/images/1794662742522-0cbd85da-8b16-42ab-ba7f-41b19202e21c.png",
       "previewImage": "",
       "code": "6k9pxm",
@@ -3559,6 +3573,14 @@
   "events": [
     {
       "kind": "map-create",
+      "subjectId": "map-76c80352-a3bf-4989-9043-354d4eb1581c",
+      "title": "四季之旅喵",
+      "detail": "MK4EDT",
+      "id": "event-b94b1b4f-ac5e-4849-836c-d72b9244595c",
+      "timestamp": "2026-11-14T15:12:39.337Z"
+    },
+    {
+      "kind": "map-create",
       "subjectId": "map-f94e9b7a-2f6f-4e3a-ad73-844c8ba882de",
       "title": "难度递增跑酷改（mmr终版",
       "detail": "6k9pxm",
@@ -5915,7 +5937,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-11-14T13:27:07.905Z",
+  "updatedAt": "2026-11-14T15:12:39.337Z",
   "mapTypes": [
     "PVE",
     "推塔",
