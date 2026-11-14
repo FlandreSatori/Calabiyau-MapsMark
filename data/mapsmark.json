@@ -1,7 +1,7 @@
 {
   "maps": [
     {
-      "coverImage": "/assets/images/1794669059461-bbb858f3-4ccc-4448-aa7b-6e626bac4195.png",
+      "coverImage": "",
       "previewImage": "",
       "code": "MK4EDT",
       "type": "跑酷",
@@ -12,7 +12,7 @@
       "estimatedMinutes": 120,
       "id": "map-76c80352-a3bf-4989-9043-354d4eb1581c",
       "submittedAt": "2026-11-14T15:12:39.337Z",
-      "updatedAt": "2026-11-14T15:12:39.337Z"
+      "updatedAt": "2026-11-14T15:14:15.554Z"
     },
     {
       "coverImage": "/assets/images/1794662742522-0cbd85da-8b16-42ab-ba7f-41b19202e21c.png",
@@ -3572,6 +3572,14 @@
   ],
   "events": [
     {
+      "kind": "map-update",
+      "subjectId": "map-76c80352-a3bf-4989-9043-354d4eb1581c",
+      "title": "编辑地图 四季之旅喵",
+      "detail": "MK4EDT",
+      "id": "event-70983311-2edf-43eb-8a20-5933c7765c2c",
+      "timestamp": "2026-11-14T15:14:15.554Z"
+    },
+    {
       "kind": "map-create",
       "subjectId": "map-76c80352-a3bf-4989-9043-354d4eb1581c",
       "title": "四季之旅喵",
@@ -5937,7 +5945,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-11-14T15:12:39.337Z",
+  "updatedAt": "2026-11-14T15:14:15.554Z",
   "mapTypes": [
     "PVE",
     "推塔",
