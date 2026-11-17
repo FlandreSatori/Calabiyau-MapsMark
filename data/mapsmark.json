@@ -1196,7 +1196,8 @@
       "comment": "这图也有快一年了喵",
       "id": "review-41d6ea6f-a89d-4d2b-bcee-86d662d06baf",
       "submittedAt": "2026-11-17T00:43:25.576Z",
-      "updatedAt": "2026-11-17T00:43:25.576Z"
+      "updatedAt": "2026-11-17T13:26:08.467Z",
+      "deletedAt": "2026-11-17T13:26:08.467Z"
     },
     {
       "mapId": "map-2bca3282-e8ac-4d45-a775-f32c8c1e2079",
@@ -3933,6 +3934,14 @@
   "events": [
     {
       "kind": "review-delete",
+      "subjectId": "review-41d6ea6f-a89d-4d2b-bcee-86d662d06baf",
+      "title": "删除评价 凯尔希尔",
+      "detail": "map-ffef6b57-ac32-4e4d-96fa-5ca6e7a0b78e",
+      "id": "event-b484f0dc-b525-40a4-bad4-f1ea4e0abc4f",
+      "timestamp": "2026-11-17T13:26:08.467Z"
+    },
+    {
+      "kind": "review-delete",
       "subjectId": "review-267fc879-be47-4a95-8324-768f2f762e17",
       "title": "删除评价 凯尔希尔",
       "detail": "map-80867e29-e2cc-4563-afc8-bb1e4b225722",
@@ -6585,7 +6594,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-11-17T13:25:56.804Z",
+  "updatedAt": "2026-11-17T13:26:08.467Z",
   "mapTypes": [
     "PVE",
     "推塔",
