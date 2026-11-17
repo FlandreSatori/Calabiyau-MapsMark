@@ -1213,7 +1213,8 @@
       "comment": "老资历下料就是猛喵",
       "id": "review-e5f8ac0a-5b98-497f-8863-c9edbfd9d6b5",
       "submittedAt": "2026-11-17T00:42:30.995Z",
-      "updatedAt": "2026-11-17T00:42:30.995Z"
+      "updatedAt": "2026-11-17T13:26:15.249Z",
+      "deletedAt": "2026-11-17T13:26:15.249Z"
     },
     {
       "mapId": "map-e095a302-4ed7-4863-8363-a3959d1694db",
@@ -3934,6 +3935,14 @@
   "events": [
     {
       "kind": "review-delete",
+      "subjectId": "review-e5f8ac0a-5b98-497f-8863-c9edbfd9d6b5",
+      "title": "删除评价 凯尔希尔",
+      "detail": "map-2bca3282-e8ac-4d45-a775-f32c8c1e2079",
+      "id": "event-76dcaeea-e437-4589-88be-3b6c9c4fbd42",
+      "timestamp": "2026-11-17T13:26:15.249Z"
+    },
+    {
+      "kind": "review-delete",
       "subjectId": "review-41d6ea6f-a89d-4d2b-bcee-86d662d06baf",
       "title": "删除评价 凯尔希尔",
       "detail": "map-ffef6b57-ac32-4e4d-96fa-5ca6e7a0b78e",
@@ -6594,7 +6603,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-11-17T13:26:08.467Z",
+  "updatedAt": "2026-11-17T13:26:15.249Z",
   "mapTypes": [
     "PVE",
     "推塔",
