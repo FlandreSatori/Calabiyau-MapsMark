@@ -1030,6 +1030,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-253d8dc1-a58f-41a5-a812-a9a868857ade",
+      "reviewerName": "凯尔希尔",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 3,
+        "aesthetics": 5,
+        "guidance": 2,
+        "difficulty": 2,
+        "overall": 4
+      },
+      "comment": "量大管饱喵",
+      "id": "review-d331696d-6b16-4cb3-8910-f20629cc86e5",
+      "submittedAt": "2026-11-17T00:37:44.291Z",
+      "updatedAt": "2026-11-17T00:37:44.291Z"
+    },
+    {
       "mapId": "map-3e02a6f1-e70f-4e24-adc9-bc142a0401e2",
       "reviewerName": "喵啊",
       "anonymous": false,
@@ -3699,6 +3715,14 @@
   ],
   "events": [
     {
+      "kind": "review-create",
+      "subjectId": "review-d331696d-6b16-4cb3-8910-f20629cc86e5",
+      "title": "凯尔希尔",
+      "detail": "map-253d8dc1-a58f-41a5-a812-a9a868857ade",
+      "id": "event-ae635d93-baa5-408a-9080-050fadc211cc",
+      "timestamp": "2026-11-17T00:37:44.291Z"
+    },
+    {
       "kind": "map-create",
       "subjectId": "map-253d8dc1-a58f-41a5-a812-a9a868857ade",
       "title": "什喵！这个图居然无一人通关喵（半成品）、",
@@ -6168,7 +6192,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-11-14T19:27:25.852Z",
+  "updatedAt": "2026-11-17T00:37:44.291Z",
   "mapTypes": [
     "PVE",
     "推塔",
