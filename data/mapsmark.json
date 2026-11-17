@@ -1030,6 +1030,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-068c0cea-b86e-4c61-9a91-f3cb9fbf2b96",
+      "reviewerName": "凯尔希尔",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 2,
+        "aesthetics": 1.5,
+        "guidance": 0.5,
+        "difficulty": 0.2,
+        "overall": 3
+      },
+      "comment": "老登的图跳的不烧心喵",
+      "id": "review-1f878c04-73da-4b68-838f-f74e92179031",
+      "submittedAt": "2026-11-17T00:49:29.628Z",
+      "updatedAt": "2026-11-17T00:49:29.628Z"
+    },
+    {
       "mapId": "map-3c6db4be-3292-4b91-ad0a-bf4b698b1ed6",
       "reviewerName": "凯尔希尔",
       "anonymous": false,
@@ -3812,6 +3828,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-1f878c04-73da-4b68-838f-f74e92179031",
+      "title": "凯尔希尔",
+      "detail": "map-068c0cea-b86e-4c61-9a91-f3cb9fbf2b96",
+      "id": "event-e4cb5143-96fa-4ed3-b1bf-21b9d8006032",
+      "timestamp": "2026-11-17T00:49:29.628Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-5e6af362-7b88-4a20-a452-df4964f23a7c",
       "title": "凯尔希尔",
       "detail": "map-3c6db4be-3292-4b91-ad0a-bf4b698b1ed6",
@@ -6336,7 +6360,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-11-17T00:48:42.964Z",
+  "updatedAt": "2026-11-17T00:49:29.628Z",
   "mapTypes": [
     "PVE",
     "推塔",
