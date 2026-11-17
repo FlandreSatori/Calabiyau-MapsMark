@@ -1264,7 +1264,8 @@
       "comment": "量大管饱喵",
       "id": "review-d331696d-6b16-4cb3-8910-f20629cc86e5",
       "submittedAt": "2026-11-17T00:37:44.291Z",
-      "updatedAt": "2026-11-17T00:37:44.291Z"
+      "updatedAt": "2026-11-17T13:26:33.999Z",
+      "deletedAt": "2026-11-17T13:26:33.999Z"
     },
     {
       "mapId": "map-3e02a6f1-e70f-4e24-adc9-bc142a0401e2",
@@ -3935,6 +3936,14 @@
     }
   ],
   "events": [
+    {
+      "kind": "review-delete",
+      "subjectId": "review-d331696d-6b16-4cb3-8910-f20629cc86e5",
+      "title": "删除评价 凯尔希尔",
+      "detail": "map-253d8dc1-a58f-41a5-a812-a9a868857ade",
+      "id": "event-d069c2e3-e629-4b1c-ba95-2a2044f407c3",
+      "timestamp": "2026-11-17T13:26:34.000Z"
+    },
     {
       "kind": "review-delete",
       "subjectId": "review-c6140474-cf49-43d0-9df2-651e41712132",
@@ -6621,7 +6630,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-11-17T13:26:25.578Z",
+  "updatedAt": "2026-11-17T13:26:34.000Z",
   "mapTypes": [
     "PVE",
     "推塔",
