@@ -1041,6 +1041,22 @@
         "overall": 2.5
       },
       "comment": "小登的图跳的不烧心喵",
+      "id": "review-1ec4932f-6ddb-4d5a-af1f-6635a6044578",
+      "submittedAt": "2026-11-17T00:50:45.462Z",
+      "updatedAt": "2026-11-17T00:50:45.462Z"
+    },
+    {
+      "mapId": "map-6b4dbce4-f665-4fb8-ad7f-26f6ff0f6ff3",
+      "reviewerName": "凯尔希尔",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 1,
+        "aesthetics": 1,
+        "guidance": 0.5,
+        "difficulty": 0.4,
+        "overall": 2.5
+      },
+      "comment": "小登的图跳的不烧心喵",
       "id": "review-4e44ab2e-5f73-485e-82d7-6fde315cfea4",
       "submittedAt": "2026-11-17T00:50:33.310Z",
       "updatedAt": "2026-11-17T00:50:33.310Z"
@@ -3844,6 +3860,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-1ec4932f-6ddb-4d5a-af1f-6635a6044578",
+      "title": "凯尔希尔",
+      "detail": "map-6b4dbce4-f665-4fb8-ad7f-26f6ff0f6ff3",
+      "id": "event-c24a1222-2bcf-4628-bbfe-36580ab78cb2",
+      "timestamp": "2026-11-17T00:50:45.462Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-4e44ab2e-5f73-485e-82d7-6fde315cfea4",
       "title": "凯尔希尔",
       "detail": "map-6b4dbce4-f665-4fb8-ad7f-26f6ff0f6ff3",
@@ -6384,7 +6408,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-11-17T00:50:33.310Z",
+  "updatedAt": "2026-11-17T00:50:45.462Z",
   "mapTypes": [
     "PVE",
     "推塔",
