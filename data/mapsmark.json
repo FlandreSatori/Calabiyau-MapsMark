@@ -1111,7 +1111,8 @@
       "comment": "小登的图跳的不烧心喵",
       "id": "review-1ec4932f-6ddb-4d5a-af1f-6635a6044578",
       "submittedAt": "2026-11-17T00:50:45.462Z",
-      "updatedAt": "2026-11-17T00:50:45.462Z"
+      "updatedAt": "2026-11-17T13:25:34.702Z",
+      "deletedAt": "2026-11-17T13:25:34.702Z"
     },
     {
       "mapId": "map-6b4dbce4-f665-4fb8-ad7f-26f6ff0f6ff3",
@@ -3928,6 +3929,14 @@
   "events": [
     {
       "kind": "review-delete",
+      "subjectId": "review-1ec4932f-6ddb-4d5a-af1f-6635a6044578",
+      "title": "删除评价 凯尔希尔",
+      "detail": "map-6b4dbce4-f665-4fb8-ad7f-26f6ff0f6ff3",
+      "id": "event-2877a497-17f5-49bf-990b-834660f2e2a7",
+      "timestamp": "2026-11-17T13:25:34.702Z"
+    },
+    {
+      "kind": "review-delete",
       "subjectId": "review-285691c2-9105-4c3f-b7a1-e5cd2662d5f8",
       "title": "删除评价 凯尔希尔",
       "detail": "map-f94e9b7a-2f6f-4e3a-ad73-844c8ba882de",
@@ -6540,7 +6549,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-11-17T13:25:30.999Z",
+  "updatedAt": "2026-11-17T13:25:34.702Z",
   "mapTypes": [
     "PVE",
     "推塔",
