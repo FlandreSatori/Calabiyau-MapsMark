@@ -1030,6 +1030,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-e095a302-4ed7-4863-8363-a3959d1694db",
+      "reviewerName": "凯尔希尔",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 5,
+        "aesthetics": 1,
+        "guidance": 1,
+        "difficulty": 1,
+        "overall": 5
+      },
+      "comment": "永远怀念椅子喵，又不难又好玩喵",
+      "id": "review-c588ed83-c9c7-4654-8cd6-2e25b2834ddf",
+      "submittedAt": "2026-11-17T00:40:40.587Z",
+      "updatedAt": "2026-11-17T00:40:40.587Z"
+    },
+    {
       "mapId": "map-56074a58-bb0e-4e14-b7b8-8dc151bc8137",
       "reviewerName": "凯尔希尔",
       "anonymous": false,
@@ -3732,6 +3748,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-c588ed83-c9c7-4654-8cd6-2e25b2834ddf",
+      "title": "凯尔希尔",
+      "detail": "map-e095a302-4ed7-4863-8363-a3959d1694db",
+      "id": "event-6ad9da64-9ba8-4a4b-8e5b-4529086d8e64",
+      "timestamp": "2026-11-17T00:40:40.588Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-c6140474-cf49-43d0-9df2-651e41712132",
       "title": "凯尔希尔",
       "detail": "map-56074a58-bb0e-4e14-b7b8-8dc151bc8137",
@@ -6216,7 +6240,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-11-17T00:39:23.611Z",
+  "updatedAt": "2026-11-17T00:40:40.588Z",
   "mapTypes": [
     "PVE",
     "推塔",
