@@ -1247,7 +1247,8 @@
       "comment": "难度不上不下，，还真是中登玩的喵",
       "id": "review-c6140474-cf49-43d0-9df2-651e41712132",
       "submittedAt": "2026-11-17T00:39:23.611Z",
-      "updatedAt": "2026-11-17T00:39:23.611Z"
+      "updatedAt": "2026-11-17T13:26:25.578Z",
+      "deletedAt": "2026-11-17T13:26:25.578Z"
     },
     {
       "mapId": "map-253d8dc1-a58f-41a5-a812-a9a868857ade",
@@ -3936,6 +3937,14 @@
   "events": [
     {
       "kind": "review-delete",
+      "subjectId": "review-c6140474-cf49-43d0-9df2-651e41712132",
+      "title": "删除评价 凯尔希尔",
+      "detail": "map-56074a58-bb0e-4e14-b7b8-8dc151bc8137",
+      "id": "event-08bf88ba-6329-469c-a2d6-f71988f735c6",
+      "timestamp": "2026-11-17T13:26:25.578Z"
+    },
+    {
+      "kind": "review-delete",
       "subjectId": "review-c588ed83-c9c7-4654-8cd6-2e25b2834ddf",
       "title": "删除评价 凯尔希尔",
       "detail": "map-e095a302-4ed7-4863-8363-a3959d1694db",
@@ -6612,7 +6621,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-11-17T13:26:20.025Z",
+  "updatedAt": "2026-11-17T13:26:25.578Z",
   "mapTypes": [
     "PVE",
     "推塔",
