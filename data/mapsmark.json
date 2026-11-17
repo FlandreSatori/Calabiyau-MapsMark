@@ -1030,6 +1030,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-30ee82b6-4a70-4a06-84ed-402ecaf9c934",
+      "reviewerName": "凯尔希尔",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 5,
+        "aesthetics": 1,
+        "guidance": 1.5,
+        "difficulty": 3.5,
+        "overall": 5
+      },
+      "comment": "神中神喵，卡皮巴拉最好玩的图喵",
+      "id": "review-a149032c-33a1-4f08-ba82-2bd5472507c8",
+      "submittedAt": "2026-11-17T00:53:24.238Z",
+      "updatedAt": "2026-11-17T00:53:24.238Z"
+    },
+    {
       "mapId": "map-f94e9b7a-2f6f-4e3a-ad73-844c8ba882de",
       "reviewerName": "凯尔希尔",
       "anonymous": false,
@@ -3876,6 +3892,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-a149032c-33a1-4f08-ba82-2bd5472507c8",
+      "title": "凯尔希尔",
+      "detail": "map-30ee82b6-4a70-4a06-84ed-402ecaf9c934",
+      "id": "event-b7a1ea9f-79c2-4f6e-9b1a-6c92d23a9e8b",
+      "timestamp": "2026-11-17T00:53:24.238Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-285691c2-9105-4c3f-b7a1-e5cd2662d5f8",
       "title": "凯尔希尔",
       "detail": "map-f94e9b7a-2f6f-4e3a-ad73-844c8ba882de",
@@ -6432,7 +6456,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-11-17T00:52:10.193Z",
+  "updatedAt": "2026-11-17T00:53:24.238Z",
   "mapTypes": [
     "PVE",
     "推塔",
