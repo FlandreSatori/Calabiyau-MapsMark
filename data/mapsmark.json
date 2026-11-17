@@ -1230,7 +1230,8 @@
       "comment": "永远怀念椅子喵，又不难又好玩喵",
       "id": "review-c588ed83-c9c7-4654-8cd6-2e25b2834ddf",
       "submittedAt": "2026-11-17T00:40:40.587Z",
-      "updatedAt": "2026-11-17T00:40:40.587Z"
+      "updatedAt": "2026-11-17T13:26:20.025Z",
+      "deletedAt": "2026-11-17T13:26:20.025Z"
     },
     {
       "mapId": "map-56074a58-bb0e-4e14-b7b8-8dc151bc8137",
@@ -3935,6 +3936,14 @@
   "events": [
     {
       "kind": "review-delete",
+      "subjectId": "review-c588ed83-c9c7-4654-8cd6-2e25b2834ddf",
+      "title": "删除评价 凯尔希尔",
+      "detail": "map-e095a302-4ed7-4863-8363-a3959d1694db",
+      "id": "event-fd8ab045-6209-4d5f-beeb-dd5f995d2ae3",
+      "timestamp": "2026-11-17T13:26:20.025Z"
+    },
+    {
+      "kind": "review-delete",
       "subjectId": "review-e5f8ac0a-5b98-497f-8863-c9edbfd9d6b5",
       "title": "删除评价 凯尔希尔",
       "detail": "map-2bca3282-e8ac-4d45-a775-f32c8c1e2079",
@@ -6603,7 +6612,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-11-17T13:26:15.249Z",
+  "updatedAt": "2026-11-17T13:26:20.025Z",
   "mapTypes": [
     "PVE",
     "推塔",
