@@ -1043,7 +1043,8 @@
       "comment": "好玩喵",
       "id": "review-bdab4ade-b64a-446a-981b-66e04616c955",
       "submittedAt": "2026-11-17T00:55:54.078Z",
-      "updatedAt": "2026-11-17T00:55:54.078Z"
+      "updatedAt": "2026-11-17T13:25:05.997Z",
+      "deletedAt": "2026-11-17T13:25:05.997Z"
     },
     {
       "mapId": "map-36c10cf9-02df-4bb5-b445-150e1c113380",
@@ -3923,6 +3924,14 @@
   ],
   "events": [
     {
+      "kind": "review-delete",
+      "subjectId": "review-bdab4ade-b64a-446a-981b-66e04616c955",
+      "title": "删除评价 凯尔希尔",
+      "detail": "map-a8a456ec-97d4-4483-9c45-cf3784b1681b",
+      "id": "event-7f616b61-25b7-4b26-a90d-2d639212211a",
+      "timestamp": "2026-11-17T13:25:05.997Z"
+    },
+    {
       "kind": "review-create",
       "subjectId": "review-bdab4ade-b64a-446a-981b-66e04616c955",
       "title": "凯尔希尔",
@@ -6504,7 +6513,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-11-17T00:55:54.078Z",
+  "updatedAt": "2026-11-17T13:25:05.997Z",
   "mapTypes": [
     "PVE",
     "推塔",
