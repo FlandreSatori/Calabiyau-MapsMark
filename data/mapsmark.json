@@ -1060,7 +1060,8 @@
       "comment": "趣味性负数喵，大量关卡雷同，跳一半要睡着了喵",
       "id": "review-855aa684-798b-4258-95a7-19fc6db5f906",
       "submittedAt": "2026-11-17T00:54:39.600Z",
-      "updatedAt": "2026-11-17T00:54:39.600Z"
+      "updatedAt": "2026-11-17T13:25:10.982Z",
+      "deletedAt": "2026-11-17T13:25:10.982Z"
     },
     {
       "mapId": "map-30ee82b6-4a70-4a06-84ed-402ecaf9c934",
@@ -3925,6 +3926,14 @@
   "events": [
     {
       "kind": "review-delete",
+      "subjectId": "review-855aa684-798b-4258-95a7-19fc6db5f906",
+      "title": "删除评价 凯尔希尔",
+      "detail": "map-36c10cf9-02df-4bb5-b445-150e1c113380",
+      "id": "event-c2724193-5f29-4074-8750-f265ed253893",
+      "timestamp": "2026-11-17T13:25:10.982Z"
+    },
+    {
+      "kind": "review-delete",
       "subjectId": "review-bdab4ade-b64a-446a-981b-66e04616c955",
       "title": "删除评价 凯尔希尔",
       "detail": "map-a8a456ec-97d4-4483-9c45-cf3784b1681b",
@@ -6513,7 +6522,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-11-17T13:25:05.997Z",
+  "updatedAt": "2026-11-17T13:25:10.982Z",
   "mapTypes": [
     "PVE",
     "推塔",
