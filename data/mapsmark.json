@@ -1162,7 +1162,8 @@
       "comment": "还行喵",
       "id": "review-5e6af362-7b88-4a20-a452-df4964f23a7c",
       "submittedAt": "2026-11-17T00:48:42.964Z",
-      "updatedAt": "2026-11-17T00:48:42.964Z"
+      "updatedAt": "2026-11-17T13:25:53.148Z",
+      "deletedAt": "2026-11-17T13:25:53.148Z"
     },
     {
       "mapId": "map-80867e29-e2cc-4563-afc8-bb1e4b225722",
@@ -3931,6 +3932,14 @@
   "events": [
     {
       "kind": "review-delete",
+      "subjectId": "review-5e6af362-7b88-4a20-a452-df4964f23a7c",
+      "title": "删除评价 凯尔希尔",
+      "detail": "map-3c6db4be-3292-4b91-ad0a-bf4b698b1ed6",
+      "id": "event-82d668cd-10c3-4365-977b-cab434f3b9fe",
+      "timestamp": "2026-11-17T13:25:53.148Z"
+    },
+    {
+      "kind": "review-delete",
       "subjectId": "review-1f878c04-73da-4b68-838f-f74e92179031",
       "title": "删除评价 凯尔希尔",
       "detail": "map-068c0cea-b86e-4c61-9a91-f3cb9fbf2b96",
@@ -6567,7 +6576,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-11-17T13:25:49.084Z",
+  "updatedAt": "2026-11-17T13:25:53.148Z",
   "mapTypes": [
     "PVE",
     "推塔",
