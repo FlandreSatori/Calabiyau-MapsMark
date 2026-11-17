@@ -1077,7 +1077,8 @@
       "comment": "神中神喵，卡皮巴拉最好玩的图喵",
       "id": "review-a149032c-33a1-4f08-ba82-2bd5472507c8",
       "submittedAt": "2026-11-17T00:53:24.238Z",
-      "updatedAt": "2026-11-17T00:53:24.238Z"
+      "updatedAt": "2026-11-17T13:25:27.212Z",
+      "deletedAt": "2026-11-17T13:25:27.212Z"
     },
     {
       "mapId": "map-f94e9b7a-2f6f-4e3a-ad73-844c8ba882de",
@@ -3926,6 +3927,14 @@
   "events": [
     {
       "kind": "review-delete",
+      "subjectId": "review-a149032c-33a1-4f08-ba82-2bd5472507c8",
+      "title": "删除评价 凯尔希尔",
+      "detail": "map-30ee82b6-4a70-4a06-84ed-402ecaf9c934",
+      "id": "event-b63a6955-a078-4a0f-8138-baca33668469",
+      "timestamp": "2026-11-17T13:25:27.212Z"
+    },
+    {
+      "kind": "review-delete",
       "subjectId": "review-855aa684-798b-4258-95a7-19fc6db5f906",
       "title": "删除评价 凯尔希尔",
       "detail": "map-36c10cf9-02df-4bb5-b445-150e1c113380",
@@ -6522,7 +6531,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-11-17T13:25:10.982Z",
+  "updatedAt": "2026-11-17T13:25:27.212Z",
   "mapTypes": [
     "PVE",
     "推塔",
