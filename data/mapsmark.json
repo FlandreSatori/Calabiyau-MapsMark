@@ -1030,6 +1030,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-36c10cf9-02df-4bb5-b445-150e1c113380",
+      "reviewerName": "凯尔希尔",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 1.5,
+        "aesthetics": 3,
+        "guidance": 3.8,
+        "difficulty": 2,
+        "overall": 2.5
+      },
+      "comment": "关卡大量相似，基本上都是跳跳乐，有点像短视频文案配上的雷霆小跑酷",
+      "id": "review-e66d95a5-431e-4ae6-9918-4bce55483003",
+      "submittedAt": "2026-11-24T00:14:46.276Z",
+      "updatedAt": "2026-11-24T00:14:46.276Z"
+    },
+    {
       "mapId": "map-30ee82b6-4a70-4a06-84ed-402ecaf9c934",
       "reviewerName": "凯尔希尔",
       "anonymous": false,
@@ -4114,6 +4130,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-e66d95a5-431e-4ae6-9918-4bce55483003",
+      "title": "凯尔希尔",
+      "detail": "map-36c10cf9-02df-4bb5-b445-150e1c113380",
+      "id": "event-fe10625f-137d-4ddd-a51d-81e7fbdfc3ec",
+      "timestamp": "2026-11-24T00:14:46.276Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-3ea3f4b3-b4bc-4f1f-a39c-a7d6bde9f0f9",
       "title": "凯尔希尔",
       "detail": "map-30ee82b6-4a70-4a06-84ed-402ecaf9c934",
@@ -6894,7 +6918,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-11-24T00:13:00.938Z",
+  "updatedAt": "2026-11-24T00:14:46.276Z",
   "mapTypes": [
     "PVE",
     "推塔",
