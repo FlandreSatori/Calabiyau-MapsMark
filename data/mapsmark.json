@@ -1030,6 +1030,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-80867e29-e2cc-4563-afc8-bb1e4b225722",
+      "reviewerName": "匿名",
+      "anonymous": true,
+      "ratings": {
+        "entertainment": 2.5,
+        "aesthetics": 3.2,
+        "guidance": 2.8,
+        "difficulty": 3,
+        "overall": 2.5
+      },
+      "comment": "跑酷部分个人觉得有点难，而且不少都是比较狭窄的室内跑酷，视角乱飞影响比较严重，个人不太喜欢，地图美观度方面的确是有，但是创意度比较低，相互之间的关联度，整体协调性也比较差，只能说是第一眼看好看，但你要有什么深的感觉话，是没有的，一开始复活的引导感觉稍微有点乱，还是不太清楚要干什么，然后关卡本身就是强制引导+小空间，没有什么捷径，也没什么小路，这点倒不容易很差，趣味性的话，我只玩了一部分，感觉一般，只能说是一张中规中矩的地图，最感到可惜的是创意度真的不太足，虽然说美观看起来确实还行，但深度完全不够",
+      "id": "review-d120e606-b042-46d2-9e0d-0c571de54b4d",
+      "submittedAt": "2026-11-24T15:06:15.147Z",
+      "updatedAt": "2026-11-24T15:06:15.147Z"
+    },
+    {
       "mapId": "map-a8a456ec-97d4-4483-9c45-cf3784b1681b",
       "reviewerName": "凯尔希尔",
       "anonymous": false,
@@ -4162,6 +4178,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-d120e606-b042-46d2-9e0d-0c571de54b4d",
+      "title": "匿名",
+      "detail": "map-80867e29-e2cc-4563-afc8-bb1e4b225722",
+      "id": "event-a7cd48b1-ce6e-4454-9c75-7f3fcf5692dc",
+      "timestamp": "2026-11-24T15:06:15.147Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-df3f910b-66bb-4dfe-873e-74ebae830ce0",
       "title": "凯尔希尔",
       "detail": "map-a8a456ec-97d4-4483-9c45-cf3784b1681b",
@@ -6966,7 +6990,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-11-24T00:17:36.494Z",
+  "updatedAt": "2026-11-24T15:06:15.147Z",
   "mapTypes": [
     "PVE",
     "推塔",
