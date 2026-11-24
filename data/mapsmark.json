@@ -1030,6 +1030,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-617032a1-5385-4a42-9839-642123ec88f0",
+      "reviewerName": "凯尔希尔",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 3,
+        "aesthetics": 3.5,
+        "guidance": 3,
+        "difficulty": 2,
+        "overall": 3.5
+      },
+      "comment": "好看喵",
+      "id": "review-4e5ee7c9-462a-464f-8a81-089b33577b8a",
+      "submittedAt": "2026-11-24T00:16:44.406Z",
+      "updatedAt": "2026-11-24T00:16:44.406Z"
+    },
+    {
       "mapId": "map-36c10cf9-02df-4bb5-b445-150e1c113380",
       "reviewerName": "凯尔希尔",
       "anonymous": false,
@@ -4130,6 +4146,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-4e5ee7c9-462a-464f-8a81-089b33577b8a",
+      "title": "凯尔希尔",
+      "detail": "map-617032a1-5385-4a42-9839-642123ec88f0",
+      "id": "event-16abab92-96a9-44a0-bf4f-d030f4ae8b1b",
+      "timestamp": "2026-11-24T00:16:44.406Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-e66d95a5-431e-4ae6-9918-4bce55483003",
       "title": "凯尔希尔",
       "detail": "map-36c10cf9-02df-4bb5-b445-150e1c113380",
@@ -6918,7 +6942,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-11-24T00:14:46.276Z",
+  "updatedAt": "2026-11-24T00:16:44.406Z",
   "mapTypes": [
     "PVE",
     "推塔",
