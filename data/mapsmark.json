@@ -1030,6 +1030,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-e095a302-4ed7-4863-8363-a3959d1694db",
+      "reviewerName": "凯尔希尔",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 4.8,
+        "aesthetics": 2.8,
+        "guidance": 2.9,
+        "difficulty": 2.5,
+        "overall": 4.5
+      },
+      "comment": "神中神喵！！",
+      "id": "review-71cb02ea-1241-4fbe-bef8-dfb98227552b",
+      "submittedAt": "2026-11-24T00:05:22.060Z",
+      "updatedAt": "2026-11-24T00:05:22.060Z"
+    },
+    {
       "mapId": "map-56074a58-bb0e-4e14-b7b8-8dc151bc8137",
       "reviewerName": "凯尔希尔",
       "anonymous": false,
@@ -3970,6 +3986,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-71cb02ea-1241-4fbe-bef8-dfb98227552b",
+      "title": "凯尔希尔",
+      "detail": "map-e095a302-4ed7-4863-8363-a3959d1694db",
+      "id": "event-e83836f1-6ad3-475c-a2c9-9f7876089bb5",
+      "timestamp": "2026-11-24T00:05:22.060Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-be5a0968-f8f3-492e-8f06-7adf818e1eeb",
       "title": "凯尔希尔",
       "detail": "map-56074a58-bb0e-4e14-b7b8-8dc151bc8137",
@@ -6678,7 +6702,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-11-24T00:04:30.138Z",
+  "updatedAt": "2026-11-24T00:05:22.060Z",
   "mapTypes": [
     "PVE",
     "推塔",
