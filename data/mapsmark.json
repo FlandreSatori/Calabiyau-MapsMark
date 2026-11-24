@@ -1030,6 +1030,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-f94e9b7a-2f6f-4e3a-ad73-844c8ba882de",
+      "reviewerName": "凯尔希尔",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 4,
+        "aesthetics": 4,
+        "guidance": 4,
+        "difficulty": 0.5,
+        "overall": 4.2
+      },
+      "comment": "关卡隔离造的厉害喵",
+      "id": "review-8fb549dd-a2f8-4283-b05e-ee7a1fdc7e2b",
+      "submittedAt": "2026-11-24T00:12:16.982Z",
+      "updatedAt": "2026-11-24T00:12:16.982Z"
+    },
+    {
       "mapId": "map-6b4dbce4-f665-4fb8-ad7f-26f6ff0f6ff3",
       "reviewerName": "凯尔希尔",
       "anonymous": false,
@@ -4082,6 +4098,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-8fb549dd-a2f8-4283-b05e-ee7a1fdc7e2b",
+      "title": "凯尔希尔",
+      "detail": "map-f94e9b7a-2f6f-4e3a-ad73-844c8ba882de",
+      "id": "event-a076ec15-e8a2-4bd9-a568-f75ea16e0f44",
+      "timestamp": "2026-11-24T00:12:16.982Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-95139f63-9898-45b9-8ade-e71479037e9e",
       "title": "凯尔希尔",
       "detail": "map-6b4dbce4-f665-4fb8-ad7f-26f6ff0f6ff3",
@@ -6846,7 +6870,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-11-24T00:10:56.003Z",
+  "updatedAt": "2026-11-24T00:12:16.982Z",
   "mapTypes": [
     "PVE",
     "推塔",
