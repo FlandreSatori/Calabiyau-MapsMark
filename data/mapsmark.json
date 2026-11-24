@@ -1030,6 +1030,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-2bca3282-e8ac-4d45-a775-f32c8c1e2079",
+      "reviewerName": "凯尔希尔",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 3,
+        "aesthetics": 2,
+        "guidance": 3,
+        "difficulty": 3.5,
+        "overall": 3.8
+      },
+      "comment": "老资历造图劲大喵",
+      "id": "review-b8621e25-bc5a-4ae9-81b2-43e4a0e14d1e",
+      "submittedAt": "2026-11-24T00:06:33.073Z",
+      "updatedAt": "2026-11-24T00:06:33.073Z"
+    },
+    {
       "mapId": "map-e095a302-4ed7-4863-8363-a3959d1694db",
       "reviewerName": "凯尔希尔",
       "anonymous": false,
@@ -3986,6 +4002,14 @@
   "events": [
     {
       "kind": "review-create",
+      "subjectId": "review-b8621e25-bc5a-4ae9-81b2-43e4a0e14d1e",
+      "title": "凯尔希尔",
+      "detail": "map-2bca3282-e8ac-4d45-a775-f32c8c1e2079",
+      "id": "event-40ed7a4e-a41a-4918-aba1-0f43e7a21448",
+      "timestamp": "2026-11-24T00:06:33.073Z"
+    },
+    {
+      "kind": "review-create",
       "subjectId": "review-71cb02ea-1241-4fbe-bef8-dfb98227552b",
       "title": "凯尔希尔",
       "detail": "map-e095a302-4ed7-4863-8363-a3959d1694db",
@@ -6702,7 +6726,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-11-24T00:05:22.060Z",
+  "updatedAt": "2026-11-24T00:06:33.073Z",
   "mapTypes": [
     "PVE",
     "推塔",
