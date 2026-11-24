@@ -1030,6 +1030,22 @@
   ],
   "reviews": [
     {
+      "mapId": "map-253d8dc1-a58f-41a5-a812-a9a868857ade",
+      "reviewerName": "凯尔希尔",
+      "anonymous": false,
+      "ratings": {
+        "entertainment": 3.9,
+        "aesthetics": 4.2,
+        "guidance": 2.5,
+        "difficulty": 3,
+        "overall": 4
+      },
+      "comment": "老登mmr都能玩喵",
+      "id": "review-7ffa069b-cee7-4205-9ac8-f8f86de4aba6",
+      "submittedAt": "2026-11-24T00:03:35.899Z",
+      "updatedAt": "2026-11-24T00:03:35.899Z"
+    },
+    {
       "mapId": "map-a8a456ec-97d4-4483-9c45-cf3784b1681b",
       "reviewerName": "凯尔希尔",
       "anonymous": false,
@@ -3937,6 +3953,14 @@
   ],
   "events": [
     {
+      "kind": "review-create",
+      "subjectId": "review-7ffa069b-cee7-4205-9ac8-f8f86de4aba6",
+      "title": "凯尔希尔",
+      "detail": "map-253d8dc1-a58f-41a5-a812-a9a868857ade",
+      "id": "event-2ed6293a-4f68-497e-bb2d-ce12d8f85c97",
+      "timestamp": "2026-11-24T00:03:35.899Z"
+    },
+    {
       "kind": "review-delete",
       "subjectId": "review-d331696d-6b16-4cb3-8910-f20629cc86e5",
       "title": "删除评价 凯尔希尔",
@@ -6630,7 +6654,7 @@
       "timestamp": "2026-05-31T09:42:56.101Z"
     }
   ],
-  "updatedAt": "2026-11-17T13:26:34.000Z",
+  "updatedAt": "2026-11-24T00:03:35.899Z",
   "mapTypes": [
     "PVE",
     "推塔",
